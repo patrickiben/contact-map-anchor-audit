@@ -1,0 +1,24 @@
+{
+  "archive": "FULL_STUDY_REPRODUCIBILITY_v0.2.0.zip",
+  "archive_bytes": 3798024667,
+  "archive_sha256": "f93dca420b6bf3b642c1b8c2302d21b7c16678f89853f8a26dfbd20f90c925e2",
+  "parts": [
+    {
+      "file": "full-study-v0.2.0.zip.part-01",
+      "bytes": 1300000000,
+      "sha256": "511f192933a14d96b7054ba718d35c81fe2c06cb4eb3c4594d18be9309d17eee"
+    },
+    {
+      "file": "full-study-v0.2.0.zip.part-02",
+      "bytes": 1300000000,
+      "sha256": "0fd1d93fbaff7da9b91fa64cb54f8f24b6f91ce777ef5cd57491acd8d9609e47"
+    },
+    {
+      "file": "full-study-v0.2.0.zip.part-03",
+      "bytes": 1198024667,
+      "sha256": "c1077918dc05c8cacd878c9ba55d99427493af3b2b38d3d714c3600f1ea69e56"
+    }
+  ],
+  "max_part_bytes": 1300000000,
+  "provider_terms_notice": "https://github.com/patrickiben/contact-map-anchor-audit/blob/main/research/OUTPUT_TERMS_NOTICE.md"
+}

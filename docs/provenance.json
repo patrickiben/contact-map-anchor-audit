@@ -1,11 +1,11 @@
 {
-  "version": "1.0.0",
+  "version": "0.2.0",
   "source": {
-    "manuscript_title": "Auditing allele rankings in genomic predictions: consequence controls and contact-map anchoring",
-    "sha256": "57f31d65b5fcb857e2994c95da66b149b1bfa6885bcdbc76baa6896a79d9d0fe",
-    "version": "Author review candidate, 28 October 2026",
+    "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
+    "sha256": "fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969",
+    "version": "BMC Research Article preparation draft, 28 October 2026",
     "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
-    "publication_status": "Unsubmitted review candidate; no journal acceptance or new DOI claimed."
+    "publication_status": "Public draft in preparation for BMC Bioinformatics; not submitted or accepted."
   },
   "presets": {
     "kind": "Synthetic finite-diagram examples",
@@ -14,7 +14,8 @@
   "study_summary": {
     "kind": "Aggregate author analysis results",
     "file": "study-summary.json",
-    "scope": "No per-site diagram arrays, model prediction matrices or variant records are included in these educational files. The research source is identified by hash and line ranges, not represented as a published journal article."
+    "scope": "Aggregate summaries are shown in the demo. The full study archive, including model outputs and per-site results, is available separately in release v0.2.0 under the applicable AlphaGenome Output Terms.",
+    "archive_url": "https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0"
   },
   "imported_data": {
     "scope": "User-supplied finite diagram JSON; the application should process it locally. The user remains responsible for the provenance and allowed use of their inputs."
@@ -22,7 +23,7 @@
   "rights": {
     "original_code": "See the repository LICENSE; that license does not relicense third-party model outputs or other user inputs.",
     "educational_text": "Original educational adaptation prepared for Patrick Iben, based on the author research material.",
-    "third_party_outputs": "No blanket right to redistribute raw AlphaGenome outputs is asserted."
+    "third_party_outputs": "AlphaGenome outputs and substantial derivatives are subject to the provider Output Terms; see research/OUTPUT_TERMS_NOTICE.md. The toolkit MIT license does not replace these terms."
   },
   "educational_validation": {
     "status": "Practice materials prepared; human learner validation pending.",
@@ -33,6 +34,6 @@
     "source_hash": "SHA256 of the frozen author-review manuscript",
     "coverage": "education/SOURCE_MAP.json",
     "local_check": "python scripts/build_education.py --check",
-    "optional_source_check": "python scripts/build_education.py --check --source path/to/PROPOSED_contact_channel_3d_VALIDATED.md"
+    "optional_source_check": "python scripts/build_education.py --check --source research/manuscript.md"
   }
 }

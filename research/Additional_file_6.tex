@@ -1,0 +1,231 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  11pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{amsmath,amssymb}
+\usepackage{float}
+\usepackage{microtype}
+\usepackage{fvextra}
+\fvset{breaklines=true}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{etoolbox}
+\usepackage{needspace}
+\usepackage{xurl}
+\AtBeginEnvironment{longtable}{\singlespacing\small}
+\AtBeginEnvironment{verbatim}{\singlespacing\small}
+\setlength{\emergencystretch}{3em}
+\floatplacement{figure}{H}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}
+\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{2260}{\ensuremath{\ne}}
+\DeclareUnicodeCharacter{2208}{\ensuremath{\in}}
+\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}
+\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}
+\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}
+\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}
+\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}
+\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}
+\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}
+\DeclareUnicodeCharacter{03C6}{\ensuremath{\phi}}
+\DeclareUnicodeCharacter{2124}{\ensuremath{\mathbb Z}}
+\DeclareUnicodeCharacter{1D63}{\ensuremath{{}_r}}
+\DeclareUnicodeCharacter{2080}{\ensuremath{{}_0}}
+\DeclareUnicodeCharacter{208A}{\ensuremath{{}_+}}
+\DeclareUnicodeCharacter{208B}{\ensuremath{{}_-}}
+\DeclareUnicodeCharacter{207B}{\ensuremath{{}^{-}}}
+\DeclareUnicodeCharacter{00B9}{\ensuremath{{}^{1}}}
+\DeclareUnicodeCharacter{00B2}{\ensuremath{{}^{2}}}
+\DeclareUnicodeCharacter{2074}{\ensuremath{{}^{4}}}
+\DeclareUnicodeCharacter{2075}{\ensuremath{{}^{5}}}
+\DeclareUnicodeCharacter{2076}{\ensuremath{{}^{6}}}
+\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{0108}{\ensuremath{\widehat C}}
+\DeclareUnicodeCharacter{00C2}{\ensuremath{\widehat A}}
+
+\AtBeginDocument{\setstretch{1.12}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\section{Additional file 6: Reproducibility
+details}\label{additional-file-6-reproducibility-details}
+
+These records describe retained computational evidence. The complete
+inputs are provided through the v0.2.0 study archive identified in the
+main article. Full stored-map replay is distinct from verification of
+exported scalar results. Provider output terms and modification notices
+accompany the archive.
+
+The within-site analyses and their numerical record are archived in the
+existing AlphaGenome reproduction package {[}1{]}. Its source code,
+curation records and supplementary tables give the complete empirical
+methods. An extraction manifest records selected machine-artifact values
+and hashes; extraction does not constitute independent regeneration of
+all earlier analyses. A separate targeted cache check reproduces the
+three reported AVI stratum counts and mean statistics and records their
+tie frequencies; it does not rerun their permutation tests. The schema
+probe and mathematical-example verifier accompany the present analysis.
+The verifier checks interval translation, scale normalization, paired
+diagram-alignment bounds, nonmonotonicity under vertex deletion, the
+distinction between bottleneck and Betti-curve distances, the failure of
+treating an arbitrary contact transform as a metric, tie-aware
+conditional nulls and rank invariance. No result from these finite
+examples is labeled a genomic observation.
+
+The completed spatial reproduction bundle includes all raw per-call
+reference/alternate maps, assembled site arrays, coordinates, track
+metadata, input hashes, the locally frozen protocol, exact-matching
+settings, full diagrams, all sixteen conditional tests, numerical
+diagnostics and acquisition audits. The AlphaGenome client was version
+0.9.0; its non-generated Python source matched the recorded vendored
+commit. ALL\_FOLDS is a model alias; an immutable server weight revision
+was not exposed. The strengthened mathematical verifier passed eight
+check groups, including 100 randomized quotient comparisons. Independent
+inference checks include exhaustive finite-label distributions. These
+finite checks do not by themselves constitute a Lean formalization, a
+clean-environment regeneration of the retained audit, or biological
+validation.
+
+The anchor extension additionally contains the frozen replication cohort
+and protocol, all 84 sites' raw predictions, native diagrams, 252
+endpoint comparisons, 21 direct midpoint checks, scalar reconstruction
+baselines, known-answer controls and independent derived-count checks.
+Exact rational finite checks exercise the local slope and
+endpoint-envelope arguments; independent Hera checks include turning and
+flat controls. The prospective engine retains failures and source
+hashes, and did not exclude any planned site. The numerical comparison
+tolerances and their limits accompany the outputs. Additional file 2
+supplies the full proofs and counterexamples, and the integration map
+supplied with the review package records how this replacement
+incorporates the earlier contribution.
+
+A subsequent validation pass regenerated all 204 spatial sites from
+cached maps in a fresh environment, including full diagrams, endpoint
+distances and the fixed midpoint checks. All 6,324 per-site comparisons
+passed the declared tolerances; 18 centered-distance vectors differed
+only at floating-point rounding scale. All sixteen conditional tests
+were independently recertified from the new outputs. The six retained
+historical output files regenerated byte-for-byte using their retained
+original random seeds. This checks execution reproducibility, not Monte
+Carlo precision. Linkage to each output is recorded in the validation
+report. The portable reproduction package pins its dependencies, inputs
+and expected outputs and preserves the failed setup and postprocessing
+attempts alongside their repairs. This reproduction checks computations
+on the retained inputs; it does not establish model accuracy or
+immutable server weights.
+
+The cross-track extension retains its pre-acquisition protocol, all 252
+two-track calls, the independently checked GM12878 drift control, the
+native-prediction lock, per-site diagrams and centered validations, and
+a full reference-engine replay. An independent reviewer recomputed
+Hausdorff witnesses with a separate brute-force implementation and
+reconstructed rankings and rational selected-allele credits from
+per-site files. The only execution correction was an initial import
+failure in the acquisition environment; the unchanged analysis ran in
+the existing fresh validation environment. Failed import logs and actual
+dependency versions are preserved. The portability validation report
+supplied with the review package distinguishes the new checks from the
+preceding full harness and its remaining human and provenance
+requirements.
+
+\subsection{Fixed illustrative site}\label{fixed-illustrative-site}
+
+\pandocbounded{\includegraphics[keepaspectratio,alt={Fixed first genomic site}]{figures/figure_s6_first_genomic_site.png}}
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\textbf{Figure S6.1.} Reference map, selected-alternate difference and
+three-allele comparison for site index zero, fixed by input order rather
+than effect size. Maps are predicted log-enrichment; the diagonal is
+excluded. No physical loop validation is implied. AlphaGenome-derived
+material is subject to the provider Output Terms identified in the main
+article.
+
+\end{minipage}\par
+
+\subsection{Cited archive}\label{cited-archive}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Iben P. Reproducibility package for ``What do within-site comparisons
+  of AlphaGenome Atlas predictions measure? An audit at ClinVar sites in
+  11 genes''. Zenodo, version 1.0, 2026.
+  \href{https://doi.org/10.5281/zenodo.23537469}{doi:10.5281/zenodo.23537469}.
+\end{enumerate}
+
+\end{document}

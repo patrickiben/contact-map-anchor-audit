@@ -1,16 +1,16 @@
 # Anchor audit: concise study guide
 
-A short introduction to *Auditing allele rankings in genomic predictions: consequence controls and contact-map anchoring* by Patrick Iben.
+A short introduction to *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps* by Patrick Iben.
 
-This guide is for a numerate reader with one statistics course and no assumed expertise in persistent homology. It is the shorter of two editions. The [complete companion](COMPANION.md) explains the main manuscript and Supplements S1-S3, including the proofs, both result tables, all four figure-reading tasks, worked examples and practice questions. Both editions have matching PDFs.
+This guide is for a numerate reader with one statistics course and no assumed expertise in persistent homology. It is the shorter of two editions. The [complete companion](COMPANION.md) explains the main manuscript and Additional files 1–6, including the proofs, all result tables, all four figure-reading tasks, worked examples and practice questions. Both editions have matching PDFs.
 
-**Exact basis:** the frozen author-review manuscript and three proposed supplements dated 28 October 2026. This rework is not yet submitted. It incorporates the earlier AlphaGenome audit, whose journal submissions were desk rejected for fit. The earlier preprint remains a separate, historical version; its DOI is not a DOI for this rework. Source hashes are in [ARTIFACTS.json](ARTIFACTS.json).
+**Exact basis:** the frozen author-review manuscript and six additional files dated 28 October 2026. This rework is not yet submitted. It incorporates the earlier AlphaGenome audit, whose journal submissions were desk rejected for fit. The earlier preprint remains a separate, historical version; its DOI is not a DOI for this rework. Source hashes are in [ARTIFACTS.json](ARTIFACTS.json).
 
 ## The problem in one picture
 
 Imagine three possible DNA substitutions at the same position. A model predicts a contact map for each, and a mathematical summary gives three discrepancy scores. Two changes may tie for the largest score. After subtracting each map's own mean, one becomes the unique leader.
 
-The arithmetic can be correct while the interpretation remains uncertain. Did the operation reveal a biologically better choice, or did moving the origins of two summaries break a tie? The paper makes that distinction observable. Its clearest new finding is that centering resolved many tied rankings in two cohorts while preserving every initially strict leader and every interval lifetime. The selected clinical label did not consistently receive more credit.
+The arithmetic can be correct while the interpretation remains uncertain. Did the operation reveal a biologically better choice, or did moving the origins of two summaries break a tie? The paper makes that distinction observable. Its clearest prospective result is 42 additional centered-leader decisions in the paired IMR-90 test, even though universal endpoint saturation failed. The earlier GM12878 cohorts also showed tie resolution while preserving strict leaders and interval lifetimes. The selected clinical label did not consistently receive more credit.
 
 This is an audit of a representation choice. It does not introduce a new generic distance, measure experimental chromosome changes or establish clinical prediction.
 
@@ -69,6 +69,16 @@ The discovery credit increase was small and not significant after the declared c
 
 The replication cohort and protocol were fixed before new spatial-map acquisition. The seven genes were ASS1, BAP1, BRCA2, HFE, RB1, SCN5A and TSC1. Their windows overlapped within genes. These are seven new locus regions, not 84 independent biological regions. Prospective spatial outcomes do not establish independence from model training or an immutable server checkpoint.
 
+## The paired IMR-90 test: useful coverage despite exceptions
+
+The same 84 sites in seven loci were evaluated on a second contact track within AlphaGenome. Native-only predictions were locked before centered matching. Simple bounds identified 7 leaders; strengthened bounds identified 49, adding 42 decisions across six genes with zero observed contradictions and 35 unresolved sites. The earlier GM12878 increments were compared after those outcomes; this was the prospective test of added coverage.
+
+Numerical saturation passed in 249 of 252 comparisons. Three RB1 exceptions falsified universal saturation. Both simple and strengthened bounds abstained at all three sites, so that abstention is not a witness-only advantage. Later outcome-selected samples showed two paths changing direction and one effectively flat path; samples do not locate exact breakpoints.
+
+IMR-90 selected credit increased from 0.335317 to 0.398810, but RMS baselines remained higher (0.500000 native; 0.517857 centered). GM12878 replication credit decreased, and its RMS baselines were also higher. These descriptive results establish neither clinical superiority nor experimental validity. Reusing sites and one architecture is not independent-model replication.
+
+Whole-path envelopes require both endpoint distances. Native-only witness bounds predict selected centered leaders before centered matching. Keep those information settings separate; the endpoint witness does not automatically guarantee every intermediate ranking.
+
 ## What the earlier AlphaGenome result adds
 
 In the retained expanded-panel analysis, AVI background-distance rankings placed the ClinVar allele first at 1,095 of 1,238 nonsense/start-loss positions and 94 of 246 missense positions: about 88% and 38%. This large consequence contrast motivates controls. It does not establish that all remaining enrichment is explained by consequence.
@@ -83,11 +93,15 @@ Native-distance margins can sometimes guarantee that a strict leader remains abo
 
 The remaining sites stay unresolved. That is useful information about which calculations or error bounds are still needed. The witness cannot replace complete matching in general because it can miss repeated intervals: two copies of (0,4) versus one have witness zero but bottleneck distance two. No measured runtime speedup was claimed in the research analysis.
 
-## The three supplements in one sentence each
+## The six additional files and their role
 
 - **S1, vertex thinning:** deleting bins can extinguish degree-one features for a fixed finite bin set, but this is distinct from reducing sequencing depth; deletion can also reveal a cycle at intermediate thinning.
 - **S2, anchor theory:** proves path envelopes, local slope and ranking statements, supplies counterexamples, and explains why the individual mathematical ingredients have established precedents.
 - **S3, Monte Carlo scope:** explains the precision floor of the retained profile tests and separates exact conditional arithmetic from the validity of the scientific null.
+
+- **Additional file 4, paired track test:** records the frozen coverage comparison, all genes, tolerances, stronger baselines and exploratory exception paths.
+- **Additional file 5, retained audit:** preserves the earlier within-site methods, adverse consequence controls and clinical-ascertainment limitations.
+- **Additional file 6, reproducibility:** separates stored-input replay and scalar verification from model validity and public access to full inputs.
 
 ## Five self-checks
 
@@ -102,3 +116,7 @@ The remaining sites stay unresolved. That is useful information about which calc
 Open the [Anchor Audit Lab](https://patrickiben.github.io/contact-map-anchor-audit/) for five synthetic controls, a centering slider, bounds, local diagram import and JSON audit export. The Python toolkit accepts larger finite diagrams. Neither route constructs diagrams from a contact map or chooses the biological anchor for you.
 
 The [complete companion](COMPANION.pdf) supplies the detailed reading route, six worked examples, twelve practice questions and a research workflow. These are teaching adaptations, not biological replications or validated learner assessments. Human learner testing remains pending. AI assisted drafting and verification; passing checks does not substitute for human judgment.
+
+The full study archive is released with [v0.2.0](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0), alongside the public manuscript, code, protocols and verification records. Toolkit code is MIT-licensed; provider model outputs retain their separate terms and attribution notices. Public availability supports reproduction, not clinical validity, author journal approval or human learner effectiveness.
+
+AlphaGenome outputs and substantial derivatives, including the genomic numerical results discussed here, remain subject to the AlphaGenome Output Terms, separate from the MIT software license. The study release includes the binding terms, required attribution, modification record, and three-part archive checksums/reassembly instructions. Saved raw maps retain their original bytes; mean centering, persistence analysis, ranking and visualization are documented processing steps.

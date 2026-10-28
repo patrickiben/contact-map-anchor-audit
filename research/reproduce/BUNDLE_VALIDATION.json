@@ -1,0 +1,13 @@
+{
+  "status": "PASS_BOUNDED_BUNDLE_CHECKS",
+  "source_copy_hashes_checked": 19,
+  "machine_specific_author_path_matches": [],
+  "raw_maps_and_diagrams_copied": false,
+  "network_predictions_performed": false,
+  "primary_verifier": "PASS 495 aggregate comparisons",
+  "phased_controls": "PASS 9",
+  "summary_controls": "PASS 12",
+  "negative_controls": "PASS 4",
+  "acquisition_replay_guard": "PASS zero network requests",
+  "not_run": "Full cohort PH, newly provisioned scientific environment, output-terms permission review, public upload."
+}

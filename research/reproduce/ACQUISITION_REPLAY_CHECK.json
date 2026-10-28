@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "network_requests": 0,
+  "fresh_replay_freeze_validated": true,
+  "result": {
+    "status": "frozen_inputs_valid",
+    "n_sites": 84,
+    "protocol": "REPLAY_PROTOCOL.md",
+    "network_requests": 0
+  }
+}

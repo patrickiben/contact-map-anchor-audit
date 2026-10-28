@@ -1,11 +1,11 @@
 {
   "schema_version": "anchor-audit/education-source-map-v1",
   "source": {
-    "manuscript_title": "Auditing allele rankings in genomic predictions: consequence controls and contact-map anchoring",
-    "sha256": "57f31d65b5fcb857e2994c95da66b149b1bfa6885bcdbc76baa6896a79d9d0fe",
-    "version": "Author review candidate, 28 October 2026",
+    "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
+    "sha256": "fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969",
+    "version": "BMC Bioinformatics proposed revision, 28 October 2026",
     "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
-    "publication_status": "Unsubmitted review candidate; no journal acceptance or new DOI claimed."
+    "publication_status": "Public research draft and v0.2.0 study archive; no journal submission, acceptance or new DOI claimed."
   },
   "original_companion_sha256": "2cdf0c07cf476025ce4d3823e06d2a5470d1313db6dc877024913252c9d03848",
   "adaptation_status": "New educational adaptation; original validation status is not inherited.",
@@ -13,91 +13,91 @@
     {
       "id": "OBJECT",
       "source_lines": [
-        32,
-        50
+        35,
+        42
       ],
-      "source_excerpt_sha256": "b5576635076228557a4067a54a54c559d1c7c79930fbb75373d2474635610052",
+      "source_excerpt_sha256": "4303ae041c7a7c5f30ecca6fc72c0db764b9d4e5689a2ddf0bbc03a75677beb9",
       "covered_group": "LB-OBJECT"
     },
     {
       "id": "STABILITY",
       "source_lines": [
-        52,
-        56
+        35,
+        42
       ],
-      "source_excerpt_sha256": "06b2351d1bcb58a1376b9c58d91cd64f0a3ca4a054be4e8df04be82fac459e40",
+      "source_excerpt_sha256": "4303ae041c7a7c5f30ecca6fc72c0db764b9d4e5689a2ddf0bbc03a75677beb9",
       "covered_group": "LB-STABILITY"
     },
     {
       "id": "ANCHOR",
       "source_lines": [
-        59,
-        110
+        43,
+        76
       ],
-      "source_excerpt_sha256": "e9487e9bb37abc4784204303fac6563ad8d994baf1ec21338b50f06fed2ac7cd",
+      "source_excerpt_sha256": "1a14c0990b25df92b9279e547ea3835db15110d66473cf200e8dc5cb1c3de500",
       "covered_group": "LB-ANCHOR"
     },
     {
       "id": "RANKING",
       "source_lines": [
-        111,
-        132
+        77,
+        159
       ],
-      "source_excerpt_sha256": "26231833d71711e41b8a285e319f729b5d663845c085c1edacea2028e2ea12c9",
+      "source_excerpt_sha256": "0b771e8219e8c2d131cf010801828a4c8a9cdea0a4fb402565af9da31a81b567",
       "covered_group": "LB-RANKING"
     },
     {
       "id": "CONSEQUENCE",
       "source_lines": [
-        133,
-        161
+        195,
+        202
       ],
-      "source_excerpt_sha256": "6c2d53f2aabc12605392f95938f5670cef40b35725e0e027562cc949faa739df",
+      "source_excerpt_sha256": "9f2ab313a77d41e49ad2b4ff991f386ba8f4d3e1665d541aea8ab0d53f1cc68d",
       "covered_group": "LB-CONSEQUENCE"
     },
     {
       "id": "NULL",
       "source_lines": [
-        162,
-        203
+        117,
+        128
       ],
-      "source_excerpt_sha256": "4fda39683a89f7c951477c406aaaaf0952603735d114180d38c27b1ba889a3f6",
+      "source_excerpt_sha256": "b02fe17e3a2a8159cd5b21cb1695260b36441cd7aeba2ba0594dfc32ba479e11",
       "covered_group": "LB-NULL"
     },
     {
       "id": "DISCOVERY",
       "source_lines": [
-        204,
-        211
+        160,
+        194
       ],
-      "source_excerpt_sha256": "48ee69006174c6cc946ebeeb5be24a173f9463d654b901356994b561e51c07c5",
+      "source_excerpt_sha256": "eca0dce18df66f0220544adc4ea56e3c9fdbf2def412eb36495fe0b3700c814c",
       "covered_group": "LB-DISCOVERY"
     },
     {
       "id": "REPLICATION",
       "source_lines": [
-        212,
-        252
+        98,
+        173
       ],
-      "source_excerpt_sha256": "4fec6371b070249d883a83d60079c3ba81b27e253d02cff8bdc36c238423b69d",
+      "source_excerpt_sha256": "da62e6c0bed3bd65ceefbf5f6395500f97ecaacf80edc86a94a00360c12c20ca",
       "covered_group": "LB-REPLICATION"
     },
     {
       "id": "PRECISION",
       "source_lines": [
-        253,
-        266
+        129,
+        136
       ],
-      "source_excerpt_sha256": "1f4886831e902396e51c8f6aeb58c55ae7bb593872d9fbb004469c925f13b591",
+      "source_excerpt_sha256": "4655131352bd659b4d3ff9bf166768253a896aba2c99bbffb96cc6736fac0520",
       "covered_group": "LB-PRECISION"
     },
     {
       "id": "SCOPE",
       "source_lines": [
-        267,
-        288
+        203,
+        274
       ],
-      "source_excerpt_sha256": "c3db5f8b21c7cbdb696aaf54d141471b96f0498d9abba597445f9cc44d488d70",
+      "source_excerpt_sha256": "5d9825e4d933ddedeb18db7a8e6e87fe37446f3c05d5f1625830c58bc4b4ede8",
       "covered_group": "LB-SCOPE"
     }
   ],
@@ -105,32 +105,48 @@
     {
       "source_lines": [
         1,
-        9
+        10
       ],
-      "reason": "Title and author metadata."
+      "reason": "Title and user-confirmed author metadata."
     },
     {
       "source_lines": [
-        289,
-        319
+        275,
+        305
       ],
-      "reason": "Bibliography; relevant conceptual sources remain named in the manuscript, which is not copied into this public package."
+      "reason": "Bibliography; concepts are taught in mapped body units."
     }
   ],
   "introductory_synthesis": [
     {
       "source_lines": [
-        10,
-        31
+        11,
+        34
       ],
       "covered_by": [
         "OBJECT",
+        "STABILITY",
         "ANCHOR",
+        "RANKING",
+        "CONSEQUENCE",
+        "NULL",
         "DISCOVERY",
         "REPLICATION",
+        "PRECISION",
         "SCOPE"
       ],
-      "reason": "Abstract and introduction synthesize the body claims taught by those lessons."
+      "reason": "Abstract/background/methods overview synthesizes mapped lessons."
+    },
+    {
+      "source_lines": [
+        137,
+        159
+      ],
+      "covered_by": [
+        "RANKING",
+        "REPLICATION"
+      ],
+      "reason": "Prospective coverage result is explicitly taught in those lessons."
     }
   ],
   "human_reviews": {
@@ -140,44 +156,44 @@
   },
   "assets": {
     "docs/learning.json": {
-      "sha256": "a869a8664728273e8b92f2179926878baa6a5766f366359dea298975b82d579b",
-      "bytes": 23017
+      "sha256": "46f50edc0b4cf59b2095a07927a108a56e00166a1d8a678cf3e89b764b9637b7",
+      "bytes": 25487
     },
     "docs/study-summary.json": {
-      "sha256": "f630bc16a866ee74392def58334b691382d747c9c33f56fe961796ee0b66cf67",
-      "bytes": 2957
+      "sha256": "3f94b986f7a506cdb3104308e1b32a12e92230bb03d91647348a6bcc96b5a84b",
+      "bytes": 4223
     },
     "docs/provenance.json": {
-      "sha256": "640ea3fd8304f6963eb4a576c0bf102ce9f3b4999f8c94e2a4d8b2a0550b9efc",
-      "bytes": 2462
+      "sha256": "7f8f863e36b4c95e1d62a3f3b48e923cb2550513439d01c8bc193598ded2990f",
+      "bytes": 2637
     },
     "education/GUIDE.md": {
-      "sha256": "a74b47e5a74283997e3782a18c9e2479a2c9931d29e402484e7264d5c2fc84ff",
-      "bytes": 13914
+      "sha256": "7f434ccead8f375e08f6c59bb6f955efb49a1c6aa0be30ecb048abcc97761263",
+      "bytes": 15980
     },
     "education/PRACTICE.md": {
-      "sha256": "8348519780a13e4e8772c26afc18a9e0594fc1c4b9fc8199c8cfa0ed884ac81d",
-      "bytes": 4943
+      "sha256": "d0750291b031e46204c0504acc7afd7945031f8b6bb30273b0de7739402146ff",
+      "bytes": 5188
     },
     "education/WORKED_EXAMPLES.md": {
       "sha256": "81c1752156be62cb697229893df0ef3dbb6b146bd473654a8037715040d658cb",
       "bytes": 4753
     },
     "education/RESEARCHER_WORKFLOW.md": {
-      "sha256": "21e86535b5ef0cd2a95eea6ac88493b7aa6d0510cfa3b656d4d2f8ec601d7b36",
-      "bytes": 5485
+      "sha256": "955842ffe04646664746139f93b130848304f8b3153d71fdbab030fc6f6ef1b7",
+      "bytes": 6211
     },
     "education/README.md": {
-      "sha256": "c637bd930762dbeaf75fb948dce9342c8ec19e677d573840a211e64e6cdfb353",
-      "bytes": 3709
+      "sha256": "841c4680cb1a0efe007bba0cb86c5f336cc6bfc991064f924c1cc46955d6757c",
+      "bytes": 4606
     },
     "education/STUDY_VALUE_MAP.json": {
-      "sha256": "1f2c9c83020f08774918617a3bbe52f513824216f93b6681b4e8b149300be281",
-      "bytes": 7952
+      "sha256": "018abdbab2521698c6b76917bc79201fd4bd7185f41d9fdbccef7f3440f654d5",
+      "bytes": 11837
     },
     "scripts/build_education.py": {
-      "sha256": "962e168c24c2d293ffb610e91e81e86e19fb3db6cbc1c7b2afd6b6a8077af898",
-      "bytes": 8382
+      "sha256": "0e1122bbebb526ad76273d177db66c5d4eeb3a830566101c09c3125835539a99",
+      "bytes": 9018
     }
   }
 }

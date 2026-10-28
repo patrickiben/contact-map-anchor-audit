@@ -1,0 +1,269 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  11pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{amsmath,amssymb}
+\usepackage{float}
+\usepackage{microtype}
+\usepackage{fvextra}
+\fvset{breaklines=true}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{etoolbox}
+\usepackage{needspace}
+\AtBeginEnvironment{longtable}{\singlespacing\small}
+\AtBeginEnvironment{verbatim}{\singlespacing\small}
+\setlength{\emergencystretch}{3em}
+\floatplacement{figure}{H}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}
+\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{2260}{\ensuremath{\ne}}
+\DeclareUnicodeCharacter{2208}{\ensuremath{\in}}
+\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}
+\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}
+\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}
+\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}
+\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}
+\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}
+\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}
+\DeclareUnicodeCharacter{03C6}{\ensuremath{\phi}}
+\DeclareUnicodeCharacter{2124}{\ensuremath{\mathbb Z}}
+\DeclareUnicodeCharacter{1D63}{\ensuremath{{}_r}}
+\DeclareUnicodeCharacter{2080}{\ensuremath{{}_0}}
+\DeclareUnicodeCharacter{208A}{\ensuremath{{}_+}}
+\DeclareUnicodeCharacter{208B}{\ensuremath{{}_-}}
+\DeclareUnicodeCharacter{207B}{\ensuremath{{}^{-}}}
+\DeclareUnicodeCharacter{00B9}{\ensuremath{{}^{1}}}
+\DeclareUnicodeCharacter{00B2}{\ensuremath{{}^{2}}}
+\DeclareUnicodeCharacter{2074}{\ensuremath{{}^{4}}}
+\DeclareUnicodeCharacter{2075}{\ensuremath{{}^{5}}}
+\DeclareUnicodeCharacter{2076}{\ensuremath{{}^{6}}}
+\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{0108}{\ensuremath{\widehat C}}
+\DeclareUnicodeCharacter{00C2}{\ensuremath{\widehat A}}
+
+\AtBeginDocument{\setstretch{1.12}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\section{Additional file 3: Monte Carlo
+scope}\label{additional-file-3-monte-carlo-scope}
+
+This supplement concerns the earlier Atlas profile audit. The spatial
+fractional-credit tests use exact finite-label distributions and have no
+Monte Carlo sampling error. The profile results below are retained
+results; the additional checks dated 28 October 2026 are post-result
+validation and do not replace the frozen analyses or their criteria.
+
+The retained panel mean-statistic tests used 9,999 null draws and the
+plus-one estimate (exceedances + 1)/10,000. The AVI missense
+consequence-matched, context-weighted comparison, its analysis excluding
+the chr13 genes, and the three other-intronic splicing comparisons each
+had zero exceedances. Their raw reported p-value was therefore 0.0001,
+the simulation resolution floor. The recorded plug-in Monte Carlo
+standard error was 0.0001; this is an estimated precision diagnostic,
+not a known true standard error at a zero-exceedance boundary. The
+corresponding recorded Wilson interval for the exceedance probability,
+mapped through the plus-one formula, was {[}0.000100, 0.000484{]}. These
+intervals describe Monte Carlo precision conditional on the fitted label
+model, not uncertainty in biological effects.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.4300}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.0800}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1700}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1600}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1600}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Family and Euclidean scorer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Sites
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Exceedances / draws
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Reported raw p
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Reported BH q
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Missense, consequence matched and context weighted: AVI & 246 & 0 /
+9,999 & 0.0001 & 0.00132 \\
+Same analysis excluding chr13 genes: AVI & 170 & 0 / 9,999 & 0.0001 &
+0.00165 \\
+Other intronic, context weighted: splice junctions & 63 & 0 / 9,999 &
+0.0001 & 0.000252 \\
+Other intronic, context weighted: splice sites & 63 & 0 / 9,999 & 0.0001
+& 0.000252 \\
+Other intronic, context weighted: splice-site usage & 63 & 0 / 9,999 &
+0.0001 & 0.000252 \\
+\end{longtable}
+}
+
+For AVI, these Euclidean rankings compare each alternate profile's
+distance from the declared background profile. They are not rankings of
+the raw AVI value. The mean statistic subtracts the larger of the two
+unselected distances from the selected distance, then averages over
+sites. Both highlighted missense means are negative even though they
+exceed the means under their specified label nulls:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3700}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2100}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2100}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2100}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Consequence-matched, context-weighted AVI Euclidean comparison
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Observed mean selected-minus-largest-other distance
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Simulated null mean
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Observed minus simulated null mean
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+All 246 missense positions & -0.012798807 & -0.082914582 &
+0.070115775 \\
+The 170 missense positions outside chr13 genes & -0.040677371 &
+-0.078455404 & 0.037778033 \\
+\end{longtable}
+}
+
+The simulated null means average 9,999 draws; they are not exact
+conditional expectations. Significant enrichment here means a shift
+relative to that specified null, not a positive average margin over the
+strongest alternative. Source: retained
+\nolinkurl{results/sensitivity/panel_within_site.json},
+\nolinkurl{/families/primary|missense_matched_ctx/rows} and
+\nolinkurl{/families/primary_nochr13|missense_matched_ctx/rows}, each
+selecting the unique row with \texttt{scorer\ =\ AVI\_SCORE} and
+\texttt{geometry\ =\ euclidean}; the columns are \texttt{statistic},
+\texttt{null\_mean} and \texttt{excess\_over\_null}. These values also
+appear in \nolinkurl{independent_math_results.json} under
+\nolinkurl{/historical_uncertainty/rows/0} and
+\nolinkurl{/historical_uncertainty/rows/1}.
+
+The adjusted q-values are point estimates computed jointly within their
+stated families. A raw-p standard error is not an adjusted-q standard
+error. The printed q-values should not be interpreted as having exact
+precision to every displayed digit. The exploratory CONTACT\_MAPS top-1
+result, q = 0.0441, comes from a binomial test and does not use the
+Monte Carlo mean-statistic calculation.
+
+The frozen coding analysis reported 37 significant uniform-null
+comparisons and 10 consequence-matched comparisons. Its planned
+criterion was at most one quarter as many matched as uniform significant
+comparisons; 10 exceeds 37/4, so that criterion was not met. Three
+further independent random-number streams, each using 9,999 draws and
+the unchanged statistics, sites, families and threshold, again produced
+37 and 10. These redraws assess Monte Carlo seed sensitivity and do not
+alter the original result.
+
+A separate conservative check enclosed all 132 underlying exceedance
+probabilities simultaneously using Bonferroni-adjusted, two-sided
+Clopper--Pearson intervals with at least 95\% joint coverage. Mapping
+through the plus-one formula and propagating lower and upper limits
+monotonically through BH yielded significant-count ranges of 36--37 for
+the uniform family and 8--11 for the matched family. These broad
+enclosures do not establish either outcome of the quarter criterion. The
+observed failure and its stability in the three redraws are therefore
+reported together with the remaining Monte Carlo uncertainty. The
+enclosures require independent identically distributed null draws within
+a cell; dependence between cells does not invalidate the Bonferroni
+union bound.
+
+The analysis also changes eligibility: the matched coding comparison
+excludes sites with fewer than two consequence-compatible alternatives.
+Consequently, the difference between the two significant counts does not
+isolate a null-model change at fixed positions. The prescribed mutation
+weights are sensitivity assumptions and are not estimates of clinical
+ascertainment probabilities.
+
+Sources and reproducibility: \nolinkurl{independent_math_results.json}
+retains the five source rows; \nolinkurl{historical_mc_stability.py} and
+\texttt{.json} produce the simultaneous enclosures;
+\nolinkurl{historical_seed_redraw.py} and \texttt{.json} record the
+three new streams (2026102871, 2026102872, 2026102873). The seed redraws
+deliberately reuse the retained scientific producer and are not an
+independent implementation. No original manuscript, cache, or result
+file was edited.
+
+\end{document}

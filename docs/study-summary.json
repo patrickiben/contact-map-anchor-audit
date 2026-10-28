@@ -1,11 +1,11 @@
 {
-  "title": "What the predicted-map study found",
-  "scope": "Aggregate author analysis of AlphaGenome-predicted GM12878 contact maps. These are reported research results, separate from the synthetic browser presets. Clinical-credit comparisons in replication are descriptive.",
-  "source_sha256": "57f31d65b5fcb857e2994c95da66b149b1bfa6885bcdbc76baa6896a79d9d0fe",
+  "title": "Prospective decision coverage across two prediction tracks",
+  "scope": "Aggregate author analysis of two AlphaGenome output tracks. GM12878 discovery and new-locus replication are distinct cohorts; paired IMR-90 reuses the 84 replication sites and model architecture. Clinical-credit comparisons in replication and portability are descriptive.",
+  "source_sha256": "fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969",
   "cohorts": [
     {
       "id": "discovery",
-      "label": "Discovery",
+      "label": "GM12878 discovery",
       "sites": 120,
       "loci": 4,
       "comparisons": 360,
@@ -22,7 +22,7 @@
     },
     {
       "id": "replication",
-      "label": "New-locus replication",
+      "label": "GM12878 new-locus replication",
       "sites": 84,
       "loci": 7,
       "comparisons": 252,
@@ -36,32 +36,57 @@
       "simple_bound_leaders": 18,
       "witness_leaders": 52,
       "additional_witness_leaders": 34
+    },
+    {
+      "id": "imr90",
+      "label": "Paired IMR-90 test",
+      "sites": 84,
+      "loci": 7,
+      "comparisons": 252,
+      "native_ties": 75,
+      "resolved_ties": 74,
+      "centered_ties": 1,
+      "strict_leaders": 9,
+      "preserved_strict_leaders": 9,
+      "native_credit": 0.3353174603174603,
+      "centered_credit": 0.39880952380952384,
+      "simple_bound_leaders": 7,
+      "witness_leaders": 49,
+      "additional_witness_leaders": 42,
+      "unresolved_sites": 35,
+      "genes_with_added_leaders": 6,
+      "numerically_saturated": 249,
+      "contradictions": 0,
+      "prospective_prediction_lock": true,
+      "scope_note": "Same 84 replication sites; second track within one model."
     }
   ],
   "findings": [
-    "All 360 discovery and 252 replication comparisons numerically saturated the specified endpoint bound.",
-    "Centering resolved 72 and 66 native ties while preserving all 45 and 18 strict native leaders.",
-    "Selected-allele credit rose slightly in discovery and decreased descriptively in replication; sharper ranks did not establish a consistent clinical-credit gain.",
-    "Native-diagram witness bounds identified 44 and 34 additional unique endpoint leaders beyond the simple margin bounds. No runtime speedup was benchmarked.",
-    "No discovery main or sensitivity test survived Holm adjustment over all sixteen tests. No new confirmatory clinical-enrichment test was added in replication."
+    "Locked IMR-90 predictions identified 49/84 centered leaders versus 7/84 with simple bounds: 42 additional decisions across six genes, no observed contradictions, and 35 unresolved sites.",
+    "Universal endpoint saturation did not transfer: 249/252 IMR-90 comparisons saturated. Both bounds abstained at the three exceptional sites; the witness-specific gain occurred elsewhere.",
+    "All 612 GM12878 comparisons numerically saturated. Centering resolved 138/141 native ties and preserved all 63 strict native leaders across discovery and replication.",
+    "Selected-allele credit decreased after centering in GM12878 replication and increased in IMR-90. RMS map baselines exceeded centered H1 credit in both tracks. No clinical superiority is established.",
+    "No discovery main or sensitivity test survived Holm adjustment over all sixteen tests. No new confirmatory clinical-enrichment family was added."
   ],
   "limits": [
-    "Predicted maps on one GM12878 track, not matched experimental Hi-C measurements.",
-    "Selected sites and overlapping within-gene windows limit generalization.",
-    "Prospective status concerns new spatial outcomes; model-training independence and immutable server weights were not established.",
-    "Practical numerical allowances are not a complete validated-arithmetic certificate.",
-    "Higher-precision source outputs would be needed to isolate the causal contribution of quantization."
+    "One model, two output tracks; paired IMR-90 reuses the seven replication loci rather than adding independent sites.",
+    "Native-only bounds predict the centered endpoint. Two-endpoint envelopes audit the full path after both distances are available.",
+    "Selected sites, overlapping within-gene windows and clinically ascertained labels limit generalization.",
+    "Practical numerical allowances are not formal real-arithmetic certificates; no measured runtime advantage is claimed.",
+    "These are model predictions, not experimentally validated chromatin changes or calibrated clinical predictions."
   ],
   "source_files": [
     "anchor_method/independent_anchor_audit.json",
     "anchor_method/native_interval_ranking.json",
     "anchor_method/replication/native_interval_ranking.json",
     "full_validation_2026-10-28/artifacts/witness_increment.json",
-    "full_validation_2026-10-28/math/CLAIM_GROUNDING_CHECK.json"
+    "full_validation_2026-10-28/math/CLAIM_GROUNDING_CHECK.json",
+    "portability_imr90_2026-10-28/summary.json",
+    "portability_imr90_2026-10-28/reports/independent_results_review.json"
   ],
   "primary_tie_tolerance": 1e-06,
   "source_lines": [
-    224,
-    247
+    137,
+    202
   ]
 }

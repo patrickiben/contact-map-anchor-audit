@@ -1,0 +1,6 @@
+{
+  "python": "3.14.7",
+  "snapshot_scope": "Installed distribution versions, not newly resolved or hash-pinned.",
+  "package_count": 70,
+  "alphagenome": "0.9.0"
+}

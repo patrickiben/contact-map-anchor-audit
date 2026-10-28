@@ -1,0 +1,126 @@
+{
+  "comparisons": [
+    {
+      "alternate_index": 2,
+      "centered_distance": 0.021110063717587058,
+      "delta": 0.0035319387175870875,
+      "gene": "RB1",
+      "grid": [
+        {
+          "distance": 0.0234375,
+          "lambda": 0.0
+        },
+        {
+          "distance": 0.023084306128241278,
+          "lambda": 0.1
+        },
+        {
+          "distance": 0.022554515320603208,
+          "lambda": 0.25
+        },
+        {
+          "distance": 0.021671530641206416,
+          "lambda": 0.5
+        },
+        {
+          "distance": 0.02078854596180968,
+          "lambda": 0.75
+        },
+        {
+          "distance": 0.020756869845828363,
+          "lambda": 0.9
+        },
+        {
+          "distance": 0.021110063717587085,
+          "lambda": 1.0
+        }
+      ],
+      "maximum_absolute_chord_departure": 0.0009033768263806141,
+      "native_distance": 0.0234375,
+      "sampled_shape": "sampled_direction_change",
+      "site_index": 48
+    },
+    {
+      "alternate_index": 1,
+      "centered_distance": 0.028004987309199203,
+      "delta": 0.003245012690800692,
+      "gene": "RB1",
+      "grid": [
+        {
+          "distance": 0.02734375,
+          "lambda": 0.0
+        },
+        {
+          "distance": 0.02766825126908007,
+          "lambda": 0.1
+        },
+        {
+          "distance": 0.028155003172700144,
+          "lambda": 0.25
+        },
+        {
+          "distance": 0.028966256345400343,
+          "lambda": 0.5
+        },
+        {
+          "distance": 0.028816240481899458,
+          "lambda": 0.75
+        },
+        {
+          "distance": 0.028329488578279327,
+          "lambda": 0.9
+        },
+        {
+          "distance": 0.028004987309199203,
+          "lambda": 1.0
+        }
+      ],
+      "maximum_absolute_chord_departure": 0.0012918876908007415,
+      "native_distance": 0.02734375,
+      "sampled_shape": "sampled_direction_change",
+      "site_index": 51
+    },
+    {
+      "alternate_index": 0,
+      "centered_distance": 0.015624999999999972,
+      "delta": 0.0001416273214380412,
+      "gene": "RB1",
+      "grid": [
+        {
+          "distance": 0.015625,
+          "lambda": 0.0
+        },
+        {
+          "distance": 0.015624999999999889,
+          "lambda": 0.1
+        },
+        {
+          "distance": 0.015624999999999889,
+          "lambda": 0.25
+        },
+        {
+          "distance": 0.015624999999999972,
+          "lambda": 0.5
+        },
+        {
+          "distance": 0.015624999999999889,
+          "lambda": 0.75
+        },
+        {
+          "distance": 0.015624999999999889,
+          "lambda": 0.9
+        },
+        {
+          "distance": 0.015624999999999944,
+          "lambda": 1.0
+        }
+      ],
+      "maximum_absolute_chord_departure": 1.0755285551056204e-16,
+      "native_distance": 0.015625,
+      "sampled_shape": "flat_on_sampled_grid_at_1e12",
+      "site_index": 59
+    }
+  ],
+  "scope": "Post-result exploratory diagnostic of all three saturation exceptions; not confirmatory.",
+  "source_sha256": "f52d1a6d995ef0f5c0219ea88571aa80a5f0fda9b7fb7219582e52a1c116c01b"
+}

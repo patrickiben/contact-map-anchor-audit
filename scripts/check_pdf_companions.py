@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check the frozen PDF editions and coverage manifest with only the standard library.
 
-Optionally verify all four private source files with --source-root DIR.
+Optionally verify the main manuscript and all six additional files with --source-root DIR.
 PDF byte/hash checks do not replace rendering or human learner evaluation.
 """
 import argparse
@@ -19,6 +19,8 @@ def digest(data):
 
 def check(source_root=None):
     manifest = json.loads((ROOT/'education/ARTIFACTS.json').read_text())
+    assert len(manifest['sources'])==7, 'Expected main manuscript plus six additional files'
+    assert {x['id'] for x in manifest['sources']}=={'MAIN','AF1','AF2','AF3','AF4','AF5','AF6'}
     for item in manifest['assets']:
         content = (ROOT/item['path']).read_bytes()
         assert digest(content) == item['sha256'], 'Asset drift: '+item['path']
@@ -35,6 +37,10 @@ def check(source_root=None):
     units=set(re.findall(r'^#{2,3} ((?:P|R|S|W|T)\d{2})(?:[ .·])',companion,re.M))
     expected={f'{prefix}{i:02d}' for prefix,n in [('P',10),('R',10),('S',7),('W',6),('T',12)] for i in range(1,n+1)}
     assert units==expected, 'Teaching unit inventory changed'
+    for name in ('STUDY_GUIDE','COMPANION'):
+        content=(ROOT/'education'/f'{name}.md').read_text()
+        for token in ('42','249','252','35','0.517857','v0.2.0'):
+            assert token in content, (name,'Missing current-edition claim',token)
     coverage=(ROOT/'education/COMPLETE_COVERAGE.md').read_text()
     for row in manifest['coverage']:
         assert set(row['units'])<=units|{'INTRO'}, row['id']

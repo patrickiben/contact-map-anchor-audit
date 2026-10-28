@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-10-28T19:27:31.891559+00:00",
+  "new_track_outcomes_inspected": false,
+  "centered_distances_computed": 0,
+  "acquisition_freeze_sha256": "e7fb2e455e0055ce6d39aae992fdfd3e78feb0466b8c2592fa6d0448872faa23",
+  "files": {
+    "scripts/phased_engine.py": "9139528795303ccede7fcd9c3dd73c098e29ffec2ad51e1330a02441c490a761",
+    "scripts/test_phased_engine.py": "cc5648d44566cd6f645a2d61d5202ef094ca55014089e3ebdd4be4f625b28a1d"
+  },
+  "external_sources": {
+    "../scripts/analyze_spatial_maps.py": "929df5588fd2cb4ed7e0dc385630a828e117216d7bd24744c29ccfb4e9423f78",
+    "../anchor_method/certify_increasing_branch.py": "21ba5d71ab04eb1bc6607a2f556b3b8284813618f8b0cc2e797587a3f2bee807"
+  },
+  "controls": "9 synthetic checks independently reported passed; log rerun retained separately"
+}

@@ -4,9 +4,9 @@
 
 Mean centering can translate persistence intervals without changing their lifetimes. If reference and alternate diagrams translate by different amounts, their bottleneck distance can still change. A tied ranking may then become unique. The toolkit makes that mechanism inspectable and distinguishes a more decisive ranking from evidence of better clinical discrimination.
 
-**Manuscript:** *Auditing allele rankings in genomic predictions: consequence controls and contact-map anchoring*. Current rework, not yet submitted (28 October 2026). The earlier AlphaGenome audit received editorial desk decisions for journal fit; its preprint and archived data remain separate versioned records.
+**Manuscript:** *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*. In preparation for **BMC Bioinformatics**, not submitted (28 October 2026). The earlier AlphaGenome audit received editorial desk decisions for journal fit; its preprint and archived data remain separate versioned records.
 
-[Code and toolkit](https://github.com/patrickiben/contact-map-anchor-audit) · [Live demo](https://patrickiben.github.io/contact-map-anchor-audit/) · [Study guide PDF](education/STUDY_GUIDE.pdf) · [Complete companion PDF](education/COMPANION.pdf) · [Manuscript → code → demo map](https://github.com/patrickiben/patrickiben/blob/main/RESEARCH_MAP.md)
+[Latest manuscript](research/manuscript.pdf) · [Code and toolkit](https://github.com/patrickiben/contact-map-anchor-audit) · [Live demo](https://patrickiben.github.io/contact-map-anchor-audit/) · [Study guide PDF](education/STUDY_GUIDE.pdf) · [Complete companion PDF](education/COMPANION.pdf) · [Manuscript → code → demo map](https://github.com/patrickiben/patrickiben/blob/main/RESEARCH_MAP.md)
 
 ## Choose a starting point
 
@@ -79,7 +79,9 @@ A small numerical residual is **near-saturation on computed inputs**. The suppli
 
 ## Research basis and boundaries
 
-The toolkit accompanies Patrick Iben's author-review manuscript *Auditing allele rankings in genomic predictions: consequence controls and contact-map anchoring*, dated 28 October 2026. Its exact source hash and educational line mappings are in [the source map](education/SOURCE_MAP.json). The manuscript is not copied into this repository; no journal acceptance or new DOI is claimed.
+The toolkit accompanies Patrick Iben's author-review manuscript *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, dated 28 October 2026. Its exact source hash and educational line mappings are in [the source map](education/SOURCE_MAP.json). The [current public draft and six supplements](research/README.md) are included here. No journal acceptance or new DOI is claimed.
+
+The prospective IMR-90 test identified **49/84 centered leaders versus 7/84 with simple bounds**, adding 42 decisions across six genes with no observed contradictions and 35 unresolved sites. Universal numerical saturation failed in three comparisons; both bounds abstained at those sites. This paired test uses the same 84 replication sites and a second output track of one model. RMS baselines still exceeded centered H1 selected-allele credit.
 
 The research contribution is an executable audit of a specified preprocessing path, its ranking consequences and its observed behavior in predicted contact maps. Bottleneck distance, elementary stability bounds and shift-invariant comparisons have established precedents; this is not a claim to a new generic metric.
 
@@ -89,13 +91,13 @@ The browser separates three evidence classes:
 2. **Study summary:** aggregate author analysis results from the predicted-map cohorts, bound to named source artifacts and the manuscript hash.
 3. **User imports:** diagrams supplied by the user, with provenance and interpretation determined by their own upstream workflow.
 
-No raw AlphaGenome maps, model weights or per-site genomic diagram dataset is packaged here. The package does not generate persistence diagrams from contact maps, locate genomic loops, infer pathogenicity or establish physical chromatin remodeling. The study's sharper rankings did not establish a consistent improvement in clinically selected-allele credit.
+The small toolkit checkout does not contain model weights or raw genomic map arrays. The [full study archive in release v0.2.0](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0) supplies the stored maps, paired calls, diagrams, source and offline replay instructions as three checksum-verified download parts. [Provider output terms and modification notices](research/OUTPUT_TERMS_NOTICE.md) apply separately to the model outputs and substantial derivatives. The package does not generate persistence diagrams from contact maps, locate genomic loops, infer pathogenicity or establish physical chromatin remodeling. The study's sharper rankings did not establish a consistent improvement in clinically selected-allele credit.
 
 For the earlier background-profile audit, see the separate [Same-Site Allele Explorer](https://github.com/patrickiben/alphagenome-allele-demo). Its endpoint differs from the direct reference-versus-alternate diagram comparison used here.
 
 ## Educational companion
 
-The printable editions follow the same structure as the other research repositories: [STUDY_GUIDE](education/STUDY_GUIDE.pdf) for a concise introduction, and [COMPANION](education/COMPANION.pdf) for the main manuscript and all three current supplements. Both also have Markdown editions. The [complete coverage map](education/COMPLETE_COVERAGE.md) and [artifact manifest](education/ARTIFACTS.json) identify their scope and versions.
+The printable editions follow the same structure as the other research repositories: [STUDY_GUIDE](education/STUDY_GUIDE.pdf) for a concise introduction, and [COMPANION](education/COMPANION.pdf) for the main manuscript and all six current supplementary files. Both also have Markdown editions. The [complete coverage map](education/COMPLETE_COVERAGE.md) and [artifact manifest](education/ARTIFACTS.json) identify their scope and versions.
 
 The browser companion has ten lessons, a glossary, six worked examples and twelve interactive practice questions with feedback. The [aggregate-value map](education/STUDY_VALUE_MAP.json) and [source map](education/SOURCE_MAP.json) make that adaptation inspectable.
 
@@ -123,7 +125,7 @@ npm test
 Educational checks can additionally verify the frozen manuscript and retained research artifacts when those are available locally:
 
 ```sh
-python scripts/build_education.py --check --self-test --source path/to/PROPOSED_contact_channel_3d_VALIDATED.md --research-root path/to/contact3d_rework_2026-10-28
+python scripts/build_education.py --check --self-test --source research/manuscript.md --research-root path/to/contact3d_rework_2026-10-28
 ```
 
 These checks support implementation, content and source correspondence. They do not replace mathematical proof, formal floating-point certification, biological validation or a human review of scientific interpretation.
@@ -132,6 +134,6 @@ The printable editions use the portfolio's Georgia/Arial typography and Letter p
 
 ## Citation and licensing
 
-Use [CITATION.cff](CITATION.cff) to cite software version 0.1.0, and record the exact commit used for an analysis. No DOI has been assigned in this file.
+Use [CITATION.cff](CITATION.cff) to cite software version 0.2.0, and record the exact commit used for an analysis. No DOI has been assigned in this file.
 
-Original project code and educational text are licensed under [MIT](LICENSE), copyright 2026 Patrick Iben. Third-party libraries and user-supplied data retain their own licenses and terms. The code license does not relicense AlphaGenome assets or outputs, which are not bundled as a raw or per-site dataset in this package.
+Original project code and educational text are licensed under [MIT](LICENSE), copyright 2026 Patrick Iben. Third-party libraries and user-supplied data retain their own licenses and terms. The code license does not relicense AlphaGenome assets or outputs, which are included only in the separately identified study archive under the provider terms. See the [output terms notice](research/OUTPUT_TERMS_NOTICE.md).

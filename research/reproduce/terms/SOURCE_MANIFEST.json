@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "file": "AlphaGenome_Services_Additional_Terms_2026-09-08.pdf",
+      "url": "https://storage.googleapis.com/alphagenome/terms/20260908/AlphaGenome%20Services%20Additional%20Terms%20of%20Service%20-%20English.pdf",
+      "bytes": 159130,
+      "sha256": "0a1b52c469cda9828cc1a5c64b7b39122bd96e20827617fe157d34126005a6c5",
+      "retrieved": "2026-10-28"
+    },
+    {
+      "file": "AlphaGenome_Output_Terms_2026-10-09.pdf",
+      "url": "https://storage.googleapis.com/alphagenome/terms/20260909/AlphaGenome-Output-Terms-of-Use.pdf",
+      "bytes": 100722,
+      "sha256": "3df37d06d58802a123729161106f9b1e19b7cd1ca8a7eb6b7317e539c2378c87",
+      "retrieved": "2026-10-28"
+    }
+  ],
+  "no_new_agreement_accepted": true
+}

@@ -75,6 +75,17 @@ test('responsive layout and automated accessibility scan',async({page},testInfo)
   expect(errors).toEqual([]);
 });
 
+test('paired track summary preserves prospective gain and interpretation boundaries',async({page})=>{
+  await expect(page.locator('.cohort-card')).toHaveCount(3);
+  const paired=page.locator('.cohort-card').filter({hasText:'Paired IMR-90 test'});
+  await expect(paired.locator('.cohort-hero')).toContainText('7 → 49');
+  await expect(paired).toContainText('Same 84 replication sites');
+  await expect(paired).toContainText('35 sites remain unresolved');
+  await expect(page.locator('#study-content')).toContainText('249/252');
+  await expect(page.locator('#study-content')).toContainText('Both bounds abstained');
+  await expect(page.locator('#study-content')).toContainText('RMS map baselines exceeded');
+});
+
 
 test('the endpoint envelope includes an off-grid zero-distance cusp',async({page})=>{
   const input={id:'off-grid-cusp',reference:[[0,4]],alternates:[{id:'Cusp',diagram:[[-.37,3.63]],delta:1}]};

@@ -7,6 +7,9 @@
     },
     "full_validation_2026-10-28/artifacts/witness_increment.json": {
       "sha256": "70f662e82bb5204a5d115b8931b4e287b59763251989df1631a578425d19f7b9"
+    },
+    "portability_imr90_2026-10-28/portability_summary.json": {
+      "sha256": "ca551a87fc4f3e849f9f32b108a70c527b8003f4c24481a44077c7a7c1c42c79"
     }
   },
   "checks": [
@@ -327,6 +330,159 @@
       ],
       "operation": "identity",
       "value": 34
+    },
+    {
+      "cohort": "imr90",
+      "field": "sites",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "n_observed_sites"
+      ],
+      "operation": "identity",
+      "value": 84
+    },
+    {
+      "cohort": "imr90",
+      "field": "loci",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "n_genes"
+      ],
+      "operation": "identity",
+      "value": 7
+    },
+    {
+      "cohort": "imr90",
+      "field": "comparisons",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "secondary",
+        "n_pairs"
+      ],
+      "operation": "identity",
+      "value": 252
+    },
+    {
+      "cohort": "imr90",
+      "field": "native_ties",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "native_tied_sites"
+      ],
+      "operation": "identity",
+      "value": 75
+    },
+    {
+      "cohort": "imr90",
+      "field": "resolved_ties",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "tie_resolved_sites"
+      ],
+      "operation": "identity",
+      "value": 74
+    },
+    {
+      "cohort": "imr90",
+      "field": "centered_ties",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "centered_tied_sites"
+      ],
+      "operation": "identity",
+      "value": 1
+    },
+    {
+      "cohort": "imr90",
+      "field": "strict_leaders",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "strict_native_leader_preserved_sites"
+      ],
+      "operation": "identity",
+      "value": 9
+    },
+    {
+      "cohort": "imr90",
+      "field": "preserved_strict_leaders",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "strict_native_leader_preserved_sites"
+      ],
+      "operation": "identity",
+      "value": 9
+    },
+    {
+      "cohort": "imr90",
+      "field": "simple_bound_leaders",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "simple_unique_leaders"
+      ],
+      "operation": "identity",
+      "value": 7
+    },
+    {
+      "cohort": "imr90",
+      "field": "witness_leaders",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "strengthened_unique_leaders"
+      ],
+      "operation": "identity",
+      "value": 49
+    },
+    {
+      "cohort": "imr90",
+      "field": "additional_witness_leaders",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "additional_leader_sites"
+      ],
+      "operation": "identity",
+      "value": 42
+    },
+    {
+      "cohort": "imr90",
+      "field": "native_credit",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "baseline_mean_selected_credit",
+        "native"
+      ],
+      "operation": "identity",
+      "value": 0.3353174603174603
+    },
+    {
+      "cohort": "imr90",
+      "field": "centered_credit",
+      "source": "portability_imr90_2026-10-28/portability_summary.json",
+      "keys": [
+        "primary",
+        "summary",
+        "baseline_mean_selected_credit",
+        "centered"
+      ],
+      "operation": "identity",
+      "value": 0.39880952380952384
     }
   ]
 }

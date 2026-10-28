@@ -1,0 +1,57 @@
+{
+  "site_ids": [
+    "chr9:130489343:G",
+    "chr3:52408597:A",
+    "chr13:32370560:A",
+    "chr6:26092780:A",
+    "chr13:48465370:T",
+    "chr3:38606689:A",
+    "chr9:132900839:T"
+  ],
+  "selection_rule": "Smallest frozen hash_sha256 within each gene, site_id tie breaker",
+  "records": [
+    {
+      "gene": "ASS1",
+      "site_id": "chr9:130489343:G",
+      "hash_sha256": "06d6338f517d3a38ade499fbf5b45716941b0dcba8df2ace8aed7aa932bdc2d1",
+      "site_index": 7
+    },
+    {
+      "gene": "BAP1",
+      "site_id": "chr3:52408597:A",
+      "hash_sha256": "012549330d569a47fb6c853a5abf95b36780fcf6d7eaceb19ed272645afc5f8e",
+      "site_index": 21
+    },
+    {
+      "gene": "BRCA2",
+      "site_id": "chr13:32370560:A",
+      "hash_sha256": "0045b27a0b3f307bde534a39a41895e6268856ac1b1070f69db3cefbb20b9691",
+      "site_index": 34
+    },
+    {
+      "gene": "HFE",
+      "site_id": "chr6:26092780:A",
+      "hash_sha256": "087ea4087ab92bc2caee567b3d4cf2d95ea6fd8f3f734c14b12cb9380d96ec51",
+      "site_index": 44
+    },
+    {
+      "gene": "RB1",
+      "site_id": "chr13:48465370:T",
+      "hash_sha256": "008c7f17e45ea3c2fcae49d64f8bbc963ecac1d2b5b439ccfd89e682f2a05cba",
+      "site_index": 59
+    },
+    {
+      "gene": "SCN5A",
+      "site_id": "chr3:38606689:A",
+      "hash_sha256": "000e9e35daa415cf45e35261bc9a35e616047309cbbb59070bb5fa7e3367afcd",
+      "site_index": 70
+    },
+    {
+      "gene": "TSC1",
+      "site_id": "chr9:132900839:T",
+      "hash_sha256": "010cc7dbbdc8e197975341dd3d2b07a6b2933cb729415ad711a749866cdecf56",
+      "site_index": 75
+    }
+  ],
+  "manifest_sha256": "f01218002409020d338228d74374a246bb45944583da565f34dda780d055a7b2"
+}

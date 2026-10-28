@@ -1,0 +1,173 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  11pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{amsmath,amssymb}
+\usepackage{float}
+\usepackage{microtype}
+\usepackage{fvextra}
+\fvset{breaklines=true}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{etoolbox}
+\usepackage{needspace}
+\AtBeginEnvironment{longtable}{\singlespacing\small}
+\AtBeginEnvironment{verbatim}{\singlespacing\small}
+\setlength{\emergencystretch}{3em}
+\floatplacement{figure}{H}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}
+\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{2260}{\ensuremath{\ne}}
+\DeclareUnicodeCharacter{2208}{\ensuremath{\in}}
+\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}
+\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}
+\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}
+\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}
+\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}
+\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}
+\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}
+\DeclareUnicodeCharacter{03C6}{\ensuremath{\phi}}
+\DeclareUnicodeCharacter{2124}{\ensuremath{\mathbb Z}}
+\DeclareUnicodeCharacter{1D63}{\ensuremath{{}_r}}
+\DeclareUnicodeCharacter{2080}{\ensuremath{{}_0}}
+\DeclareUnicodeCharacter{208A}{\ensuremath{{}_+}}
+\DeclareUnicodeCharacter{208B}{\ensuremath{{}_-}}
+\DeclareUnicodeCharacter{207B}{\ensuremath{{}^{-}}}
+\DeclareUnicodeCharacter{00B9}{\ensuremath{{}^{1}}}
+\DeclareUnicodeCharacter{00B2}{\ensuremath{{}^{2}}}
+\DeclareUnicodeCharacter{2074}{\ensuremath{{}^{4}}}
+\DeclareUnicodeCharacter{2075}{\ensuremath{{}^{5}}}
+\DeclareUnicodeCharacter{2076}{\ensuremath{{}^{6}}}
+\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{0108}{\ensuremath{\widehat C}}
+\DeclareUnicodeCharacter{00C2}{\ensuremath{\widehat A}}
+
+\AtBeginDocument{\setstretch{1.0}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\section{Additional file 1: Vertex
+thinning}\label{additional-file-1-vertex-thinning}
+
+Retained mathematical contribution from the combined manuscript. Vertex
+thinning deletes bins and is distinct from sequencing-depth reduction.
+The numbering below belongs to this supplement.
+
+\textbf{Proposition 2: finite-set degree-one extinction.} Fix \(N\) bins
+and retain each independently with probability \(p\). Restrict the edge
+array to the retained bins. Let \(T_p\) be a well-defined statistic that
+equals zero whenever the resulting degree-one diagram is empty.
+Transformations of the statistic or filtration may depend on \(p\) or
+the retained count, provided they preserve this zero. Then, for every
+\(\varepsilon > 0\),
+
+\[\Pr(|T_p|>\varepsilon)\leq\Pr\{\operatorname{Bin}(N,p)\geq4\}\leq \binom{N}{4}p^4.\]
+
+\textbf{Proof.} A flag complex on at most three vertices has no
+degree-one homology: any three-cycle is filled by its triangle. A
+nonempty degree-one diagram therefore requires at least four retained
+vertices. If \(K\) is the retained count, the indicator of \(K \geq  4\)
+is bounded by the number of retained four-vertex subsets, whose
+expectation is \(\binom{N}{4}p^4\). This proves the bound and
+convergence to zero in probability for fixed \(N\).
+
+The result concerns the probability of a nonzero statistic. It does not
+give a universal exponent for persistence amplitude, an expectation
+bound for arbitrarily rescaled statistics, or a monotonicity law at
+finite \(p\). Deleting the hub of a wheel graph can expose a four-cycle
+and increase degree-one persistence. Complexes with at most three
+vertices need not be contractible; the proof requires only their empty
+degree-one diagrams.
+
+If \(N\) grows, \(p\) tending to zero alone is insufficient. Vanishing
+expected retained count, \(Np \to  0\), is sufficient for extinction.
+Four growing groups arranged around a cycle can retain a degree-one
+feature when each group still contains retained vertices. Consequently,
+the finite-set argument must not be presented as an impossibility
+theorem for ordinary sequencing-depth changes at fixed bin resolution.
+
+Subsampling a retained set to a fixed \(m\) bins is available only when
+at least \(m\) remain. For a fixed original bin set and map, under
+independent retention with a common probability \(p\), conditional on
+eligibility and averaging over the retained set, a subsequent uniform
+\(m\)-subset is uniformly distributed among the original \(m\)-subsets.
+This yields a specific conditional comparability statement; it does not
+recover the full-map target or remove the loss of eligibility. The proof
+supplies the finite-sampling boundary directly. It provides no planar
+scaling exponent for contact-map summaries.
+
+\textbf{Map-specific refinement.} Let \(a_j\) count \(j\)-bin subsets
+whose restricted full filtration has a positive-length H1 interval.
+Independent vertex retention gives the exact finite expression
+
+\[\Pr\{D_1(w|R_p)\ne\varnothing\}=\sum_{j=4}^N a_jp^j(1-p)^{N-j}.\]
+
+If \(k\) is the smallest index with \(a_k > 0\), its leading term is
+\(a_k p^k + O(p^{k+1})\) for fixed map and \(N\). If all \(a_j\) vanish,
+the probability is zero. Thus the universal fourth-power upper bound is
+sharp in order only when the map contains a four-bin witness. A
+five-cycle with perimeter births zero and all chord births one has
+probability exactly \(p^5\). Additional retained vertices may fill a
+witness, so the event is not monotone. This refinement concerns diagram
+nonemptiness; a particular statistic can still vanish on a nonempty
+diagram. Exhaustive four- and five-cycle checks accompany the proof.
+
+\end{document}

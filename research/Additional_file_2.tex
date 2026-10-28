@@ -1,0 +1,472 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  11pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{amsmath,amssymb}
+\usepackage{float}
+\usepackage{microtype}
+\usepackage{fvextra}
+\fvset{breaklines=true}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage{etoolbox}
+\usepackage{needspace}
+\AtBeginEnvironment{longtable}{\singlespacing\small}
+\AtBeginEnvironment{verbatim}{\singlespacing\small}
+\setlength{\emergencystretch}{3em}
+\floatplacement{figure}{H}
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}
+\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}
+\DeclareUnicodeCharacter{2260}{\ensuremath{\ne}}
+\DeclareUnicodeCharacter{2208}{\ensuremath{\in}}
+\DeclareUnicodeCharacter{221E}{\ensuremath{\infty}}
+\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}
+\DeclareUnicodeCharacter{03BB}{\ensuremath{\lambda}}
+\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}
+\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}
+\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}
+\DeclareUnicodeCharacter{03B5}{\ensuremath{\varepsilon}}
+\DeclareUnicodeCharacter{03C6}{\ensuremath{\phi}}
+\DeclareUnicodeCharacter{2124}{\ensuremath{\mathbb Z}}
+\DeclareUnicodeCharacter{1D63}{\ensuremath{{}_r}}
+\DeclareUnicodeCharacter{2080}{\ensuremath{{}_0}}
+\DeclareUnicodeCharacter{208A}{\ensuremath{{}_+}}
+\DeclareUnicodeCharacter{208B}{\ensuremath{{}_-}}
+\DeclareUnicodeCharacter{207B}{\ensuremath{{}^{-}}}
+\DeclareUnicodeCharacter{00B9}{\ensuremath{{}^{1}}}
+\DeclareUnicodeCharacter{00B2}{\ensuremath{{}^{2}}}
+\DeclareUnicodeCharacter{2074}{\ensuremath{{}^{4}}}
+\DeclareUnicodeCharacter{2075}{\ensuremath{{}^{5}}}
+\DeclareUnicodeCharacter{2076}{\ensuremath{{}^{6}}}
+\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
+\DeclareUnicodeCharacter{0108}{\ensuremath{\widehat C}}
+\DeclareUnicodeCharacter{00C2}{\ensuremath{\widehat A}}
+
+\AtBeginDocument{\setstretch{1.12}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
+\hypersetup{
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\section{Additional file 2: Anchor
+theory}\label{additional-file-2-anchor-theory}
+
+\subsection{1. Object of study and
+interpretation}\label{object-of-study-and-interpretation}
+
+Let \(D\) and \(E\) be finite persistence diagrams with finite
+coordinates, including the diagonal with unlimited multiplicity in their
+bottleneck comparison. Write \(E+t\) for translation of both coordinates
+by \(t\) and define
+
+\[
+f(t)=d_B(D,E+t).
+\]
+
+For the present superlevel contact construction, implemented as a
+sublevel filtration of \(-L\), subtracting a map mean from \(L\) adds
+that mean to its persistence coordinates. Consequently, with
+\(\delta=\operatorname{mean}(L_{alt})-\operatorname{mean}(L_{ref})\),
+the native and mean-centered distances are \(f(0)\) and \(f(\delta)\).
+Common translation of both diagrams cancels. Every individual interval
+lifetime is unchanged by this operation.
+
+This identity does not say that a centered score is a function of the
+native scalar distance and mean change alone. For \(D=\{(0,4)\}\),
+\(E_+=\{(1,5)\}\) and \(E_-=\{(-1,3)\}\), both native distances equal 1.
+Under the same \(\delta=1/4\) their distances become 5/4 and 3/4. The
+direction is information about diagram location lost in the native
+scalar summary. Appropriate interpretation: \textbf{anchor-location
+sensitivity of a diagram comparison}. Inappropriate interpretation:
+proof that mean intensity alone explains a biological effect, or that
+centered diagrams lack structural information.
+
+\subsection{2. Endpoint rigidity and an error-aware path
+tube}\label{endpoint-rigidity-and-an-error-aware-path-tube}
+
+Translation and the triangle inequality give \(|f(t)-f(s)|\leq |t-s|\).
+This elementary inequality yields a stronger diagnostic than checking
+selected intermediate shifts.
+
+Let \(\delta\ne 0\), \(T=|\delta|\), \(h=\operatorname{sign}(\delta)\),
+and \(g(u)=f(hu)\), \(0\leq u\leq T\). Put \(A=g(0)\), \(C=g(T)\). For
+every \(u\),
+
+\[
+\max\{A-u,C-(T-u)\}\leq g(u)\leq\min\{A+u,C+(T-u)\}.\qquad (1)
+\]
+
+For either \(r\in \{-1,+1\}\), define the saturation deficit
+
+\[
+\kappa_r=T-r(C-A)\geq0.
+\]
+
+Then, throughout the entire segment,
+
+\[
+u-\kappa_r\leq r[g(u)-A]\leq u.\qquad (2)
+\]
+
+Proof. Apply the 1-Lipschitz inequality from the starting endpoint and
+from the ending endpoint, obtaining (1); substitute
+\(C-A=r(T-\kappa_r)\). Both signs give (2). No assumption about a fixed
+optimal matching is needed.
+
+If \(|C-A|=T\), taking \(r=\operatorname{sign}(C-A)\) gives
+\(\kappa_r=0\) and therefore \(g(u)=A+ru\) everywhere on the segment.
+This is an exact theorem for any shift magnitude, not just an
+infinitesimal result. It does \textbf{not} imply that one matching
+remains optimal, or that this affine formula extends outside the
+segment.
+
+Suppose only estimates \(\widehat A\), \(\widehat C\) are available,
+with proven bounds \(|\widehat A-A|\leq e_0\) and
+\(|\widehat C-C|\leq e_T\). Then
+
+\[
+\kappa_r\leq K_r:=T-r(\widehat C-\widehat A)+e_0+e_T.\qquad (3)
+\]
+
+For valid error bounds \(K_r\) is nonnegative. Combining (2) and (3),
+the whole path lies within \(e_0+K_r\) of the line \(\widehat A+ru\). A
+sharper signed statement is \(r[g(u)-A]\in [u-K_r,u]\). For nonsaturated
+paths, the following envelopes need no affine approximation:
+
+\[
+\begin{aligned}L(u)&=\max\{0,\widehat A-e_0-u,\widehat C-e_T-(T-u)\},\\ U(u)&=\min\{\widehat A+e_0+u,\widehat C+e_T+(T-u)\}.\end{aligned}
+\]
+
+They satisfy \(L(u)\leq g(u)\leq U(u)\). At \(\delta=0\) there is no
+path to audit.
+
+There are two distinct computational claims. A residual at machine
+precision is \textbf{observed numerical saturation}. A certified \(K\)
+requires endpoint error bounds covering every relevant operation: PH
+input conversion, coordinate recovery and translation, mean estimation
+when an exact-real mean is the target, distance evaluation and its
+returned rounding. The existing float32 filtration audit alone does not
+verify all binary64 arithmetic. One can conservatively include such
+errors, but must state the budget and its provenance. A solver's exact
+algorithm mode is not, by itself, a formal interval-arithmetic proof for
+a real-valued source map. API quantization remains part of the delivered
+data and cannot be reversed by this audit.
+
+If \(\delta\) is uncertain by \(e_\delta\), either define the audit
+target as the explicitly stored shift, or add \(e_\delta\) to the
+endpoint/path error when comparing to the intended shift; 1-Lipschitz
+continuity justifies that addition.
+
+\subsection{3. Why local slopes have only three possible
+values}\label{why-local-slopes-have-only-three-possible-values}
+
+For \(x=(b_x,d_x)\in D\) and \(y=(b_y,d_y)\in E\), set
+
+\[
+\begin{aligned}c_{xy}&=((b_x-b_y)+(d_x-d_y))/2,\\ q_{xy}&=|(b_x-b_y)-(d_x-d_y)|/2.\end{aligned}
+\]
+
+Their matching cost is exactly
+
+\[
+\varphi_{xy}(t)=\max\{|b_x-b_y-t|,|d_x-d_y-t|\}=|t-c_{xy}|+q_{xy}.
+\]
+
+Matching a point to the diagonal costs half its lifetime, independently
+of \(t\). For any fixed partial matching \(M\), the maximum cost
+therefore has the form \(\max\{a_M-t,b_M+t,c_M\}\), allowing absent
+real-real terms and taking \(c_M\geq 0\). There are finitely many
+partial matchings. Thus \(f\) is a finite lower envelope of these
+functions: continuous, piecewise affine, 1-Lipschitz, with affine slopes
+in \(\{-1,0,+1\}\). It need not be convex: for \(D=E=\{(0,2)\}\),
+\(f(t)=\min\{|t|,1\}\).
+
+The familiar parameterized-matching structure is a useful derivation for
+this audit, not a claim of new mathematical machinery.
+
+\subsubsection{A native-diagram-only local
+certificate}\label{a-native-diagram-only-local-certificate}
+
+The following provides a prospective slope from native diagrams, without
+consulting a centered endpoint or selected-allele labels. Assume
+\(b=f(0)>0\). Form the standard finite augmented bipartite graph: real
+\(D\) points and \(E\)-diagonal copies on the left; real \(E\) points
+and \(D\)-diagonal copies on the right. Include every real-real edge,
+each real point's own diagonal edge, and all diagonal-copy to
+diagonal-copy edges of cost zero. A perfect matching encodes a
+persistence matching.
+
+Call an edge low, critical or high according as its native cost is
+\(<b\), \(=b\) or \(>b\). For a direction \(h\in \{-1,+1\}\), a critical
+real-real edge has one-sided slope \(a_e=-1\) if \(h c_{xy}>0\), and
+\(+1\) otherwise. Critical diagonal edges have slope zero. Define
+
+\[
+\begin{aligned}\gamma&=\min\{|w_e(0)-b|:w_e(0)\ne b\},\\ R&=\min\{\gamma/2,\ |c_{xy}|\text{ for critical real-real edges with }h c_{xy}>0\}.\end{aligned}
+\]
+
+An empty second minimum is \(+\infty\). Zero-cost dummy edges ensure the
+first minimum exists when \(b>0\). For \(0<u<R\), low edges stay below
+each candidate level \(b+ru\), high edges stay above, and critical edges
+retain their one-sided affine formulas.
+
+Let \(G_r\) include all low edges and the critical edges with
+\(a_e\leq r\). The smallest \(r\in \{-1,0,+1\}\) for which \(G_r\) has a
+perfect matching satisfies
+
+\[
+f(hu)=b+ru\quad\text{for all }0\leq u<R.\qquad (4)
+\]
+
+Proof. The stated inequalities fix which edges can be used at the
+threshold \(b+ru\). A native-optimal matching must contain at least one
+critical edge, since otherwise its native maximum would be \(<b\).
+Therefore the minimum, over optimal matchings, of their largest critical
+slope is the exact active slope; nonoptimal matchings cannot enter below
+it before the gap closes. This is equivalently the three
+threshold-matching tests above.
+
+This radius is conservative and may be much smaller than an empirical
+mean shift. Predicting the native one-sided slope does not justify
+extending it beyond \(R\). Cases \(b=0\) should use a separate
+degeneracy treatment, rather than apply this statement unchanged. The
+certificate can be implemented with exact dyadic arithmetic for stored
+binary coordinates, but dense graph construction is optional and
+potentially expensive.
+
+If all coordinates in \(D\) and \(E\) lie on one affine lattice
+\(a+g\mathbb Z\), then real-real costs are multiples of \(g\) and
+diagonal costs are multiples of \(g/2\). Hence \(\gamma\geq g/2\) and
+every positive \(|c_{xy}|\geq g/2\), so \(R\geq g/4\). This is a
+conservative lattice-derived local radius, not an assertion that an
+observed shift lies within it. Source quantization alone is insufficient
+to choose \(g\) after diagram-coordinate recovery and translation; the
+actual stored coordinates must be checked. Small shifts on a nonflat
+affine cell are necessarily saturated. The empirical frequency of
+saturation should therefore be compared with shift magnitudes,
+candidate-level gaps and flat/turning synthetic controls, rather than
+treated as a novel phenomenon.
+
+\subsection{4. Witnesses that can avoid another complete matching
+computation}\label{witnesses-that-can-avoid-another-complete-matching-computation}
+
+A diagonal-augmented Hausdorff lower bound is
+
+\[
+\begin{aligned}H(t)=\max\bigl\{&\max_x\min[\operatorname{dist}_{\infty}(x,E+t),\operatorname{life}(x)/2],\\ &\max_y\min[\operatorname{dist}_{\infty}(y+t,D),\operatorname{life}(y)/2]\bigr\}\leq f(t).\end{aligned}
+\]
+
+Use distance \(+\infty\) to the empty finite set. The inequality holds
+because each point in any matching either pays a real-point cost or its
+diagonal cost. Nearest-neighbor queries can evaluate H efficiently.
+
+For an increasing path, \(H(\delta)\leq C\leq A+T\). If
+\(H(\delta)=A+T\), saturation is proved without solving the shifted
+matching problem. With an error-controlled lower estimate \(H_{low}\)
+and upper estimate \(A_{up}\), the increasing deficit is bounded by
+\(\kappa_+\leq A_{up}+T-H_{low}\). This is a witness-based audit using
+native diagrams and the chosen shift. It is independent of centered
+matching computation, but not independent of the chosen anchor or
+diagram geometry.
+
+For a decreasing path the universal lower bound is \(C\geq A-T\). A
+valid explicit shifted matching with maximum cost \(\leq A-T\) proves
+equality. More generally a matching upper bound \(U\) gives
+\(\kappa_-=T+C-A\leq T+U-A_{low}\). Hausdorff alone generally cannot
+establish this upper bound.
+
+Hausdorff is not an exact replacement for bottleneck matching: \(D\)
+containing two copies of \((0,4)\) and \(E\) containing one has
+\(H(0)=0\) but \(f(0)=2\). Multiplicity and Hall-type matching
+constraints matter.
+
+\subsection{5. Ranking, tolerance and partial
+orders}\label{ranking-tolerance-and-partial-orders}
+
+For allele a let its exactly saturated path be
+\(B_a(\lambda)=A_a+\lambda k_a\), \(0\leq \lambda\leq 1\), where
+\(k_a=r_a|\delta_a|\). In a numerically certified version, enclose this
+line by the endpoint-derived tube. Rank crossings of exact lines occur
+only where
+
+\[
+(A_a-A_b)+\lambda(k_a-k_b)=0.
+\]
+
+For a top-set rule that includes scores within \(\tau\) of the maximum,
+also include the roots where this expression equals \(\pm \tau\). Retain
+only roots within \([0,1]\), and handle parallel or identical lines
+separately. The pairwise roots partition the path into cells with a
+constant tolerance-defined top set. The boundaries require the inclusive
+convention used by the frozen analysis.
+
+An exact native tie can break for every \(\lambda>0\) if \(\tau=0\) and
+slopes differ. With positive tolerance \(\tau\), that pair separates
+only after \(\lambda|k_a-k_b|>\tau\). Thus top-credit changes can be
+large even when distance changes are arbitrarily small; the
+discontinuity belongs to the rank/tie functional, not to persistence
+distance. At fixed positive \(\tau\) the discontinuities move to the
+tolerance boundary.
+
+For arbitrary certified score intervals \([L_a,U_a]\), a exceeds b by
+more than \(\tau\) whenever \(L_a>U_b+\tau\). The set
+\(\{a: U_a\geq \max_{b\ne a}L_b-\tau\}\) conservatively contains every
+possible tolerance-defined top allele. The set
+\(\{a: L_a\geq \max_{b\ne a}U_b-\tau\}\) is guaranteed to belong to the
+top set for every admissible score vector. These possible and guaranteed
+sets are exact for independent Cartesian score intervals; with dependent
+errors they remain conservative. They define a robust partial ranking
+rather than forcing unsupported total ranks. For a whole path, use the
+endpoint envelopes at \(u=\lambda|\delta_a|\), or take the appropriate
+infima and suprema over the \(\lambda\) interval to certify uniform
+membership or pairwise ordering.
+
+The standard anchor-blind margin guarantee is
+\(A_i-A_j>|\delta_i|+|\delta_j|+\tau\), with numerical errors added when
+estimated quantities are used. A slope-aware path certificate can be
+tighter: minimize \((A_i-A_j)+\lambda(k_i-k_j)\) over the desired
+\(\lambda\) interval, which requires only its endpoints, then subtract
+the two tube errors and compare to \(\tau\). These are elementary
+robust-ranking consequences, not new generic ranking theorems.
+
+Do not choose \(\lambda\) using selected-allele labels and treat the
+resulting enrichment as predeclared. The new replication should freeze
+the tolerance, error budget, endpoint-saturation statistic, ranking
+audit and any predictive baseline before map outcomes are inspected.
+
+\subsection{6. Rank-filtration
+perturbations}\label{rank-filtration-perturbations}
+
+Assign edge ij the fraction of eligible edges with strictly greater
+\(L\) value, grouping ties so equal weights enter together. The
+resulting rank flag filtration is unchanged under every strictly
+increasing transformation of \(L\) (Giusti et al., 2015). It removes
+magnitude information more broadly than global centring. Near ties,
+small entrywise changes can alter ranks, so the weighted-filtration
+stability bound does not transfer automatically. If edge perturbations
+are bounded by \(\delta\), only comparisons whose original gap is at
+most \(2\delta\) can change. With \(m\) edges, the rank-filtration
+perturbation is at most \(\max_e \#\{f\ne e:|w_f-w_e|\leq2\delta\}/m\).
+At exact ties no universal continuity bound tending to zero with
+\(\delta\) exists: splitting an all-tied four-bin graph into a
+zero-birth perimeter and two arbitrarily later diagonals creates a rank
+interval of length 2/3.
+
+An uncentred weighted filtration, a centred weighted filtration and a
+rank filtration answer different questions. Their comparison is more
+informative than labelling topology uniformly intensity-sensitive.
+Degree-one interval lengths also omit genomic feature identity:
+relabelling bins leaves the abstract diagram unchanged.
+Coordinate-sensitive comparisons remain necessary when loop location is
+the target.
+
+\subsection{7. Verification and prior-art
+scope}\label{verification-and-prior-art-scope}
+
+\begin{itemize}
+\tightlist
+\item
+  Sheehy, Kisielius and Cavanna, \emph{Computing the Shift-Invariant
+  Bottleneck Distance for Persistence Diagrams}, CCCG 2018, already
+  define optimization over diagonal shifts and study its computation.
+  Their parameterized matching problem is directly relevant. The shift
+  quotient and the idea of following shifted costs must not be presented
+  as new: https://donsheehy.net/research/cavanna18computing.pdf
+\item
+  Cao, Monod, Vlontzos, Schmidtke and Kainz, \emph{Topological
+  information retrieval with dilation-invariant bottleneck comparative
+  measures}, published 4 July 2023, develop dilation-invariant
+  comparisons and explicitly relate them to shift-invariant bottleneck
+  work. This is close normalization/comparison prior art, although its
+  transformation and retrieval task differ:
+  https://academic.oup.com/imaiai/article/12/3/1964/7217093
+\item
+  May, Krishnamoorthy and Gambill, \emph{A Normalized Bottleneck
+  Distance on Persistence Diagrams and Homology Preservation under
+  Dimension Reduction}, submitted 11 June 2023, revised 29 August 2024
+  and published in La Matematica, develops scale normalization and
+  stability in a dimension-reduction setting. It further excludes broad
+  novelty claims about normalized persistence comparison:
+  https://arxiv.org/abs/2306.06727 ;
+  https://doi.org/10.1007/s44007-024-00130-0
+\end{itemize}
+
+The endpoint rigidity lemma follows from elementary Lipschitz geometry.
+The finite-cell slope statement follows from finite bottleneck matching.
+The interval ranking statements are standard margin arguments. No
+priority claim is made for these individual results. The review covered
+these closest identified sources, not every work on parametric matching
+or robust ranking.
+
+\subsection{8. Exact finite checks and their
+limits}\label{exact-finite-checks-and-their-limits}
+
+\nolinkurl{scripts/astra_verify_anchor_theory.py} independently
+enumerates all partial matchings on 250 small rational diagram pairs. It
+passed 498 directional local-slope cases (1,494 exact evaluations) and
+4,500 endpoint-cone/deficit-tube checks, together with saturating,
+V-turn, diagonal-cap, opposite-slope and multiplicity controls. Output:
+\nolinkurl{outputs/astra_anchor_theory_verification.json}.
+
+All verification arithmetic uses Python Fraction. These finite checks
+support implementation and catch sign/degeneracy errors; the written
+proofs carry the universal statements. They are not a proof-assistant
+formalization and do not certify the full genomic diagram computations.
+
+\end{document}

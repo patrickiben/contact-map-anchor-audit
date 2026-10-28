@@ -36,7 +36,7 @@ For a valid 1-Lipschitz anchor path, what does exact endpoint saturation imply?
 
 ## T04 · Core
 
-Which statement describes the reported replication?
+Which statement describes the GM12878 new-locus replication?
 
 1. More ties resolved, while selected-allele credit decreased descriptively
 2. Every clinical metric improved
@@ -116,10 +116,10 @@ A new analysis deletes genomic bins. Can the same-support stability statement be
 
 ## T12 · Transfer
 
-Two cases share a native distance and shift, but their distances move in opposite directions. What fails?
+On the same 84 sites in a second AlphaGenome track, strengthened bounds add 42 decisions while three saturation tests fail. Both bounds abstain at those exceptional sites. What is supported?
 
-1. The definition of lifetime
-2. The possibility of diagram matching
-3. Universal reconstruction from those two scalar summaries alone
+1. A new model architecture and clinical superiority were validated
+2. Useful additional decision coverage transferred within one model; universal saturation did not
+3. Only strengthened bounds detected all three exceptions
 
-**Answer: 3.** Relative diagram location contains directional information absent from the native scalar score and shift.
+**Answer: 2.** The 42 added decisions occur elsewhere. Both bounds abstained at the three exceptions. The same sites and architecture prevent an independent-model or new-locus claim.

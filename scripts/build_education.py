@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse, collections, copy, hashlib, json
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_SOURCE = '57f31d65b5fcb857e2994c95da66b149b1bfa6885bcdbc76baa6896a79d9d0fe'
+EXPECTED_SOURCE = 'fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969'
 EXPECTED_IDS = {'OBJECT','STABILITY','ANCHOR','RANKING','CONSEQUENCE','NULL','DISCOVERY','REPLICATION','PRECISION','SCOPE'}
 
 def digest(data: bytes) -> str:
@@ -18,7 +18,7 @@ def rendered_documents(learning):
     for lesson in learning['lessons']:
         lines += [f"## {lesson['title']}", '', lesson['summary'], '']
         for paragraph in lesson['body']: lines += [paragraph, '']
-        lines += [f"**Try it:** {lesson['try_it']}", '', f"**Boundary:** {lesson['boundary']}", '', f"Source: author-review manuscript lines {lesson['source_lines'][0]}–{lesson['source_lines'][1]}; see [source map](SOURCE_MAP.json).", '']
+        lines += [f"**Try it:** {lesson['try_it']}", '', f"**Boundary:** {lesson['boundary']}", '', f"Source: current BMC manuscript lines {lesson['source_lines'][0]}–{lesson['source_lines'][1]}; see [source map](SOURCE_MAP.json).", '']
     lines += ['## Glossary', '']
     for item in learning['glossary']: lines += [f"- **{item['term']}:** {item['definition']}"]
     lines += ['', '## Keep these distinctions', ''] + ['- '+x for x in learning['nonclaims']]
@@ -33,6 +33,10 @@ def rendered_documents(learning):
 def validate(learning, study, mapping, source_path=None, research_root=None):
     assert learning['source']['sha256'] == study['source_sha256'] == mapping['source']['sha256'] == EXPECTED_SOURCE
     assert len(learning['lessons']) == 10
+    combined=' '.join(' '.join(x['body']) for x in learning['lessons'])
+    for fact in ('42 additional decisions','35 unresolved','249 of 252','Both simple and strengthened bounds','same 84','same AlphaGenome architecture','0.517857','before centered matching','full validated-arithmetic enclosure'):
+        assert fact in combined, 'Missing portability teaching boundary: '+fact
+    assert {c['id'] for c in study['cohorts']} == {'discovery','replication','imr90'}
     ids={x['id'] for x in learning['lessons']};assert ids==EXPECTED_IDS
     assert len(learning['quiz'])==12
     assert collections.Counter(q['kind'] for q in learning['quiz'])=={'CORE':4,'BOUNDARY':4,'TRANSFER':4}
@@ -49,7 +53,8 @@ def validate(learning, study, mapping, source_path=None, research_root=None):
     for c in study['cohorts']:
         assert c['sites']==c['native_ties']+c['strict_leaders']
         assert c['native_ties']-c['resolved_ties']==c['centered_ties']
-        assert c['strict_leaders']==c['preserved_strict_leaders']==c['simple_bound_leaders']
+        assert c['strict_leaders']==c['preserved_strict_leaders']
+        assert c['simple_bound_leaders']<=c['preserved_strict_leaders']
         assert c['witness_leaders']-c['simple_bound_leaders']==c['additional_witness_leaders']
         assert c['comparisons']==3*c['sites']
         assert 0<=c['native_credit']<=1 and 0<=c['centered_credit']<=1
@@ -86,6 +91,7 @@ def mutation_controls(learning, study, mapping):
         ('bad_answer_index', lambda a,b,c: a['quiz'][0].update(answer_index=99)),
         ('wrong_study_credit', lambda a,b,c: b['cohorts'][0].update(native_credit=.9)),
         ('invented_human_approval', lambda a,b,c: c['human_reviews'].update(author_approval='invented')),
+        ('removed_portability_boundary', lambda a,b,c: next(x for x in a['lessons'] if x['id']=='DISCOVERY')['body'].pop()),
         ('changed_source_binding', lambda a,b,c: a['source'].update(sha256='0'*64)),
     ]
     result = []

@@ -1,0 +1,476 @@
+{
+  "historical_locks_are_evidence_not_replay_authorization": true,
+  "persistence_diagrams_included": false,
+  "raw_prediction_maps_included": false,
+  "sources": [
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_000.json",
+      "sha256": "f4a8aae4683990dbe951fabd0712a07e7258249e4ce28ef0267f2397b86ac355"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_001.json",
+      "sha256": "5259fad2f6647e7e365e81e754f3f56f7837038408b780f3228ca166d0c5d6f2"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_002.json",
+      "sha256": "7890add11d2b1666fc6c786df78210591fe69dd85c0747c212df55224b020486"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_003.json",
+      "sha256": "d7e86b67f3a345ecc535cbe9f4ecbdb218d591996b60a5a344836cf190d12746"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_004.json",
+      "sha256": "e12c390eb71eec95f1d4e5f993c149dcfc2f21343d5ac0aa1eef0cfc5c4734bc"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_005.json",
+      "sha256": "f720e1e83059ae825eb3a75751e0b545bd9e0c7d036aff9e654b7438ec9d0cd4"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_006.json",
+      "sha256": "f8522634ca74c93c7a0fb229838ecafd9f764bf5454eabea8f3784ca00637b6c"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_007.json",
+      "sha256": "73c80352c9b90e5417a430019e84acceea4002fdd7f498ab38f7c3ab9f37e5e6"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_008.json",
+      "sha256": "52ce93790b67ddd3e49c7ccbc6bcefbcdd2937f4b2dc90e949531682ba885091"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_009.json",
+      "sha256": "bdcfcc0cf09b0d609ee3d2fdbc47fb606079631ab42a74296105abb86f3832ff"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_010.json",
+      "sha256": "bda25444d188020ddf23ef19210f62de4a9dd2106c0cd1055f03f28d73fd5cd2"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_011.json",
+      "sha256": "f58276e6b29101fb2eb314e487d91804e2a5c34877e3f1bdbbfec38f64c481d7"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_012.json",
+      "sha256": "6ade341b57f130784c883ae8a615c15407674e502d7539237343bbc819fc3ed8"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_013.json",
+      "sha256": "979d5c4b93cc76c00d0be519399261ee83e5be870c8ae1bfa8c643e4372a6f1c"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_014.json",
+      "sha256": "312e7aebdcb59fdce819b3dfd122ac95d9b9b99fd534861b253ef3422c946834"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_015.json",
+      "sha256": "18d64f8872322401b0465d2d315a9a4e3f74cf461dec543698fb0ab5875a6ae2"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_016.json",
+      "sha256": "80e99c5c555ad033ba30e0adf5c26f1ae902f42ff8682d4d0f0c03afe06eea8b"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_017.json",
+      "sha256": "01135885d0e52f162ca69e84bba4b8d7466d063ae583e409433e15a110cf87b9"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_018.json",
+      "sha256": "611afca4446f5f501bbd60488d84ede2f2324158e9fe7fdc812a5f9d0bcefa2b"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_019.json",
+      "sha256": "03643c11bd9a37f48ba5c4965a032d83a5eab47153993efb305272df6bbf4634"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_020.json",
+      "sha256": "01fa1ac8a830e2eea40003d8441748734946e8711abe6b6cb2602f034c955b0c"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_021.json",
+      "sha256": "aa0c80b34a1de8b51c866734e767aadd98b3246b6dbfbe2afa5e8cdd4b723140"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_022.json",
+      "sha256": "5399e52ff0c0e34dd9c9fc534faedfbda4d188135e6c0acefd5c7a0a9ec76d77"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_023.json",
+      "sha256": "6545c04412647445b04b223519675930bec6f1d40833dd767e0ac61f2cc2bb53"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_024.json",
+      "sha256": "a8efaaf12a65065fe4b5e3cfc1f2faf9f3b0c28bc98e54b48ab990ebe1f71a08"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_025.json",
+      "sha256": "d93ca2f8ed61ab3010901c225b29f92a6800197fb32b8e777eed2d4dbc16f9c0"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_026.json",
+      "sha256": "fdcb6ad7e38cd3fc034ab35a6f4789df3b2d62e5df0a619b84754bb6a58e5125"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_027.json",
+      "sha256": "7cb349a943e2020d03f9355469421cc6f3f567898a68c616ea165362f646b075"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_028.json",
+      "sha256": "f7fe5721bb77950651d3f43d23ee012909b0d3de73d5ca8914645df2cbec3c08"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_029.json",
+      "sha256": "6624536dfd656366dd98403d705cc7f5a15a7e283d3d2e33a3392633a306c8a5"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_030.json",
+      "sha256": "a0da5e7790cdee18bd3e2fc5d64471f7a02148042ad1adc4b06280e837869f17"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_031.json",
+      "sha256": "ded66b40b93004151b38a27a56050b10f5d2e3bedf49660fe49bf85dafd95316"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_032.json",
+      "sha256": "ace67f175cb4585dd3b52635df0550f6513cb630b49586a7f8b10784eb8e76e3"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_033.json",
+      "sha256": "787bcb6608d5fdf177b80bff3358ec3562a4ff49def94e4404ff9016b1984656"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_034.json",
+      "sha256": "6e6ee65bdb744402168a884cd433693f37361f91efdbcde9edd5a0b2c4c3354a"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_035.json",
+      "sha256": "b38d6f6eba34b40b330aeb423f2e1f1a690afa100c6df40abe64d47315a0dbbe"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_036.json",
+      "sha256": "bd72da0549a279c10eca927b825dafde36bb051fcdb121c3e829747d182cfe73"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_037.json",
+      "sha256": "39651c3021b908e1cec6c5b1aeee0af182e00bdae970c9a694664bfe3a7a238d"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_038.json",
+      "sha256": "59b370f204770166ebee23aa7c1e9139e1fa61da651810bdac9a4d07b38a8db5"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_039.json",
+      "sha256": "f8590dd91bed4ffc406f27e21168c69ee1116528db2b7c7f953b05303b56d9eb"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_040.json",
+      "sha256": "9214d98497a38e7a9a80b486292441c37769d47a1a4f9368cb80d6103cdd9bbe"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_041.json",
+      "sha256": "60333563548cb8cb423ed45157a01a472846138821e4633837782fea09db1eb2"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_042.json",
+      "sha256": "87a660563fe376084f8937555a87214aeaba1e8b8a237f697a3ecd2271900298"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_043.json",
+      "sha256": "0803f3f4e220574aa93424bdc23087c08a0fccc5034ccaa238f69b6a0633242e"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_044.json",
+      "sha256": "7b0f52dcf2a0051136e6f8f5e885e3413503088754359fd39ea220f4b45d7db5"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_045.json",
+      "sha256": "730af4722ead423b657e35785f35b77889624590c4827a74ce555b101ccbf084"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_046.json",
+      "sha256": "6025cd90f4890a7b27c132fd082ddc69057ab0ca574eee6f6b934b04bfce0874"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_047.json",
+      "sha256": "8f3f5acb66e14d1f8b4bc3325e675e60e5c83b29d7bfa50c90d316d9f9977a33"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_048.json",
+      "sha256": "46044d6d7dcfd02b69115ab5c7be06f2095ec48c59b22548f88a24919f5676e4"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_049.json",
+      "sha256": "858f61f44103e27a5a714c59c5073f9df45af100a3ecdcdb0f7f1d33dee7431a"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_050.json",
+      "sha256": "91252139ffbe8ec8f6424db65463bc420894b6ee4282e52740f6770170b158ec"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_051.json",
+      "sha256": "ede4149b34b6564d761f8145ea22320d739dba7702a78b37a14962981f837213"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_052.json",
+      "sha256": "d4952ccf184740b09e1c6e7ba3f198201b2c5b706afff1f225d3d46a0088635f"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_053.json",
+      "sha256": "94f83b339bf0a18ed873082803ae67dcd6a7d48e1dec0fd1ec687f305faca481"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_054.json",
+      "sha256": "0c0ef8f4204f850efe8e4244f098d653a8c20eade3aecae714d78e55f8b5021f"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_055.json",
+      "sha256": "5613c33bbfc172f67d465ef443255940f17711ecc070f23783483cea5fc93151"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_056.json",
+      "sha256": "a17c59461147027f511da774034a0fc6ddd7b490cde7f0fc8f56e7068ab93089"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_057.json",
+      "sha256": "691a2e0509bb3e2188e43f0b6b25eabde9b44b82fee95f980de4d11737da41fa"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_058.json",
+      "sha256": "48619180671f8671dcec7947db1295a1ffb1094337d767b6910730f02ccb7af7"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_059.json",
+      "sha256": "0b7888432ba9da01d3a8aace770b9e8403141a27c5f63a22c4790732c856fedf"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_060.json",
+      "sha256": "2ba0bfa680292af7863bada862fc6c623b89e086ca5059c6829e38a7c304d188"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_061.json",
+      "sha256": "5a23e4b98df233bc22f2044dcad730d8da37bd7e54f17d39369a63f4cf0a0f93"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_062.json",
+      "sha256": "77ed06579ee735d935adb7c35ad43114ac87bbcf5d8ec0ec1a4a487393e6fbf8"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_063.json",
+      "sha256": "8d4bca9871fa158c9bfa16c3bcb88243b408791d3ceb10f04f23b28c3e8423eb"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_064.json",
+      "sha256": "f66b05e3c5b6e1701c35c286d6d60112581468929526c84047d36544475b713f"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_065.json",
+      "sha256": "0372d64af73493d36dd81b9cb87150c1c729a6b883a7eace30c5247742698c2b"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_066.json",
+      "sha256": "663de24fccf9c60dcfa2c86a55864531d637cfe51c94226f87835fe61b4cd684"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_067.json",
+      "sha256": "d71be6c3d4f489f7c50cd9b501cd3d3f4a18cbbc5fbdfea2de89e2d2a5be54b7"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_068.json",
+      "sha256": "830e6fa3624154864f411131347351f5c3aa446024512642541d0ee01ffefead"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_069.json",
+      "sha256": "b196598b9a42639ea52e980f982e76f0b30b756b9e00d00eda51077aef885680"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_070.json",
+      "sha256": "9345e60dd88b2888e6cfacd457082cda358cca8231caa1dae714fe3763092639"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_071.json",
+      "sha256": "f46306cfe9d5da7707a3845054e22e931c37e30c3cffc28cb38d9993275edb35"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_072.json",
+      "sha256": "0e3ead42dc3f0780ae0cc1cf9666205183b6f2b06f0c4c36dd44bc7ef04a1300"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_073.json",
+      "sha256": "07e65ba07d1489f9f97b50be4450f08dc7a6be55cca5f10b33214ae9a5ede101"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_074.json",
+      "sha256": "88c132b38152291157cbe645554d931a3c84f629e0e9d11579b4ac4a9a13d44c"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_075.json",
+      "sha256": "c2a09fd583d9b162161a93bf42ad964b77cd89e83db3f7dad2d82b66d424ce2e"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_076.json",
+      "sha256": "2025cb5dc3dde38bd43f926cfb7bb48e2612430b6eb81062609ea406970e83e0"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_077.json",
+      "sha256": "582080b9fc08d390ceef12df648a799192139d607af145322de0b070a60e157b"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_078.json",
+      "sha256": "1f4d6e2ef77edb7d8b1cf582a0b33daa0d08a5c02fbd162501f6ab73711cfda8"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_079.json",
+      "sha256": "b456f54bdc0549f2846de9738ef6aba6c8b750e3ea567919ed56e4563ffba21f"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_080.json",
+      "sha256": "b9e6d2d0d606725c2807d63a5d0531300071ef19c583eb09f852a9a877d67764"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_081.json",
+      "sha256": "0e6c7f7e350a90c6f2d872b3228ecdc1fc02a6211d2f3e5b8644f8d58bc62b8d"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_082.json",
+      "sha256": "3e0f987dee1851cfef37bdcd072bf16793f9fbb7bda49f750b5b42231790198b"
+    },
+    {
+      "relative_source": "portability_imr90_2026-10-28/site_analysis/site_083.json",
+      "sha256": "2697d9665834826a03242f481acf97e8afc4d22ffc57684fc34c18ff909082ea"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "analysis_source/scripts/analyze_spatial_maps.py",
+      "bundle_sha256": "929df5588fd2cb4ed7e0dc385630a828e117216d7bd24744c29ccfb4e9423f78",
+      "relative_source": "scripts/analyze_spatial_maps.py",
+      "source_sha256": "929df5588fd2cb4ed7e0dc385630a828e117216d7bd24744c29ccfb4e9423f78"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "analysis_source/anchor_method/certify_increasing_branch.py",
+      "bundle_sha256": "21ba5d71ab04eb1bc6607a2f556b3b8284813618f8b0cc2e797587a3f2bee807",
+      "relative_source": "anchor_method/certify_increasing_branch.py",
+      "source_sha256": "21ba5d71ab04eb1bc6607a2f556b3b8284813618f8b0cc2e797587a3f2bee807"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "analysis_source/anchor_method/prospective_engine.py",
+      "bundle_sha256": "edf4895cecf0f7ad30c84df6c21fb416c79b984ccdb451f97b5d4112b2359a0d",
+      "relative_source": "anchor_method/prospective_engine.py",
+      "source_sha256": "edf4895cecf0f7ad30c84df6c21fb416c79b984ccdb451f97b5d4112b2359a0d"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "analysis_source/portability/scripts/phased_engine.py",
+      "bundle_sha256": "9139528795303ccede7fcd9c3dd73c098e29ffec2ad51e1330a02441c490a761",
+      "relative_source": "portability_imr90_2026-10-28/scripts/phased_engine.py",
+      "source_sha256": "9139528795303ccede7fcd9c3dd73c098e29ffec2ad51e1330a02441c490a761"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "analysis_source/portability/scripts/test_phased_engine.py",
+      "bundle_sha256": "cc5648d44566cd6f645a2d61d5202ef094ca55014089e3ebdd4be4f625b28a1d",
+      "relative_source": "portability_imr90_2026-10-28/scripts/test_phased_engine.py",
+      "source_sha256": "cc5648d44566cd6f645a2d61d5202ef094ca55014089e3ebdd4be4f625b28a1d"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "analysis_source/portability/scripts/summarize_portability.py",
+      "bundle_sha256": "716927c5d0ff18eb34948b5bb0022a6a970f3edd4a812a35b9d4fbd285d6c0af",
+      "relative_source": "portability_imr90_2026-10-28/scripts/summarize_portability.py",
+      "source_sha256": "716927c5d0ff18eb34948b5bb0022a6a970f3edd4a812a35b9d4fbd285d6c0af"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "analysis_source/portability/scripts/compare_reference_replay.py",
+      "bundle_sha256": "b61e110337d2efdbe02344e340a6381663f3bd98198b3ff41e2fcf41e7330183",
+      "relative_source": "portability_imr90_2026-10-28/scripts/compare_reference_replay.py",
+      "source_sha256": "b61e110337d2efdbe02344e340a6381663f3bd98198b3ff41e2fcf41e7330183"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "analysis_source/portability/scripts/diagnose_nonsaturation.py",
+      "bundle_sha256": "3e1fde642e1f266e5982458008bed963811baadc7d371638ec57055dc00f0bad",
+      "relative_source": "portability_imr90_2026-10-28/scripts/diagnose_nonsaturation.py",
+      "source_sha256": "3e1fde642e1f266e5982458008bed963811baadc7d371638ec57055dc00f0bad"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "analysis_source/portability/scripts/audit_portability_acquisition.py",
+      "bundle_sha256": "268472e1baa9571871e3a362b2bbde20f450fd0b4d0ed44ac699299977208b35",
+      "relative_source": "portability_imr90_2026-10-28/scripts/audit_portability_acquisition.py",
+      "source_sha256": "268472e1baa9571871e3a362b2bbde20f450fd0b4d0ed44ac699299977208b35"
+    },
+    {
+      "adaptation": "Replace author-specific project/credential location with environment variables; add output/legacy environment overrides. Historical freeze cannot authorize this different script hash; a fresh acquisition must freeze it explicitly.",
+      "bundle_file": "analysis_source/portability/scripts/acquire_portability.py",
+      "bundle_sha256": "e9eec7bee16530d82d0d03316114b70611afe92480194ab8951978d5e28c0821",
+      "relative_source": "portability_imr90_2026-10-28/scripts/acquire_portability.py",
+      "source_sha256": "77dfe0ff8bace9aea4189b956e82b4f1acaf35afe72fa481ba01fbe0d79dd108"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "provenance/PORTABILITY_PROTOCOL_FROZEN.md",
+      "bundle_sha256": "56c5ae0650a02f05384e1d1cbc19f894d957d155f196a6db5432f9f36e10aa43",
+      "relative_source": "portability_imr90_2026-10-28/PORTABILITY_PROTOCOL_FROZEN.md",
+      "source_sha256": "56c5ae0650a02f05384e1d1cbc19f894d957d155f196a6db5432f9f36e10aa43"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "provenance/POST_RESULT_PATH_PROTOCOL.md",
+      "bundle_sha256": "8b7c695ed4698cf0a6dedd74c27ac5c5933f3f21315fcc281a23b1f82e5622fb",
+      "relative_source": "portability_imr90_2026-10-28/POST_RESULT_PATH_PROTOCOL.md",
+      "source_sha256": "8b7c695ed4698cf0a6dedd74c27ac5c5933f3f21315fcc281a23b1f82e5622fb"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "provenance/candidate_cohort.json",
+      "bundle_sha256": "b58bcab74e54c5f1626f9e5a3d07d87665b2e10af6553933d1a488e2a06cb34c",
+      "relative_source": "portability_imr90_2026-10-28/candidate_cohort.json",
+      "source_sha256": "b58bcab74e54c5f1626f9e5a3d07d87665b2e10af6553933d1a488e2a06cb34c"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "provenance/midpoint_selection.json",
+      "bundle_sha256": "516ba948e6782dcd3d1430779413b26ec7793f3464c53f109de05bb407161876",
+      "relative_source": "portability_imr90_2026-10-28/midpoint_selection.json",
+      "source_sha256": "516ba948e6782dcd3d1430779413b26ec7793f3464c53f109de05bb407161876"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "provenance/freeze_record.json",
+      "bundle_sha256": "e7fb2e455e0055ce6d39aae992fdfd3e78feb0466b8c2592fa6d0448872faa23",
+      "relative_source": "portability_imr90_2026-10-28/freeze_record.json",
+      "source_sha256": "e7fb2e455e0055ce6d39aae992fdfd3e78feb0466b8c2592fa6d0448872faa23"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "provenance/analysis_code_freeze.json",
+      "bundle_sha256": "77eacd629a33d01507ce3fa6b2989318960b8f335dd733622189693d79f016b9",
+      "relative_source": "portability_imr90_2026-10-28/analysis_code_freeze.json",
+      "source_sha256": "77eacd629a33d01507ce3fa6b2989318960b8f335dd733622189693d79f016b9"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "provenance/native_predictions_lock.json",
+      "bundle_sha256": "cc6ddc14d531f8e95974dbb69ae1b8dc3b7fdf73ed0f4201279836e1b52cef40",
+      "relative_source": "portability_imr90_2026-10-28/native_predictions_lock.json",
+      "source_sha256": "cc6ddc14d531f8e95974dbb69ae1b8dc3b7fdf73ed0f4201279836e1b52cef40"
+    },
+    {
+      "adaptation": null,
+      "bundle_file": "requirements_final.lock",
+      "bundle_sha256": "3d0f49de6f7c1a10ae50e7f68fc82b93cfdbfdbc129c9ff390ec9d881ab3c4c5",
+      "relative_source": "full_validation_2026-10-28/reproduction/requirements_final.lock",
+      "source_sha256": "3d0f49de6f7c1a10ae50e7f68fc82b93cfdbfdbc129c9ff390ec9d881ab3c4c5"
+    },
+    {
+      "adaptation": "Remove machine-specific generation-command comment only.",
+      "bundle_file": "requirements.hashed.lock",
+      "bundle_sha256": "568ad1a9d3b444f6963b52ce835a6e5f7dfee1c8698b9df4bd301b922ba98b07",
+      "relative_source": "full_validation_2026-10-28/reproduction/requirements.hashed.lock",
+      "source_sha256": "6f656624128a27c4de675c319d6829e2e0705dd39cb4d991f469ce65952fdf20"
+    }
+  ]
+}

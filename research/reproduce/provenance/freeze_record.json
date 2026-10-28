@@ -1,0 +1,20 @@
+{
+  "frozen_at_utc": "2026-10-28T19:27:07.692579+00:00",
+  "protocol_file": "PORTABILITY_PROTOCOL_FROZEN.md",
+  "new_portability_prediction_calls_before_freeze": 0,
+  "decision": "IMR90 paired cross-track portability, all84sites; contemporaneousGM12878control; phase-locked native predictions; 17extra leaders across4genes operational benchmark",
+  "files": {
+    "PORTABILITY_PROTOCOL_FROZEN.md": "56c5ae0650a02f05384e1d1cbc19f894d957d155f196a6db5432f9f36e10aa43",
+    "candidate_cohort.json": "b58bcab74e54c5f1626f9e5a3d07d87665b2e10af6553933d1a488e2a06cb34c",
+    "midpoint_selection.json": "516ba948e6782dcd3d1430779413b26ec7793f3464c53f109de05bb407161876",
+    "contact_track_inventory_prior.json": "2831d9dcc22b70dd155f1b56e0a265beb56a2dca84dfbfa7f8915d1cf9a7d526",
+    "scripts/acquire_portability.py": "77dfe0ff8bace9aea4189b956e82b4f1acaf35afe72fa481ba01fbe0d79dd108"
+  },
+  "external_scientific_sources": {
+    "scripts/analyze_spatial_maps.py": "929df5588fd2cb4ed7e0dc385630a828e117216d7bd24744c29ccfb4e9423f78",
+    "anchor_method/certify_increasing_branch.py": "21ba5d71ab04eb1bc6607a2f556b3b8284813618f8b0cc2e797587a3f2bee807",
+    "anchor_method/native_interval_ranking.py": "16f5f9439efa77174f3747ee4d70338f936c47258fb50421850f5ba52c4a211f",
+    "full_validation_2026-10-28/proposed/PROPOSED_contact_channel_3d_VALIDATED.md": "57f31d65b5fcb857e2994c95da66b149b1bfa6885bcdbc76baa6896a79d9d0fe"
+  },
+  "independent_design_review": "GPT-6 Astra: no blocking flaw; clarified complete-cohort criterion and structural monotonicity before freeze"
+}

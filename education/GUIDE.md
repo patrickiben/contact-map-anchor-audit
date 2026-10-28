@@ -18,7 +18,7 @@ Keep reference and alternate bins, masks, track and filtration conventions align
 
 **Boundary:** An abstract degree-one feature is not automatically a located chromatin loop.
 
-Source: author-review manuscript lines 32–50; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 35–42; see [source map](SOURCE_MAP.json).
 
 ## A stable distance can still change a rank
 
@@ -34,7 +34,7 @@ Ranks answer a different question. If two scores are tied, even a small differen
 
 **Boundary:** Mathematical stability does not establish biological calibration.
 
-Source: author-review manuscript lines 52–56; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 35–42; see [source map](SOURCE_MAP.json).
 
 ## Move the origin, preserve interval lengths
 
@@ -46,11 +46,13 @@ Let delta be the alternate mean minus the reference mean. The audit computes the
 
 The distance can change by at most the absolute shift. Endpoint bounds enclose the intervening path. Exact equality at that bound forces a straight path; a small floating-point residual alone does not prove exact equality.
 
+Two information settings matter. Whole-path envelopes use both native and centered endpoints after evaluation. The prospective endpoint audit instead uses native diagrams, native distances and the declared shifts before centered matching; those endpoint decisions do not automatically protect the whole path.
+
 **Try it:** Use reference (0,4), alternate (1,5), and shift 0.25. Check that the lifetime stays 4 while distance rises from 1 to 1.25.
 
 **Boundary:** Numerical near-saturation is not a formal certificate for unseen higher-precision model outputs.
 
-Source: author-review manuscript lines 59–110; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 43–76; see [source map](SOURCE_MAP.json).
 
 ## Leave uncertain winners unresolved
 
@@ -62,11 +64,13 @@ Bounds can identify possible winners, guaranteed members of the top set, and gua
 
 A Hausdorff witness is a lower bound obtained from nearest-point or diagonal distances. It can strengthen a decision without another full matching. It can miss multiplicity constraints, so it is not a replacement for bottleneck distance.
 
+In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leaders and strengthened bounds identified 49: 42 additional decisions across six genes, with zero observed contradictions and 35 unresolved sites. The practical numerical allowance is not a full validated-arithmetic enclosure.
+
 **Try it:** Increase the tie tolerance in the lab. Explain why a previously unique leader can become unresolved without changing any diagram.
 
 **Boundary:** A unique maximum is not evidence that the selected allele is clinically correct.
 
-Source: author-review manuscript lines 111–132; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 77–159; see [source map](SOURCE_MAP.json).
 
 ## Interpret the earlier AVI result precisely
 
@@ -82,7 +86,7 @@ Some reported small adjusted values came from zero exceedances in a finite simul
 
 **Boundary:** Neither background-distance ranking nor null-relative enrichment supplies an independently validated pathogenic-versus-benign classifier.
 
-Source: author-review manuscript lines 133–161; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 195–202; see [source map](SOURCE_MAP.json).
 
 ## Separate exact arithmetic from a scientific null
 
@@ -98,7 +102,7 @@ No discovery primary or sensitivity test survived Holm adjustment across the six
 
 **Boundary:** Null reference intervals are not biological effect confidence intervals.
 
-Source: author-review manuscript lines 162–203; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 117–128; see [source map](SOURCE_MAP.json).
 
 ## Find the mechanism before celebrating the ranking
 
@@ -110,11 +114,13 @@ Centering resolved 72 native ties while preserving all 45 strict native leaders.
 
 Adding the absolute mean shift to the native distance reconstructed many centered top sets, but not all. Two diagrams can share the same native distance and shift while responding in opposite directions.
 
+The earlier GM12878 saturation pattern did not universally transfer: 249 of 252 IMR-90 comparisons passed and three RB1 comparisons failed. Both simple and strengthened bounds already abstained at all three sites. The distinct witness gain is 42 decisions elsewhere, not unique detection of these exceptions. Exploratory direct samples showed two turning paths and one effectively flat path.
+
 **Try it:** Compare alternates (1,5) and (-1,3) against reference (0,4), with the same positive shift. Why does the scalar native distance not tell you the direction?
 
 **Boundary:** Local saturation is ordinary on a nonflat piece of a finite matching problem; its frequency is not a new generic theorem.
 
-Source: author-review manuscript lines 204–211; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 160–194; see [source map](SOURCE_MAP.json).
 
 ## Ask what actually replicated
 
@@ -126,11 +132,15 @@ All 66 native ties became unique maxima, and all 18 strict native leaders were p
 
 The stronger witness bounds identified additional endpoint leaders beyond the simple margin check. This measures decision yield. A runtime speedup was not benchmarked, and no new confirmatory clinical-enrichment test was added.
 
+IMR-90 reused the same 84 replication sites and the same AlphaGenome architecture. Its protocol preceded acquisition; native-only predictions were locked before centered distances were evaluated. GM12878 witness increments had been compared after those outcomes. A second output track adds neither independent loci nor an independent model.
+
+IMR-90 selected credit rose descriptively from 0.335317 to 0.398810, whereas GM12878 replication credit fell. Native and centered RMS credits were 0.500000 and 0.517857 in IMR-90 and 0.444444 and 0.460317 in GM12878; all exceeded centered H1 in the corresponding track. More unique rankings did not establish clinical superiority.
+
 **Try it:** Give a one-sentence conclusion that includes both tie resolution and the credit decrease.
 
 **Boundary:** Eighty-four overlapping windows do not represent 84 independent genomic regions.
 
-Source: author-review manuscript lines 212–252; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 98–173; see [source map](SOURCE_MAP.json).
 
 ## Match the conclusion to numerical resolution
 
@@ -146,7 +156,7 @@ The paper reports numerical witnesses using practical allowances. It does not pr
 
 **Boundary:** Reproducing floating-point outputs does not reveal the model’s unexposed internal precision.
 
-Source: author-review manuscript lines 253–266; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 129–136; see [source map](SOURCE_MAP.json).
 
 ## Use reproducibility to answer the right question
 
@@ -158,11 +168,13 @@ This toolkit adds reusable software and teaching examples. Its presets are synth
 
 The research contribution combines a specified preprocessing path, ranking bounds, useful witnesses, explicit unresolved cases and measured new-locus behavior. It is not a new generic distance, a physical loop detector or a clinical prediction tool.
 
+The full v0.2.0 study archive is publicly released with the manuscript, code and verification records. Toolkit code is MIT-licensed; model outputs retain separate provider terms and attribution. Public release does not establish clinical validity, author journal approval or human learner transfer.
+
 **Try it:** Describe one independent measurement that would be needed to connect the audit to a real structural chromosome change.
 
 **Boundary:** The practice quiz has not been validated with human learners and does not replace author review.
 
-Source: author-review manuscript lines 267–288; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 203–274; see [source map](SOURCE_MAP.json).
 
 ## Glossary
 
@@ -188,5 +200,6 @@ Source: author-review manuscript lines 267–288; see [source map](SOURCE_MAP.js
 - Synthetic presets are teaching examples, not genomic observations.
 - The toolkit does not infer pathogenicity or locate chromatin loops.
 - Numerical near-saturation is not formal real-arithmetic certification.
-- Aggregate study results concern predicted maps on one selected track and overlapping loci.
+- Aggregate study results concern two output tracks of one model, reusing the same 84 sites in the paired test.
 - The interactive quiz is practice with answer feedback, not a validated human transfer assessment.
+- Public release authorization is not a human learner or author journal-approval verdict.

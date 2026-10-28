@@ -1,0 +1,16 @@
+# Scientific validation and release checks
+
+28 October 2026. This record separates scientific calculations, independent checks and publication packaging. It does not imply journal acceptance, author submission approval or human learner certification.
+
+- The earlier fresh-environment replay covered all 204 GM12878 spatial sites and independently checked sixteen finite-label tests. Retained historical outputs also regenerated under their recorded seeds.
+- The paired IMR-90 protocol preceded acquisition. All 84 native-only site predictions were locked before centered matching. All 252 calls succeeded; contemporary GM12878 outputs exactly matched the historical comparator, and each paired IMR-90 map differed.
+- Independent brute-force calculation reproduced every one of 252 Hausdorff witnesses. A full unmodified reference-engine replay reproduced 336 diagrams and all 3,696 shared scientific comparisons. This shares the PH kernel; it is not another model or a second PH implementation.
+- The new portable scalar verifier reconstructs 495 aggregate comparisons, all three tolerances, gene summaries, leave-one-gene-out summaries and exact rational credits. Four damaging mutations were rejected. It does not recompute the scalar inputs from maps.
+- Nine phased-engine controls and twelve summary controls pass in the portable source layout. The acquisition adapter was checked without making API requests.
+- The complete public archive preserves the scientific input files, declares metadata/path adaptations, includes the provider terms and notices, and was independently checked by streaming every manifest-listed member. The three-part reassembly reproduced the whole ZIP hash and correctly refused an overwrite. Packing is not another full scientific rerun.
+- Independent GPT-6 Astra review found no remaining major source-level scientific blocker within its reading scope. The full manuscript and supplementary PDFs were visually inspected. Source/formula repairs preserved the findings and negative controls.
+- The updated study guide and complete companion cover the current main manuscript and all six supplements. Source/coverage and producer checks passed. All 35 teaching PDF pages were inspected. Human learner assessment remains unperformed.
+
+The primary portability result is **7→49 of 84 leaders, +42 across six genes, zero observed contradictions and 35 unresolved sites**. Saturation was 249/252, so the earlier universal pattern failed. Both simple and strengthened bounds abstained at all exceptional sites. These findings do not establish independent-sample confidence bounds or clinical correctness.
+
+See [the main article](manuscript.pdf), [Additional file 4](Additional_file_4.pdf), [Additional file 6](Additional_file_6.pdf), [compact verification outputs](reproduce/DERIVED_VERIFICATION.json) and [education checks](../education/VALIDATION.json). The complete release contains the underlying saved inputs and fuller dated verification records. The exact manuscript and release artifact hashes are recorded in `ARTIFACTS.json` and the release checksums.

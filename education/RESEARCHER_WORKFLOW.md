@@ -43,6 +43,8 @@ python -m anchor_audit path/to/site.json --output path/to/report.json
 
 The command also accepts a batch object containing a `sites` array. Use the command's `--help` output for path resolution, size limits, path sampling, tolerance and numerical-allowance options. Treat input and output as different files.
 
+For a prospective study, save and hash native-only decisions before evaluating centered distances. The research IMR-90 protocol did this; a browser demonstration of both endpoints is not itself a prospectively locked experiment. Use both-endpoint envelopes for the retrospective whole-path audit and native-only intervals for prospective centered-leader decisions.
+
 ## 4. Interpret the report
 
 | Report element | What it answers | What it does not establish |
@@ -71,3 +73,5 @@ For larger cohorts, report the sites left unresolved, strict leaders replaced, t
 Synthetic presets verify and explain mathematical behavior. The study panel reports aggregate results from selected predicted maps. User imports are a third evidence source and must carry their own provenance.
 
 A reusable computation helps make the method inspectable. It does not establish independence from model training, biological exchangeability, calibrated clinical performance or experimental chromosome architecture. Those require different evidence.
+
+The paired IMR-90 study illustrates why abstention and added coverage need separate reporting: both methods abstained at all three saturation-exception sites, while strengthened bounds added 42 decisions elsewhere. The full v0.2.0 study archive supplies the map inputs separately from small scalar-verification records, with provider output notices retained.

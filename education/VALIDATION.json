@@ -9,7 +9,7 @@
   },
   "source_file_checked": true,
   "research_sources_checked": true,
-  "aggregate_value_checks": 26,
+  "aggregate_value_checks": 39,
   "human_learner_validation": "NOT_PERFORMED",
   "author_approval": "NOT_CERTIFIED",
   "scope": "Source/coverage/value/hash checks; no educational efficacy or formal theorem certification.",
@@ -32,6 +32,10 @@
     },
     {
       "name": "invented_human_approval",
+      "detected": true
+    },
+    {
+      "name": "removed_portability_boundary",
       "detected": true
     },
     {

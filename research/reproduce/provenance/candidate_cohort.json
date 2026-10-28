@@ -1,0 +1,5720 @@
+{
+  "status": "design_candidate_pending_root_confirmation_no_new_predictions",
+  "created_at_utc": "2026-10-28T16:28:40.004548+00:00",
+  "schema_version": 1,
+  "assembly": "GRCh38",
+  "n_sites": 84,
+  "n_variant_calls": 252,
+  "n_genes": 7,
+  "primary_track": {
+    "name": "4dn:4DNFIXP4QG5B",
+    "strand": ".",
+    "Assay title": "in situ Hi-C",
+    "ontology_curie": "EFO:0002784",
+    "biosample_name": "GM12878",
+    "biosample_type": "cell_line",
+    "data_source": "4dnucleome"
+  },
+  "second_track": null,
+  "second_track_reason": "K562 absent from cached 28-track metadata; no replacement selected",
+  "model_alias": "ALL_FOLDS",
+  "immutable_model_revision_available": false,
+  "bin_resolution_bp": 2048,
+  "window_bp": 1048576,
+  "n_bins": 512,
+  "coordinate_convention": "variant position is 1-based; windows and bin coordinates are 0-based half-open",
+  "sampling": {
+    "namespace": "contact3d-anchor-replication-v1|",
+    "hash_input": "namespace + chr:position_1based:REF",
+    "per_gene_n": 12,
+    "allocation": "one per nonempty selected-allele-consequence stratum; remaining slots Hamilton proportional to stratum residual capacity n-1; fractional ties alphabetical",
+    "within_stratum": "ascending full SHA256 hex, site_id secondary",
+    "all_three_alternates": true,
+    "outcome_based_selection": false
+  },
+  "source_sha256": {
+    "panel": "940a046caefd3cfb0b8c04b2425509058ad1480e02fb0a33896b2f2c3f1aee73",
+    "old_manifest": "b0310ff156f99ff2cf22c74e23ec8d505a54db9852a91f5cdc2821258928c44b",
+    "metadata": "a9fad0db3d10d860c6e0186d6256689c8db492f8f7e1e66d46e12d8dfcba4d94"
+  },
+  "design_script_sha256": "c98eb3fa3c4ab66b0f5ff6afce9b5630814d143df92a8972055f5ed9d57000e5",
+  "eligible_n": 1713,
+  "exclusions": {
+    "not_single_plp": 431
+  },
+  "gene_summary": {
+    "ASS1": {
+      "eligible_n": 108,
+      "selected_n": 12,
+      "eligible_consequence_counts": {
+        "canonical_splice": 19,
+        "intronic": 3,
+        "missense": 55,
+        "nonsense": 31
+      },
+      "selected_consequence_counts": {
+        "canonical_splice": 3,
+        "intronic": 1,
+        "missense": 5,
+        "nonsense": 3
+      },
+      "eligible_position_range_1based": [
+        130452268,
+        130500974
+      ],
+      "selected_position_range_1based": [
+        130454375,
+        130494914
+      ],
+      "all_windows_common_intersection_bp": 1008037
+    },
+    "BAP1": {
+      "eligible_n": 104,
+      "selected_n": 12,
+      "eligible_consequence_counts": {
+        "canonical_splice": 18,
+        "intronic": 1,
+        "missense": 16,
+        "nonsense": 67,
+        "start_lost": 1,
+        "stop_lost": 1
+      },
+      "selected_consequence_counts": {
+        "canonical_splice": 2,
+        "intronic": 1,
+        "missense": 2,
+        "nonsense": 5,
+        "start_lost": 1,
+        "stop_lost": 1
+      },
+      "eligible_position_range_1based": [
+        52402290,
+        52409876
+      ],
+      "selected_position_range_1based": [
+        52402290,
+        52409876
+      ],
+      "all_windows_common_intersection_bp": 1040990
+    },
+    "BRCA2": {
+      "eligible_n": 806,
+      "selected_n": 12,
+      "eligible_consequence_counts": {
+        "canonical_splice": 17,
+        "intronic": 23,
+        "missense": 57,
+        "nonsense": 707,
+        "start_lost": 1,
+        "synonymous": 1
+      },
+      "selected_consequence_counts": {
+        "canonical_splice": 1,
+        "intronic": 1,
+        "missense": 2,
+        "nonsense": 6,
+        "start_lost": 1,
+        "synonymous": 1
+      },
+      "eligible_position_range_1based": [
+        32315669,
+        32398432
+      ],
+      "selected_position_range_1based": [
+        32316461,
+        32371016
+      ],
+      "all_windows_common_intersection_bp": 994021
+    },
+    "HFE": {
+      "eligible_n": 20,
+      "selected_n": 12,
+      "eligible_consequence_counts": {
+        "canonical_splice": 3,
+        "missense": 2,
+        "nonsense": 15
+      },
+      "selected_consequence_counts": {
+        "canonical_splice": 2,
+        "missense": 2,
+        "nonsense": 8
+      },
+      "eligible_position_range_1based": [
+        26090930,
+        26093125
+      ],
+      "selected_position_range_1based": [
+        26090975,
+        26093118
+      ],
+      "all_windows_common_intersection_bp": 1046433
+    },
+    "RB1": {
+      "eligible_n": 219,
+      "selected_n": 12,
+      "eligible_consequence_counts": {
+        "canonical_splice": 33,
+        "intronic": 26,
+        "missense": 19,
+        "nonsense": 136,
+        "start_lost": 1,
+        "synonymous": 2,
+        "utr": 2
+      },
+      "selected_consequence_counts": {
+        "canonical_splice": 2,
+        "intronic": 2,
+        "missense": 1,
+        "nonsense": 4,
+        "start_lost": 1,
+        "synonymous": 1,
+        "utr": 1
+      },
+      "eligible_position_range_1based": [
+        48303720,
+        48476845
+      ],
+      "selected_position_range_1based": [
+        48303721,
+        48465370
+      ],
+      "all_windows_common_intersection_bp": 886927
+    },
+    "SCN5A": {
+      "eligible_n": 260,
+      "selected_n": 12,
+      "eligible_consequence_counts": {
+        "canonical_splice": 42,
+        "intronic": 2,
+        "missense": 83,
+        "nonsense": 130,
+        "synonymous": 3
+      },
+      "selected_consequence_counts": {
+        "canonical_splice": 2,
+        "intronic": 1,
+        "missense": 3,
+        "nonsense": 5,
+        "synonymous": 1
+      },
+      "eligible_position_range_1based": [
+        38550472,
+        38633253
+      ],
+      "selected_position_range_1based": [
+        38551076,
+        38622414
+      ],
+      "all_windows_common_intersection_bp": 977238
+    },
+    "TSC1": {
+      "eligible_n": 196,
+      "selected_n": 12,
+      "eligible_consequence_counts": {
+        "canonical_splice": 25,
+        "intronic": 8,
+        "missense": 14,
+        "nonsense": 149
+      },
+      "selected_consequence_counts": {
+        "canonical_splice": 2,
+        "intronic": 1,
+        "missense": 2,
+        "nonsense": 7
+      },
+      "eligible_position_range_1based": [
+        132897293,
+        132928866
+      ],
+      "selected_position_range_1based": [
+        132897421,
+        132925642
+      ],
+      "all_windows_common_intersection_bp": 1020355
+    }
+  },
+  "selected_consequence_counts": {
+    "canonical_splice": 14,
+    "missense": 17,
+    "nonsense": 38,
+    "intronic": 7,
+    "stop_lost": 1,
+    "start_lost": 3,
+    "synonymous": 3,
+    "utr": 1
+  },
+  "selected_consequence_matched_allele_counts": {
+    "3": 43,
+    "1": 33,
+    "2": 8
+  },
+  "window_audit": {
+    "overlap_pairs_with_original120": 0,
+    "within_new_overlap_pairs": 462,
+    "cross_gene_overlap_pairs": 0,
+    "within_gene_pairs_expected": 462
+  },
+  "reference_check": "all1713 eligible sites match local GRCh38 FASTA; windows in chromosome bounds",
+  "sites": [
+    {
+      "site_id": "chr9:130454375:T",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130454375,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:130454375:T>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130454375:T>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:130454375:T>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "3374960",
+        "gene": "ASS1",
+        "ref": "T",
+        "alt": "C",
+        "name": "NM_054012.4(ASS1):c.174+2T>C",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 174,
+        "c_offset": 2,
+        "c_ref": "T",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 129930086,
+      "window_end_0based_exclusive": 130978662,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0c9c7a1ec8b9036b50b65d9f83474902b0db434ed8773cb1729adbf15b6b9f63",
+      "stratum_pool_n": 19,
+      "stratum_selected_n": 3,
+      "sampling_fraction": 0.15789473684210525,
+      "inverse_sampling_fraction": 6.333333333333333,
+      "site_index": 0
+    },
+    {
+      "site_id": "chr9:130458483:G",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130458483,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:130458483:G>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:130458483:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130458483:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "265960",
+        "gene": "ASS1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_054012.4(ASS1):c.257G>A (p.Arg86His)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 257,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 6
+      },
+      "window_start_0based": 129934194,
+      "window_end_0based_exclusive": 130982770,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0c02a3687521cf27557c8d1cc8bbe33d88bc0819e49ca0f772572813544c991a",
+      "stratum_pool_n": 55,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.09090909090909091,
+      "inverse_sampling_fraction": 11.0,
+      "site_index": 1
+    },
+    {
+      "site_id": "chr9:130464120:C",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130464120,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:130464120:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130464120:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130464120:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1460356",
+        "gene": "ASS1",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_054012.4(ASS1):c.373C>T (p.Gln125Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 373,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 129939831,
+      "window_end_0based_exclusive": 130988407,
+      "variant_bin_0based": 256,
+      "hash_sha256": "36c698fa3c423593e54aacbfcfbde4e5a1f357dbbcc4cc74ce6f0dd69b9f0d64",
+      "stratum_pool_n": 31,
+      "stratum_selected_n": 3,
+      "sampling_fraction": 0.0967741935483871,
+      "inverse_sampling_fraction": 10.333333333333334,
+      "site_index": 2
+    },
+    {
+      "site_id": "chr9:130470891:C",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130470891,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:130470891:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130470891:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130470891:C>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "3256953",
+        "gene": "ASS1",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_054012.4(ASS1):c.553C>T (p.Leu185Phe)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 553,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 129946602,
+      "window_end_0based_exclusive": 130995178,
+      "variant_bin_0based": 256,
+      "hash_sha256": "1138f5816999782aad8a890a8da55c2522591638b11c22b7a9005c05f9498d66",
+      "stratum_pool_n": 55,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.09090909090909091,
+      "inverse_sampling_fraction": 11.0,
+      "site_index": 3
+    },
+    {
+      "site_id": "chr9:130470905:G",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130470905,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:130470905:G>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130470905:G>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130470905:G>T",
+          "alt": "T",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "379598",
+        "gene": "ASS1",
+        "ref": "G",
+        "alt": "T",
+        "name": "NM_054012.4(ASS1):c.566+1G>T",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 566,
+        "c_offset": 1,
+        "c_ref": "G",
+        "c_alt": "T",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 129946616,
+      "window_end_0based_exclusive": 130995192,
+      "variant_bin_0based": 256,
+      "hash_sha256": "2d72cd579cfd9f5068e8feb9601de9be72cd9f7e935c3a706cb61a2f3eed8f6b",
+      "stratum_pool_n": 19,
+      "stratum_selected_n": 3,
+      "sampling_fraction": 0.15789473684210525,
+      "inverse_sampling_fraction": 6.333333333333333,
+      "site_index": 4
+    },
+    {
+      "site_id": "chr9:130470906:T",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130470906,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:130470906:T>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130470906:T>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:130470906:T>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "4353084",
+        "gene": "ASS1",
+        "ref": "T",
+        "alt": "C",
+        "name": "NM_054012.4(ASS1):c.566+2T>C",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 566,
+        "c_offset": 2,
+        "c_ref": "T",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 2
+      },
+      "window_start_0based": 129946617,
+      "window_end_0based_exclusive": 130995193,
+      "variant_bin_0based": 256,
+      "hash_sha256": "39667c5986b873019398115d3d5e36e980193890dc3da9aeb43d2c967424f845",
+      "stratum_pool_n": 19,
+      "stratum_selected_n": 3,
+      "sampling_fraction": 0.15789473684210525,
+      "inverse_sampling_fraction": 6.333333333333333,
+      "site_index": 5
+    },
+    {
+      "site_id": "chr9:130476904:C",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130476904,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:130476904:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130476904:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130476904:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "2860934",
+        "gene": "ASS1",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_054012.4(ASS1):c.631C>T (p.Gln211Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 631,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 129952615,
+      "window_end_0based_exclusive": 131001191,
+      "variant_bin_0based": 256,
+      "hash_sha256": "2af3b10a780a9ae2383a76b5395c33648072581f063ed301fd58e984c2b5c4ae",
+      "stratum_pool_n": 31,
+      "stratum_selected_n": 3,
+      "sampling_fraction": 0.0967741935483871,
+      "inverse_sampling_fraction": 10.333333333333334,
+      "site_index": 6
+    },
+    {
+      "site_id": "chr9:130489343:G",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130489343,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 2,
+      "alternatives": [
+        {
+          "id": "chr9:130489343:G>A",
+          "alt": "A",
+          "consequence": "synonymous",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130489343:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:130489343:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "4062535",
+        "gene": "ASS1",
+        "ref": "G",
+        "alt": "C",
+        "name": "NM_054012.4(ASS1):c.849G>C (p.Glu283Asp)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 849,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 129965054,
+      "window_end_0based_exclusive": 131013630,
+      "variant_bin_0based": 256,
+      "hash_sha256": "06d6338f517d3a38ade499fbf5b45716941b0dcba8df2ace8aed7aa932bdc2d1",
+      "stratum_pool_n": 55,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.09090909090909091,
+      "inverse_sampling_fraction": 11.0,
+      "site_index": 7
+    },
+    {
+      "site_id": "chr9:130489348:C",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130489348,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:130489348:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:130489348:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130489348:C>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "3596480",
+        "gene": "ASS1",
+        "ref": "C",
+        "alt": "A",
+        "name": "NM_054012.4(ASS1):c.854C>A (p.Pro285Gln)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 854,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "A",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 129965059,
+      "window_end_0based_exclusive": 131013635,
+      "variant_bin_0based": 256,
+      "hash_sha256": "076f8df533797b39d6f32dc637e0baeff3cbeceb2383e53e059ef2eb332230cf",
+      "stratum_pool_n": 55,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.09090909090909091,
+      "inverse_sampling_fraction": 11.0,
+      "site_index": 8
+    },
+    {
+      "site_id": "chr9:130489366:A",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130489366,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:130489366:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:130489366:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130489366:A>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "4709708",
+        "gene": "ASS1",
+        "ref": "A",
+        "alt": "C",
+        "name": "NM_054012.4(ASS1):c.872A>C (p.Tyr291Ser)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 872,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 129965077,
+      "window_end_0based_exclusive": 131013653,
+      "variant_bin_0based": 256,
+      "hash_sha256": "1605f2f5699cfe25331996077a60b33f9d47ebdc041e8d3e1fe91b72badf7e09",
+      "stratum_pool_n": 55,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.09090909090909091,
+      "inverse_sampling_fraction": 11.0,
+      "site_index": 9
+    },
+    {
+      "site_id": "chr9:130489469:G",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130489469,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "intronic",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:130489469:G>A",
+          "alt": "A",
+          "consequence": "intronic",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:130489469:G>C",
+          "alt": "C",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130489469:G>T",
+          "alt": "T",
+          "consequence": "intronic",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "intronic",
+      "clinvar_record": {
+        "variation_id": "265962",
+        "gene": "ASS1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_054012.4(ASS1):c.970+5G>A",
+        "name_class": "other_intronic",
+        "name_detail": "cds_intron",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 970,
+        "c_offset": 5,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 13
+      },
+      "window_start_0based": 129965180,
+      "window_end_0based_exclusive": 131013756,
+      "variant_bin_0based": 256,
+      "hash_sha256": "32346bf2e3c8da7016ab1f9dbddd0a68cda2d5f3a9800e1d2f37ac426a791fbe",
+      "stratum_pool_n": 3,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 0.3333333333333333,
+      "inverse_sampling_fraction": 3.0,
+      "site_index": 10
+    },
+    {
+      "site_id": "chr9:130494914:A",
+      "gene": "ASS1",
+      "chromosome": "chr9",
+      "position_1based": 130494914,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:130494914:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130494914:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:130494914:A>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_054012.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1210355",
+        "gene": "ASS1",
+        "ref": "A",
+        "alt": "T",
+        "name": "NM_054012.4(ASS1):c.1018A>T (p.Lys340Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_054012.4",
+        "c_prefix": "",
+        "c": 1018,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "T",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 129970625,
+      "window_end_0based_exclusive": 131019201,
+      "variant_bin_0based": 256,
+      "hash_sha256": "30e7fd7f5aae3eb102a703b384e48d4095e2b1df93a5e7d264d842abe6df2083",
+      "stratum_pool_n": 31,
+      "stratum_selected_n": 3,
+      "sampling_fraction": 0.0967741935483871,
+      "inverse_sampling_fraction": 10.333333333333334,
+      "site_index": 11
+    },
+    {
+      "site_id": "chr3:52402290:A",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52402290,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "stop_lost",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:52402290:A>C",
+          "alt": "C",
+          "consequence": "stop_lost",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52402290:A>G",
+          "alt": "G",
+          "consequence": "stop_lost",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:52402290:A>T",
+          "alt": "T",
+          "consequence": "stop_lost",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1787368",
+        "gene": "BAP1",
+        "ref": "A",
+        "alt": "G",
+        "name": "NM_004656.4(BAP1):c.2188T>C (p.Ter730Arg)",
+        "name_class": "other",
+        "name_detail": "stop_loss",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 2188,
+        "c_offset": 0,
+        "c_ref": "T",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 51878001,
+      "window_end_0based_exclusive": 52926577,
+      "variant_bin_0based": 256,
+      "hash_sha256": "be0259edfee0c50b421f803a8b4c6059f5c8bb7ca6810e3b1689b73fd51b4b5a",
+      "stratum_pool_n": 1,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 1.0,
+      "inverse_sampling_fraction": 1.0,
+      "site_index": 12
+    },
+    {
+      "site_id": "chr3:52402778:C",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52402778,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:52402778:C>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52402778:C>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:52402778:C>T",
+          "alt": "T",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "3638791",
+        "gene": "BAP1",
+        "ref": "C",
+        "alt": "G",
+        "name": "NM_004656.4(BAP1):c.1983+1G>C",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 1983,
+        "c_offset": 1,
+        "c_ref": "G",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 51878489,
+      "window_end_0based_exclusive": 52927065,
+      "variant_bin_0based": 256,
+      "hash_sha256": "08c6e0e1f59b8ab9e95f144d779fcfc03a529cc3768386792321e5a458dfbf0c",
+      "stratum_pool_n": 18,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.1111111111111111,
+      "inverse_sampling_fraction": 9.0,
+      "site_index": 13
+    },
+    {
+      "site_id": "chr3:52403260:G",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52403260,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr3:52403260:G>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:52403260:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52403260:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "3371820",
+        "gene": "BAP1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_004656.4(BAP1):c.1768C>T (p.Gln590Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 1768,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 51878971,
+      "window_end_0based_exclusive": 52927547,
+      "variant_bin_0based": 256,
+      "hash_sha256": "040445cc1c4c65832d606283d3774465369ef37ec3c10bca855fcdb67a3a805f",
+      "stratum_pool_n": 67,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.07462686567164178,
+      "inverse_sampling_fraction": 13.4,
+      "site_index": 14
+    },
+    {
+      "site_id": "chr3:52403300:T",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52403300,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:52403300:T>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52403300:T>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:52403300:T>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "1068233",
+        "gene": "BAP1",
+        "ref": "T",
+        "alt": "C",
+        "name": "NM_004656.4(BAP1):c.1730-2A>G",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 1730,
+        "c_offset": -2,
+        "c_ref": "A",
+        "c_alt": "G",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 51879011,
+      "window_end_0based_exclusive": 52927587,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0b78bc3224178b4eda70a1507ab4ee7812206913a5167103fede6480ac4a61d3",
+      "stratum_pool_n": 18,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.1111111111111111,
+      "inverse_sampling_fraction": 9.0,
+      "site_index": 15
+    },
+    {
+      "site_id": "chr3:52403437:G",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52403437,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 2,
+      "alternatives": [
+        {
+          "id": "chr3:52403437:G>A",
+          "alt": "A",
+          "consequence": "synonymous",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52403437:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:52403437:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1778494",
+        "gene": "BAP1",
+        "ref": "G",
+        "alt": "C",
+        "name": "NM_004656.4(BAP1):c.1708C>G (p.Leu570Val)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 1708,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "G",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 3
+      },
+      "window_start_0based": 51879148,
+      "window_end_0based_exclusive": 52927724,
+      "variant_bin_0based": 256,
+      "hash_sha256": "01cbc5fdfc2aea9bb37a67417bfb159e6756b141f11a3ad530b2d221ec690682",
+      "stratum_pool_n": 16,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.125,
+      "inverse_sampling_fraction": 8.0,
+      "site_index": 16
+    },
+    {
+      "site_id": "chr3:52405128:A",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52405128,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 2,
+      "alternatives": [
+        {
+          "id": "chr3:52405128:A>C",
+          "alt": "C",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:52405128:A>G",
+          "alt": "G",
+          "consequence": "synonymous",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52405128:A>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "862537",
+        "gene": "BAP1",
+        "ref": "A",
+        "alt": "C",
+        "name": "NM_004656.4(BAP1):c.1098T>G (p.Tyr366Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 1098,
+        "c_offset": 0,
+        "c_ref": "T",
+        "c_alt": "G",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 51880839,
+      "window_end_0based_exclusive": 52929415,
+      "variant_bin_0based": 256,
+      "hash_sha256": "03d9f889e723a476f874537e424b26b80130bbe1e528750462f5ca5409f61f1e",
+      "stratum_pool_n": 67,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.07462686567164178,
+      "inverse_sampling_fraction": 13.4,
+      "site_index": 17
+    },
+    {
+      "site_id": "chr3:52406826:T",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52406826,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 2,
+      "selected_consequence": "intronic",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:52406826:T>A",
+          "alt": "A",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52406826:T>C",
+          "alt": "C",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52406826:T>G",
+          "alt": "G",
+          "consequence": "intronic",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "intronic",
+      "clinvar_record": {
+        "variation_id": "240065",
+        "gene": "BAP1",
+        "ref": "T",
+        "alt": "G",
+        "name": "NM_004656.4(BAP1):c.659+3A>C",
+        "name_class": "other_intronic",
+        "name_detail": "cds_intron",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 659,
+        "c_offset": 3,
+        "c_ref": "A",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 4
+      },
+      "window_start_0based": 51882537,
+      "window_end_0based_exclusive": 52931113,
+      "variant_bin_0based": 256,
+      "hash_sha256": "eb51c348fb2a755e1fb8faf0725c845114a899b3904156d080576e1782af9ded",
+      "stratum_pool_n": 1,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 1.0,
+      "inverse_sampling_fraction": 1.0,
+      "site_index": 18
+    },
+    {
+      "site_id": "chr3:52407415:G",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52407415,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:52407415:G>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:52407415:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52407415:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1738816",
+        "gene": "BAP1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_004656.4(BAP1):c.421C>T (p.His141Tyr)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 421,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 51883126,
+      "window_end_0based_exclusive": 52931702,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0954bfa6427585cf8dabf97af6a5f40702ea344ba5b8c2eba24c8c98e7ad7979",
+      "stratum_pool_n": 16,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.125,
+      "inverse_sampling_fraction": 8.0,
+      "site_index": 19
+    },
+    {
+      "site_id": "chr3:52408573:C",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52408573,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr3:52408573:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52408573:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52408573:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "2845236",
+        "gene": "BAP1",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_004656.4(BAP1):c.156G>A (p.Trp52Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 156,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 51884284,
+      "window_end_0based_exclusive": 52932860,
+      "variant_bin_0based": 256,
+      "hash_sha256": "03ea3f53f729153056502fded69a4eb9a1a3596acd7061ccef0485d76633a11c",
+      "stratum_pool_n": 67,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.07462686567164178,
+      "inverse_sampling_fraction": 13.4,
+      "site_index": 20
+    },
+    {
+      "site_id": "chr3:52408597:A",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52408597,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 2,
+      "alternatives": [
+        {
+          "id": "chr3:52408597:A>C",
+          "alt": "C",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:52408597:A>G",
+          "alt": "G",
+          "consequence": "synonymous",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52408597:A>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1073405",
+        "gene": "BAP1",
+        "ref": "A",
+        "alt": "C",
+        "name": "NM_004656.4(BAP1):c.132T>G (p.Tyr44Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 132,
+        "c_offset": 0,
+        "c_ref": "T",
+        "c_alt": "G",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 51884308,
+      "window_end_0based_exclusive": 52932884,
+      "variant_bin_0based": 256,
+      "hash_sha256": "012549330d569a47fb6c853a5abf95b36780fcf6d7eaceb19ed272645afc5f8e",
+      "stratum_pool_n": 67,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.07462686567164178,
+      "inverse_sampling_fraction": 13.4,
+      "site_index": 21
+    },
+    {
+      "site_id": "chr3:52409864:C",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52409864,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr3:52409864:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52409864:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52409864:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "575817",
+        "gene": "BAP1",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_004656.4(BAP1):c.15G>A (p.Trp5Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 15,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 51885575,
+      "window_end_0based_exclusive": 52934151,
+      "variant_bin_0based": 256,
+      "hash_sha256": "09fa39ed36c36b9d88e7b14641782b2a9d662172977610ad026364e99fdb5dfb",
+      "stratum_pool_n": 67,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.07462686567164178,
+      "inverse_sampling_fraction": 13.4,
+      "site_index": 22
+    },
+    {
+      "site_id": "chr3:52409876:C",
+      "gene": "BAP1",
+      "chromosome": "chr3",
+      "position_1based": 52409876,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "start_lost",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:52409876:C>A",
+          "alt": "A",
+          "consequence": "start_lost",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:52409876:C>G",
+          "alt": "G",
+          "consequence": "start_lost",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:52409876:C>T",
+          "alt": "T",
+          "consequence": "start_lost",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_004656.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1953049",
+        "gene": "BAP1",
+        "ref": "C",
+        "alt": "G",
+        "name": "NM_004656.4(BAP1):c.3G>C (p.Met1Ile)",
+        "name_class": "start_loss",
+        "name_detail": "",
+        "tx": "NM_004656.4",
+        "c_prefix": "",
+        "c": 3,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "C",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 51885587,
+      "window_end_0based_exclusive": 52934163,
+      "variant_bin_0based": 256,
+      "hash_sha256": "828acba8088fd5029db773816ffaba9ae3ec2e6e951205a432a34ac9aa9a5d70",
+      "stratum_pool_n": 1,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 1.0,
+      "inverse_sampling_fraction": 1.0,
+      "site_index": 23
+    },
+    {
+      "site_id": "chr13:32316461:A",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32316461,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "start_lost",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:32316461:A>C",
+          "alt": "C",
+          "consequence": "start_lost",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32316461:A>G",
+          "alt": "G",
+          "consequence": "start_lost",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:32316461:A>T",
+          "alt": "T",
+          "consequence": "start_lost",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "216026",
+        "gene": "BRCA2",
+        "ref": "A",
+        "alt": "G",
+        "name": "NM_000059.4(BRCA2):c.1A>G (p.Met1Val)",
+        "name_class": "start_loss",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 1,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "G",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 31792172,
+      "window_end_0based_exclusive": 32840748,
+      "variant_bin_0based": 256,
+      "hash_sha256": "b38b459c7f4adaad6f704a89b3822c01ee22acc765ebc299d23b9e28b9c767c5",
+      "stratum_pool_n": 1,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 1.0,
+      "inverse_sampling_fraction": 1.0,
+      "site_index": 24
+    },
+    {
+      "site_id": "chr13:32326149:A",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32326149,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 0,
+      "selected_consequence": "synonymous",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:32326149:A>C",
+          "alt": "C",
+          "consequence": "synonymous",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:32326149:A>G",
+          "alt": "G",
+          "consequence": "synonymous",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32326149:A>T",
+          "alt": "T",
+          "consequence": "synonymous",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "4824532",
+        "gene": "BRCA2",
+        "ref": "A",
+        "alt": "C",
+        "name": "NM_000059.4(BRCA2):c.474A>C (p.Ser158=)",
+        "name_class": "synonymous",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 474,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 31801860,
+      "window_end_0based_exclusive": 32850436,
+      "variant_bin_0based": 256,
+      "hash_sha256": "334f01755c7877165ceaa83ca66bbd07340001d457dc3d6347791b675f0083c5",
+      "stratum_pool_n": 1,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 1.0,
+      "inverse_sampling_fraction": 1.0,
+      "site_index": 25
+    },
+    {
+      "site_id": "chr13:32329441:A",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32329441,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:32329441:A>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32329441:A>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:32329441:A>T",
+          "alt": "T",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "52063",
+        "gene": "BRCA2",
+        "ref": "A",
+        "alt": "G",
+        "name": "NM_000059.4(BRCA2):c.632-2A>G",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 632,
+        "c_offset": -2,
+        "c_ref": "A",
+        "c_alt": "G",
+        "classification": "Pathogenic",
+        "review_status": "reviewed by expert panel",
+        "number_submitters": 10
+      },
+      "window_start_0based": 31805152,
+      "window_end_0based_exclusive": 32853728,
+      "variant_bin_0based": 256,
+      "hash_sha256": "072ef9828c2deef2e9445eaa36aa5be5e88376c5ffd7aa93220965883b0f8df8",
+      "stratum_pool_n": 17,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 0.058823529411764705,
+      "inverse_sampling_fraction": 17.0,
+      "site_index": 26
+    },
+    {
+      "site_id": "chr13:32332706:A",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32332706,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr13:32332706:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32332706:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32332706:A>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1074393",
+        "gene": "BRCA2",
+        "ref": "A",
+        "alt": "T",
+        "name": "NM_000059.4(BRCA2):c.1228A>T (p.Lys410Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 1228,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 31808417,
+      "window_end_0based_exclusive": 32856993,
+      "variant_bin_0based": 256,
+      "hash_sha256": "02a62176b4036d1f3e27cca87072283ff8c9f877f120734235b02226d4c555d6",
+      "stratum_pool_n": 707,
+      "stratum_selected_n": 6,
+      "sampling_fraction": 0.008486562942008486,
+      "inverse_sampling_fraction": 117.83333333333333,
+      "site_index": 27
+    },
+    {
+      "site_id": "chr13:32332854:T",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32332854,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 2,
+      "alternatives": [
+        {
+          "id": "chr13:32332854:T>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32332854:T>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32332854:T>G",
+          "alt": "G",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "266632",
+        "gene": "BRCA2",
+        "ref": "T",
+        "alt": "G",
+        "name": "NM_000059.4(BRCA2):c.1376T>G (p.Leu459Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 1376,
+        "c_offset": 0,
+        "c_ref": "T",
+        "c_alt": "G",
+        "classification": "Pathogenic",
+        "review_status": "reviewed by expert panel",
+        "number_submitters": 5
+      },
+      "window_start_0based": 31808565,
+      "window_end_0based_exclusive": 32857141,
+      "variant_bin_0based": 256,
+      "hash_sha256": "032b27b1dd055df0a954ee1805f13138f34b34d0ce932032a364b682c08c2645",
+      "stratum_pool_n": 707,
+      "stratum_selected_n": 6,
+      "sampling_fraction": 0.008486562942008486,
+      "inverse_sampling_fraction": 117.83333333333333,
+      "site_index": 28
+    },
+    {
+      "site_id": "chr13:32336488:C",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32336488,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr13:32336488:C>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:32336488:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32336488:C>T",
+          "alt": "T",
+          "consequence": "synonymous",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "548419",
+        "gene": "BRCA2",
+        "ref": "C",
+        "alt": "A",
+        "name": "NM_000059.4(BRCA2):c.2133C>A (p.Cys711Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 2133,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "reviewed by expert panel",
+        "number_submitters": 4
+      },
+      "window_start_0based": 31812199,
+      "window_end_0based_exclusive": 32860775,
+      "variant_bin_0based": 256,
+      "hash_sha256": "015730d3f91fc4ebd77242efbe42a0f08e934dbdabc3ba3b1044b26be0bae677",
+      "stratum_pool_n": 707,
+      "stratum_selected_n": 6,
+      "sampling_fraction": 0.008486562942008486,
+      "inverse_sampling_fraction": 117.83333333333333,
+      "site_index": 29
+    },
+    {
+      "site_id": "chr13:32337635:A",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32337635,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr13:32337635:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32337635:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32337635:A>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "162102",
+        "gene": "BRCA2",
+        "ref": "A",
+        "alt": "T",
+        "name": "NM_000059.4(BRCA2):c.3280A>T (p.Lys1094Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 3280,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "reviewed by expert panel",
+        "number_submitters": 2
+      },
+      "window_start_0based": 31813346,
+      "window_end_0based_exclusive": 32861922,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0047db72170696802b0d48ba464c1a7b2987348588cdb4623f67691e50ba3b6b",
+      "stratum_pool_n": 707,
+      "stratum_selected_n": 6,
+      "sampling_fraction": 0.008486562942008486,
+      "inverse_sampling_fraction": 117.83333333333333,
+      "site_index": 30
+    },
+    {
+      "site_id": "chr13:32340185:A",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32340185,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr13:32340185:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32340185:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32340185:A>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "2857286",
+        "gene": "BRCA2",
+        "ref": "A",
+        "alt": "T",
+        "name": "NM_000059.4(BRCA2):c.5830A>T (p.Lys1944Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 5830,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 31815896,
+      "window_end_0based_exclusive": 32864472,
+      "variant_bin_0based": 256,
+      "hash_sha256": "01104701e5d6c266a1bfa64bb2b8812f857c1b7810a1fee7d115ddc4b8d0f0c9",
+      "stratum_pool_n": 707,
+      "stratum_selected_n": 6,
+      "sampling_fraction": 0.008486562942008486,
+      "inverse_sampling_fraction": 117.83333333333333,
+      "site_index": 31
+    },
+    {
+      "site_id": "chr13:32362536:A",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32362536,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:32362536:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:32362536:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32362536:A>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "52422",
+        "gene": "BRCA2",
+        "ref": "A",
+        "alt": "C",
+        "name": "NM_000059.4(BRCA2):c.7819A>C (p.Thr2607Pro)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 7819,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "reviewed by expert panel",
+        "number_submitters": 4
+      },
+      "window_start_0based": 31838247,
+      "window_end_0based_exclusive": 32886823,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0cba871372e2358d7303bd676a1d93cdb78477c0715dd40a7b8be6d5097d57b8",
+      "stratum_pool_n": 57,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.03508771929824561,
+      "inverse_sampling_fraction": 28.5,
+      "site_index": 32
+    },
+    {
+      "site_id": "chr13:32362584:C",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32362584,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:32362584:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32362584:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32362584:C>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "573433",
+        "gene": "BRCA2",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000059.4(BRCA2):c.7867C>T (p.His2623Tyr)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 7867,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 31838295,
+      "window_end_0based_exclusive": 32886871,
+      "variant_bin_0based": 256,
+      "hash_sha256": "05769ca94f821c6283abd196c86b3c4ac663fb383cc137dd22316af6b9494727",
+      "stratum_pool_n": 57,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.03508771929824561,
+      "inverse_sampling_fraction": 28.5,
+      "site_index": 33
+    },
+    {
+      "site_id": "chr13:32370560:A",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32370560,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "intronic",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:32370560:A>C",
+          "alt": "C",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32370560:A>G",
+          "alt": "G",
+          "consequence": "intronic",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:32370560:A>T",
+          "alt": "T",
+          "consequence": "intronic",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "intronic",
+      "clinvar_record": {
+        "variation_id": "52603",
+        "gene": "BRCA2",
+        "ref": "A",
+        "alt": "G",
+        "name": "NM_000059.4(BRCA2):c.8487+3A>G",
+        "name_class": "other_intronic",
+        "name_detail": "cds_intron",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 8487,
+        "c_offset": 3,
+        "c_ref": "A",
+        "c_alt": "G",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 14
+      },
+      "window_start_0based": 31846271,
+      "window_end_0based_exclusive": 32894847,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0045b27a0b3f307bde534a39a41895e6268856ac1b1070f69db3cefbb20b9691",
+      "stratum_pool_n": 23,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 0.043478260869565216,
+      "inverse_sampling_fraction": 23.0,
+      "site_index": 34
+    },
+    {
+      "site_id": "chr13:32371016:G",
+      "gene": "BRCA2",
+      "chromosome": "chr13",
+      "position_1based": 32371016,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr13:32371016:G>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32371016:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:32371016:G>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000059.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "462483",
+        "gene": "BRCA2",
+        "ref": "G",
+        "alt": "T",
+        "name": "NM_000059.4(BRCA2):c.8548G>T (p.Glu2850Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000059.4",
+        "c_prefix": "",
+        "c": 8548,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 5
+      },
+      "window_start_0based": 31846727,
+      "window_end_0based_exclusive": 32895303,
+      "variant_bin_0based": 256,
+      "hash_sha256": "028144fe39ace24a01bbb298eafeaa1fb5fc704d2dcd3de4da64db79bb6e38c4",
+      "stratum_pool_n": 707,
+      "stratum_selected_n": 6,
+      "sampling_fraction": 0.008486562942008486,
+      "inverse_sampling_fraction": 117.83333333333333,
+      "site_index": 35
+    },
+    {
+      "site_id": "chr6:26090975:C",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26090975,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr6:26090975:C>A",
+          "alt": "A",
+          "consequence": "synonymous",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26090975:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26090975:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1073981",
+        "gene": "HFE",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000410.4(HFE):c.211C>T (p.Arg71Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 211,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 4
+      },
+      "window_start_0based": 25566686,
+      "window_end_0based_exclusive": 26615262,
+      "variant_bin_0based": 256,
+      "hash_sha256": "3281a8ca2500bb439c9b74a78fd7577b87c9ffe1f001ca573f01d702d7a3e981",
+      "stratum_pool_n": 15,
+      "stratum_selected_n": 8,
+      "sampling_fraction": 0.5333333333333333,
+      "inverse_sampling_fraction": 1.875,
+      "site_index": 36
+    },
+    {
+      "site_id": "chr6:26091313:G",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26091313,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr6:26091313:G>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr6:26091313:G>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26091313:G>T",
+          "alt": "T",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "845767",
+        "gene": "HFE",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_000410.4(HFE):c.341-1G>A",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 341,
+        "c_offset": -1,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 25567024,
+      "window_end_0based_exclusive": 26615600,
+      "variant_bin_0based": 256,
+      "hash_sha256": "61bd7aad70fc27536e69ce50bf9bb06aaf9b056e5b040cd28257e5b6f9a79932",
+      "stratum_pool_n": 3,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.6666666666666666,
+      "inverse_sampling_fraction": 1.5,
+      "site_index": 37
+    },
+    {
+      "site_id": "chr6:26091380:G",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26091380,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr6:26091380:G>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr6:26091380:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26091380:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "2016731",
+        "gene": "HFE",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_000410.4(HFE):c.407G>A (p.Trp136Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 407,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 25567091,
+      "window_end_0based_exclusive": 26615667,
+      "variant_bin_0based": 256,
+      "hash_sha256": "5354ee5954c90fac0390ce88f967e818f23cc0f3d0523777338935c691b522a5",
+      "stratum_pool_n": 15,
+      "stratum_selected_n": 8,
+      "sampling_fraction": 0.5333333333333333,
+      "inverse_sampling_fraction": 1.875,
+      "site_index": 38
+    },
+    {
+      "site_id": "chr6:26091387:C",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26091387,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 2,
+      "alternatives": [
+        {
+          "id": "chr6:26091387:C>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26091387:C>G",
+          "alt": "G",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr6:26091387:C>T",
+          "alt": "T",
+          "consequence": "synonymous",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1458886",
+        "gene": "HFE",
+        "ref": "C",
+        "alt": "G",
+        "name": "NM_000410.4(HFE):c.414C>G (p.Tyr138Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 414,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "G",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 25567098,
+      "window_end_0based_exclusive": 26615674,
+      "variant_bin_0based": 256,
+      "hash_sha256": "3053adf6fc8ad7c1e85a3e3609df7d72482a6553f42267ad2da613cec4d28cf0",
+      "stratum_pool_n": 15,
+      "stratum_selected_n": 8,
+      "sampling_fraction": 0.5333333333333333,
+      "inverse_sampling_fraction": 1.875,
+      "site_index": 39
+    },
+    {
+      "site_id": "chr6:26091475:G",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26091475,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr6:26091475:G>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26091475:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26091475:G>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "88946",
+        "gene": "HFE",
+        "ref": "G",
+        "alt": "T",
+        "name": "NM_000410.4(HFE):c.502G>T (p.Glu168Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 502,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 2
+      },
+      "window_start_0based": 25567186,
+      "window_end_0based_exclusive": 26615762,
+      "variant_bin_0based": 256,
+      "hash_sha256": "3dd6d4ad8c0f7ae773c0e73ee210824467700cf9578e8df5e48ed4afe8e7dfc9",
+      "stratum_pool_n": 15,
+      "stratum_selected_n": 8,
+      "sampling_fraction": 0.5333333333333333,
+      "inverse_sampling_fraction": 1.875,
+      "site_index": 40
+    },
+    {
+      "site_id": "chr6:26091521:T",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26091521,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr6:26091521:T>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26091521:T>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr6:26091521:T>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "2152189",
+        "gene": "HFE",
+        "ref": "T",
+        "alt": "C",
+        "name": "NM_000410.4(HFE):c.548T>C (p.Leu183Pro)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 548,
+        "c_offset": 0,
+        "c_ref": "T",
+        "c_alt": "C",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 25567232,
+      "window_end_0based_exclusive": 26615808,
+      "variant_bin_0based": 256,
+      "hash_sha256": "f01451a498ae8b338e983bcfb8977e33a0fd5de22cb078871bc7f11bc97ace8b",
+      "stratum_pool_n": 2,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 1.0,
+      "inverse_sampling_fraction": 1.0,
+      "site_index": 41
+    },
+    {
+      "site_id": "chr6:26091583:C",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26091583,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr6:26091583:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26091583:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26091583:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "2962260",
+        "gene": "HFE",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000410.4(HFE):c.610C>T (p.Gln204Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 610,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 25567294,
+      "window_end_0based_exclusive": 26615870,
+      "variant_bin_0based": 256,
+      "hash_sha256": "1042e55b9ddf684cc9f13c9fe90069e7000fb4fcd7ce4b03029feeb19f69b077",
+      "stratum_pool_n": 15,
+      "stratum_selected_n": 8,
+      "sampling_fraction": 0.5333333333333333,
+      "inverse_sampling_fraction": 1.875,
+      "site_index": 42
+    },
+    {
+      "site_id": "chr6:26092761:C",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26092761,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 2,
+      "alternatives": [
+        {
+          "id": "chr6:26092761:C>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26092761:C>G",
+          "alt": "G",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr6:26092761:C>T",
+          "alt": "T",
+          "consequence": "synonymous",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "3689840",
+        "gene": "HFE",
+        "ref": "C",
+        "alt": "G",
+        "name": "NM_000410.4(HFE):c.693C>G (p.Tyr231Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 693,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "G",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 25568472,
+      "window_end_0based_exclusive": 26617048,
+      "variant_bin_0based": 256,
+      "hash_sha256": "16b7d7bde6d9ef823b9bd4e7628d3dc80f43b1f9035605bde2a959d78b075e1b",
+      "stratum_pool_n": 15,
+      "stratum_selected_n": 8,
+      "sampling_fraction": 0.5333333333333333,
+      "inverse_sampling_fraction": 1.875,
+      "site_index": 43
+    },
+    {
+      "site_id": "chr6:26092780:A",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26092780,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr6:26092780:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26092780:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26092780:A>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "2837089",
+        "gene": "HFE",
+        "ref": "A",
+        "alt": "T",
+        "name": "NM_000410.4(HFE):c.712A>T (p.Lys238Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 712,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 25568491,
+      "window_end_0based_exclusive": 26617067,
+      "variant_bin_0based": 256,
+      "hash_sha256": "087ea4087ab92bc2caee567b3d4cf2d95ea6fd8f3f734c14b12cb9380d96ec51",
+      "stratum_pool_n": 15,
+      "stratum_selected_n": 8,
+      "sampling_fraction": 0.5333333333333333,
+      "inverse_sampling_fraction": 1.875,
+      "site_index": 44
+    },
+    {
+      "site_id": "chr6:26092916:A",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26092916,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr6:26092916:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr6:26092916:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26092916:A>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "19",
+        "gene": "HFE",
+        "ref": "A",
+        "alt": "C",
+        "name": "NM_000410.4(HFE):c.848A>C (p.Gln283Pro)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 848,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "C",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 5
+      },
+      "window_start_0based": 25568627,
+      "window_end_0based_exclusive": 26617203,
+      "variant_bin_0based": 256,
+      "hash_sha256": "db98a2679ae800b8b634eaf0f94648332ffbc57ec8e2c9f857cbca4810403ae5",
+      "stratum_pool_n": 2,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 1.0,
+      "inverse_sampling_fraction": 1.0,
+      "site_index": 45
+    },
+    {
+      "site_id": "chr6:26092960:G",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26092960,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr6:26092960:G>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26092960:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26092960:G>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "407073",
+        "gene": "HFE",
+        "ref": "G",
+        "alt": "T",
+        "name": "NM_000410.4(HFE):c.892G>T (p.Glu298Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 892,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "T",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 3
+      },
+      "window_start_0based": 25568671,
+      "window_end_0based_exclusive": 26617247,
+      "variant_bin_0based": 256,
+      "hash_sha256": "1ed081336cd5075858eeff60759e2bab99fa40406a663170ee7397544dca5d59",
+      "stratum_pool_n": 15,
+      "stratum_selected_n": 8,
+      "sampling_fraction": 0.5333333333333333,
+      "inverse_sampling_fraction": 1.875,
+      "site_index": 46
+    },
+    {
+      "site_id": "chr6:26093118:G",
+      "gene": "HFE",
+      "chromosome": "chr6",
+      "position_1based": 26093118,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr6:26093118:G>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr6:26093118:G>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr6:26093118:G>T",
+          "alt": "T",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000410.4",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "3007618",
+        "gene": "HFE",
+        "ref": "G",
+        "alt": "C",
+        "name": "NM_000410.4(HFE):c.893-1G>C",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_000410.4",
+        "c_prefix": "",
+        "c": 893,
+        "c_offset": -1,
+        "c_ref": "G",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 25568829,
+      "window_end_0based_exclusive": 26617405,
+      "variant_bin_0based": 256,
+      "hash_sha256": "2482ff63b69e299c4f4db8f3bf60053be583e282aa0d57a56f47a041a388d998",
+      "stratum_pool_n": 3,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.6666666666666666,
+      "inverse_sampling_fraction": 1.5,
+      "site_index": 47
+    },
+    {
+      "site_id": "chr13:48303721:G",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48303721,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "utr",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:48303721:G>A",
+          "alt": "A",
+          "consequence": "utr",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:48303721:G>C",
+          "alt": "C",
+          "consequence": "utr",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48303721:G>T",
+          "alt": "T",
+          "consequence": "utr",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "utr",
+      "clinvar_record": {
+        "variation_id": "3780934",
+        "gene": "RB1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_000321.3(RB1):c.-192G>A",
+        "name_class": "utr",
+        "name_detail": "5utr",
+        "tx": "NM_000321.3",
+        "c_prefix": "-",
+        "c": 192,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 47779432,
+      "window_end_0based_exclusive": 48828008,
+      "variant_bin_0based": 256,
+      "hash_sha256": "253c85899155c8102a0207cebab4492b9bcec6ddaad1afd10c47504c2661bce2",
+      "stratum_pool_n": 2,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 0.5,
+      "inverse_sampling_fraction": 2.0,
+      "site_index": 48
+    },
+    {
+      "site_id": "chr13:48303913:A",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48303913,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "start_lost",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:48303913:A>C",
+          "alt": "C",
+          "consequence": "start_lost",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48303913:A>G",
+          "alt": "G",
+          "consequence": "start_lost",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:48303913:A>T",
+          "alt": "T",
+          "consequence": "start_lost",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "3787240",
+        "gene": "RB1",
+        "ref": "A",
+        "alt": "G",
+        "name": "NM_000321.3(RB1):c.1A>G (p.Met1Val)",
+        "name_class": "start_loss",
+        "name_detail": "",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 1,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "G",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 3
+      },
+      "window_start_0based": 47779624,
+      "window_end_0based_exclusive": 48828200,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0e34e3c7e44b6f60feeffcd8d35f7e236719337e6565cf647bf67c294b7c8dbc",
+      "stratum_pool_n": 1,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 1.0,
+      "inverse_sampling_fraction": 1.0,
+      "site_index": 49
+    },
+    {
+      "site_id": "chr13:48304049:G",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48304049,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:48304049:G>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:48304049:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48304049:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1771256",
+        "gene": "RB1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_000321.3(RB1):c.137G>A (p.Arg46Lys)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 137,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 47779760,
+      "window_end_0based_exclusive": 48828336,
+      "variant_bin_0based": 256,
+      "hash_sha256": "08f30ae3fde5ab2c0730328a65f2927f7fb51f213b2ac065ebe3c5e79a8c8c64",
+      "stratum_pool_n": 19,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 0.05263157894736842,
+      "inverse_sampling_fraction": 19.0,
+      "site_index": 50
+    },
+    {
+      "site_id": "chr13:48307406:G",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48307406,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "synonymous",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr13:48307406:G>A",
+          "alt": "A",
+          "consequence": "synonymous",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:48307406:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48307406:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "3237115",
+        "gene": "RB1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_000321.3(RB1):c.264G>A (p.Leu88=)",
+        "name_class": "synonymous",
+        "name_detail": "",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 264,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 47783117,
+      "window_end_0based_exclusive": 48831693,
+      "variant_bin_0based": 256,
+      "hash_sha256": "40d62bb38311aa24e34ad4834d218e6502a96bd93c1d60be9f772a82374aaf4b",
+      "stratum_pool_n": 2,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 0.5,
+      "inverse_sampling_fraction": 2.0,
+      "site_index": 51
+    },
+    {
+      "site_id": "chr13:48342597:A",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48342597,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:48342597:A>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48342597:A>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:48342597:A>T",
+          "alt": "T",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "4531459",
+        "gene": "RB1",
+        "ref": "A",
+        "alt": "G",
+        "name": "NM_000321.3(RB1):c.265-2A>G",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 265,
+        "c_offset": -2,
+        "c_ref": "A",
+        "c_alt": "G",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 47818308,
+      "window_end_0based_exclusive": 48866884,
+      "variant_bin_0based": 256,
+      "hash_sha256": "1731efeee33114f65d93e33f31c6b2e95c3fa7281f7c3c9f0e1fcf9ddb8e4fd2",
+      "stratum_pool_n": 33,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.06060606060606061,
+      "inverse_sampling_fraction": 16.5,
+      "site_index": 52
+    },
+    {
+      "site_id": "chr13:48342717:A",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48342717,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "intronic",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:48342717:A>C",
+          "alt": "C",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48342717:A>G",
+          "alt": "G",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48342717:A>T",
+          "alt": "T",
+          "consequence": "intronic",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "intronic",
+      "clinvar_record": {
+        "variation_id": "527904",
+        "gene": "RB1",
+        "ref": "A",
+        "alt": "T",
+        "name": "NM_000321.3(RB1):c.380+3A>T",
+        "name_class": "other_intronic",
+        "name_detail": "cds_intron",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 380,
+        "c_offset": 3,
+        "c_ref": "A",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 47818428,
+      "window_end_0based_exclusive": 48867004,
+      "variant_bin_0based": 256,
+      "hash_sha256": "09a0773b469d92a14156fca263e50d90055ec3877d78a61d5e05ffd52befa7dc",
+      "stratum_pool_n": 26,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.07692307692307693,
+      "inverse_sampling_fraction": 13.0,
+      "site_index": 53
+    },
+    {
+      "site_id": "chr13:48349012:T",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48349012,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 2,
+      "alternatives": [
+        {
+          "id": "chr13:48349012:T>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:48349012:T>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48349012:T>G",
+          "alt": "G",
+          "consequence": "nonsense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "376329",
+        "gene": "RB1",
+        "ref": "T",
+        "alt": "A",
+        "name": "NM_000321.3(RB1):c.596T>A (p.Leu199Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 596,
+        "c_offset": 0,
+        "c_ref": "T",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 47824723,
+      "window_end_0based_exclusive": 48873299,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0126d89d22d85fdd45882df118abf76a70d3ee973f1b01733d466b07595fdae1",
+      "stratum_pool_n": 136,
+      "stratum_selected_n": 4,
+      "sampling_fraction": 0.029411764705882353,
+      "inverse_sampling_fraction": 34.0,
+      "site_index": 54
+    },
+    {
+      "site_id": "chr13:48381381:G",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48381381,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr13:48381381:G>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48381381:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48381381:G>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "978456",
+        "gene": "RB1",
+        "ref": "G",
+        "alt": "T",
+        "name": "NM_000321.3(RB1):c.1633G>T (p.Glu545Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 1633,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 5
+      },
+      "window_start_0based": 47857092,
+      "window_end_0based_exclusive": 48905668,
+      "variant_bin_0based": 256,
+      "hash_sha256": "01f981b78c4901873fa7c57d10c3f8540dc4bc33868e15a9274ad1dc37fdc5b3",
+      "stratum_pool_n": 136,
+      "stratum_selected_n": 4,
+      "sampling_fraction": 0.029411764705882353,
+      "inverse_sampling_fraction": 34.0,
+      "site_index": 55
+    },
+    {
+      "site_id": "chr13:48381446:A",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48381446,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 0,
+      "selected_consequence": "intronic",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:48381446:A>C",
+          "alt": "C",
+          "consequence": "intronic",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:48381446:A>G",
+          "alt": "G",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48381446:A>T",
+          "alt": "T",
+          "consequence": "intronic",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "intronic",
+      "clinvar_record": {
+        "variation_id": "428689",
+        "gene": "RB1",
+        "ref": "A",
+        "alt": "C",
+        "name": "NM_000321.3(RB1):c.1695+3A>C",
+        "name_class": "other_intronic",
+        "name_detail": "cds_intron",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 1695,
+        "c_offset": 3,
+        "c_ref": "A",
+        "c_alt": "C",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 47857157,
+      "window_end_0based_exclusive": 48905733,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0aa3c607c1f1a3d1d3b042b1d25fc1bebcc738efa738db9a9de21651b5bfdf0a",
+      "stratum_pool_n": 26,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.07692307692307693,
+      "inverse_sampling_fraction": 13.0,
+      "site_index": 56
+    },
+    {
+      "site_id": "chr13:48456343:A",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48456343,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr13:48456343:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48456343:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48456343:A>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "3237040",
+        "gene": "RB1",
+        "ref": "A",
+        "alt": "T",
+        "name": "NM_000321.3(RB1):c.1954A>T (p.Lys652Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 1954,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 47932054,
+      "window_end_0based_exclusive": 48980630,
+      "variant_bin_0based": 256,
+      "hash_sha256": "045d6227b046edab56df8f5e465f0fe3cf26f8927909e69d6cd2973528e70128",
+      "stratum_pool_n": 136,
+      "stratum_selected_n": 4,
+      "sampling_fraction": 0.029411764705882353,
+      "inverse_sampling_fraction": 34.0,
+      "site_index": 57
+    },
+    {
+      "site_id": "chr13:48463830:C",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48463830,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr13:48463830:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48463830:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48463830:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "640755",
+        "gene": "RB1",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000321.3(RB1):c.2206C>T (p.Gln736Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 2206,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 3
+      },
+      "window_start_0based": 47939541,
+      "window_end_0based_exclusive": 48988117,
+      "variant_bin_0based": 256,
+      "hash_sha256": "042210eb9cb5f7de8b5b58956e32fcf00ee393c4f6a7e81e84ac095a4500af2d",
+      "stratum_pool_n": 136,
+      "stratum_selected_n": 4,
+      "sampling_fraction": 0.029411764705882353,
+      "inverse_sampling_fraction": 34.0,
+      "site_index": 58
+    },
+    {
+      "site_id": "chr13:48465370:T",
+      "gene": "RB1",
+      "chromosome": "chr13",
+      "position_1based": 48465370,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr13:48465370:T>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr13:48465370:T>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr13:48465370:T>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000321.3",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "458151",
+        "gene": "RB1",
+        "ref": "T",
+        "alt": "C",
+        "name": "NM_000321.3(RB1):c.2489+2T>C",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_000321.3",
+        "c_prefix": "",
+        "c": 2489,
+        "c_offset": 2,
+        "c_ref": "T",
+        "c_alt": "C",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 47941081,
+      "window_end_0based_exclusive": 48989657,
+      "variant_bin_0based": 256,
+      "hash_sha256": "008c7f17e45ea3c2fcae49d64f8bbc963ecac1d2b5b439ccfd89e682f2a05cba",
+      "stratum_pool_n": 33,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.06060606060606061,
+      "inverse_sampling_fraction": 16.5,
+      "site_index": 59
+    },
+    {
+      "site_id": "chr3:38551076:T",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38551076,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:38551076:T>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:38551076:T>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38551076:T>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "446418",
+        "gene": "SCN5A",
+        "ref": "T",
+        "alt": "A",
+        "name": "NM_000335.5(SCN5A):c.5293A>T (p.Met1765Leu)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 5293,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 38026787,
+      "window_end_0based_exclusive": 39075363,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0236ce45227d3da39bbcc273be937b36c187e41ad52eae3a26e8266859a67f03",
+      "stratum_pool_n": 83,
+      "stratum_selected_n": 3,
+      "sampling_fraction": 0.03614457831325301,
+      "inverse_sampling_fraction": 27.666666666666668,
+      "site_index": 60
+    },
+    {
+      "site_id": "chr3:38554274:C",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38554274,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "intronic",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:38554274:C>A",
+          "alt": "A",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38554274:C>G",
+          "alt": "G",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38554274:C>T",
+          "alt": "T",
+          "consequence": "intronic",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "intronic",
+      "clinvar_record": {
+        "variation_id": "1326912",
+        "gene": "SCN5A",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000335.5(SCN5A):c.4810+5G>A",
+        "name_class": "other_intronic",
+        "name_detail": "cds_intron",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 4810,
+        "c_offset": 5,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 2
+      },
+      "window_start_0based": 38029985,
+      "window_end_0based_exclusive": 39078561,
+      "variant_bin_0based": 256,
+      "hash_sha256": "aed2be952a3bf72180658403610c640b0211ed3f7e885baa4673c84df542b7e3",
+      "stratum_pool_n": 2,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 0.5,
+      "inverse_sampling_fraction": 2.0,
+      "site_index": 61
+    },
+    {
+      "site_id": "chr3:38557231:C",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38557231,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "synonymous",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:38557231:C>A",
+          "alt": "A",
+          "consequence": "synonymous",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:38557231:C>G",
+          "alt": "G",
+          "consequence": "synonymous",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38557231:C>T",
+          "alt": "T",
+          "consequence": "synonymous",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "1527872",
+        "gene": "SCN5A",
+        "ref": "C",
+        "alt": "A",
+        "name": "NM_000335.5(SCN5A):c.4296G>T (p.Gly1432=)",
+        "name_class": "synonymous",
+        "name_detail": "",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 4296,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "T",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 38032942,
+      "window_end_0based_exclusive": 39081518,
+      "variant_bin_0based": 256,
+      "hash_sha256": "208de5c8edd3802d502ab3df8e047065c5d546d830b768d748282399f074fe8c",
+      "stratum_pool_n": 3,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 0.3333333333333333,
+      "inverse_sampling_fraction": 3.0,
+      "site_index": 62
+    },
+    {
+      "site_id": "chr3:38575388:C",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38575388,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr3:38575388:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38575388:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38575388:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "201585",
+        "gene": "SCN5A",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000335.5(SCN5A):c.3572G>A (p.Trp1191Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 3572,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 38051099,
+      "window_end_0based_exclusive": 39099675,
+      "variant_bin_0based": 256,
+      "hash_sha256": "070638e6a7aa7b5a8713903af38f39d9ee678d281462dfd57d09a608dce3bab8",
+      "stratum_pool_n": 130,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.038461538461538464,
+      "inverse_sampling_fraction": 26.0,
+      "site_index": 63
+    },
+    {
+      "site_id": "chr3:38585842:C",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38585842,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr3:38585842:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38585842:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38585842:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "406396",
+        "gene": "SCN5A",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000335.5(SCN5A):c.2636G>A (p.Trp879Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 2636,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 38061553,
+      "window_end_0based_exclusive": 39110129,
+      "variant_bin_0based": 256,
+      "hash_sha256": "01f02bbb15e8cae4eee1aef006aa28c9eb5978fe15768792b3b2799d1839d6a4",
+      "stratum_pool_n": 130,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.038461538461538464,
+      "inverse_sampling_fraction": 26.0,
+      "site_index": 64
+    },
+    {
+      "site_id": "chr3:38597968:C",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38597968,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:38597968:C>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38597968:C>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38597968:C>T",
+          "alt": "T",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "1067586",
+        "gene": "SCN5A",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000335.5(SCN5A):c.2024-1G>A",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 2024,
+        "c_offset": -1,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 38073679,
+      "window_end_0based_exclusive": 39122255,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0467a146f8a90ef45a623507d2c3b6ac2b92187fb685dfedb4298e99e09c32af",
+      "stratum_pool_n": 42,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.047619047619047616,
+      "inverse_sampling_fraction": 21.0,
+      "site_index": 65
+    },
+    {
+      "site_id": "chr3:38598978:C",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38598978,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr3:38598978:C>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:38598978:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38598978:C>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "972691",
+        "gene": "SCN5A",
+        "ref": "C",
+        "alt": "A",
+        "name": "NM_000335.5(SCN5A):c.1963G>T (p.Glu655Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 1963,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 38074689,
+      "window_end_0based_exclusive": 39123265,
+      "variant_bin_0based": 256,
+      "hash_sha256": "024b97a4aa7d309717a5417f1b7ce7fb121d1a9207fd659c824eb0effcd85234",
+      "stratum_pool_n": 130,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.038461538461538464,
+      "inverse_sampling_fraction": 26.0,
+      "site_index": 66
+    },
+    {
+      "site_id": "chr3:38603999:G",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38603999,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr3:38603999:G>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:38603999:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38603999:G>T",
+          "alt": "T",
+          "consequence": "synonymous",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "517279",
+        "gene": "SCN5A",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_000335.5(SCN5A):c.1603C>T (p.Arg535Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 1603,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 11
+      },
+      "window_start_0based": 38079710,
+      "window_end_0based_exclusive": 39128286,
+      "variant_bin_0based": 256,
+      "hash_sha256": "02e7b6739316eea39b7695fc02f240697892e67970cfb3eec97ec6759257e4c9",
+      "stratum_pool_n": 130,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.038461538461538464,
+      "inverse_sampling_fraction": 26.0,
+      "site_index": 67
+    },
+    {
+      "site_id": "chr3:38606091:C",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38606091,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:38606091:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:38606091:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38606091:C>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "972696",
+        "gene": "SCN5A",
+        "ref": "C",
+        "alt": "A",
+        "name": "NM_000335.5(SCN5A):c.1198G>T (p.Gly400Trp)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 1198,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "T",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 38081802,
+      "window_end_0based_exclusive": 39130378,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0a6aba7d0119aae62df7de90d065d097ffdc49e8657c3006bb1efe6f8b0915fc",
+      "stratum_pool_n": 83,
+      "stratum_selected_n": 3,
+      "sampling_fraction": 0.03614457831325301,
+      "inverse_sampling_fraction": 27.666666666666668,
+      "site_index": 68
+    },
+    {
+      "site_id": "chr3:38606149:C",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38606149,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:38606149:C>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38606149:C>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38606149:C>T",
+          "alt": "T",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "463294",
+        "gene": "SCN5A",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000335.5(SCN5A):c.1141-1G>A",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 1141,
+        "c_offset": -1,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 38081860,
+      "window_end_0based_exclusive": 39130436,
+      "variant_bin_0based": 256,
+      "hash_sha256": "0acbe877239c6e884453dfc92432e4f7bfe71ef0e0ce45d4dca782781ac24685",
+      "stratum_pool_n": 42,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.047619047619047616,
+      "inverse_sampling_fraction": 21.0,
+      "site_index": 69
+    },
+    {
+      "site_id": "chr3:38606689:A",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38606689,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 0,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr3:38606689:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr3:38606689:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38606689:A>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "67637",
+        "gene": "SCN5A",
+        "ref": "A",
+        "alt": "C",
+        "name": "NM_000335.5(SCN5A):c.1120T>G (p.Trp374Gly)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 1120,
+        "c_offset": 0,
+        "c_ref": "T",
+        "c_alt": "G",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 3
+      },
+      "window_start_0based": 38082400,
+      "window_end_0based_exclusive": 39130976,
+      "variant_bin_0based": 256,
+      "hash_sha256": "000e9e35daa415cf45e35261bc9a35e616047309cbbb59070bb5fa7e3367afcd",
+      "stratum_pool_n": 83,
+      "stratum_selected_n": 3,
+      "sampling_fraction": 0.03614457831325301,
+      "inverse_sampling_fraction": 27.666666666666668,
+      "site_index": 70
+    },
+    {
+      "site_id": "chr3:38622414:C",
+      "gene": "SCN5A",
+      "chromosome": "chr3",
+      "position_1based": 38622414,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr3:38622414:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38622414:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr3:38622414:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000335.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "448976",
+        "gene": "SCN5A",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000335.5(SCN5A):c.468G>A (p.Trp156Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000335.5",
+        "c_prefix": "",
+        "c": 468,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 38098125,
+      "window_end_0based_exclusive": 39146701,
+      "variant_bin_0based": 256,
+      "hash_sha256": "013f3dee203c682a9e861348a58245161568b4ed6ea11cca2e264d6d9d157596",
+      "stratum_pool_n": 130,
+      "stratum_selected_n": 5,
+      "sampling_fraction": 0.038461538461538464,
+      "inverse_sampling_fraction": 26.0,
+      "site_index": 71
+    },
+    {
+      "site_id": "chr9:132897421:A",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132897421,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 0,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:132897421:A>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:132897421:A>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132897421:A>T",
+          "alt": "T",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "845066",
+        "gene": "TSC1",
+        "ref": "A",
+        "alt": "C",
+        "name": "NM_000368.5(TSC1):c.2813+2T>G",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 2813,
+        "c_offset": 2,
+        "c_ref": "T",
+        "c_alt": "G",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 1
+      },
+      "window_start_0based": 132373132,
+      "window_end_0based_exclusive": 133421708,
+      "variant_bin_0based": 256,
+      "hash_sha256": "01427ca08fe550255201597a41287c1c8a4404c76d643f0e40825791c9b30341",
+      "stratum_pool_n": 25,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.08,
+      "inverse_sampling_fraction": 12.5,
+      "site_index": 72
+    },
+    {
+      "site_id": "chr9:132900348:T",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132900348,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "intronic",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:132900348:T>A",
+          "alt": "A",
+          "consequence": "intronic",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132900348:T>C",
+          "alt": "C",
+          "consequence": "intronic",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:132900348:T>G",
+          "alt": "G",
+          "consequence": "intronic",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "intronic",
+      "clinvar_record": {
+        "variation_id": "581656",
+        "gene": "TSC1",
+        "ref": "T",
+        "alt": "C",
+        "name": "NM_000368.5(TSC1):c.2625+367A>G",
+        "name_class": "other_intronic",
+        "name_detail": "cds_intron",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 2625,
+        "c_offset": 367,
+        "c_ref": "A",
+        "c_alt": "G",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 5
+      },
+      "window_start_0based": 132376059,
+      "window_end_0based_exclusive": 133424635,
+      "variant_bin_0based": 256,
+      "hash_sha256": "1d8b1d3b6dc9cfe827d765e5bd86b253cad23d22e96208c575ded85888dad70d",
+      "stratum_pool_n": 8,
+      "stratum_selected_n": 1,
+      "sampling_fraction": 0.125,
+      "inverse_sampling_fraction": 8.0,
+      "site_index": 73
+    },
+    {
+      "site_id": "chr9:132900821:G",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132900821,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:132900821:G>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132900821:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132900821:G>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "3148658",
+        "gene": "TSC1",
+        "ref": "G",
+        "alt": "T",
+        "name": "NM_000368.5(TSC1):c.2519C>A (p.Ser840Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 2519,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 2
+      },
+      "window_start_0based": 132376532,
+      "window_end_0based_exclusive": 133425108,
+      "variant_bin_0based": 256,
+      "hash_sha256": "038b03ec9b8baf78483b8383f19570286993baea17f0a4f9d2785f25d908ba1a",
+      "stratum_pool_n": 149,
+      "stratum_selected_n": 7,
+      "sampling_fraction": 0.04697986577181208,
+      "inverse_sampling_fraction": 21.285714285714285,
+      "site_index": 74
+    },
+    {
+      "site_id": "chr9:132900839:T",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132900839,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "C",
+      "selected_allele_index": 1,
+      "selected_consequence": "canonical_splice",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:132900839:T>A",
+          "alt": "A",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132900839:T>C",
+          "alt": "C",
+          "consequence": "canonical_splice",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:132900839:T>G",
+          "alt": "G",
+          "consequence": "canonical_splice",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "canonical_splice",
+      "clinvar_record": {
+        "variation_id": "48967",
+        "gene": "TSC1",
+        "ref": "T",
+        "alt": "C",
+        "name": "NM_000368.5(TSC1):c.2503-2A>G",
+        "name_class": "canonical_splice",
+        "name_detail": "cds_intron",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 2503,
+        "c_offset": -2,
+        "c_ref": "A",
+        "c_alt": "G",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 2
+      },
+      "window_start_0based": 132376550,
+      "window_end_0based_exclusive": 133425126,
+      "variant_bin_0based": 256,
+      "hash_sha256": "010cc7dbbdc8e197975341dd3d2b07a6b2933cb729415ad711a749866cdecf56",
+      "stratum_pool_n": 25,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.08,
+      "inverse_sampling_fraction": 12.5,
+      "site_index": 75
+    },
+    {
+      "site_id": "chr9:132902649:G",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132902649,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:132902649:G>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:132902649:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132902649:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "48942",
+        "gene": "TSC1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_000368.5(TSC1):c.2347C>T (p.Gln783Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 2347,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 4
+      },
+      "window_start_0based": 132378360,
+      "window_end_0based_exclusive": 133426936,
+      "variant_bin_0based": 256,
+      "hash_sha256": "034ac30f37515e40e6a902cd6ae40e351fa961f3ead53407ef1c255e8e36d130",
+      "stratum_pool_n": 149,
+      "stratum_selected_n": 7,
+      "sampling_fraction": 0.04697986577181208,
+      "inverse_sampling_fraction": 21.285714285714285,
+      "site_index": 76
+    },
+    {
+      "site_id": "chr9:132903785:G",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132903785,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:132903785:G>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:132903785:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132903785:G>T",
+          "alt": "T",
+          "consequence": "synonymous",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "48885",
+        "gene": "TSC1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_000368.5(TSC1):c.2074C>T (p.Arg692Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 2074,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 23
+      },
+      "window_start_0based": 132379496,
+      "window_end_0based_exclusive": 133428072,
+      "variant_bin_0based": 256,
+      "hash_sha256": "01857696997a7a68a11697ddb4db2e256badacaf54c8d753cad2737460738a5c",
+      "stratum_pool_n": 149,
+      "stratum_selected_n": 7,
+      "sampling_fraction": 0.04697986577181208,
+      "inverse_sampling_fraction": 21.285714285714285,
+      "site_index": 77
+    },
+    {
+      "site_id": "chr9:132905591:C",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132905591,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:132905591:C>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:132905591:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132905591:C>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "280309",
+        "gene": "TSC1",
+        "ref": "C",
+        "alt": "A",
+        "name": "NM_000368.5(TSC1):c.1987G>T (p.Glu663Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 1987,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 3
+      },
+      "window_start_0based": 132381302,
+      "window_end_0based_exclusive": 133429878,
+      "variant_bin_0based": 256,
+      "hash_sha256": "05e61c1b28f0fb83660baced48bb217c41fd0df18ad8736e007f42011d5f9a60",
+      "stratum_pool_n": 149,
+      "stratum_selected_n": 7,
+      "sampling_fraction": 0.04697986577181208,
+      "inverse_sampling_fraction": 21.285714285714285,
+      "site_index": 78
+    },
+    {
+      "site_id": "chr9:132905819:T",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132905819,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:132905819:T>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:132905819:T>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132905819:T>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "64796",
+        "gene": "TSC1",
+        "ref": "T",
+        "alt": "A",
+        "name": "NM_000368.5(TSC1):c.1759A>T (p.Lys587Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 1759,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 2
+      },
+      "window_start_0based": 132381530,
+      "window_end_0based_exclusive": 133430106,
+      "variant_bin_0based": 256,
+      "hash_sha256": "05aa23856de670dd8759cb0eabdac4d28ce7628a8ee74a50f821437b79e26782",
+      "stratum_pool_n": 149,
+      "stratum_selected_n": 7,
+      "sampling_fraction": 0.04697986577181208,
+      "inverse_sampling_fraction": 21.285714285714285,
+      "site_index": 79
+    },
+    {
+      "site_id": "chr9:132906032:G",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132906032,
+      "ref": "G",
+      "alleles": [
+        "A",
+        "C",
+        "T"
+      ],
+      "selected_allele": "A",
+      "selected_allele_index": 0,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:132906032:G>A",
+          "alt": "A",
+          "consequence": "nonsense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:132906032:G>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132906032:G>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "649818",
+        "gene": "TSC1",
+        "ref": "G",
+        "alt": "A",
+        "name": "NM_000368.5(TSC1):c.1546C>T (p.Gln516Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 1546,
+        "c_offset": 0,
+        "c_ref": "C",
+        "c_alt": "T",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 2
+      },
+      "window_start_0based": 132381743,
+      "window_end_0based_exclusive": 133430319,
+      "variant_bin_0based": 256,
+      "hash_sha256": "06b0583f6d2b47f6971f0d591b8e290b649bea26363db9ff18af7b79ea57715f",
+      "stratum_pool_n": 149,
+      "stratum_selected_n": 7,
+      "sampling_fraction": 0.04697986577181208,
+      "inverse_sampling_fraction": 21.285714285714285,
+      "site_index": 80
+    },
+    {
+      "site_id": "chr9:132921835:A",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132921835,
+      "ref": "A",
+      "alleles": [
+        "C",
+        "G",
+        "T"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 1,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:132921835:A>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132921835:A>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": true
+        },
+        {
+          "id": "chr9:132921835:A>T",
+          "alt": "T",
+          "consequence": "missense",
+          "is_plp": false
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "49073",
+        "gene": "TSC1",
+        "ref": "A",
+        "alt": "G",
+        "name": "NM_000368.5(TSC1):c.647T>C (p.Phe216Ser)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 647,
+        "c_offset": 0,
+        "c_ref": "T",
+        "c_alt": "C",
+        "classification": "Pathogenic/Likely pathogenic",
+        "review_status": "criteria provided, multiple submitters, no conflicts",
+        "number_submitters": 3
+      },
+      "window_start_0based": 132397546,
+      "window_end_0based_exclusive": 133446122,
+      "variant_bin_0based": 256,
+      "hash_sha256": "015909279c76d92f7a417100e5653f75cc887e2ce1cf764cb5d1e8ae73c1d1b4",
+      "stratum_pool_n": 14,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.14285714285714285,
+      "inverse_sampling_fraction": 7.0,
+      "site_index": 81
+    },
+    {
+      "site_id": "chr9:132921940:T",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132921940,
+      "ref": "T",
+      "alleles": [
+        "A",
+        "C",
+        "G"
+      ],
+      "selected_allele": "G",
+      "selected_allele_index": 2,
+      "selected_consequence": "missense",
+      "consequence_matched_allele_count": 3,
+      "alternatives": [
+        {
+          "id": "chr9:132921940:T>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132921940:T>C",
+          "alt": "C",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132921940:T>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "64818",
+        "gene": "TSC1",
+        "ref": "T",
+        "alt": "G",
+        "name": "NM_000368.5(TSC1):c.542A>C (p.His181Pro)",
+        "name_class": "missense",
+        "name_detail": "",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 542,
+        "c_offset": 0,
+        "c_ref": "A",
+        "c_alt": "C",
+        "classification": "Likely pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 2
+      },
+      "window_start_0based": 132397651,
+      "window_end_0based_exclusive": 133446227,
+      "variant_bin_0based": 256,
+      "hash_sha256": "08d12e9e1289f28428abc47b13b068ccc9ba8ec3b7d6705968a18717c9c7807e",
+      "stratum_pool_n": 14,
+      "stratum_selected_n": 2,
+      "sampling_fraction": 0.14285714285714285,
+      "inverse_sampling_fraction": 7.0,
+      "site_index": 82
+    },
+    {
+      "site_id": "chr9:132925642:C",
+      "gene": "TSC1",
+      "chromosome": "chr9",
+      "position_1based": 132925642,
+      "ref": "C",
+      "alleles": [
+        "A",
+        "G",
+        "T"
+      ],
+      "selected_allele": "T",
+      "selected_allele_index": 2,
+      "selected_consequence": "nonsense",
+      "consequence_matched_allele_count": 1,
+      "alternatives": [
+        {
+          "id": "chr9:132925642:C>A",
+          "alt": "A",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132925642:C>G",
+          "alt": "G",
+          "consequence": "missense",
+          "is_plp": false
+        },
+        {
+          "id": "chr9:132925642:C>T",
+          "alt": "T",
+          "consequence": "nonsense",
+          "is_plp": true
+        }
+      ],
+      "transcript": "NM_000368.5",
+      "position_class": "coding",
+      "clinvar_record": {
+        "variation_id": "49012",
+        "gene": "TSC1",
+        "ref": "C",
+        "alt": "T",
+        "name": "NM_000368.5(TSC1):c.308G>A (p.Trp103Ter)",
+        "name_class": "nonsense",
+        "name_detail": "",
+        "tx": "NM_000368.5",
+        "c_prefix": "",
+        "c": 308,
+        "c_offset": 0,
+        "c_ref": "G",
+        "c_alt": "A",
+        "classification": "Pathogenic",
+        "review_status": "criteria provided, single submitter",
+        "number_submitters": 2
+      },
+      "window_start_0based": 132401353,
+      "window_end_0based_exclusive": 133449929,
+      "variant_bin_0based": 256,
+      "hash_sha256": "017722d9e6fd419a62d7b9e79c2ed56627528bd72a67b59e4e8e764e5f7edf4f",
+      "stratum_pool_n": 149,
+      "stratum_selected_n": 7,
+      "sampling_fraction": 0.04697986577181208,
+      "inverse_sampling_fraction": 21.285714285714285,
+      "site_index": 83
+    }
+  ]
+}

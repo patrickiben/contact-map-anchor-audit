@@ -10,3 +10,9 @@
 .numerical-details{margin-top:12px;border-top:1px solid #e4e9dd;padding-top:9px}.numerical-details summary{cursor:pointer;font-size:10px;color:var(--teal);font-weight:600}.numerical-details ul{margin:9px 0 0;padding-left:17px;font-size:10px}.numerical-details li{margin-bottom:6px}
 
 .teaching-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+/* Three reported evaluations; the paired track is explicitly not a new cohort. */
+@media (min-width:1100px){.cohort-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cohort-hero strong{font-size:42px}.cohort-title h3{font-size:26px}.study-metrics{grid-template-columns:1fr}.cohort-title{min-height:85px}}
+.study-results{margin-bottom:25px}.cohort-title p{line-height:1.5}
+.cohort-title{display:block}.cohort-title p{margin-top:8px}.cohort-hero{display:block}.cohort-hero strong{display:block;white-space:nowrap}.cohort-hero span{display:block;margin-top:9px}
+@media(min-width:1100px){.cohort-title{min-height:105px}}

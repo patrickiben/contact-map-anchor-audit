@@ -8,3 +8,5 @@
 @media print{.site-header,.controls,.editor-actions,.quiz-actions,.button,.site-footer{display:none}.wrap{width:100%}body{background:white;font-size:11px}.intro,.lab-layout,.input-layout,.learning-layout{display:block}.chart-grid{display:grid;grid-template-columns:1fr 1fr}.panel{break-inside:avoid}.study-section{background:white}.chart-host{min-height:0}.section-heading{margin-top:30px}details.lesson:not([open]) .lesson-content{display:block}}
 
 .numerical-details{margin-top:12px;border-top:1px solid #e4e9dd;padding-top:9px}.numerical-details summary{cursor:pointer;font-size:10px;color:var(--teal);font-weight:600}.numerical-details ul{margin:9px 0 0;padding-left:17px;font-size:10px}.numerical-details li{margin-bottom:6px}
+
+.teaching-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center}

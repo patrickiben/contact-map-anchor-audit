@@ -30,6 +30,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Check educational content and adverse fixtures
         run: python scripts/build_education.py --check --self-test
+      - name: Check printable teaching editions and coverage
+        run: python scripts/check_pdf_companions.py
       - name: Check the generated standalone lab
         run: python scripts/build_standalone.py --check
       - name: Install browser test dependencies

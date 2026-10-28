@@ -1,0 +1,723 @@
+{
+  "schema": "research-teaching-editions-v1",
+  "date": "2026-10-28",
+  "title": "Auditing allele rankings in genomic predictions: consequence controls and contact-map anchoring",
+  "source_scope": "Frozen main manuscript and current Supplements S1-S3; educational interpretation, not a deposit of the raw research bundle.",
+  "sources": [
+    {
+      "id": "MAIN",
+      "file": "PROPOSED_contact_channel_3d_VALIDATED.md",
+      "sha256": "57f31d65b5fcb857e2994c95da66b149b1bfa6885bcdbc76baa6896a79d9d0fe",
+      "lines": 319,
+      "publication_status": "Unsubmitted author-review source, 28 October 2026; raw source not copied into this toolkit"
+    },
+    {
+      "id": "S1",
+      "file": "PROPOSED_SUPPLEMENT_S1_VERTEX_THINNING.md",
+      "sha256": "b4d0040e8549d269b1fb08628b133b50eb770ced77b39f4d5a7c73c8a8b3327d",
+      "lines": 25,
+      "publication_status": "Unsubmitted author-review source, 28 October 2026; raw source not copied into this toolkit"
+    },
+    {
+      "id": "S2",
+      "file": "PROPOSED_SUPPLEMENT_S2_ANCHOR_THEORY.md",
+      "sha256": "b6439fea33044f36718632eeb1829d6461f730eea16e9235628ba3168c0b2636",
+      "lines": 141,
+      "publication_status": "Unsubmitted author-review source, 28 October 2026; raw source not copied into this toolkit"
+    },
+    {
+      "id": "S3",
+      "file": "PROPOSED_SUPPLEMENT_S3_MONTE_CARLO_SCOPE.md",
+      "sha256": "b597a5031bb1fdad5cbee2f8ab5ba8f52df617dd6a10ee38c66fcc4c4da7f551",
+      "lines": 32,
+      "publication_status": "Unsubmitted author-review source, 28 October 2026; raw source not copied into this toolkit"
+    }
+  ],
+  "coverage": [
+    {
+      "id": "MAIN-01",
+      "source": "MAIN",
+      "lines": [
+        1,
+        18
+      ],
+      "units": [
+        "INTRO",
+        "P01",
+        "P03",
+        "P07",
+        "P08"
+      ],
+      "topic": "Title, version, author metadata and abstract synthesis",
+      "excerpt_sha256": "572a08e61f637771d38f5371694b3d685d49e7fa7737381b72c881ec9346d123"
+    },
+    {
+      "id": "MAIN-02",
+      "source": "MAIN",
+      "lines": [
+        20,
+        31
+      ],
+      "units": [
+        "R01",
+        "R05"
+      ],
+      "topic": "Contribution, prior art, located structural targets",
+      "excerpt_sha256": "36e47ce4b5806ac7e66183c5e667d69dbb6ae56ece00bf24f5657b84c3e6bd73"
+    },
+    {
+      "id": "MAIN-03",
+      "source": "MAIN",
+      "lines": [
+        32,
+        42
+      ],
+      "units": [
+        "P01",
+        "R01"
+      ],
+      "topic": "Counts, predicted log enrichment, Atlas score and sampling operations",
+      "excerpt_sha256": "eab0afbf50a13843837ad92edfb74088e1ec7c88a0812c4a8085af914ba38a8a"
+    },
+    {
+      "id": "MAIN-04",
+      "source": "MAIN",
+      "lines": [
+        44,
+        56
+      ],
+      "units": [
+        "P02",
+        "R02"
+      ],
+      "topic": "Full flag filtration, support/F2, stability and Betti counterexample",
+      "excerpt_sha256": "0047a7830e12727aef83e5daa932d440636bf4640b20553985a5664b082eb0d0"
+    },
+    {
+      "id": "MAIN-05",
+      "source": "MAIN",
+      "lines": [
+        59,
+        77
+      ],
+      "units": [
+        "P03",
+        "R03"
+      ],
+      "topic": "Translation, invariant summaries, centering norm, normalization and Figure 1",
+      "excerpt_sha256": "be5a8b5d5c520f2a99947584b892445d409c438043b95de334fbe548e71491ed"
+    },
+    {
+      "id": "MAIN-06",
+      "source": "MAIN",
+      "lines": [
+        79,
+        97
+      ],
+      "units": [
+        "P03",
+        "R04",
+        "S02",
+        "S03"
+      ],
+      "topic": "Endpoint cones, saturation, deficits, numerical errors and finite slopes",
+      "excerpt_sha256": "4438608dddb1f5a3aa41c9892448b76d0bd5baad1af36f15c020dc77e237193b"
+    },
+    {
+      "id": "MAIN-07",
+      "source": "MAIN",
+      "lines": [
+        99,
+        109
+      ],
+      "units": [
+        "P04",
+        "R04",
+        "S04"
+      ],
+      "topic": "Witnesses, branch asymmetry, multiplicity and two counterexamples",
+      "excerpt_sha256": "de50a0e30bf1adaf5f6cde8ce05fd4fcab91ba1ccfacc5aca5a8ede9daaf4d27"
+    },
+    {
+      "id": "MAIN-08",
+      "source": "MAIN",
+      "lines": [
+        111,
+        121
+      ],
+      "units": [
+        "P04",
+        "R04",
+        "S05"
+      ],
+      "topic": "Margins, possible/guaranteed sets, crossings, baselines and label separation",
+      "excerpt_sha256": "b3343e021d37e3e5beaa6c1e04cc259e2079150123efac9e3506a91fdc092bad"
+    },
+    {
+      "id": "MAIN-09",
+      "source": "MAIN",
+      "lines": [
+        123,
+        132
+      ],
+      "units": [
+        "R05",
+        "S06"
+      ],
+      "topic": "Shift-invariant prior art, half-range bound, rank ties and lost location",
+      "excerpt_sha256": "1fbcb323d9e6741e5a7538045745e4d3f378a5fbd2b314f36386c3343e8e7072"
+    },
+    {
+      "id": "MAIN-10",
+      "source": "MAIN",
+      "lines": [
+        133,
+        141
+      ],
+      "units": [
+        "P05",
+        "R06"
+      ],
+      "topic": "Profile design, cohorts, pooling, geometries, null weights and eligibility",
+      "excerpt_sha256": "74ed8f0e0618ad4de06988d3dcf57debbc2b16b8678e31ac59831fa8950a1ada"
+    },
+    {
+      "id": "MAIN-11",
+      "source": "MAIN",
+      "lines": [
+        143,
+        153
+      ],
+      "units": [
+        "P05",
+        "R06",
+        "S07"
+      ],
+      "topic": "All reported profile strata, quarter criterion, negative margins and exploratory baselines",
+      "excerpt_sha256": "9d570584bdc5cc4378cb0892888f58800f7d64856144d35adf8ba7ad745f5516"
+    },
+    {
+      "id": "MAIN-12",
+      "source": "MAIN",
+      "lines": [
+        155,
+        161
+      ],
+      "units": [
+        "R06"
+      ],
+      "topic": "Zero-origin sensitivity, historical tie rules, targeted tie check and endpoint change",
+      "excerpt_sha256": "cd5aab4036016d0ea161bd216313d17e65bdf365eec28741a1b7b82b9f83baa0"
+    },
+    {
+      "id": "MAIN-13",
+      "source": "MAIN",
+      "lines": [
+        162,
+        170
+      ],
+      "units": [
+        "P01",
+        "R07"
+      ],
+      "topic": "Spatial acquisition, dimensions, support, solvers, precision and changed edges",
+      "excerpt_sha256": "942c330763ca5e7701b9609ef1827afc22e9a3c01730bf6ee2eaebe75fabc744"
+    },
+    {
+      "id": "MAIN-14",
+      "source": "MAIN",
+      "lines": [
+        172,
+        178
+      ],
+      "units": [
+        "P06",
+        "R07"
+      ],
+      "topic": "Local declaration, four tests, exact conditional arithmetic and sensitivity nulls",
+      "excerpt_sha256": "1513715796ec9d0ced81075104e53e23a43eb480e28b6596f0a80e38c678135c"
+    },
+    {
+      "id": "MAIN-15",
+      "source": "MAIN",
+      "lines": [
+        180,
+        193
+      ],
+      "units": [
+        "P07",
+        "R08"
+      ],
+      "topic": "First main table, correction families, null intervals and tie resolutions",
+      "excerpt_sha256": "665273430416cab6f4bdfe0af9b7ca2e17610fac190f20803855788f672994eb"
+    },
+    {
+      "id": "MAIN-16",
+      "source": "MAIN",
+      "lines": [
+        195,
+        201
+      ],
+      "units": [
+        "R08"
+      ],
+      "topic": "Figures 2 and 3: descriptive cohorts and fixed first-site illustration",
+      "excerpt_sha256": "a6ee0200d54d93ae87c5018d0c0be3372725ca059c887857655068709a6d81ad"
+    },
+    {
+      "id": "MAIN-17",
+      "source": "MAIN",
+      "lines": [
+        204,
+        211
+      ],
+      "units": [
+        "P07",
+        "R08"
+      ],
+      "topic": "Discovery path saturation, branch counts, scalar reconstruction and witnesses",
+      "excerpt_sha256": "48ee69006174c6cc946ebeeb5be24a173f9463d654b901356994b561e51c07c5"
+    },
+    {
+      "id": "MAIN-18",
+      "source": "MAIN",
+      "lines": [
+        212,
+        220
+      ],
+      "units": [
+        "P08",
+        "R09"
+      ],
+      "topic": "Replication sampling, independence limits, frozen outcomes and midpoint design",
+      "excerpt_sha256": "d7694b1072858382e6b984dc0457015d42ceee84ad948fbf5e260ee1b3e6b878"
+    },
+    {
+      "id": "MAIN-19",
+      "source": "MAIN",
+      "lines": [
+        222,
+        237
+      ],
+      "units": [
+        "P08",
+        "R09"
+      ],
+      "topic": "Second main table: full discovery/replication denominator comparison",
+      "excerpt_sha256": "003d58280fe97ef207410e058da33cc60f6ec2eb3a7d2efff9dfd4dc2050f003"
+    },
+    {
+      "id": "MAIN-20",
+      "source": "MAIN",
+      "lines": [
+        239,
+        247
+      ],
+      "units": [
+        "P08",
+        "R09"
+      ],
+      "topic": "Replication mechanism, midpoint checks, witness increments, tolerance and RMS baselines",
+      "excerpt_sha256": "6f91b6abdbe6059cfab80c7fe7dbd85d8c28fec7221cc5fd11baeadc7c386e89"
+    },
+    {
+      "id": "MAIN-21",
+      "source": "MAIN",
+      "lines": [
+        249,
+        252
+      ],
+      "units": [
+        "R09"
+      ],
+      "topic": "Figure 4 panels, breakpoint approximation and uncertainty boundary",
+      "excerpt_sha256": "63057e60c33f30270361c0864b4ea84718dedf1f76a5d507a1cce03feb7055c9"
+    },
+    {
+      "id": "MAIN-22",
+      "source": "MAIN",
+      "lines": [
+        253,
+        265
+      ],
+      "units": [
+        "P09",
+        "P10",
+        "R10"
+      ],
+      "topic": "Interpretation, novelty limits, quantization, biological and sampling limitations",
+      "excerpt_sha256": "23d61d9bfcfc904e28dc381002d86e4a6898f1c144e44d38a81268f6e34404fb"
+    },
+    {
+      "id": "MAIN-23",
+      "source": "MAIN",
+      "lines": [
+        267,
+        276
+      ],
+      "units": [
+        "P10",
+        "R10"
+      ],
+      "topic": "Reproduction artifacts, all 204 sites, 6324 checks and fixed-seed limits",
+      "excerpt_sha256": "670f6ebe8b6d5e9dac68e8cdb942eff33237d79c0feefc0924bd0006ef69bf43"
+    },
+    {
+      "id": "MAIN-24",
+      "source": "MAIN",
+      "lines": [
+        278,
+        287
+      ],
+      "units": [
+        "R10"
+      ],
+      "topic": "Ethics, data terms, funding/conflicts, AI assistance and author responsibility",
+      "excerpt_sha256": "f7199cadb4e97083bf9e5dcd9efb7fbd824a4baca51cf50ba4df5546d1b536ba"
+    },
+    {
+      "id": "MAIN-25",
+      "source": "MAIN",
+      "lines": [
+        289,
+        319
+      ],
+      "units": [
+        "R05",
+        "R10",
+        "S06"
+      ],
+      "topic": "Bibliographic source roles and closest invariant-distance precedents",
+      "excerpt_sha256": "06065eab55a2ef493e9c4730a8fbb4ae76d1a4aa5589bcb1a2895f87018fa1da"
+    },
+    {
+      "id": "S1-01",
+      "source": "S1",
+      "lines": [
+        1,
+        5
+      ],
+      "units": [
+        "INTRO",
+        "S01"
+      ],
+      "topic": "Supplement title and distinction from read thinning",
+      "excerpt_sha256": "57cbfb56bf1c0851ad6ec42a5c03652a994d49684d78bf3a692979603273e195"
+    },
+    {
+      "id": "S1-02",
+      "source": "S1",
+      "lines": [
+        7,
+        11
+      ],
+      "units": [
+        "S01"
+      ],
+      "topic": "Fixed-N zero-preserving extinction bound and proof",
+      "excerpt_sha256": "01bbedd45503a86735c9344ea1d41cc42bf083d9de2781957171cdbf8c7b08e5"
+    },
+    {
+      "id": "S1-03",
+      "source": "S1",
+      "lines": [
+        13,
+        15
+      ],
+      "units": [
+        "S01"
+      ],
+      "topic": "No amplitude law, nonmonotone deletion and growing-N boundary",
+      "excerpt_sha256": "4f84cc1cca7590b1a831ac341bc6dba3dc53413ea37ec1e18c7af5d2c2f7b822"
+    },
+    {
+      "id": "S1-04",
+      "source": "S1",
+      "lines": [
+        17,
+        17
+      ],
+      "units": [
+        "S01"
+      ],
+      "topic": "Conditional uniform fixed-size subset and eligibility",
+      "excerpt_sha256": "938baa99d1583cc9831f14eb8a712081fb447608856bbea796e6481db0bff42d"
+    },
+    {
+      "id": "S1-05",
+      "source": "S1",
+      "lines": [
+        20,
+        25
+      ],
+      "units": [
+        "S01"
+      ],
+      "topic": "Exact map-specific polynomial, leading witness order and cycles",
+      "excerpt_sha256": "49baa585a2ec22bc29a2c4e062f847c05f385d2db9084f4c4568e0d85de34831"
+    },
+    {
+      "id": "S2-01",
+      "source": "S2",
+      "lines": [
+        1,
+        13
+      ],
+      "units": [
+        "P03",
+        "R03",
+        "R04",
+        "S02"
+      ],
+      "topic": "Object, centering sign, lifetime invariance and opposite slopes",
+      "excerpt_sha256": "64dea812dea22038cad13b5b36b2fa9c98de21403bea4f00677a3ee40147196a"
+    },
+    {
+      "id": "S2-02",
+      "source": "S2",
+      "lines": [
+        15,
+        48
+      ],
+      "units": [
+        "R04",
+        "S02"
+      ],
+      "topic": "Exact endpoint rigidity, deficit tube, errors and shift uncertainty",
+      "excerpt_sha256": "e7abc3e249fe5a4925bac0ee8db1a53eb370827bb50821ec007cf1ad07da8ce6"
+    },
+    {
+      "id": "S2-03",
+      "source": "S2",
+      "lines": [
+        50,
+        63
+      ],
+      "units": [
+        "S03"
+      ],
+      "topic": "Matching costs, finite slope set and nonconvex cap",
+      "excerpt_sha256": "9837f9f805e84c191a32870b3d2dd1a077074084cd11d29645b6325b9f96a547"
+    },
+    {
+      "id": "S2-04",
+      "source": "S2",
+      "lines": [
+        65,
+        84
+      ],
+      "units": [
+        "S03"
+      ],
+      "topic": "Native graph certificate, strict radius, degeneracy and lattice bound",
+      "excerpt_sha256": "81d1b398a03fd1bad0de51f8d8baf86574cc885b99d8e1d31bee55ae3c382d9d"
+    },
+    {
+      "id": "S2-05",
+      "source": "S2",
+      "lines": [
+        86,
+        99
+      ],
+      "units": [
+        "R04",
+        "S04"
+      ],
+      "topic": "Hausdorff witness, empty sets, both branches and multiplicity",
+      "excerpt_sha256": "ebd9c7289cfe7ea2c204061e1fa48b38daf7ec5922ccbee6c3f19f0a328f7234"
+    },
+    {
+      "id": "S2-06",
+      "source": "S2",
+      "lines": [
+        101,
+        116
+      ],
+      "units": [
+        "R04",
+        "S05"
+      ],
+      "topic": "Tolerance roots, Cartesian intervals, path margins and no label tuning",
+      "excerpt_sha256": "b64b8b1f534758064599bacce25c6a31aba02d896c0e3e77c001736a498b32bb"
+    },
+    {
+      "id": "S2-07",
+      "source": "S2",
+      "lines": [
+        118,
+        125
+      ],
+      "units": [
+        "R05",
+        "S06"
+      ],
+      "topic": "Rank perturbation count, all-tied counterexample and lost location",
+      "excerpt_sha256": "5bbe48199e1413ee9d98252b1487bab521679cff55d3eed922efe97abdb8e076"
+    },
+    {
+      "id": "S2-08",
+      "source": "S2",
+      "lines": [
+        127,
+        135
+      ],
+      "units": [
+        "R05",
+        "S06"
+      ],
+      "topic": "Closest prior art and individual theorem priority boundary",
+      "excerpt_sha256": "57e275c7cdf1516e8f81711fc43063267df05c41b96ce07f4b392af9e6d46a2f"
+    },
+    {
+      "id": "S2-09",
+      "source": "S2",
+      "lines": [
+        137,
+        141
+      ],
+      "units": [
+        "S06"
+      ],
+      "topic": "Exact finite verifier counts and limits",
+      "excerpt_sha256": "434eac7d2b557acfe07933a4d39d80344510d2f401642995d214a53c9f609ece"
+    },
+    {
+      "id": "S3-01",
+      "source": "S3",
+      "lines": [
+        1,
+        5
+      ],
+      "units": [
+        "P05",
+        "P06",
+        "S07"
+      ],
+      "topic": "Profile versus spatial arithmetic, zero exceedance and precision floor",
+      "excerpt_sha256": "23f9dff49f7fff100e6a384d36575d9ed0f8e57370ada1d38c51cd88d8da5d49"
+    },
+    {
+      "id": "S3-02",
+      "source": "S3",
+      "lines": [
+        7,
+        13
+      ],
+      "units": [
+        "S07"
+      ],
+      "topic": "All five retained zero-exceedance table rows",
+      "excerpt_sha256": "ab18353190b5629a7c0f25bc01f36c2cb0dd3598a39509d12544bd19a0d3cc54"
+    },
+    {
+      "id": "S3-03",
+      "source": "S3",
+      "lines": [
+        15,
+        22
+      ],
+      "units": [
+        "P05",
+        "R06",
+        "S07"
+      ],
+      "topic": "Both negative-margin rows, null means and source role",
+      "excerpt_sha256": "2e87f044e4e69328d729f42ab99054ee4832f06c1f946321beb664e2a6edcfcb"
+    },
+    {
+      "id": "S3-04",
+      "source": "S3",
+      "lines": [
+        24,
+        24
+      ],
+      "units": [
+        "S07"
+      ],
+      "topic": "Raw p versus adjusted q precision; separate binomial top-1 test",
+      "excerpt_sha256": "c6caa2f0b1634fa0f660115a53618dd8f40f662421f47998c802bb447aacd78d"
+    },
+    {
+      "id": "S3-05",
+      "source": "S3",
+      "lines": [
+        26,
+        28
+      ],
+      "units": [
+        "R06",
+        "S07"
+      ],
+      "topic": "Quarter criterion, three redraws, simultaneous intervals and assumptions",
+      "excerpt_sha256": "31a196d235f6ff15f2a57f1c6f156df11266575ae2514e803b51612b009e35fb"
+    },
+    {
+      "id": "S3-06",
+      "source": "S3",
+      "lines": [
+        30,
+        32
+      ],
+      "units": [
+        "R06",
+        "S07"
+      ],
+      "topic": "Eligibility change, sensitivity weights and provenance limits",
+      "excerpt_sha256": "b255f1e8dea095c4b89be6ae377548d3197b2f20102c09f88925f7889342fbf4"
+    }
+  ],
+  "assets": [
+    {
+      "path": "education/STUDY_GUIDE.md",
+      "sha256": "5e25dbd5733c237a0f874b2bb6a213ebea32ddc62e3849d81e0ddee8c2fb1ae1",
+      "bytes": 10738
+    },
+    {
+      "path": "education/STUDY_GUIDE.pdf",
+      "sha256": "6c8fd4f37ee2836c7cd70fb7ae54c8a52c5e58baf9b37cda8863dcf3156ab3ce",
+      "bytes": 189802
+    },
+    {
+      "path": "education/COMPANION.md",
+      "sha256": "d9eab001b6cf205c8dc36237f48a0dc99e9fe3e2cdd68bae4709cb88f2d133a1",
+      "bytes": 77597
+    },
+    {
+      "path": "education/COMPANION.pdf",
+      "sha256": "8ecd60e7d39d0f181ef908adc6b5edc748b0afdb8dfbcb03ce5a2e56b30b703f",
+      "bytes": 270929
+    },
+    {
+      "path": "education/COMPLETE_COVERAGE.md",
+      "sha256": "cd3b7bea340433385c2e0b9a4006884c930cd2be026179d084de72b63d404b7b",
+      "bytes": 7277
+    },
+    {
+      "path": "education/pdf_build_metadata.json",
+      "sha256": "67d6613532fa60a3bd590d26417474debdf0e9692a4cc4dc96dc4b0184cd7fda",
+      "bytes": 932
+    },
+    {
+      "path": "scripts/build_pdf_companions.py",
+      "sha256": "55e548cc021f3734829fd5b4317a2d8e1cdcdea1c26c30649a1f617452ac1f05",
+      "bytes": 15883
+    },
+    {
+      "path": "scripts/check_pdf_companions.py",
+      "sha256": "a77bcbd55265cc4613d573824b078270111a03ac3247514565a0b49198ef935c",
+      "bytes": 3285
+    }
+  ],
+  "validation": {
+    "scientific_readthrough": "Model-assisted separate review against all four source files; identified corrections incorporated.",
+    "visual_review": "All 32 rendered pages inspected on contact sheets; dense tables, mathematical text and final guide page also inspected at page scale. Short quiz items are kept together. No clipping, overlap or missing glyphs found.",
+    "human_learner_validation": "NOT_PERFORMED",
+    "author_approval": "NOT_CERTIFIED",
+    "mathematical_scope": "Teaching explanations and finite checks do not constitute formal proof-assistant or complete real-arithmetic certification.",
+    "pdf_pages": {
+      "study_guide": 4,
+      "complete_companion": 28
+    },
+    "source_coverage_check": "All four frozen source hashes, mapped excerpt hashes and every nonblank source line verified."
+  }
+}

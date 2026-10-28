@@ -1,0 +1,31 @@
+{
+  "format": "research-companion-pdf-build-v1",
+  "date": "2026-10-28",
+  "style": "Research and teaching series: Georgia body, Arial headings, teal accents, letter pages",
+  "editions": [
+    {
+      "name": "STUDY_GUIDE",
+      "pages": 4,
+      "markdown": {
+        "path": "education/STUDY_GUIDE.md",
+        "sha256": "5e25dbd5733c237a0f874b2bb6a213ebea32ddc62e3849d81e0ddee8c2fb1ae1"
+      },
+      "pdf": {
+        "path": "education/STUDY_GUIDE.pdf",
+        "sha256": "6c8fd4f37ee2836c7cd70fb7ae54c8a52c5e58baf9b37cda8863dcf3156ab3ce"
+      }
+    },
+    {
+      "name": "COMPANION",
+      "pages": 28,
+      "markdown": {
+        "path": "education/COMPANION.md",
+        "sha256": "d9eab001b6cf205c8dc36237f48a0dc99e9fe3e2cdd68bae4709cb88f2d133a1"
+      },
+      "pdf": {
+        "path": "education/COMPANION.pdf",
+        "sha256": "8ecd60e7d39d0f181ef908adc6b5edc748b0afdb8dfbcb03ce5a2e56b30b703f"
+      }
+    }
+  ]
+}

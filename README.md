@@ -4,11 +4,15 @@
 
 Mean centering can translate persistence intervals without changing their lifetimes. If reference and alternate diagrams translate by different amounts, their bottleneck distance can still change. A tied ranking may then become unique. The toolkit makes that mechanism inspectable and distinguishes a more decisive ranking from evidence of better clinical discrimination.
 
+**Manuscript:** *Auditing allele rankings in genomic predictions: consequence controls and contact-map anchoring*. Current rework, not yet submitted (28 October 2026). The earlier AlphaGenome audit received editorial desk decisions for journal fit; its preprint and archived data remain separate versioned records.
+
+[Code and toolkit](https://github.com/patrickiben/contact-map-anchor-audit) · [Live demo](https://patrickiben.github.io/contact-map-anchor-audit/) · [Study guide PDF](education/STUDY_GUIDE.pdf) · [Complete companion PDF](education/COMPANION.pdf) · [Manuscript → code → demo map](https://github.com/patrickiben/patrickiben/blob/main/RESEARCH_MAP.md)
+
 ## Choose a starting point
 
 - **Explore:** [open the interactive lab](https://patrickiben.github.io/contact-map-anchor-audit/). Move the centering slider, compare synthetic controls, inspect unresolved winners and export an audit report.
 - **Use your diagrams:** run the Python command on finite persistence-diagram JSON, with an optional accelerated backend for larger inputs.
-- **Learn:** follow the [educational companion](education/README.md), [worked examples](education/WORKED_EXAMPLES.md) and [practice questions](education/PRACTICE.md).
+- **Learn:** choose the [concise study guide](education/STUDY_GUIDE.pdf) or [complete companion](education/COMPANION.pdf), with [Markdown editions and coverage records](education/README.md). The interactive lessons, [worked examples](education/WORKED_EXAMPLES.md) and [practice questions](education/PRACTICE.md) provide additional routes into the material.
 - **Integrate:** see [API and input/output contracts](docs/API.md) and the [researcher workflow](education/RESEARCHER_WORKFLOW.md).
 
 For an offline copy, download this repository and open `standalone/AnchorAuditLab.html` in a browser. Its scripts, styles, teaching material and synthetic presets are embedded in one file; no server is needed. The standalone file is generated from the same sources as the hosted lab.
@@ -91,7 +95,9 @@ For the earlier background-profile audit, see the separate [Same-Site Allele Exp
 
 ## Educational companion
 
-The companion has ten lessons, a glossary, six worked examples and twelve interactive practice questions with feedback. The [aggregate-value map](education/STUDY_VALUE_MAP.json) and [source map](education/SOURCE_MAP.json) make the adaptation inspectable.
+The printable editions follow the same structure as the other research repositories: [STUDY_GUIDE](education/STUDY_GUIDE.pdf) for a concise introduction, and [COMPANION](education/COMPANION.pdf) for the main manuscript and all three current supplements. Both also have Markdown editions. The [complete coverage map](education/COMPLETE_COVERAGE.md) and [artifact manifest](education/ARTIFACTS.json) identify their scope and versions.
+
+The browser companion has ten lessons, a glossary, six worked examples and twelve interactive practice questions with feedback. The [aggregate-value map](education/STUDY_VALUE_MAP.json) and [source map](education/SOURCE_MAP.json) make that adaptation inspectable.
 
 The quiz is practice, not the original locked human transfer test. Human learner validation and author approval are not certified by a software check. No educational effectiveness or learner pass rate is claimed.
 
@@ -106,6 +112,7 @@ Python numerical tests include small-diagram matching oracles, boundary cases an
 ```sh
 python -m unittest discover -s tests -p 'test_*.py'
 python scripts/build_education.py --check --self-test
+python scripts/check_pdf_companions.py
 python scripts/build_standalone.py --check
 npm ci
 npm run test:core
@@ -120,6 +127,8 @@ python scripts/build_education.py --check --self-test --source path/to/PROPOSED_
 ```
 
 These checks support implementation, content and source correspondence. They do not replace mathematical proof, formal floating-point certification, biological validation or a human review of scientific interpretation.
+
+The printable editions use the portfolio's Georgia/Arial typography and Letter page layout. To rebuild them, install ReportLab and pypdf, make Pandoc available, and run `python scripts/build_pdf_companions.py`. The renderer uses the macOS Supplemental fonts by default; set `ANCHOR_PDF_FONT_DIR` to a directory containing the documented font files on another system. After any change, inspect the rendered pages before refreshing the artifact manifest. The standard-library PDF check verifies the released files without requiring those authoring dependencies.
 
 ## Citation and licensing
 

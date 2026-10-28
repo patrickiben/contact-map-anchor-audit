@@ -115,7 +115,7 @@ The remaining sites stay unresolved. That is useful information about which calc
 
 Open the [Anchor Audit Lab](https://patrickiben.github.io/contact-map-anchor-audit/) for five synthetic controls, a centering slider, bounds, local diagram import and JSON audit export. The Python toolkit accepts larger finite diagrams. Neither route constructs diagrams from a contact map or chooses the biological anchor for you.
 
-The [complete companion](COMPANION.pdf) supplies the detailed reading route, six worked examples, twelve practice questions and a research workflow. These are teaching adaptations, not biological replications or validated learner assessments. Human learner testing remains pending. AI assisted drafting and verification; passing checks does not substitute for human judgment.
+The [complete companion](COMPANION.pdf) supplies the detailed reading route, six worked examples, twelve practice questions and a research workflow. These are teaching adaptations, not biological replications or validated learner assessments. Human learner testing remains pending. Codex assisted development and verification, Qwen3.8 earlier drafting, and Qwen3.8-Max author-supplied QC. Checks do not replace final author approval.
 
 The full study archive is released with [v0.2.0](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0), alongside the public manuscript, code, protocols and verification records. Toolkit code is MIT-licensed; provider model outputs retain their separate terms and attribution notices. Public availability supports reproduction, not clinical validity, author journal approval or human learner effectiveness.
 

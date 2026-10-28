@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "source": {
     "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-    "sha256": "fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969",
+    "sha256": "fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403",
     "version": "BMC Bioinformatics proposed revision, 28 October 2026",
     "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
     "publication_status": "Public research draft and v0.2.0 study archive; no journal submission, acceptance or new DOI claimed."
@@ -168,9 +168,10 @@
       ],
       "body": [
         "The validation reran cached-input calculations and checked source-specific numerical claims. Replaying original random seeds can reproduce a simulation exactly without reducing its statistical uncertainty.",
-        "This toolkit adds reusable software and teaching examples. Its presets are synthetic. Imported diagrams are supplied by the user and processed locally by the static browser application. The study-summary panel contains aggregate author analysis results, not raw contact maps.",
+        "This toolkit adds synthetic examples and reusable software. Imported diagrams are processed locally in the browser. The study-summary panel reports aggregate author analyses, not raw contact maps.",
         "The research contribution combines a specified preprocessing path, ranking bounds, useful witnesses, explicit unresolved cases and measured new-locus behavior. It is not a new generic distance, a physical loop detector or a clinical prediction tool.",
-        "The full v0.2.0 study archive is publicly released with the manuscript, code and verification records. Toolkit code is MIT-licensed; model outputs retain separate provider terms and attribution. Public release does not establish clinical validity, author journal approval or human learner transfer."
+        "The full v0.2.0 study archive is publicly released with the manuscript, code and verification records. Toolkit code is MIT-licensed; model outputs retain separate provider terms and attribution. Public release does not establish clinical validity, author journal approval or human learner transfer.",
+        "Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending."
       ],
       "try_it": "Describe one independent measurement that would be needed to connect the audit to a real structural chromosome change.",
       "boundary": "The practice quiz has not been validated with human learners and does not replace author review."

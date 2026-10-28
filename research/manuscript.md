@@ -26,7 +26,7 @@ Contact-map topology makes this interpretation problem concrete. Independently m
 
 We develop an executable audit of this specified preprocessing operation. Its inputs are native persistence diagrams, their bottleneck distances and map mean shifts; its outputs include bounded centered scores, uniquely determined leaders and explicit unresolved sets. After both endpoint distances are available, a complementary envelope describes the whole path. We evaluate the method on spatial discovery data, prospectively selected new loci and a second output track with predictions locked before validation. The incorporated eleven-gene Atlas audit provides the complementary consequence and ascertainment controls. These form one integrated analysis of the information behind an allele ranking.
 
-Persistent homology has established Hi-C applications, including Sauerwald and colleagues [3], topoHiC [4] and HICTDA [5], whose first version awaits peer review. Weighted-network precedents include Giusti and colleagues [6] and Petri and colleagues [7]. ICE addresses contact-map biases [8]; shift-invariant and normalized persistence comparisons address specified transformations [9,10,11]. Our contribution is the assembled audit procedure and its measured decision coverage, not priority for topology, normalization, within-site comparisons or the elementary stability results. Sequence-design work with Akita Semifreddo targets located boundaries, dots and flames [12], highlighting a distinct future validation target: abstract degree-one intervals are not automatically located chromatin loops.
+Persistent homology (PH) has established Hi-C applications, including Sauerwald and colleagues [3], topoHiC [4] and HICTDA [5], whose first version awaits peer review. Weighted-network precedents include Giusti and colleagues [6] and Petri and colleagues [7]. ICE addresses contact-map biases [8]; shift-invariant and normalized persistence comparisons address specified transformations [9,10,11]. Our contribution is the assembled audit procedure and its measured decision coverage, not priority for topology, normalization, within-site comparisons or the elementary stability results. Sequence-design work with Akita Semifreddo targets located boundaries, dots and flames [12], highlighting a distinct future validation target: abstract degree-one intervals are not automatically located chromatin loops.
 
 ## Methods
 
@@ -36,7 +36,7 @@ Supporting material covers vertex thinning (Additional file 1), anchor theory (A
 
 We analyze predicted maps, not observed read counts. AlphaGenome CONTACT_MAPS are signed log-fold enrichment over a genomic-distance-based expectation at 2,048-bp resolution [13]. Write this output as $L$. It is neither a nonnegative count matrix nor an absolute contact amount. The Atlas contact scorer is a separate aggregation of local absolute reference–alternate differences [14]; a vector of track scores is not a genomic-bin matrix. We acquired spatial maps separately from the retained score caches.
 
-For each fixed set of 512 bins, set the unordered off-diagonal edge births to $w_{ij}=-L_{ij}$. At threshold $t$, include all vertices and edges with $w_{ij}\leq t$, then fill every clique. Full degree-one persistent homology over $\mathbb F_2$ gives $D_1(w)$. This weighted flag filtration requires no triangle inequality. On the finite complete support its degree-one diagram has no essential intervals. Bins, diagonal exclusion and support are identical within each reference–alternate comparison. There are 130,816 edges per map.
+For each fixed set of 512 bins, set the unordered off-diagonal edge births to $w_{ij}=-L_{ij}$. At threshold $t$, include all vertices and edges with $w_{ij}\leq t$, then fill every clique. Full degree-one persistent homology (H1) over $\mathbb F_2$ gives $D_1(w)$. This weighted flag filtration requires no triangle inequality. On the finite complete support its degree-one diagram has no essential intervals. Bins, diagonal exclusion and support are identical within each reference–alternate comparison. There are 130,816 edges per map.
 
 For two edge arrays on this support, standard filtration stability gives $d_B(D_1(w),D_1(v))\leq\lVert w-v\rVert_\infty$ [15]. Here $d_B$ is bottleneck distance, allowing matches to the diagonal; it is not a distance between Betti curves. A finite filtration cutoff or changed support requires additional conventions. Read thinning, vertex deletion and bin aggregation change different objects; none is tested as a biological endpoint here (Additional file 1). A model enhancing sampled input, such as DeepHiC [16], also inherits uncertainty from that input.
 
@@ -132,7 +132,7 @@ Ripser computed full H1 without interval censoring. GUDHI 3.13.0 CGAL ($e=0$) an
 
 Stored-map re-execution in a fresh environment covered all 204 GM12878 spatial sites. Independent checks recertified the sixteen conditional label tests and retained historical outputs. For IMR-90, an unmodified reference-engine replay covered all 84 sites; separate brute-force nearest-neighbor code checked every witness and independently reconstructed rankings and rational credits. The replay shares the PH kernel and is not a second PH algorithm. Known-answer controls include increasing, turning, flat, zero-shift and multiplicity cases. Additional file 6 records execution, solver and preservation details. The public MIT-licensed Anchor Audit Toolkit implements the bound calculations and a browser demonstration [25,26]; the research-data access status is stated separately below.
 
-Generative AI through OpenAI Codex assisted study and audit-procedure development; mathematical derivation and adversarial checking; code for acquisition, processing, statistics and verification; manuscript drafting and revision; and literature/source checks. These checks supplement author review rather than constitute external peer review. AlphaGenome generated the molecular predictions analyzed here, which are model outputs rather than experimental measurements. The author is responsible for the submitted work; no AI system is an author.
+Generative AI through OpenAI Codex assisted study and audit-procedure development; mathematical derivation and adversarial checking; code for acquisition, processing, statistics and verification; manuscript drafting and revision; and literature/source checks. Qwen3.8 assisted earlier manuscript drafting. Author-supplied quality-control reports were generated with Qwen3.8-Max; accepted suggestions were checked against the source files and underlying artifacts before revision. These checks supplement author review rather than constitute external peer review. AlphaGenome generated the molecular predictions analyzed here, which are model outputs rather than experimental measurements. The author is responsible for the submitted work; no AI system is an author.
 
 ## Results
 
@@ -194,7 +194,7 @@ The native-distance-plus-absolute-mean-shift baseline reproduced 103/120 discove
 
 ### Consequence controls from the retained within-site audit
 
-The incorporated Atlas audit illustrates the complementary effect of clinical ascertainment and consequence. In the seven-gene expansion, ranking AVI Euclidean distance from a background centroid placed the ClinVar allele first at 1,095/1,238 nonsense or start-loss positions (88%) and 94/246 missense positions (38%). The observed coding first-choice fraction of 0.800 was below the exploratory model-free consequence-severity rule's expected 0.817. This supports including strong non-topological explanations before interpreting enrichment.
+The incorporated Atlas audit illustrates the complementary effect of clinical ascertainment and consequence. In the seven-gene expansion, ranking AVI Euclidean distance from a background centroid placed the ClinVar allele first at 1,095/1,238 nonsense or start-loss positions (88%) and 94/246 missense positions (38%). Across all 1,490 coding positions, including six synonymous positions, the observed first-choice fraction was 1,192/1,490 (0.800), below the exploratory model-free consequence-severity rule's expected 0.817. This supports including strong non-topological explanations before interpreting enrichment.
 
 Ten of 66 coding comparisons remained significant under the matched-consequence null, compared with 37 under the uniform null. Ten exceeded the prespecified quarter-of-37 criterion; the planned “mainly consequence class” criterion was not met. Eligible cohorts also differed (452 versus 1,490 AVI positions), so this was not a fixed-cohort null comparison. Three redraws reproduced 37/10, but simultaneous Monte Carlo count enclosures of 36–37 and 8–11 could not certify the criterion (Additional file 3).
 
@@ -242,15 +242,15 @@ Project: Anchor Audit Toolkit. Home page and version: references [25,26]. Operat
 
 ### Competing interests
 
-The author declares no competing financial or personal interests.
+The author declares no competing financial or nonfinancial interests.
 
 ### Funding
 
-This work received no specific grant support.
+This work received no specific grant or institutional funding.
 
 ### Authors' contributions
 
-P.I. developed the research program and is responsible for the study design, analyses, interpretation and manuscript. Generative-AI assistance is disclosed in Methods. Final author approval of this proposed revision is recorded separately from computational validation.
+P.I. developed the research program and is responsible for the study design, analyses, interpretation and manuscript. Generative-AI assistance is disclosed in Methods. Final author approval of this proposed revision remains pending.
 
 ### Acknowledgements
 

@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse, collections, copy, hashlib, json
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_SOURCE = 'fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969'
+EXPECTED_SOURCE = 'fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403'
 EXPECTED_IDS = {'OBJECT','STABILITY','ANCHOR','RANKING','CONSEQUENCE','NULL','DISCOVERY','REPLICATION','PRECISION','SCOPE'}
 
 def digest(data: bytes) -> str:

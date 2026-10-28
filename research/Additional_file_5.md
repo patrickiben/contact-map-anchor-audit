@@ -20,7 +20,7 @@ At the 246 missense positions, AVI's consequence-matched, mutation-aware mean-st
 
 At 63 other intronic positions, the three splicing scorers placed the selected allele first at 46, 47 and 47 positions, respectively; each corresponding reported mean-statistic q-value was 0.000252. At 157 canonical splice positions, none of the 63 scorer-by-geometry comparisons was significant. These findings are conditional on the evaluated sites and labels. Missense and splice classifications can incorporate computational evidence related to the evaluated predictors [9,10].
 
-Post hoc, a model-free consequence-severity rule had an expected first-choice fraction of 0.817 under random tie breaking, compared with AVI's observed fraction of 0.800 at the 1,490 coding positions. AlphaMissense alone, an input to AVI, also showed a missense preference. These analyses are exploratory and do not provide independent validation.
+Post hoc, a model-free consequence-severity rule had an expected first-choice fraction of 0.817 under random tie breaking, compared with AVI's observed fraction of 1,192/1,490 (0.800) across all coding positions. This cohort includes 1,238 nonsense or start-loss, 246 missense and six synonymous positions; AVI placed the selected allele first at three of the six synonymous positions. AlphaMissense alone, an input to AVI, also showed a missense preference. These analyses are exploratory and do not provide independent validation.
 
 ## 3 Anchors, ranks and the scope of their repair
 

@@ -13,12 +13,12 @@ A subsequent validation pass regenerated all 204 spatial sites from cached maps 
 
 The cross-track extension retains its pre-acquisition protocol, all 252 two-track calls, the independently checked GM12878 drift control, the native-prediction lock, per-site diagrams and centered validations, and a full reference-engine replay. An independent reviewer recomputed Hausdorff witnesses with a separate brute-force implementation and reconstructed rankings and rational selected-allele credits from per-site files. The only execution correction was an initial import failure in the acquisition environment; the unchanged analysis ran in the existing fresh validation environment. Failed import logs and actual dependency versions are preserved. The portability validation report supplied with the review package distinguishes the new checks from the preceding full harness and its remaining human and provenance requirements.
 
-## Fixed illustrative site
-
-![Fixed first genomic site](figures/figure_s6_first_genomic_site.png)
-
-**Figure S6.1.** Reference map, selected-alternate difference and three-allele comparison for site index zero, fixed by input order rather than effect size. Maps are predicted log-enrichment; the diagonal is excluded. No physical loop validation is implied. AlphaGenome-derived material is subject to the provider Output Terms identified in the main article.
-
 ## Cited archive
 
 1. Iben P. Reproducibility package for “What do within-site comparisons of AlphaGenome Atlas predictions measure? An audit at ClinVar sites in 11 genes”. Zenodo, version 1.0, 2026. [doi:10.5281/zenodo.23537469](https://doi.org/10.5281/zenodo.23537469).
+
+## Fixed illustrative site
+
+![Fixed first genomic site with contrast and full-range difference views](figures/figure_s6_first_genomic_site.png){width=6.5in}
+
+**Figure S6.1.** Fixed input-order site zero (chr9:128203567:C; DNM1; GM12878), not selected by effect size. **A**, reference predicted log-enrichment. **B**, selected-alternate T minus reference, with linear limits ±0.00390625 (99th percentile of absolute off-diagonal differences): 788/261632 cells (0.301%) color-clipped. **C**, identical differences at full linear range ±0.01171875, without clipping. Both scales are zero-centered in log-enrichment difference units. **D**, native and mean-centered H1 bottleneck distances for three alternate alleles; the asterisk marks the ClinVar-selected allele. Gray diagonals are excluded. No physical loop validation is implied. AlphaGenome-derived material remains subject to provider Output Terms identified in the main article.

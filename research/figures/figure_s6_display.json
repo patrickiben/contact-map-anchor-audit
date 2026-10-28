@@ -1,0 +1,46 @@
+{
+  "site_index": 0,
+  "site_id": "chr9:128203567:C",
+  "selected_allele": "T",
+  "shape": [
+    512,
+    512
+  ],
+  "off_diagonal_cells": 261632,
+  "difference_min": -0.01171875,
+  "difference_max": 0.01171875,
+  "absolute_difference_percentiles": {
+    "50": 0.0,
+    "90": 0.001953125,
+    "95": 0.0029296875,
+    "98": 0.00390625,
+    "99": 0.00390625,
+    "99.5": 0.00390625,
+    "100": 0.01171875
+  },
+  "B_linear_symmetric_limit": 0.00390625,
+  "B_strictly_clipped_cells": 788,
+  "B_clipped_percent": 0.3011863992172211,
+  "C_linear_symmetric_limit": 0.01171875,
+  "C_clipped_cells": 0,
+  "zero_difference_cells": 137778,
+  "source_files": {
+    "data/manifest.json": "46200b0c2d98333bc5cba31178aaab1f5e5dd868d4776bc2138b34313a943afd",
+    "summary/compact_summary_fixture.json": "32c8acc77a677cd083581ba31121825e74e149fbba874fc0cf8eabac2cdf63ec",
+    "data/sites/site_000.npz": "69624b5ce8c0bbd7f48dad4ea150eb4fab417e400949232d27a44e9344654e97"
+  },
+  "script_sha256": "42abfae0f9fb679c0cd9802d4932ab49ad47bb9e1f37301e2cb4a0983f43b7da",
+  "original_bar_values": {
+    "native": [
+      0.015625,
+      0.01171875,
+      0.01171875
+    ],
+    "centered": [
+      0.015694568364085004,
+      0.01167631296548266,
+      0.01168228341183375
+    ]
+  },
+  "note": "Both triangles counted; these are display cells, not independent observations. No smoothing, interpolation, aggregation, nonlinear transform, or new scientific calculation. Diagonal masked only for display."
+}

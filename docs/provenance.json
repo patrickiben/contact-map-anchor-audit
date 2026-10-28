@@ -1,8 +1,8 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.2",
   "source": {
     "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-    "sha256": "fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969",
+    "sha256": "fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403",
     "version": "BMC Research Article preparation draft, 28 October 2026",
     "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
     "publication_status": "Public draft in preparation for BMC Bioinformatics; not submitted or accepted."

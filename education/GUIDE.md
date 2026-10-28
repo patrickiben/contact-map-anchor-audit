@@ -164,11 +164,13 @@ A rerun supports computation; independent measurements support biology.
 
 The validation reran cached-input calculations and checked source-specific numerical claims. Replaying original random seeds can reproduce a simulation exactly without reducing its statistical uncertainty.
 
-This toolkit adds reusable software and teaching examples. Its presets are synthetic. Imported diagrams are supplied by the user and processed locally by the static browser application. The study-summary panel contains aggregate author analysis results, not raw contact maps.
+This toolkit adds synthetic examples and reusable software. Imported diagrams are processed locally in the browser. The study-summary panel reports aggregate author analyses, not raw contact maps.
 
 The research contribution combines a specified preprocessing path, ranking bounds, useful witnesses, explicit unresolved cases and measured new-locus behavior. It is not a new generic distance, a physical loop detector or a clinical prediction tool.
 
 The full v0.2.0 study archive is publicly released with the manuscript, code and verification records. Toolkit code is MIT-licensed; model outputs retain separate provider terms and attribution. Public release does not establish clinical validity, author journal approval or human learner transfer.
+
+Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending.
 
 **Try it:** Describe one independent measurement that would be needed to connect the audit to a real structural chromosome change.
 

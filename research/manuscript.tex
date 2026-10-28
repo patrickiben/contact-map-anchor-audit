@@ -211,7 +211,7 @@ audit provides the complementary consequence and ascertainment controls.
 These form one integrated analysis of the information behind an allele
 ranking.
 
-Persistent homology has established Hi-C applications, including
+Persistent homology (PH) has established Hi-C applications, including
 Sauerwald and colleagues {[}3{]}, topoHiC {[}4{]} and HICTDA {[}5{]},
 whose first version awaits peer review. Weighted-network precedents
 include Giusti and colleagues {[}6{]} and Petri and colleagues {[}7{]}.
@@ -247,10 +247,10 @@ spatial maps separately from the retained score caches.
 For each fixed set of 512 bins, set the unordered off-diagonal edge
 births to \(w_{ij}=-L_{ij}\). At threshold \(t\), include all vertices
 and edges with \(w_{ij}\leq t\), then fill every clique. Full degree-one
-persistent homology over \(\mathbb F_2\) gives \(D_1(w)\). This weighted
-flag filtration requires no triangle inequality. On the finite complete
-support its degree-one diagram has no essential intervals. Bins,
-diagonal exclusion and support are identical within each
+persistent homology (H1) over \(\mathbb F_2\) gives \(D_1(w)\). This
+weighted flag filtration requires no triangle inequality. On the finite
+complete support its degree-one diagram has no essential intervals.
+Bins, diagonal exclusion and support are identical within each
 reference--alternate comparison. There are 130,816 edges per map.
 
 For two edge arrays on this support, standard filtration stability gives
@@ -593,11 +593,14 @@ stated separately below.
 Generative AI through OpenAI Codex assisted study and audit-procedure
 development; mathematical derivation and adversarial checking; code for
 acquisition, processing, statistics and verification; manuscript
-drafting and revision; and literature/source checks. These checks
-supplement author review rather than constitute external peer review.
-AlphaGenome generated the molecular predictions analyzed here, which are
-model outputs rather than experimental measurements. The author is
-responsible for the submitted work; no AI system is an author.
+drafting and revision; and literature/source checks. Qwen3.8 assisted
+earlier manuscript drafting. Author-supplied quality-control reports
+were generated with Qwen3.8-Max; accepted suggestions were checked
+against the source files and underlying artifacts before revision. These
+checks supplement author review rather than constitute external peer
+review. AlphaGenome generated the molecular predictions analyzed here,
+which are model outputs rather than experimental measurements. The
+author is responsible for the submitted work; no AI system is an author.
 
 \subsection{Results}\label{results}
 
@@ -821,8 +824,9 @@ The incorporated Atlas audit illustrates the complementary effect of
 clinical ascertainment and consequence. In the seven-gene expansion,
 ranking AVI Euclidean distance from a background centroid placed the
 ClinVar allele first at 1,095/1,238 nonsense or start-loss positions
-(88\%) and 94/246 missense positions (38\%). The observed coding
-first-choice fraction of 0.800 was below the exploratory model-free
+(88\%) and 94/246 missense positions (38\%). Across all 1,490 coding
+positions, including six synonymous positions, the observed first-choice
+fraction was 1,192/1,490 (0.800), below the exploratory model-free
 consequence-severity rule's expected 0.817. This supports including
 strong non-topological explanations before interpreting enrichment.
 
@@ -988,18 +992,18 @@ asserted.
 
 \subsubsection{Competing interests}\label{competing-interests}
 
-The author declares no competing financial or personal interests.
+The author declares no competing financial or nonfinancial interests.
 
 \subsubsection{Funding}\label{funding}
 
-This work received no specific grant support.
+This work received no specific grant or institutional funding.
 
 \subsubsection{Authors' contributions}\label{authors-contributions}
 
 P.I. developed the research program and is responsible for the study
 design, analyses, interpretation and manuscript. Generative-AI
 assistance is disclosed in Methods. Final author approval of this
-proposed revision is recorded separately from computational validation.
+proposed revision remains pending.
 
 \subsubsection{Acknowledgements}\label{acknowledgements}
 

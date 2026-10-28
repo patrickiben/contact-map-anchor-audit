@@ -2,7 +2,7 @@
   "schema_version": "anchor-audit/education-source-map-v1",
   "source": {
     "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-    "sha256": "fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969",
+    "sha256": "fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403",
     "version": "BMC Bioinformatics proposed revision, 28 October 2026",
     "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
     "publication_status": "Public research draft and v0.2.0 study archive; no journal submission, acceptance or new DOI claimed."
@@ -16,7 +16,7 @@
         35,
         42
       ],
-      "source_excerpt_sha256": "4303ae041c7a7c5f30ecca6fc72c0db764b9d4e5689a2ddf0bbc03a75677beb9",
+      "source_excerpt_sha256": "0b55c803df8ce02678ded0476299a578def1b1d7fee975f36ba1be4bd718967c",
       "covered_group": "LB-OBJECT"
     },
     {
@@ -25,7 +25,7 @@
         35,
         42
       ],
-      "source_excerpt_sha256": "4303ae041c7a7c5f30ecca6fc72c0db764b9d4e5689a2ddf0bbc03a75677beb9",
+      "source_excerpt_sha256": "0b55c803df8ce02678ded0476299a578def1b1d7fee975f36ba1be4bd718967c",
       "covered_group": "LB-STABILITY"
     },
     {
@@ -43,7 +43,7 @@
         77,
         159
       ],
-      "source_excerpt_sha256": "0b771e8219e8c2d131cf010801828a4c8a9cdea0a4fb402565af9da31a81b567",
+      "source_excerpt_sha256": "b122ae0c63831efe885114e8d33e62320dc4c5f8f2e0bccd7730119d862977b6",
       "covered_group": "LB-RANKING"
     },
     {
@@ -52,7 +52,7 @@
         195,
         202
       ],
-      "source_excerpt_sha256": "9f2ab313a77d41e49ad2b4ff991f386ba8f4d3e1665d541aea8ab0d53f1cc68d",
+      "source_excerpt_sha256": "c9b2a8de9d735081ad79c84346340375ac2a60aedad6fcfd5ada691e398dd664",
       "covered_group": "LB-CONSEQUENCE"
     },
     {
@@ -79,7 +79,7 @@
         98,
         173
       ],
-      "source_excerpt_sha256": "da62e6c0bed3bd65ceefbf5f6395500f97ecaacf80edc86a94a00360c12c20ca",
+      "source_excerpt_sha256": "669878b02e563bc84e1f576a9c08816f4be77c3932af184305526ff1ab771d2c",
       "covered_group": "LB-REPLICATION"
     },
     {
@@ -88,7 +88,7 @@
         129,
         136
       ],
-      "source_excerpt_sha256": "4655131352bd659b4d3ff9bf166768253a896aba2c99bbffb96cc6736fac0520",
+      "source_excerpt_sha256": "9fee9d56820fde2682f54ee235d288a1028840cc7ecfcd21847d430398e57415",
       "covered_group": "LB-PRECISION"
     },
     {
@@ -97,7 +97,7 @@
         203,
         274
       ],
-      "source_excerpt_sha256": "5d9825e4d933ddedeb18db7a8e6e87fe37446f3c05d5f1625830c58bc4b4ede8",
+      "source_excerpt_sha256": "2f9fd03775e414571d126dcde58dc8d7e3f21040ba455a40773094d2502f73fe",
       "covered_group": "LB-SCOPE"
     }
   ],
@@ -156,20 +156,20 @@
   },
   "assets": {
     "docs/learning.json": {
-      "sha256": "46f50edc0b4cf59b2095a07927a108a56e00166a1d8a678cf3e89b764b9637b7",
-      "bytes": 25487
+      "sha256": "c4720ece5a85004759333eb7af91c108d6b647f36372e6e8d8ab4e029ba57b7c",
+      "bytes": 25734
     },
     "docs/study-summary.json": {
-      "sha256": "3f94b986f7a506cdb3104308e1b32a12e92230bb03d91647348a6bcc96b5a84b",
+      "sha256": "460d3607e1138ba0f6dd09900f01739206a1cbd09b05a536b4c1aae4f39d6633",
       "bytes": 4223
     },
     "docs/provenance.json": {
-      "sha256": "7f8f863e36b4c95e1d62a3f3b48e923cb2550513439d01c8bc193598ded2990f",
+      "sha256": "b7659ddb3f00d19f83151c4005c558287a1a10199f0e3373166405a40c0afa55",
       "bytes": 2637
     },
     "education/GUIDE.md": {
-      "sha256": "7f434ccead8f375e08f6c59bb6f955efb49a1c6aa0be30ecb048abcc97761263",
-      "bytes": 15980
+      "sha256": "e134dd91687148c9c9a5020e976b36819f2d3d555a9a946c311816d7c42e5fd4",
+      "bytes": 16217
     },
     "education/PRACTICE.md": {
       "sha256": "d0750291b031e46204c0504acc7afd7945031f8b6bb30273b0de7739402146ff",
@@ -184,15 +184,15 @@
       "bytes": 6211
     },
     "education/README.md": {
-      "sha256": "841c4680cb1a0efe007bba0cb86c5f336cc6bfc991064f924c1cc46955d6757c",
-      "bytes": 4606
+      "sha256": "08f458e0d8909d2b65dc9fd7e3611c4e4213d63f92eefaedb113b6f65390ff0b",
+      "bytes": 5014
     },
     "education/STUDY_VALUE_MAP.json": {
       "sha256": "018abdbab2521698c6b76917bc79201fd4bd7185f41d9fdbccef7f3440f654d5",
       "bytes": 11837
     },
     "scripts/build_education.py": {
-      "sha256": "0e1122bbebb526ad76273d177db66c5d4eeb3a830566101c09c3125835539a99",
+      "sha256": "f4b5e23d19d626abf708818a8d998e572c79e160701b7c9b7593ce3972f06f7e",
       "bytes": 9018
     }
   }

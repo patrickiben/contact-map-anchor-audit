@@ -8,7 +8,7 @@ The intended reader has one statistics course. No genetics or persistence backgr
 
 **Publication status:** this is an unsubmitted rework incorporating the earlier AlphaGenome audit. The earlier submissions were desk rejected for journal fit. Their archived preprint and reproduction deposit remain historical sources, not a new DOI or an active submission for this rework. The revised manuscript and study archive are publicly released; that release is not journal submission, journal acceptance or a new DOI.
 
-**Exact-source contract:** [ARTIFACTS.json](ARTIFACTS.json) records the SHA-256 of the current main source and all six additional files. [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md) maps source spans and substantive objects to teaching units. Main-source hash: `fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969`.
+**Exact-source contract:** [ARTIFACTS.json](ARTIFACTS.json) records the SHA-256 of the current main source and all six additional files. [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md) maps source spans and substantive objects to teaching units. Main-source hash: `fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403`.
 
 Completeness means an explicit teaching treatment of every substantive source component, including the supplement proofs, counterexamples and result-table interpretations. It does not mean copying each bibliography entry, reprinting all raw data, rerunning the research bundle inside the PDF, or claiming independent biological validation. Reported values are attributed to the frozen sources. Synthetic arithmetic illustrates a method and is not an additional genomic observation.
 
@@ -180,11 +180,13 @@ A rerun supports computation; independent measurements support biology.
 
 The validation reran cached-input calculations and checked source-specific numerical claims. Replaying original random seeds can reproduce a simulation exactly without reducing its statistical uncertainty.
 
-This toolkit adds reusable software and teaching examples. Its presets are synthetic. Imported diagrams are supplied by the user and processed locally by the static browser application. The study-summary panel contains aggregate author analysis results, not raw contact maps.
+This toolkit adds synthetic examples and reusable software. Imported diagrams are processed locally in the browser. The study-summary panel reports aggregate author analyses, not raw contact maps.
 
 The research contribution combines a specified preprocessing path, ranking bounds, useful witnesses, explicit unresolved cases and measured new-locus behavior. It is not a new generic distance, a physical loop detector or a clinical prediction tool.
 
 The full v0.2.0 study archive is publicly released with the manuscript, code and verification records. Toolkit code is MIT-licensed; model outputs retain separate provider terms and attribution. Public release does not establish clinical validity, author journal approval or human learner transfer.
+
+Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending.
 
 **Try it:** Describe one independent measurement that would be needed to connect the audit to a real structural chromosome change.
 
@@ -278,7 +280,7 @@ Permutation analyses used 9,999 draws, plus-one p-values, BH within declared fam
 | Missense outside chr13 | 58 of 170 first ranks, 0.341 | Retains the negative-margin versus null-relative distinction. |
 | Other intronic splicing scorers | 46, 47 and 47 first ranks among 63 positions; q 0.000252 each | Conditional retained findings with Monte Carlo precision limits. |
 | Canonical splice | No significant comparison among 63 scorer-by-geometry tests at 157 positions | A distinct stratum; cannot be pooled with the other-intronic result. |
-| Exploratory consequence rule | Expected first choice 0.817 versus AVI 0.800 at 1,490 coding positions | Post hoc, with random tie breaking for the rule; not independent validation. |
+| Exploratory consequence rule | Expected first choice 0.817 versus AVI 1,192/1,490 (0.800), including 3/6 synonymous positions | Post hoc, with random tie breaking for the rule; not independent validation. |
 
 The retained missense observed mean was about -0.0128 versus simulated null mean -0.0829; outside chr13 these were -0.0407 and -0.0785. The significant q-values were 0.00132 and 0.00165. The negative observed margins preclude interpreting these as positive average leads over the strongest rival. AVI includes other predictors and consequence-related features; related computational evidence can also enter clinical labels. Post hoc, AlphaMissense alone also showed a missense preference, but it is an AVI input and therefore not an independent model baseline.
 
@@ -321,7 +323,7 @@ For centered sensitivity analyses, consequence matching had expected credit 0.32
 
 Native, centered and rank representations had 75, three and one tied sites. Centering resolved 72 native ties and preserved all 45 strict leaders. Credit vectors changed at 73 sites, yet the average selected-credit gain stayed small. Conditional null reference intervals are not confidence intervals for biological effects. Resampling only four purposively selected genes cannot establish population-wide coverage.
 
-Figure 4 shows the 120-site credits and descriptive gene-level points against the uniform one-third line. It does not select a favorable gene. Additional file 6 Figure S6.1 uses site index zero by fixed order: reference map, full-range selected-alternate difference, then three-allele distances. Its panels display predicted log enrichment and a summary comparison, not experimentally localized contact change.
+Figure 4 shows the 120-site credits and descriptive gene-level points against the uniform one-third line. It does not select a favorable gene. Additional file 6 Figure S6.1 keeps input-order site zero. A is the reference map; B uses signed linear difference limits ±0.00390625, clipping 788/261632 off-diagonal cells (0.301%); C shows identical differences at the full ±0.01171875 range without clipping; D retains the three-allele distances. The contrast view improves visibility, not effect magnitude. Always compare its scale with the full-range control. These are predicted maps, not experimentally localized contact changes.
 
 The later label-blind mechanism audit found all 360 endpoint changes near their translation bound, with maximum residual 2.08e-16 and no tiny shifts at 1e-10. Distances increased in 278 cases and decreased in 82. Endpoint-derived lines had no internal pairwise crossing; unique top sets rose from 45 at lambda zero to 111 at 0.1 and 117 at one. Every centered top set remained inside its native set.
 
@@ -406,7 +408,7 @@ The frozen main manuscript reports a later fresh-environment regeneration of all
 
 The research record includes per-call maps, diagrams, track metadata, coordinates, protocols, failure records and source hashes. The versioned public release distributes reusable code and teaching materials together with a separate full study archive carrying provider output notices. The old reproduction deposit and old preprint are historical sources, not deposits or DOIs for the revised manuscript. Public code release does not imply journal submission or publication of the rework.
 
-The manuscript declares public annotations and computational outputs rather than participant recruitment, no specific grant support and no competing financial or personal interests. AI assisted procedure development, derivations and review, code, numerical validation, prose and literature checking. AlphaGenome produced the molecular predictions. The author retains responsibility; software does not certify final author review of the revised research or human learner effectiveness.
+The confirmed declarations report public annotations and computational outputs, no specific grant or institutional funding, and no competing financial or nonfinancial interests. OpenAI Codex assisted development, derivations, code, validation, prose and source checks; Qwen3.8 assisted earlier drafting and Qwen3.8-Max generated author-supplied QC reports checked against retained artifacts. These checks are not external peer review. AlphaGenome produced molecular predictions. The author retains responsibility; final author approval and human learner effectiveness remain uncertified.
 
 The current main bibliography groups model/output context, topology and invariant-distance precedents, clinical annotations and computational-evidence guidance, inference methods, the earlier archive, and toolkit sources. The additional files use local bibliography numbering. Citing these sources does not independently reproduce their findings.
 

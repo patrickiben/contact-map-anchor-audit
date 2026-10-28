@@ -1,6 +1,6 @@
 # Complete source-to-teaching coverage
 
-Current source SHA256 `fdaa582b89b89651f0629162b94acacdb6cfdab93c0696e7029e9a5676be1969`. Main manuscript plus all six additional files. Coverage denotes mapped educational explanation, not a human comprehension verdict. The complete companion retains 45 units (10 P, 10 R, 7 S, 6 W, 12 T).
+Current source SHA256 `fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403`. Main manuscript plus all six additional files. Coverage denotes mapped educational explanation, not a human comprehension verdict. The complete companion retains 45 units (10 P, 10 R, 7 S, 6 W, 12 T).
 
 | Source object | Span | Teaching units | Topic |
 |---|---|---|---|

@@ -1,0 +1,67 @@
+{
+  "title": "What the predicted-map study found",
+  "scope": "Aggregate author analysis of AlphaGenome-predicted GM12878 contact maps. These are reported research results, separate from the synthetic browser presets. Clinical-credit comparisons in replication are descriptive.",
+  "source_sha256": "57f31d65b5fcb857e2994c95da66b149b1bfa6885bcdbc76baa6896a79d9d0fe",
+  "cohorts": [
+    {
+      "id": "discovery",
+      "label": "Discovery",
+      "sites": 120,
+      "loci": 4,
+      "comparisons": 360,
+      "native_ties": 75,
+      "resolved_ties": 72,
+      "centered_ties": 3,
+      "strict_leaders": 45,
+      "preserved_strict_leaders": 45,
+      "native_credit": 0.3680555555555556,
+      "centered_credit": 0.375,
+      "simple_bound_leaders": 45,
+      "witness_leaders": 89,
+      "additional_witness_leaders": 44
+    },
+    {
+      "id": "replication",
+      "label": "New-locus replication",
+      "sites": 84,
+      "loci": 7,
+      "comparisons": 252,
+      "native_ties": 66,
+      "resolved_ties": 66,
+      "centered_ties": 0,
+      "strict_leaders": 18,
+      "preserved_strict_leaders": 18,
+      "native_credit": 0.35912698412698413,
+      "centered_credit": 0.32142857142857145,
+      "simple_bound_leaders": 18,
+      "witness_leaders": 52,
+      "additional_witness_leaders": 34
+    }
+  ],
+  "findings": [
+    "All 360 discovery and 252 replication comparisons numerically saturated the specified endpoint bound.",
+    "Centering resolved 72 and 66 native ties while preserving all 45 and 18 strict native leaders.",
+    "Selected-allele credit rose slightly in discovery and decreased descriptively in replication; sharper ranks did not establish a consistent clinical-credit gain.",
+    "Native-diagram witness bounds identified 44 and 34 additional unique endpoint leaders beyond the simple margin bounds. No runtime speedup was benchmarked.",
+    "No discovery main or sensitivity test survived Holm adjustment over all sixteen tests. No new confirmatory clinical-enrichment test was added in replication."
+  ],
+  "limits": [
+    "Predicted maps on one GM12878 track, not matched experimental Hi-C measurements.",
+    "Selected sites and overlapping within-gene windows limit generalization.",
+    "Prospective status concerns new spatial outcomes; model-training independence and immutable server weights were not established.",
+    "Practical numerical allowances are not a complete validated-arithmetic certificate.",
+    "Higher-precision source outputs would be needed to isolate the causal contribution of quantization."
+  ],
+  "source_files": [
+    "anchor_method/independent_anchor_audit.json",
+    "anchor_method/native_interval_ranking.json",
+    "anchor_method/replication/native_interval_ranking.json",
+    "full_validation_2026-10-28/artifacts/witness_increment.json",
+    "full_validation_2026-10-28/math/CLAIM_GROUNDING_CHECK.json"
+  ],
+  "primary_tie_tolerance": 1e-06,
+  "source_lines": [
+    224,
+    247
+  ]
+}

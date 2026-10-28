@@ -1,0 +1,42 @@
+{
+  "status": "PASS_MECHANICAL_SCOPE_ONLY",
+  "lessons": 10,
+  "quiz_items": 12,
+  "quiz_kinds": {
+    "CORE": 4,
+    "BOUNDARY": 4,
+    "TRANSFER": 4
+  },
+  "source_file_checked": true,
+  "research_sources_checked": true,
+  "aggregate_value_checks": 26,
+  "human_learner_validation": "NOT_PERFORMED",
+  "author_approval": "NOT_CERTIFIED",
+  "scope": "Source/coverage/value/hash checks; no educational efficacy or formal theorem certification.",
+  "mutation_controls": [
+    {
+      "name": "missing_lesson",
+      "detected": true
+    },
+    {
+      "name": "duplicate_quiz_id",
+      "detected": true
+    },
+    {
+      "name": "bad_answer_index",
+      "detected": true
+    },
+    {
+      "name": "wrong_study_credit",
+      "detected": true
+    },
+    {
+      "name": "invented_human_approval",
+      "detected": true
+    },
+    {
+      "name": "changed_source_binding",
+      "detected": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-28",
+  "scope": "Software, numerical controls, browser behavior and educational source correspondence; not biological, clinical or human-learning validation.",
+  "python_suite_with_fast_dependencies": {"passed": 26, "failed": 0, "skipped": 0},
+  "javascript_core_suite": {"passed": 5, "failed": 0},
+  "browser_suite": {
+    "passed": 14,
+    "failed": 0,
+    "engine": "Chromium",
+    "viewports": ["desktop 1440 x 1000", "mobile iPhone 13 emulation"],
+    "checks": ["interactive controls", "local import and export round trip", "hostile label escaping", "invalid input retains accepted audit", "quiz feedback and retry", "no horizontal overflow", "automated WCAG A/AA checks with axe", "off-grid envelope geometry", "offline single-file operation without HTTP requests"],
+    "limits": "Mobile emulation is not physical-device testing; automated accessibility checks do not certify all accessibility requirements."
+  },
+  "education": {
+    "lessons": 10,
+    "worked_examples": 6,
+    "practice_questions": 12,
+    "aggregate_value_checks": 26,
+    "source_excerpt_hashes": 10,
+    "mutation_controls": 6,
+    "frozen_manuscript_and_research_sources_checked": true,
+    "human_learner_validation": "not performed"
+  },
+  "scientific_review": {
+    "model": "GPT-6 Astra",
+    "envelope_plotting_issue": "Fixed by using analytic cone intersections and zero crossings, with an off-grid cusp regression test.",
+    "translation_rounding": "Detected lost additions and lifetime distortion are checked against the supplied allowance; this is not a complete real-arithmetic certificate."
+  },
+  "large_diagram_check": "real_pair_check.json",
+  "source_disclosure": "No raw model maps, per-site genomic diagrams, variant records, credentials or local machine paths are packaged."
+}

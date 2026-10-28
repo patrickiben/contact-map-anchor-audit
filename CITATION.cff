@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use the Anchor Audit Toolkit, cite this software and record the commit used."
+type: software
+title: "Anchor Audit Toolkit"
+version: 0.1.0
+authors:
+  - family-names: Iben
+    given-names: Patrick
+    orcid: "https://orcid.org/0009-0005-2443-7973"
+repository-code: "https://github.com/patrickiben/contact-map-anchor-audit"
+license: MIT
+abstract: >-
+  A Python toolkit and interactive browser lab for auditing how a declared
+  translation of finite persistence diagrams changes bottleneck distances,
+  ties, and tolerance-aware rankings. Includes synthetic controls, endpoint
+  bounds, witness-based partial rankings, and source-linked educational
+  materials. Numerical checks do not constitute formal real-arithmetic,
+  biological, or clinical validation.
+keywords:
+  - persistent homology
+  - bottleneck distance
+  - preprocessing audit
+  - ranking stability
+  - computational genomics

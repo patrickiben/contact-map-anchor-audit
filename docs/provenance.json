@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "source": {
+    "manuscript_title": "Auditing allele rankings in genomic predictions: consequence controls and contact-map anchoring",
+    "sha256": "57f31d65b5fcb857e2994c95da66b149b1bfa6885bcdbc76baa6896a79d9d0fe",
+    "version": "Author review candidate, 28 October 2026",
+    "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
+    "publication_status": "Unsubmitted review candidate; no journal acceptance or new DOI claimed."
+  },
+  "presets": {
+    "kind": "Synthetic finite-diagram examples",
+    "scope": "Presets demonstrate mathematical mechanisms and failure cases. They are not sampled or anonymized genomic observations."
+  },
+  "study_summary": {
+    "kind": "Aggregate author analysis results",
+    "file": "study-summary.json",
+    "scope": "No per-site diagram arrays, model prediction matrices or variant records are included in these educational files. The research source is identified by hash and line ranges, not represented as a published journal article."
+  },
+  "imported_data": {
+    "scope": "User-supplied finite diagram JSON; the application should process it locally. The user remains responsible for the provenance and allowed use of their inputs."
+  },
+  "rights": {
+    "original_code": "See the repository LICENSE; that license does not relicense third-party model outputs or other user inputs.",
+    "educational_text": "Original educational adaptation prepared for Patrick Iben, based on the author research material.",
+    "third_party_outputs": "No blanket right to redistribute raw AlphaGenome outputs is asserted."
+  },
+  "educational_validation": {
+    "status": "Practice materials prepared; human learner validation pending.",
+    "original_companion_status": "The prior source companion passed mechanical source/coverage checks but returned PARTIAL because human reviews and learner assessment were pending.",
+    "adaptation": "The multiple-choice quiz is an interactive practice adaptation, not the prior locked human transfer test."
+  },
+  "verification": {
+    "source_hash": "SHA256 of the frozen author-review manuscript",
+    "coverage": "education/SOURCE_MAP.json",
+    "local_check": "python scripts/build_education.py --check",
+    "optional_source_check": "python scripts/build_education.py --check --source path/to/PROPOSED_contact_channel_3d_VALIDATED.md"
+  }
+}

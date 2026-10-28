@@ -1,0 +1,332 @@
+{
+  "schema_version": "anchor-audit/study-value-map-v1",
+  "scope": "Aggregate analysis only; source files are not bundled. These selectors can be checked against the retained author research bundle.",
+  "sources": {
+    "anchor_method/independent_anchor_audit.json": {
+      "sha256": "69306a84bb5d79d4736672d49c78b6caf48cf47382a6c93328803c337df42dfd"
+    },
+    "full_validation_2026-10-28/artifacts/witness_increment.json": {
+      "sha256": "70f662e82bb5204a5d115b8931b4e287b59763251989df1631a578425d19f7b9"
+    }
+  },
+  "checks": [
+    {
+      "cohort": "discovery",
+      "field": "sites",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "sites"
+      ],
+      "operation": "identity",
+      "value": 120
+    },
+    {
+      "cohort": "discovery",
+      "field": "comparisons",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "pairs"
+      ],
+      "operation": "identity",
+      "value": 360
+    },
+    {
+      "cohort": "discovery",
+      "field": "native_ties",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "native_ties"
+      ],
+      "operation": "identity",
+      "value": 75
+    },
+    {
+      "cohort": "discovery",
+      "field": "resolved_ties",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "ties_resolved"
+      ],
+      "operation": "identity",
+      "value": 72
+    },
+    {
+      "cohort": "discovery",
+      "field": "centered_ties",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "centered_ties"
+      ],
+      "operation": "identity",
+      "value": 3
+    },
+    {
+      "cohort": "discovery",
+      "field": "native_credit",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "mean_selected_credit",
+        "native"
+      ],
+      "operation": "identity",
+      "value": 0.3680555555555556
+    },
+    {
+      "cohort": "discovery",
+      "field": "centered_credit",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "mean_selected_credit",
+        "centered"
+      ],
+      "operation": "identity",
+      "value": 0.375
+    },
+    {
+      "cohort": "discovery",
+      "field": "simple_bound_leaders",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "margin_pass_sites"
+      ],
+      "operation": "identity",
+      "value": 45
+    },
+    {
+      "cohort": "discovery",
+      "field": "loci",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "per_gene"
+      ],
+      "operation": "length",
+      "value": 4
+    },
+    {
+      "cohort": "discovery",
+      "field": "strict_leaders",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "sites"
+      ],
+      "operation": "subtract",
+      "subtract": 75,
+      "value": 45
+    },
+    {
+      "cohort": "discovery",
+      "field": "preserved_strict_leaders",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "discovery",
+        "summary",
+        "sites"
+      ],
+      "operation": "subtract",
+      "subtract": 75,
+      "value": 45
+    },
+    {
+      "cohort": "discovery",
+      "field": "witness_leaders",
+      "source": "full_validation_2026-10-28/artifacts/witness_increment.json",
+      "keys": [
+        "cohorts",
+        "discovery",
+        "witness"
+      ],
+      "operation": "identity",
+      "value": 89
+    },
+    {
+      "cohort": "discovery",
+      "field": "additional_witness_leaders",
+      "source": "full_validation_2026-10-28/artifacts/witness_increment.json",
+      "keys": [
+        "cohorts",
+        "discovery",
+        "additional"
+      ],
+      "operation": "identity",
+      "value": 44
+    },
+    {
+      "cohort": "replication",
+      "field": "sites",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "sites"
+      ],
+      "operation": "identity",
+      "value": 84
+    },
+    {
+      "cohort": "replication",
+      "field": "comparisons",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "pairs"
+      ],
+      "operation": "identity",
+      "value": 252
+    },
+    {
+      "cohort": "replication",
+      "field": "native_ties",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "native_ties"
+      ],
+      "operation": "identity",
+      "value": 66
+    },
+    {
+      "cohort": "replication",
+      "field": "resolved_ties",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "ties_resolved"
+      ],
+      "operation": "identity",
+      "value": 66
+    },
+    {
+      "cohort": "replication",
+      "field": "centered_ties",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "centered_ties"
+      ],
+      "operation": "identity",
+      "value": 0
+    },
+    {
+      "cohort": "replication",
+      "field": "native_credit",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "mean_selected_credit",
+        "native"
+      ],
+      "operation": "identity",
+      "value": 0.35912698412698413
+    },
+    {
+      "cohort": "replication",
+      "field": "centered_credit",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "mean_selected_credit",
+        "centered"
+      ],
+      "operation": "identity",
+      "value": 0.32142857142857145
+    },
+    {
+      "cohort": "replication",
+      "field": "simple_bound_leaders",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "margin_pass_sites"
+      ],
+      "operation": "identity",
+      "value": 18
+    },
+    {
+      "cohort": "replication",
+      "field": "loci",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "per_gene"
+      ],
+      "operation": "length",
+      "value": 7
+    },
+    {
+      "cohort": "replication",
+      "field": "strict_leaders",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "sites"
+      ],
+      "operation": "subtract",
+      "subtract": 66,
+      "value": 18
+    },
+    {
+      "cohort": "replication",
+      "field": "preserved_strict_leaders",
+      "source": "anchor_method/independent_anchor_audit.json",
+      "keys": [
+        "replication",
+        "summary",
+        "sites"
+      ],
+      "operation": "subtract",
+      "subtract": 66,
+      "value": 18
+    },
+    {
+      "cohort": "replication",
+      "field": "witness_leaders",
+      "source": "full_validation_2026-10-28/artifacts/witness_increment.json",
+      "keys": [
+        "cohorts",
+        "replication",
+        "witness"
+      ],
+      "operation": "identity",
+      "value": 52
+    },
+    {
+      "cohort": "replication",
+      "field": "additional_witness_leaders",
+      "source": "full_validation_2026-10-28/artifacts/witness_increment.json",
+      "keys": [
+        "cohorts",
+        "replication",
+        "additional"
+      ],
+      "operation": "identity",
+      "value": 34
+    }
+  ]
+}

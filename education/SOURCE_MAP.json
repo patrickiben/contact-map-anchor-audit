@@ -1,0 +1,183 @@
+{
+  "schema_version": "anchor-audit/education-source-map-v1",
+  "source": {
+    "manuscript_title": "Auditing allele rankings in genomic predictions: consequence controls and contact-map anchoring",
+    "sha256": "57f31d65b5fcb857e2994c95da66b149b1bfa6885bcdbc76baa6896a79d9d0fe",
+    "version": "Author review candidate, 28 October 2026",
+    "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
+    "publication_status": "Unsubmitted review candidate; no journal acceptance or new DOI claimed."
+  },
+  "original_companion_sha256": "2cdf0c07cf476025ce4d3823e06d2a5470d1313db6dc877024913252c9d03848",
+  "adaptation_status": "New educational adaptation; original validation status is not inherited.",
+  "lessons": [
+    {
+      "id": "OBJECT",
+      "source_lines": [
+        32,
+        50
+      ],
+      "source_excerpt_sha256": "b5576635076228557a4067a54a54c559d1c7c79930fbb75373d2474635610052",
+      "covered_group": "LB-OBJECT"
+    },
+    {
+      "id": "STABILITY",
+      "source_lines": [
+        52,
+        56
+      ],
+      "source_excerpt_sha256": "06b2351d1bcb58a1376b9c58d91cd64f0a3ca4a054be4e8df04be82fac459e40",
+      "covered_group": "LB-STABILITY"
+    },
+    {
+      "id": "ANCHOR",
+      "source_lines": [
+        59,
+        110
+      ],
+      "source_excerpt_sha256": "e9487e9bb37abc4784204303fac6563ad8d994baf1ec21338b50f06fed2ac7cd",
+      "covered_group": "LB-ANCHOR"
+    },
+    {
+      "id": "RANKING",
+      "source_lines": [
+        111,
+        132
+      ],
+      "source_excerpt_sha256": "26231833d71711e41b8a285e319f729b5d663845c085c1edacea2028e2ea12c9",
+      "covered_group": "LB-RANKING"
+    },
+    {
+      "id": "CONSEQUENCE",
+      "source_lines": [
+        133,
+        161
+      ],
+      "source_excerpt_sha256": "6c2d53f2aabc12605392f95938f5670cef40b35725e0e027562cc949faa739df",
+      "covered_group": "LB-CONSEQUENCE"
+    },
+    {
+      "id": "NULL",
+      "source_lines": [
+        162,
+        203
+      ],
+      "source_excerpt_sha256": "4fda39683a89f7c951477c406aaaaf0952603735d114180d38c27b1ba889a3f6",
+      "covered_group": "LB-NULL"
+    },
+    {
+      "id": "DISCOVERY",
+      "source_lines": [
+        204,
+        211
+      ],
+      "source_excerpt_sha256": "48ee69006174c6cc946ebeeb5be24a173f9463d654b901356994b561e51c07c5",
+      "covered_group": "LB-DISCOVERY"
+    },
+    {
+      "id": "REPLICATION",
+      "source_lines": [
+        212,
+        252
+      ],
+      "source_excerpt_sha256": "4fec6371b070249d883a83d60079c3ba81b27e253d02cff8bdc36c238423b69d",
+      "covered_group": "LB-REPLICATION"
+    },
+    {
+      "id": "PRECISION",
+      "source_lines": [
+        253,
+        266
+      ],
+      "source_excerpt_sha256": "1f4886831e902396e51c8f6aeb58c55ae7bb593872d9fbb004469c925f13b591",
+      "covered_group": "LB-PRECISION"
+    },
+    {
+      "id": "SCOPE",
+      "source_lines": [
+        267,
+        288
+      ],
+      "source_excerpt_sha256": "c3db5f8b21c7cbdb696aaf54d141471b96f0498d9abba597445f9cc44d488d70",
+      "covered_group": "LB-SCOPE"
+    }
+  ],
+  "structural_exclusions": [
+    {
+      "source_lines": [
+        1,
+        9
+      ],
+      "reason": "Title and author metadata."
+    },
+    {
+      "source_lines": [
+        289,
+        319
+      ],
+      "reason": "Bibliography; relevant conceptual sources remain named in the manuscript, which is not copied into this public package."
+    }
+  ],
+  "introductory_synthesis": [
+    {
+      "source_lines": [
+        10,
+        31
+      ],
+      "covered_by": [
+        "OBJECT",
+        "ANCHOR",
+        "DISCOVERY",
+        "REPLICATION",
+        "SCOPE"
+      ],
+      "reason": "Abstract and introduction synthesize the body claims taught by those lessons."
+    }
+  ],
+  "human_reviews": {
+    "author_approval": null,
+    "learner_comprehension": null,
+    "transfer_test": null
+  },
+  "assets": {
+    "docs/learning.json": {
+      "sha256": "a869a8664728273e8b92f2179926878baa6a5766f366359dea298975b82d579b",
+      "bytes": 23017
+    },
+    "docs/study-summary.json": {
+      "sha256": "f630bc16a866ee74392def58334b691382d747c9c33f56fe961796ee0b66cf67",
+      "bytes": 2957
+    },
+    "docs/provenance.json": {
+      "sha256": "640ea3fd8304f6963eb4a576c0bf102ce9f3b4999f8c94e2a4d8b2a0550b9efc",
+      "bytes": 2462
+    },
+    "education/GUIDE.md": {
+      "sha256": "a74b47e5a74283997e3782a18c9e2479a2c9931d29e402484e7264d5c2fc84ff",
+      "bytes": 13914
+    },
+    "education/PRACTICE.md": {
+      "sha256": "8348519780a13e4e8772c26afc18a9e0594fc1c4b9fc8199c8cfa0ed884ac81d",
+      "bytes": 4943
+    },
+    "education/WORKED_EXAMPLES.md": {
+      "sha256": "81c1752156be62cb697229893df0ef3dbb6b146bd473654a8037715040d658cb",
+      "bytes": 4753
+    },
+    "education/RESEARCHER_WORKFLOW.md": {
+      "sha256": "21e86535b5ef0cd2a95eea6ac88493b7aa6d0510cfa3b656d4d2f8ec601d7b36",
+      "bytes": 5485
+    },
+    "education/README.md": {
+      "sha256": "78135c6275bcd5a52a01f8c948fc045080a72ac30706ce5254c348fe8347b532",
+      "bytes": 2550
+    },
+    "education/STUDY_VALUE_MAP.json": {
+      "sha256": "1f2c9c83020f08774918617a3bbe52f513824216f93b6681b4e8b149300be281",
+      "bytes": 7952
+    },
+    "scripts/build_education.py": {
+      "sha256": "962e168c24c2d293ffb610e91e81e86e19fb3db6cbc1c7b2afd6b6a8077af898",
+      "bytes": 8382
+    }
+  }
+}

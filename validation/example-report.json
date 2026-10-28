@@ -1,0 +1,106 @@
+{
+  "schema_version": "anchor-audit/report-v1",
+  "id": "opposite-slopes",
+  "backend": {
+    "name": "reference",
+    "libraries": {}
+  },
+  "numeric_scope": "Binary64 finite-diagram matching; allowance is a user-supplied practical error budget, not a proved arithmetic enclosure. Ranking guarantees are conditional on valid bounds. No exact-real certification or biological validation.",
+  "tolerance": 1e-06,
+  "allowance": 1e-12,
+  "selected": "increasing",
+  "alternatives": [
+    {
+      "id": "increasing",
+      "delta": 0.25,
+      "native": 1.0,
+      "centered": 1.25,
+      "change": 0.25,
+      "absolute_shift": 0.25,
+      "saturation_residual": 0.0,
+      "near_saturated": true,
+      "hausdorff": 1.25,
+      "lower": 1.249999999999,
+      "upper": 1.250000000001,
+      "path": [
+        {
+          "lambda": 0.0,
+          "distance": 1.0,
+          "lower": 0.999999999999,
+          "upper": 1.000000000001
+        },
+        {
+          "lambda": 0.5,
+          "distance": 1.125,
+          "lower": 1.124999999999,
+          "upper": 1.125000000001
+        },
+        {
+          "lambda": 1.0,
+          "distance": 1.25,
+          "lower": 1.249999999999,
+          "upper": 1.250000000001
+        }
+      ]
+    },
+    {
+      "id": "decreasing",
+      "delta": 0.25,
+      "native": 1.0,
+      "centered": 0.75,
+      "change": -0.25,
+      "absolute_shift": 0.25,
+      "saturation_residual": 0.0,
+      "near_saturated": true,
+      "hausdorff": 0.75,
+      "lower": 0.749999999999,
+      "upper": 1.250000000001,
+      "path": [
+        {
+          "lambda": 0.0,
+          "distance": 1.0,
+          "lower": 0.999999999999,
+          "upper": 1.000000000001
+        },
+        {
+          "lambda": 0.5,
+          "distance": 0.875,
+          "lower": 0.874999999999,
+          "upper": 0.875000000001
+        },
+        {
+          "lambda": 1.0,
+          "distance": 0.75,
+          "lower": 0.749999999999,
+          "upper": 0.750000000001
+        }
+      ]
+    }
+  ],
+  "rankings": {
+    "native": [
+      "increasing",
+      "decreasing"
+    ],
+    "centered": [
+      "increasing"
+    ],
+    "possible_centered": [
+      "increasing",
+      "decreasing"
+    ],
+    "guaranteed_centered": [
+      "increasing"
+    ],
+    "guaranteed_unique_centered": [],
+    "native_margin_leaders": []
+  },
+  "credits": {
+    "native": 0.5,
+    "centered": 1.0
+  },
+  "warnings": [
+    "Synthetic or user-supplied diagrams only; this audit does not establish clinical or biological validity.",
+    "Practical numerical allowances are not formal arithmetic certificates; near saturation does not prove exact affinity."
+  ]
+}

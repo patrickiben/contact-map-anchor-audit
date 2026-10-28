@@ -1,0 +1,11 @@
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+test-results/
+playwright-report/
+.DS_Store
+*.log

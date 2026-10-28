@@ -1,0 +1,38 @@
+{
+  "description": "Synthetic controls only. Coordinates have arbitrary units; these are not genomic predictions or observed biology.",
+  "sites": [
+    {
+      "id": "tie-split",
+      "reference": [[0, 4]],
+      "alternates": [
+        {"id": "A", "diagram": [[1, 5]], "delta": 0.25},
+        {"id": "B", "diagram": [[1, 5]], "delta": -0.25},
+        {"id": "C", "diagram": [[1, 5]], "delta": 0.1}
+      ],
+      "selected": "B"
+    },
+    {
+      "id": "opposite-slopes",
+      "reference": [[0, 4]],
+      "alternates": [
+        {"id": "increasing", "diagram": [[1, 5]], "delta": 0.25},
+        {"id": "decreasing", "diagram": [[-1, 3]], "delta": 0.25}
+      ]
+    },
+    {
+      "id": "turning-path",
+      "reference": [[0, 4]],
+      "alternates": [{"id": "turn", "diagram": [[-1, 3]], "delta": 2}]
+    },
+    {
+      "id": "diagonal-cap",
+      "reference": [[0, 2]],
+      "alternates": [{"id": "cap", "diagram": [[0, 2]], "delta": 2}]
+    },
+    {
+      "id": "multiplicity",
+      "reference": [[0, 4], [0, 4]],
+      "alternates": [{"id": "single", "diagram": [[0, 4]], "delta": 0.25}]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "opposite-slopes",
+  "reference": [[0, 4]],
+  "alternates": [
+    {"id": "increasing", "diagram": [[1, 5]], "delta": 0.25},
+    {"id": "decreasing", "diagram": [[-1, 3]], "delta": 0.25}
+  ],
+  "selected": "increasing"
+}

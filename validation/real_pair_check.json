@@ -1,0 +1,23 @@
+{
+  "schema_version": "anchor-audit/real-pair-validation-v1",
+  "scope": "One retained discovery reference/alternate diagram pair; execution and stored-endpoint agreement only, not a cohort replication or biological validation. No coordinates or raw predictions are redistributed.",
+  "reference_points": 7907,
+  "alternate_points": 7907,
+  "pairs_checked": 1,
+  "path_samples": 2,
+  "backend": {
+    "name": "hera",
+    "libraries": {
+      "gudhi": "3.13.0",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1"
+    }
+  },
+  "comparison_tolerance": 1e-12,
+  "absolute_endpoint_errors": {
+    "native": 0.0,
+    "centered": 0.0
+  },
+  "all_within_tolerance": true,
+  "elapsed_seconds": 4.199406292000276
+}

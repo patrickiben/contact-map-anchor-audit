@@ -1,6 +1,6 @@
 # Complete source-to-teaching coverage
 
-Current source SHA256 `fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403`. Main manuscript plus all six additional files. Coverage denotes mapped educational explanation, not a human comprehension verdict. The complete companion retains 45 units (10 P, 10 R, 7 S, 6 W, 12 T).
+Current source SHA256 `05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d`. Main manuscript plus all six additional files. Coverage denotes mapped educational explanation, not a human comprehension verdict. The complete companion retains 45 units (10 P, 10 R, 7 S, 6 W, 12 T).
 
 | Source object | Span | Teaching units | Topic |
 |---|---|---|---|
@@ -32,7 +32,7 @@ Current source SHA256 `fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5d
 | MAIN-26 | 251–254 | R10 | Authors' contributions |
 | MAIN-27 | 255–258 | R10 | Acknowledgements |
 | MAIN-28 | 259–274 | INTRO | Additional files |
-| MAIN-29 | 275–305 | R05, R10 | References |
+| MAIN-29 | 275–307 | R05, R10 | References |
 | AF1-01 | 1–25 | S01 | Additional file 1: Vertex thinning |
 | AF2-01 | 1–4 | S02 | Additional file 2: Anchor theory |
 | AF2-02 | 5–16 | S02 | 1. Object of study and interpretation |

@@ -41,3 +41,15 @@ Updated confirmed funding/conflict declarations and separated Qwen3.8 earlier dr
 PDFs remain 5 and 30 pages. Rendered at 90 dpi and compared with the prior fully inspected edition. Final changed body pages: guide 5; companion 1, 6, 10, 12–17. Each changed page was actually image-inspected; page 7 was also inspected during layout repair. All remaining page bodies match prior inspected page images. Fixed a stranded P10 source line by shortening redundant prose, without reducing font size. Headers, footers, tables, explicit scales, disclosures and source binding remain legible. No clipping or overlap found. Renders: `/tmp/anchor-education-v022-qa/`.
 
 Checks PASS: source/lesson bindings; 39 producer-value checks; all seven mutation controls; 45 teaching units; 55 source-coverage spans over seven source files; PDF source/hash/structure checks. Human learner validation remains **NOT_PERFORMED** and final author approval **NOT_CERTIFIED**; confirmed declarations alone do not certify either. No commit, push, submission or public release performed by this refresh.
+
+## Author read-through / software release 0.2.3
+
+Current main-source SHA-256: `05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d`. All six supplementary sources remain unchanged from v0.2.2. The records above are historical evidence for their named editions.
+
+The teaching update clarifies unresolved bounds versus observed ties, maximum-coordinate/own-diagonal witness distances, and slope units for diagram shift versus normalized lambda. It removes the earlier “suggestive before adjustment” wording and links the primary Holm paper. All introductory source excerpts were rebound to the accepted manuscript.
+
+Rendered both PDFs at 90 dpi. Guide page 3 and companion pages 1 and 3–23 have changed body pixels and were directly inspected. Companion pages 2 and 24 were additionally inspected. The other bodies match the previously inspected v0.2.2 edition; comparison excludes the bottom 65 footer pixels. No clipping, overlap, missing glyphs or broken tables were observed. The editions retain five and thirty pages. Footers on inspected pages remain consistent and readable.
+
+Final guide SHA-256: `f80cfbe3cac8452af5230d8e821da96196a92da45b9a9a71eef332dceb8d5c91`. Final companion SHA-256: `3e30745e3c65d1c3c657bf7076cee52079fd958e957ef32bcffc3b19c729d2a0`.
+
+Producer checks and coverage continue to identify mechanical scope only. Human learner validation remains NOT_PERFORMED; final author proof and journal approval remain pending.

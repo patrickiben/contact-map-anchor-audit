@@ -8,7 +8,7 @@ The intended reader has one statistics course. No genetics or persistence backgr
 
 **Publication status:** this is an unsubmitted rework incorporating the earlier AlphaGenome audit. The earlier submissions were desk rejected for journal fit. Their archived preprint and reproduction deposit remain historical sources, not a new DOI or an active submission for this rework. The revised manuscript and study archive are publicly released; that release is not journal submission, journal acceptance or a new DOI.
 
-**Exact-source contract:** [ARTIFACTS.json](ARTIFACTS.json) records the SHA-256 of the current main source and all six additional files. [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md) maps source spans and substantive objects to teaching units. Main-source hash: `fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403`.
+**Exact-source contract:** [ARTIFACTS.json](ARTIFACTS.json) records the SHA-256 of the current main source and all six additional files. [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md) maps source spans and substantive objects to teaching units. Main-source hash: `05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d`.
 
 Completeness means an explicit teaching treatment of every substantive source component, including the supplement proofs, counterexamples and result-table interpretations. It does not mean copying each bibliography entry, reprinting all raw data, rerunning the research bundle inside the PDF, or claiming independent biological validation. Reported values are attributed to the frozen sources. Synthetic arithmetic illustrates a method and is not an additional genomic observation.
 
@@ -80,7 +80,7 @@ Bounds can identify possible winners, guaranteed members of the top set, and gua
 
 A Hausdorff witness is a lower bound obtained from nearest-point or diagonal distances. It can strengthen a decision without another full matching. It can miss multiplicity constraints, so it is not a replacement for bottleneck distance.
 
-In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leaders and strengthened bounds identified 49: 42 additional decisions across six genes, with zero observed contradictions and 35 unresolved sites. The practical numerical allowance is not a full validated-arithmetic enclosure.
+In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leaders and strengthened bounds identified 49: 42 additional decisions across six genes, with zero observed contradictions and 35 unresolved sites. The practical numerical allowance is not a full validated-arithmetic enclosure. Unresolved by the bounds does not necessarily mean that the directly computed centered scores are tied.
 
 **Try it:** Increase the tie tolerance in the lab. Explain why a previously unique leader can become unresolved without changing any diagram.
 
@@ -238,7 +238,7 @@ Figure 1 uses a synthetic four-bin cycle. Panel A shows intervals translated by 
 
 Let A and C be endpoint distances, T the absolute shift and lambda the path fraction. The lower envelope is the largest of zero, `A - lambda*T`, and `C - (1-lambda)*T`. The upper envelope is the smaller of `A + lambda*T` and `C + (1-lambda)*T`. These bounds use both endpoints. Exact endpoint change of magnitude T makes them coincide. A numerical residual near zero is a different statement.
 
-Nearest-point-or-diagonal distances supply a Hausdorff lower bound H. An increasing branch is determined when that lower bound meets `A + T`. A decreasing branch instead needs an upper witness, for example an explicit matching that costs `A - T`. An inconclusive lower witness cannot be promoted to a decreasing-branch certificate.
+For each point, take the smaller of its nearest opposite-diagram distance and its own diagonal distance, using the maximum-coordinate metric. The largest such value over both diagrams supplies the lower bound H. An increasing branch is determined when that lower bound meets `A + T`. A decreasing branch instead needs an upper witness, for example an explicit matching that costs `A - T`. An inconclusive lower witness cannot be promoted to a decreasing-branch certificate.
 
 One subtle counterexample concerns edges that do not change native H1. A four-bin square has perimeter births zero and diagonal births one. Raising one diagonal birth to ten leaves the native interval (0,1) intact, but changes the six-edge mean by 1.5. Independently centered diagrams then have bottleneck distance 0.5. This proves a possible route by which an anchor changes a comparison; it does not identify the cause of any particular genomic tie.
 
@@ -319,7 +319,7 @@ Three sensitivity nulls applied consequence matching, mutation weights, and both
 
 The first three tests are one-sided enrichment above one third; the fourth is paired and two-sided around zero. No row passes the declared correction. The centered excess above one third is 0.041667, distinct from its native-to-centered change of 0.006944.
 
-For centered sensitivity analyses, consequence matching had expected credit 0.3264, p 0.1001 and sixteen-test Holm 1. Mutation weighting gave 0.3187, p 0.06459 and Holm 0.896. Combining both gave 0.2953, p 0.006084 and Holm 0.09735. The last is suggestive before adjustment but does not pass the declared sixteen-test familywise threshold. Failure to reject is not proof that all biological effects vanish.
+For centered sensitivity analyses, consequence matching had expected credit 0.3264, p 0.1001 and sixteen-test Holm 1. Mutation weighting gave 0.3187, p 0.06459 and Holm 0.896. Combining both gave 0.2953, p 0.006084 and Holm 0.09735. None passes the declared sixteen-test familywise threshold. Failure to reject is not proof that all biological effects vanish. The Holm correction is described in [Holm (1979)](https://www.jstor.org/stable/4615733); the main manuscript now cites it at first use.
 
 Native, centered and rank representations had 75, three and one tied sites. Centering resolved 72 native ties and preserved all 45 strict leaders. Credit vectors changed at 73 sites, yet the average selected-credit gain stayed small. Conditional null reference intervals are not confidence intervals for biological effects. Resampling only four purposively selected genes cannot establish population-wide coverage.
 
@@ -456,7 +456,7 @@ The word proved matters. A complete budget must cover input conversion, recovere
 
 **Source:** current manuscript/additional-file spans mapped by this unit in [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md). **Evidence:** finite matching derivation and sufficient local condition.
 
-For one real-real point pair, average the birth and death differences to obtain c, and take half the absolute difference of those two differences to obtain q. Its L-infinity cost after translation t is exactly `|t-c| + q`. A diagonal cost is constant at half the lifetime. For one partial matching, the largest cost is the maximum of a line of slope -1, a line of slope +1 and a constant. Minimizing over finitely many matchings yields a continuous piecewise-affine distance with local slopes -1, zero or +1. The lower envelope need not be convex: identical interval (0,2) gives `min(|t|,1)`.
+For one real-real point pair, average the birth and death differences to obtain c, and take half the absolute difference of those two differences to obtain q. Its L-infinity cost after translation t is exactly `|t-c| + q`. A diagonal cost is constant at half the lifetime. For one partial matching, the largest cost is the maximum of a line of slope -1, a line of slope +1 and a constant. Minimizing over finitely many matchings yields a continuous piecewise-affine distance with local slopes -1, zero or +1. The lower envelope need not be convex: identical interval (0,2) gives `min(|t|,1)`. These slopes are measured against the shift t. Against the normalized path fraction lambda, the possible slopes are -T, zero and +T, where T is the absolute relative shift.
 
 For a native distance b greater than zero, form the augmented finite bipartite graph. Its left side contains real D points and diagonal copies of E; its right side contains real E points and diagonal copies of D. Include all real-real edges, each real point's own diagonal edge, and all dummy-to-dummy edges at cost zero. A perfect matching then represents a persistence matching. Classify edges by native cost: below b, equal to b, or above b. The critical real-real edges have directional slope -1 when the chosen direction points toward their corner c, and +1 otherwise; diagonal edges have slope zero.
 

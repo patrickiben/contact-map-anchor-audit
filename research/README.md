@@ -8,7 +8,7 @@ Patrick Iben · Public draft, 28 October 2026
 
 The prospective IMR-90 test increased centered-leader coverage from **7/84 to 49/84**, adding 42 decisions across six genes without observed contradictions; 35 sites remained unresolved. Universal numerical saturation failed in three comparisons. Both simple and strengthened bounds abstained at those sites. The paired test uses the same 84 replication sites and a second output track within one AlphaGenome model. Clinical-credit changes were mixed across tracks, and RMS baselines remained stronger than centered H1 credit.
 
-See the [0.2.2 QC revision record](QC_REVISION_2026-10-28.md) for the clarified coding denominator, PH/H1 terminology, confirmed disclosures and paired contrast/full-range S6 figure. Scientific results and the v0.2.0 data archive are unchanged. The guide and companion retain 5/30 pages; changed-page inspection for this revision is distinguished from the earlier complete 35-page review in [validation](VALIDATION.md).
+The [0.2.3 author read-through revision](AUTHOR_READTHROUGH_REVISION_2026-10-28.md) incorporates the accepted clarifications, adds Holm (1979) at first use and updates the source-linked teaching editions. The main PDF remains 22 pages, with 30 references. The [earlier 0.2.2 QC revision](QC_REVISION_2026-10-28.md) improved the coding-denominator explanation and S6 figure. Scientific results, all six supplements and the v0.2.0 data archive are unchanged in 0.2.3. Final proof and submission approval remain pending. [Validation](VALIDATION.md) distinguishes the current checks from earlier scientific runs.
 
 ## Supporting files
 

@@ -71,7 +71,7 @@ The replication cohort and protocol were fixed before new spatial-map acquisitio
 
 ## The paired IMR-90 test: useful coverage despite exceptions
 
-The same 84 sites in seven loci were evaluated on a second contact track within AlphaGenome. Native-only predictions were locked before centered matching. Simple bounds identified 7 leaders; strengthened bounds identified 49, adding 42 decisions across six genes with zero observed contradictions and 35 unresolved sites. The earlier GM12878 increments were compared after those outcomes; this was the prospective test of added coverage.
+The same 84 sites in seven loci were evaluated on a second contact track within AlphaGenome. Native-only predictions were locked before centered matching. Simple bounds identified 7 leaders; strengthened bounds identified 49, adding 42 decisions across six genes with zero observed contradictions and 35 unresolved sites. The earlier GM12878 increments were compared after those outcomes; this was the prospective test of added coverage. Unresolved by the bounds does not necessarily mean that the directly computed centered scores are tied.
 
 Numerical saturation passed in 249 of 252 comparisons. Three RB1 exceptions falsified universal saturation. Both simple and strengthened bounds abstained at all three sites, so that abstention is not a witness-only advantage. Later outcome-selected samples showed two paths changing direction and one effectively flat path; samples do not locate exact breakpoints.
 

@@ -64,7 +64,7 @@ Bounds can identify possible winners, guaranteed members of the top set, and gua
 
 A Hausdorff witness is a lower bound obtained from nearest-point or diagonal distances. It can strengthen a decision without another full matching. It can miss multiplicity constraints, so it is not a replacement for bottleneck distance.
 
-In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leaders and strengthened bounds identified 49: 42 additional decisions across six genes, with zero observed contradictions and 35 unresolved sites. The practical numerical allowance is not a full validated-arithmetic enclosure.
+In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leaders and strengthened bounds identified 49: 42 additional decisions across six genes, with zero observed contradictions and 35 unresolved sites. The practical numerical allowance is not a full validated-arithmetic enclosure. Unresolved by the bounds does not necessarily mean that the directly computed centered scores are tied.
 
 **Try it:** Increase the tie tolerance in the lab. Explain why a previously unique leader can become unresolved without changing any diagram.
 

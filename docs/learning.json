@@ -1,10 +1,10 @@
 {
   "title": "Understand the Anchor Audit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "source": {
     "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-    "sha256": "fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403",
-    "version": "BMC Bioinformatics proposed revision, 28 October 2026",
+    "sha256": "05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d",
+    "version": "BMC Bioinformatics author read-through revision, 28 October 2026",
     "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
     "publication_status": "Public research draft and v0.2.0 study archive; no journal submission, acceptance or new DOI claimed."
   },
@@ -70,7 +70,7 @@
         "The top set contains every score within the chosen tolerance of the maximum. When the selected allele belongs to a tie, fractional credit divides one by the size of that top set. Ties are not silently broken by array order.",
         "Bounds can identify possible winners, guaranteed members of the top set, and guaranteed unique leaders. A sufficient native-margin bound can protect a strict leader throughout the path. When a bound is inconclusive, the right output is an unresolved set.",
         "A Hausdorff witness is a lower bound obtained from nearest-point or diagonal distances. It can strengthen a decision without another full matching. It can miss multiplicity constraints, so it is not a replacement for bottleneck distance.",
-        "In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leaders and strengthened bounds identified 49: 42 additional decisions across six genes, with zero observed contradictions and 35 unresolved sites. The practical numerical allowance is not a full validated-arithmetic enclosure."
+        "In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leaders and strengthened bounds identified 49: 42 additional decisions across six genes, with zero observed contradictions and 35 unresolved sites. The practical numerical allowance is not a full validated-arithmetic enclosure. Unresolved by the bounds does not necessarily mean that the directly computed centered scores are tied."
       ],
       "try_it": "Increase the tie tolerance in the lab. Explain why a previously unique leader can become unresolved without changing any diagram.",
       "boundary": "A unique maximum is not evidence that the selected allele is clinically correct."

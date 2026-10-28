@@ -15,7 +15,7 @@ For an interactive route, use the [Anchor Audit Lab](https://patrickiben.github.
 - [Source and coverage map](SOURCE_MAP.json): exact manuscript hash, line ranges, excerpt hashes and educational asset hashes.
 - [Aggregate-value map](STUDY_VALUE_MAP.json): the study-summary numbers and their generating artifact selectors.
 
-The manuscript basis is the 28 October 2026 author-review candidate, *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, SHA256 `fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403`. That public draft is supplied with the versioned study release; no journal acceptance or new DOI is implied.
+The manuscript basis is the 28 October 2026 author-review candidate, *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, SHA256 `05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d`. That public draft is supplied with the versioned study release; no journal acceptance or new DOI is implied.
 
 The current rework has not been submitted. The [earlier AlphaGenome audit's teaching materials](https://github.com/patrickiben/alphagenome-allele-demo/tree/main/education) remain tied to its preprint v3 and five earlier supplements. They explain that prior version; the new companion covers the current rework and Additional files 1–6. The [research map](https://github.com/patrickiben/patrickiben/blob/main/RESEARCH_MAP.md) connects both versions to their respective code and demonstrations.
 
@@ -42,3 +42,5 @@ The full study archive is released with [v0.2.0](https://github.com/patrickiben/
 AlphaGenome outputs and substantial derivatives, including the genomic numerical results discussed here, remain subject to the AlphaGenome Output Terms, separate from the MIT software license. The study release includes the binding terms, required attribution, modification record, and three-part archive checksums/reassembly instructions. Saved raw maps retain their original bytes; mean centering, persistence analysis, ranking and visualization are documented processing steps.
 
 The QC revision updates declared funding/conflicts and AI disclosure (Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC), clarifies the 1,192/1,490 coding result including 3/6 synonymous positions, and teaches the explicitly clipped S6 contrast view alongside its unclipped control. Declarations were confirmed; final author approval remains NOT_CERTIFIED and human learner validation NOT_PERFORMED.
+
+This edition incorporates the author’s section-by-section manuscript edits and the added Holm reference. Final proof approval and human learner assessment remain pending.

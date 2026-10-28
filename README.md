@@ -105,7 +105,7 @@ The quiz is practice, not the original locked human transfer test. Human learner
 
 ## Development disclosure
 
-OpenAI Codex assisted with implementation, educational adaptation, mathematical review and automated verification. Qwen3.8 assisted earlier manuscript drafting; Qwen3.8-Max generated author-supplied QC reports checked against retained artifacts. AI-assisted review and passing software tests do not constitute independent human review, human learner certification or clinical validation. Patrick Iben is the named project author; author review of the complete revised research manuscript and its interpretations remains pending.
+OpenAI Codex assisted with implementation, educational adaptation, mathematical review and automated verification. Qwen3.8 assisted earlier manuscript drafting; Qwen3.8-Max generated author-supplied QC reports checked against retained artifacts. AI-assisted review and passing software tests do not constitute independent human review, human learner certification or clinical validation. Patrick Iben is the named project author; the section-by-section edits are accepted, while final proof and submission approval remain pending.
 
 ## Verification
 
@@ -134,6 +134,6 @@ The printable editions use the portfolio's Georgia/Arial typography and Letter p
 
 ## Citation and licensing
 
-Use [CITATION.cff](CITATION.cff) to cite software version 0.2.2, and record the exact commit used for an analysis. The complete study data remain archived in v0.2.0; v0.2.2 updates manuscript clarifications, AI disclosures, the S6 figure layout and source-bound teaching materials; [the QC revision record](research/QC_REVISION_2026-10-28.md) describes the changes. The earlier v0.2.1 packaging patch added the previously ignored validation log. Neither revision changes the archived scientific calculations or data. No DOI has been assigned in this file.
+Use [CITATION.cff](CITATION.cff) to cite software version 0.2.3, and record the exact commit used for an analysis. The complete study data remain archived in v0.2.0. Version 0.2.3 incorporates the author-approved read-through edits, adds the Holm citation, clarifies slope units and updates the teaching materials; see the [revision record](research/AUTHOR_READTHROUGH_REVISION_2026-10-28.md). The preceding [v0.2.2 QC revision](research/QC_REVISION_2026-10-28.md) improved the S6 figure and disclosures. These revisions leave the archived scientific data and calculations unchanged. Final proof and submission approval remain pending. No DOI has been assigned in this file.
 
 Original project code and educational text are licensed under [MIT](LICENSE), copyright 2026 Patrick Iben. Third-party libraries and user-supplied data retain their own licenses and terms. The code license does not relicense AlphaGenome assets or outputs, which are included only in the separately identified study archive under the provider terms. See the [output terms notice](research/OUTPUT_TERMS_NOTICE.md).

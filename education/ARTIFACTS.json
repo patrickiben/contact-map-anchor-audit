@@ -7,8 +7,8 @@
     {
       "id": "MAIN",
       "file": "PROPOSED_BMC_BIOINFORMATICS.md",
-      "sha256": "fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403",
-      "lines": 305
+      "sha256": "05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d",
+      "lines": 307
     },
     {
       "id": "AF1",
@@ -73,7 +73,7 @@
         "P08"
       ],
       "topic": "Abstract",
-      "excerpt_sha256": "36af9f738c5063fa3ca4b99cb30f56a099e675bede5fa8e5205f154498aa1ee4"
+      "excerpt_sha256": "be3f62ad0b7fb8a72a8dc60d653bccd5681637162b2639fdc703cc73e339e7ff"
     },
     {
       "id": "MAIN-03",
@@ -87,7 +87,7 @@
         "R05"
       ],
       "topic": "Background",
-      "excerpt_sha256": "94084e5e57907992d4520617cd62591867b452f37a46fc9bfecca6b707e0fdb3"
+      "excerpt_sha256": "f641a09cc4185a04ebfb4a5d3763f746368108e997ecda80c86d6cbd3a71b4da"
     },
     {
       "id": "MAIN-04",
@@ -116,7 +116,7 @@
         "R02"
       ],
       "topic": "Predicted maps and filtration",
-      "excerpt_sha256": "0b55c803df8ce02678ded0476299a578def1b1d7fee975f36ba1be4bd718967c"
+      "excerpt_sha256": "c4c0a7119e28eb9656cda2bfb0d56bb2037f220288bff7471569abe3aea8ee9e"
     },
     {
       "id": "MAIN-06",
@@ -130,7 +130,7 @@
         "R03"
       ],
       "topic": "Declared anchor path",
-      "excerpt_sha256": "caa2b683b2fb25dc8dfeb04b307ea11c891934fc92ee8c916c0d6824ba3e5b31"
+      "excerpt_sha256": "888aa357fb27fcb7f5fcfcf33f10866027a84fdb07dae54842046778e25453dc"
     },
     {
       "id": "MAIN-07",
@@ -146,7 +146,7 @@
         "S03"
       ],
       "topic": "Endpoint-derived whole-path envelopes",
-      "excerpt_sha256": "c89095972bb48202be524c34ad6e2e310694b8e6196996583efbaf4c87585523"
+      "excerpt_sha256": "31db4894fd2bc43c76068c01572f6be291badf1bdc3537cfb9300f3604326682"
     },
     {
       "id": "MAIN-08",
@@ -162,7 +162,7 @@
         "S05"
       ],
       "topic": "Native-only prediction of centered leaders",
-      "excerpt_sha256": "ca527fd6d00fa81853a87d8bb99969da034bb34a2f8f54d1e70a582b1ba5ea69"
+      "excerpt_sha256": "79c1011256d9b281f9a75d22f1e6f51d4cf593aa823188f537b9673a03be69a7"
     },
     {
       "id": "MAIN-09",
@@ -177,7 +177,7 @@
         "R09"
       ],
       "topic": "Evaluation design and separation of prediction from validation",
-      "excerpt_sha256": "6832475b4df6c83de9f2e3d3f5794a26ef021743486277eb7242cda376e74b21"
+      "excerpt_sha256": "f9c91782efac291344bc1725093a5859272e2ba0da7fcc3313decb3bbe023431"
     },
     {
       "id": "MAIN-10",
@@ -192,7 +192,7 @@
         "S07"
       ],
       "topic": "Clinical-label summaries and baseline comparisons",
-      "excerpt_sha256": "b02fe17e3a2a8159cd5b21cb1695260b36441cd7aeba2ba0594dfc32ba479e11"
+      "excerpt_sha256": "07deb243f748ab81f03e68a4764f3e78b375e57e9ca2453547315a0a4ae18545"
     },
     {
       "id": "MAIN-11",
@@ -207,7 +207,7 @@
         "R10"
       ],
       "topic": "Computation, verification and AI assistance",
-      "excerpt_sha256": "9fee9d56820fde2682f54ee235d288a1028840cc7ecfcd21847d430398e57415"
+      "excerpt_sha256": "af2830a3cdcae73f0cfcc1f0c092e9e6a4fefc24db3909d069fdb67df0d3cd15"
     },
     {
       "id": "MAIN-12",
@@ -235,7 +235,7 @@
         "R09"
       ],
       "topic": "Prospective centered-leader coverage",
-      "excerpt_sha256": "54bf816c469101871ca18ac07d63699ea120ac2929ca9e713dacf0da185e394e"
+      "excerpt_sha256": "7ecab83bb65ba9b54ab31a46626c391beaa98b86b7e2078682dff602a87b4979"
     },
     {
       "id": "MAIN-14",
@@ -250,7 +250,7 @@
         "R09"
       ],
       "topic": "Saturation, exceptions and tie resolution",
-      "excerpt_sha256": "9675d2bb24e5a8b6f1f959ee0fa29460f93b3738e6cde82ff404c9ade3e4cb21"
+      "excerpt_sha256": "0f6db57bfa595d4214b589f1d2ca688a317ac557eda2bc51cf94e5b281431ed8"
     },
     {
       "id": "MAIN-15",
@@ -265,7 +265,7 @@
         "R09"
       ],
       "topic": "Selected-allele credit and stronger scalar baselines",
-      "excerpt_sha256": "1deb050bb773ce86eb69e1373837b9c690218dc7caa2f4c01de119ff189ccf8b"
+      "excerpt_sha256": "328147f72afa69247460195f82d53ae37ba7e5d6d1df7d25be478c60df782e1f"
     },
     {
       "id": "MAIN-16",
@@ -279,7 +279,7 @@
         "R06"
       ],
       "topic": "Consequence controls from the retained within-site audit",
-      "excerpt_sha256": "c9b2a8de9d735081ad79c84346340375ac2a60aedad6fcfd5ada691e398dd664"
+      "excerpt_sha256": "48042c90305d2f0b27b26906fe3f499c4295f9b17884aece8ed659bf16748701"
     },
     {
       "id": "MAIN-17",
@@ -293,7 +293,7 @@
         "R10"
       ],
       "topic": "Discussion",
-      "excerpt_sha256": "4d08acdd3712eae4e6a8c4e28dc5670fc9fd06e9dae597309866ae83a5dcbb88"
+      "excerpt_sha256": "c477c090f638538964170692b5a36806e278584519eadec883da3b6d80b72519"
     },
     {
       "id": "MAIN-18",
@@ -307,7 +307,7 @@
         "R10"
       ],
       "topic": "Conclusions",
-      "excerpt_sha256": "fceaa722d3383994b18ad1669a0ee213004356e92d1c4f6ac2015f96f6e96213"
+      "excerpt_sha256": "76d46b2cac1b08face492eafb18e37aa21cea78d2df877818d6cb877dd0d19e3"
     },
     {
       "id": "MAIN-19",
@@ -320,7 +320,7 @@
         "INTRO"
       ],
       "topic": "Abbreviations",
-      "excerpt_sha256": "7be5ac8cfb6876b3d29f658a9fce45edba663048fa5c17335c9bc7b4c647c210"
+      "excerpt_sha256": "f3bbc247f43146105e587df39fe5f0c100bccedc2904f75616fa0bfe436e31ce"
     },
     {
       "id": "MAIN-20",
@@ -373,7 +373,7 @@
         "R10"
       ],
       "topic": "Availability of data and materials",
-      "excerpt_sha256": "9e40402d850b6c0a64b7a9ede511e1edcc3169a829e2c1d1d2719f5ab6678b87"
+      "excerpt_sha256": "dac51aa010ae7b8b56f134065fc9b4eb5145a613949b891cf132a4180bf2bd5f"
     },
     {
       "id": "MAIN-24",
@@ -438,21 +438,21 @@
         "INTRO"
       ],
       "topic": "Additional files",
-      "excerpt_sha256": "6db95bc9c20ad1b1e24f138176e90e9c1c56ef3ea77fb520371d50ebf52d1c19"
+      "excerpt_sha256": "97bd4744cdce2eaa5e5b808d62fe12d366b339a936175fa10c2d3a8cc028d515"
     },
     {
       "id": "MAIN-29",
       "source": "MAIN",
       "lines": [
         275,
-        305
+        307
       ],
       "units": [
         "R05",
         "R10"
       ],
       "topic": "References",
-      "excerpt_sha256": "bba6ab71cd84d51b29e10129d5ddd1f9eeb1f9efddaac05cef87b1c3dc0e9120"
+      "excerpt_sha256": "53e3acd62e50947ad47a72f838fc293b878dfe8616c97afda7e89904ef951174"
     },
     {
       "id": "AF1-01",
@@ -816,33 +816,33 @@
   "assets": [
     {
       "path": "education/STUDY_GUIDE.md",
-      "sha256": "db6ad3d0b68a0f79dbd961fd9f5056793c1d739e0be184afbf7f14f73a46eee1",
-      "bytes": 13767
+      "sha256": "5627da79a9e43ccdc39ef2a9de5629c99c6c465a15ea2ceba6d1947e48301d8c",
+      "bytes": 13871
     },
     {
       "path": "education/STUDY_GUIDE.pdf",
-      "sha256": "d63f36d5d97d05dc0ad3de209a88cd8a19462279b57e9b122b898640e0b3048b",
-      "bytes": 193052
+      "sha256": "f80cfbe3cac8452af5230d8e821da96196a92da45b9a9a71eef332dceb8d5c91",
+      "bytes": 193110
     },
     {
       "path": "education/COMPANION.md",
-      "sha256": "b1dcd2113abd4ac852d9884cd14059f57c04f094c8099d072a0d98426fb90c5b",
-      "bytes": 86362
+      "sha256": "d833369db3fd1f1a3efb15d46d113b717e9575ac5dcf754caf8d35d5f66646fb",
+      "bytes": 86870
     },
     {
       "path": "education/COMPANION.pdf",
-      "sha256": "5f0cdb4ad0355180c868f49331f8e7a46bcaa3840475b67e9bcfa49c52b8436c",
-      "bytes": 283472
+      "sha256": "3e30745e3c65d1c3c657bf7076cee52079fd958e957ef32bcffc3b19c729d2a0",
+      "bytes": 284084
     },
     {
       "path": "education/COMPLETE_COVERAGE.md",
-      "sha256": "a3f2f3feffce9471efc82251b46aa39c7d4dd680eac8e5dd487a9d0c599719fd",
+      "sha256": "77b654092b2b20d3540b0cf0aac10a6660a920a5e0e485c147b78dbcd4546617",
       "bytes": 4649
     },
     {
       "path": "education/pdf_build_metadata.json",
-      "sha256": "f2891d858953e5c8bb3b28fe3e12b0d1269dc9639df1b9f69498d4c749e4511a",
-      "bytes": 1530
+      "sha256": "a94277043abb7211d162a0c13ed3a92818d48c01afe80a964fd00d0253f0c077",
+      "bytes": 1541
     },
     {
       "path": "scripts/build_pdf_companions.py",
@@ -856,8 +856,8 @@
     },
     {
       "path": "education/RELEASE_QA.md",
-      "sha256": "d057998a34596d7be3e84dd9619f966aac25acdd6f4bff3a6b208626f5f9b107",
-      "bytes": 5631
+      "sha256": "a2840ba45f4854e8277abcae3357017c4704dd9fed263a804a08c244ffcbf000",
+      "bytes": 7092
     }
   ],
   "validation": {
@@ -866,6 +866,6 @@
     "human_learner_validation": "NOT_PERFORMED",
     "author_journal_approval": "NOT_CERTIFIED",
     "public_release_authorization": "User explicitly requested GitHub update; not a scientific approval verdict.",
-    "visual_scope": "Final 5/30-page editions rendered; changed body pages guide5 and companion1,6,10,12–17 image-inspected. Remaining bodies match prior inspected edition. No clipping or overlap."
+    "visual_scope": "Current 5/30-page editions rendered at 90 dpi; guide3 and companion1,3\u201323 changed bodies inspected, plus companion2,24. Other bodies pixel-match the previously inspected v0.2.2 edition excluding the bottom65 footer pixels. No clipping, overlap or broken tables observed."
   }
 }

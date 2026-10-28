@@ -1,8 +1,13 @@
 {
-  "version": "0.2.2",
-  "manuscript_source_sha256": "fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403",
+  "version": "0.2.3",
+  "manuscript_source_sha256": "05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d",
   "publication_status": "In preparation for BMC Bioinformatics; not submitted",
   "files": [
+    {
+      "path": "AUTHOR_READTHROUGH_REVISION_2026-10-28.md",
+      "bytes": 3179,
+      "sha256": "92fee813a805196abcc11a7513f5b84797cb065a1a603cc05e2ceef905cf56f7"
+    },
     {
       "path": "Additional_file_1.md",
       "bytes": 3514,
@@ -115,13 +120,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4761,
-      "sha256": "8dff1e23ec95124229190b84a0861446fb4779b0c8b51a3a278c4f33eab6c8f1"
+      "bytes": 4950,
+      "sha256": "ed4158064423716428b0dd5bc750e89ddfd10ca7614ea8003364e4c1d0b44221"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 3824,
-      "sha256": "5e27c587f047f2c760df2953099fd56e667234b51d9fd35710c74ced7318f4d1"
+      "bytes": 4553,
+      "sha256": "107edfd38c31dd6994d3b3e6da25801e882d8816b0ab81e7ebc3fe70b7a9bb17"
     },
     {
       "path": "figures/README.md",
@@ -180,18 +185,18 @@
     },
     {
       "path": "manuscript.md",
-      "bytes": 50283,
-      "sha256": "fdd21e67dcacd4254c3daa1237dad82695d35ce9dab6f6773a46e2a5ddcfd403"
+      "bytes": 52571,
+      "sha256": "05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d"
     },
     {
       "path": "manuscript.pdf",
-      "bytes": 773783,
-      "sha256": "6541706f6cf817afa9b0f3d3039f40885dc9cce567b9583a3ed6901df8525952"
+      "bytes": 777146,
+      "sha256": "326629d4d1262951da5c4ca335eb7471317669dc9dc3f55f48aba3e3e8019f61"
     },
     {
       "path": "manuscript.tex",
-      "bytes": 60062,
-      "sha256": "707e40216e7ed54c358f7fdbcdfede44af325959d7bd71bc62815440d7ae480c"
+      "bytes": 62389,
+      "sha256": "9754e1c24f659cc1f0a004f9d14850766ba833eba904621782b2b9f13533c92c"
     },
     {
       "path": "reproduce/ACQUISITION_REPLAY_CHECK.json",

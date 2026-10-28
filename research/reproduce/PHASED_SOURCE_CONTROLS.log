@@ -1,0 +1,34 @@
+Starting 0 synthetic_0
+PH complete 0 intervals [1, 1, 1, 1]
+Pair complete 0 0 0.00s
+Pair complete 0 1 0.00s
+Pair complete 0 2 0.00s
+Completed site 0
+Starting 1 synthetic_1
+PH complete 1 intervals [1, 1, 0, 1]
+Pair complete 1 0 0.00s
+Pair complete 1 1 0.00s
+Pair complete 1 2 0.00s
+Completed site 1
+Starting 2 synthetic_2
+PH complete 2 intervals [0, 0, 0, 0]
+Pair complete 2 0 0.00s
+Pair complete 2 1 0.00s
+Pair complete 2 2 0.00s
+Completed site 2
+{
+  "status": "PASS",
+  "checks": [
+    "centered_phase_rejects_missing_lock",
+    "native_phase_contains_no_centered_endpoints",
+    "repeat_native_phase_preserves_lock",
+    "centered_phase_rejects_changed_native_artifact",
+    "centered_phase_rejects_changed_protocol",
+    "centered_phase_preserves_lock_and_validates_bounds",
+    "three_synthetic_sites_match_original_scientific_engine",
+    "nonsaturation_and_nonaffine_controls_are_detected",
+    "wrong_leader_prediction_is_rejected"
+  ],
+  "count": 9,
+  "scope": "Synthetic implementation and freeze controls; no new genomic data acquired or inspected."
+}

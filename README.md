@@ -134,6 +134,6 @@ The printable editions use the portfolio's Georgia/Arial typography and Letter p
 
 ## Citation and licensing
 
-Use [CITATION.cff](CITATION.cff) to cite software version 0.2.0, and record the exact commit used for an analysis. No DOI has been assigned in this file.
+Use [CITATION.cff](CITATION.cff) to cite software version 0.2.1, and record the exact commit used for an analysis. The complete study data remain archived in v0.2.0; v0.2.1 adds the previously ignored validation log to the source checkout without changing calculations or data. No DOI has been assigned in this file.
 
 Original project code and educational text are licensed under [MIT](LICENSE), copyright 2026 Patrick Iben. Third-party libraries and user-supplied data retain their own licenses and terms. The code license does not relicense AlphaGenome assets or outputs, which are included only in the separately identified study archive under the provider terms. See the [output terms notice](research/OUTPUT_TERMS_NOTICE.md).

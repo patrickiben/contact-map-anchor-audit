@@ -2,13 +2,13 @@
 
 ## Reader, purpose and exact basis
 
-This is the complete research-and-teaching edition for Patrick Iben's *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, the final-proof candidate dated 28 October 2026, together with its six PDF supplements and compact scalar-verification archive (Additional file 7). It explains the main methods, mathematical statements, empirical results, all three main tables, all four main figures, limitations, reproducibility record, declarations and the supplements. The [concise study guide](STUDY_GUIDE.md) offers a shorter introduction; both editions have PDFs.
+This is the complete research-and-teaching edition for Patrick Iben's *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, the author-approved submission manuscript dated 29 October 2026, together with its six PDF supplements and compact scalar-verification archive (Additional file 7). It explains the main methods, mathematical statements, empirical results, all three main tables, all four main figures, limitations, reproducibility record, declarations and the supplements. The [concise study guide](STUDY_GUIDE.md) offers a shorter introduction; both editions have PDFs.
 
 The intended reader has one statistics course. No genetics or persistence background is assumed. Read the ten guided lessons first, then use R01-R10 for detailed source reading, S01-S07 for the supplements, the six worked examples to check mechanisms, and the twelve practice questions to test interpretation. The glossary and researcher workflow support later use of the executable toolkit.
 
 **Publication status:** this is an unsubmitted rework incorporating the earlier AlphaGenome audit. The earlier submissions were desk rejected for journal fit. Their archived preprint and reproduction deposit remain historical sources, not a new DOI or an active submission for this rework. The revised manuscript and study archive are publicly released; that release is not journal submission, journal acceptance or a new DOI.
 
-**Exact-source contract:** [ARTIFACTS.json](ARTIFACTS.json) records the SHA-256 of the current main source and all six additional files. [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md) maps source spans and substantive objects to teaching units. Main-source hash: `5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0`.
+**Exact-source contract:** [ARTIFACTS.json](ARTIFACTS.json) records the SHA-256 of the current main source and all six additional files. [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md) maps source spans and substantive objects to teaching units. Main-source hash: `a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29`.
 
 Completeness means an explicit teaching treatment of every substantive source component, including the supplement proofs, counterexamples and result-table interpretations. It does not mean copying each bibliography entry, reprinting all raw data, rerunning the research bundle inside the PDF, or claiming independent biological validation. Reported values are attributed to the frozen sources. Synthetic arithmetic illustrates a method and is not an additional genomic observation.
 
@@ -16,7 +16,7 @@ Completeness means an explicit teaching treatment of every substantive source co
 
 Definitions and mathematical proofs establish conditional statements. Model-output results describe delivered predictions. Statistical results depend on declared labels, nulls, sampling and multiplicity families. Exploratory checks remain exploratory. Prespecified spatial replication means its design preceded new spatial outcomes, not that the model's training set is known. Reproduction checks retained computations; it does not establish clinical truth.
 
-Each detailed reading names its source, evidence type and explained question. Try the question before its answer. The twelve multiple-choice items are practice with feedback, not the original locked human assessment. Human semantic review and learner transfer remain unperformed; final author approval is pending. AI-assisted checks do not replace those reviews.
+Each detailed reading names its source, evidence type and explained question. Try the question before its answer. The twelve multiple-choice items are practice with feedback, not the original locked human assessment. The author approved the manuscript and Additional files 1–7 for submission on 29 October 2026. Human educational semantic review and learner transfer remain unperformed.
 
 ## Guided lessons: a first route through the manuscript
 
@@ -190,7 +190,7 @@ The research contribution combines a specified preprocessing path, ranking bound
 
 The full v0.2.0 study archive is publicly released with the manuscript, code and verification records. Toolkit code is MIT-licensed; model outputs retain separate provider terms and attribution. Public release does not establish clinical validity, author journal approval or human learner transfer.
 
-Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending.
+Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review. The author approved the manuscript and Additional files 1–7 for submission on 29 October 2026.
 
 The amended Additional file 7 independently checks scalar-derived counts, bounds, ranking sets and credits. Its 495 aggregate comparisons and 17 deliberate failure controls do not recompute persistence, witness distances or model predictions. The full study archive and separate Julia validation capsule supply the larger computational records.
 
@@ -430,7 +430,7 @@ The [Julia validation capsule](https://github.com/patrickiben/contact-map-anchor
 
 The research record includes per-call maps, diagrams, track metadata, coordinates, protocols, failure records and source hashes. The versioned public release distributes reusable code and teaching materials together with a separate full study archive carrying provider output notices. The old reproduction deposit and old preprint are historical sources, not deposits or DOIs for the revised manuscript. Public code release does not imply journal submission or publication of the rework.
 
-The confirmed declarations report public annotations and computational outputs, no specific grant or institutional funding, and no competing financial or nonfinancial interests. OpenAI Codex assisted development, derivations, code, validation, prose and source checks; Qwen3.8 assisted earlier drafting and Qwen3.8-Max generated author-supplied QC reports checked against retained artifacts. These checks are not external peer review. AlphaGenome produced molecular predictions. The author retains responsibility; final author approval and human learner effectiveness remain uncertified.
+The confirmed declarations report public annotations and computational outputs, no specific grant or institutional funding, and no competing financial or nonfinancial interests. OpenAI Codex assisted development, derivations, code, validation, prose and source checks; Qwen3.8 assisted earlier drafting and Qwen3.8-Max generated author-supplied QC reports checked against retained artifacts. These checks are not external peer review. AlphaGenome produced molecular predictions. The author retains responsibility and approved the manuscript and Additional files 1–7 for submission on 29 October 2026. Human learner effectiveness remains untested.
 
 The current main bibliography has 31 references, including model/output context, topology and invariant-distance precedents, clinical annotations and computational-evidence guidance, inference methods, Ripserer, the earlier archive, and toolkit sources. The additional files use local bibliography numbering. Citing these sources does not independently reproduce their findings.
 

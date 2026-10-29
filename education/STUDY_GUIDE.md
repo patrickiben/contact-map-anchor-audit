@@ -4,7 +4,7 @@ A short introduction to *Auditing preprocessing-sensitive allele rankings in pre
 
 This guide is for a numerate reader with one statistics course and no assumed expertise in persistent homology. It is the shorter of two editions. The [complete companion](COMPANION.md) explains the main manuscript and Additional files 1–6, including the proofs, all result tables, all four figure-reading tasks, worked examples and practice questions. Both editions have matching PDFs.
 
-**Exact basis:** the final-proof manuscript, six PDF supplements and scalar-verification archive dated 28 October 2026. This rework is not yet submitted. It incorporates the earlier AlphaGenome audit, whose journal submissions were desk rejected for fit. The earlier preprint remains a separate, historical version; its DOI is not a DOI for this rework. Source hashes are in [ARTIFACTS.json](ARTIFACTS.json).
+**Exact basis:** the manuscript, six PDF supplements and scalar-verification archive approved for submission on 29 October 2026. This rework is not yet submitted. It incorporates the earlier AlphaGenome audit, whose journal submissions were desk rejected for fit. The earlier preprint remains a separate, historical version; its DOI is not a DOI for this rework. Source hashes are in [ARTIFACTS.json](ARTIFACTS.json).
 
 ## The problem in one picture
 
@@ -120,6 +120,6 @@ Ripserer in Julia separately reconstructed 72 full diagrams from nine replicatio
 
 Open the [Anchor Audit Lab](https://patrickiben.github.io/contact-map-anchor-audit/) for five synthetic controls, a centering slider, bounds, local diagram import and JSON audit export. The Python toolkit accepts larger finite diagrams. Neither route constructs diagrams from a contact map or chooses the biological anchor for you.
 
-The [complete companion](COMPANION.pdf) supplies the detailed reading route, six worked examples, twelve practice questions and a research workflow. These are teaching adaptations, not biological replications or validated learner assessments. Whole-package author approval, human semantic review and learner testing remain pending. Codex assisted development and verification, Qwen3.8 earlier drafting, and Qwen3.8-Max author-supplied QC. Checks do not replace final author approval.
+The [complete companion](COMPANION.pdf) supplies the detailed reading route, six worked examples, twelve practice questions and a research workflow. These are teaching adaptations, not biological replications or validated learner assessments. The author approved the manuscript and Additional files 1–7 for submission on 29 October 2026; human educational review and learner testing remain unperformed. Codex assisted development and verification, Qwen3.8 earlier drafting, and Qwen3.8-Max author-supplied QC. Automated checks do not replace author responsibility.
 
 The [v0.2.0 release](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0) supplies the full study archive; the Julia check has a separate capsule. Original software is MIT-licensed. AlphaGenome outputs and substantial derivatives retain provider terms and notices. Saved raw maps retain their bytes; centering, persistence analysis, ranking and visualization are documented modifications. Public access does not establish clinical validity, author approval or learner effectiveness.

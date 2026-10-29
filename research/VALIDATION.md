@@ -1,6 +1,6 @@
 # Scientific validation and release checks
 
-28 October 2026. The current edition is v0.2.4, a consolidated final-proof candidate for BMC Bioinformatics. Guided section review is complete; whole-package author approval remains pending. No journal submission or acceptance is claimed.
+29 October 2026. The current edition is v0.2.5, the author-approved submission edition for BMC Bioinformatics. Patrick Iben approved the consolidated manuscript and Additional files 1–7 and confirmed that the rework was not under consideration elsewhere. The pending-approval sentence has been replaced by the author-approval statement. Scientific text and all supplementary files retain their accepted content. No journal submission or acceptance is claimed.
 
 ## Scientific computations retained from earlier runs
 
@@ -26,6 +26,6 @@ The primary portability finding remains **7 to 49 of 84 leaders, +42 across six 
 
 ## Software and teaching checks
 
-Current executed release checks are recorded in [the v0.2.4 receipt](../validation/release-checks-v0.2.4.json). The older [v0.1.0 receipt](../validation/release-checks.json) describes that earlier package only; its file-scope statement does not describe the later research/Julia additions. Research-file hashes are in [ARTIFACTS.json](ARTIFACTS.json); teaching source/coverage checks are in [education/VALIDATION.json](../education/VALIDATION.json) and [education/ARTIFACTS.json](../education/ARTIFACTS.json).
+The affected publication/source checks for the approval-only update are recorded in [the v0.2.5 receipt](../validation/release-checks-v0.2.5.json). The preceding broader final-proof checks remain recorded in [the v0.2.4 receipt](../validation/release-checks-v0.2.4.json); they are historical checks of that edition, not newly rerun scientific computations. The older [v0.1.0 receipt](../validation/release-checks.json) describes that earlier package only; its file-scope statement does not describe the later research/Julia additions. Research-file hashes are in [ARTIFACTS.json](ARTIFACTS.json); teaching source/coverage checks are in [education/VALIDATION.json](../education/VALIDATION.json) and [education/ARTIFACTS.json](../education/ARTIFACTS.json).
 
 AI-assisted review and automated checks do not constitute external human peer review, human learner validation, clinical validation or a formal real-arithmetic certificate. The preceding research reports retain their scoped harness limitations. No all-gates-green claim is made.

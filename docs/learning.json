@@ -1,12 +1,12 @@
 {
   "title": "Understand the Anchor Audit",
-  "version": "0.2.4-final-proof",
+  "version": "0.2.5-author-approved",
   "source": {
     "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-    "sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
-    "version": "BMC Bioinformatics final-proof candidate, 28 October 2026",
-    "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
-    "publication_status": "Unsubmitted final-proof candidate; full study archive v0.2.0 and separate Julia validation capsule. Whole-package author approval and human learner reviews remain pending."
+    "sha256": "a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29",
+    "version": "Author-approved BMC Bioinformatics submission manuscript, 29 October 2026",
+    "scope": "Source-linked educational adaptation. The author approved the manuscript and Additional files 1–7 for submission on 29 October 2026. Human educational semantic review and learner validation remain unperformed.",
+    "publication_status": "Author-approved package in preparation for BMC Bioinformatics; not submitted or accepted. Full study archive v0.2.0 and separate Julia validation capsule are preserved."
   },
   "lessons": [
     {
@@ -196,7 +196,7 @@
         "This toolkit adds synthetic examples and reusable software. Imported diagrams are processed locally in the browser. The study-summary panel reports aggregate author analyses, not raw contact maps.",
         "The research contribution combines a specified preprocessing path, ranking bounds, useful witnesses, explicit unresolved cases and measured new-locus behavior. It is not a new generic distance, a physical loop detector or a clinical prediction tool.",
         "The full v0.2.0 study archive is publicly released with the manuscript, code and verification records. Toolkit code is MIT-licensed; model outputs retain separate provider terms and attribution. Public release does not establish clinical validity, author journal approval or human learner transfer.",
-        "Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending.",
+        "Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review. The author approved the manuscript and Additional files 1–7 for submission on 29 October 2026.",
         "The amended Additional file 7 independently checks scalar-derived counts, bounds, ranking sets and credits. Its 495 aggregate comparisons and 17 deliberate failure controls do not recompute persistence, witness distances or model predictions. The full study archive and separate Julia validation capsule supply the larger computational records."
       ],
       "try_it": "Describe one independent measurement that would be needed to connect the audit to a real structural chromosome change.",

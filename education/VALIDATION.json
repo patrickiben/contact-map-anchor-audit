@@ -13,7 +13,8 @@
   "aggregate_value_checks": 39,
   "human_learner_validation": "NOT_PERFORMED",
   "human_semantic_review": "NOT_PERFORMED",
-  "author_approval": "NOT_CERTIFIED",
+  "author_manuscript_submission_approval": "CONFIRMED_2026-10-29",
+  "author_educational_review": "NOT_PERFORMED",
   "scope": "Source/coverage/value/hash checks; no educational efficacy or formal theorem certification.",
   "mutation_controls": [
     {

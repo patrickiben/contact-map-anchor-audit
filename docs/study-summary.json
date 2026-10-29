@@ -1,7 +1,7 @@
 {
   "title": "Prospective decision coverage across two prediction tracks",
   "scope": "Aggregate author analysis of two AlphaGenome output tracks. GM12878 discovery and new-locus replication are distinct cohorts; paired IMR-90 reuses the 84 replication sites and model architecture. Clinical-credit comparisons in replication and portability are descriptive.",
-  "source_sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
+  "source_sha256": "a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29",
   "cohorts": [
     {
       "id": "discovery",

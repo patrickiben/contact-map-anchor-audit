@@ -1,8 +1,13 @@
 {
-  "version": "0.2.4",
-  "manuscript_source_sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
-  "publication_status": "Consolidated final proof in preparation for BMC Bioinformatics; not submitted; whole-package author approval pending",
+  "version": "0.2.5",
+  "manuscript_source_sha256": "a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29",
+  "publication_status": "Author-approved submission edition for BMC Bioinformatics; not yet submitted",
   "files": [
+    {
+      "path": "AUTHOR_APPROVED_EDITION_2026-10-29.md",
+      "bytes": 1368,
+      "sha256": "3958a5e42246a316dcecdbb960b3cd4b191b0bef5866efec7560039189e9c100"
+    },
     {
       "path": "AUTHOR_READTHROUGH_REVISION_2026-10-28.md",
       "bytes": 3179,
@@ -130,13 +135,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4465,
-      "sha256": "01d16733bd386bd4dbb3ffff22108578860e8104cf3771b0caf2014bf5a2d84d"
+      "bytes": 4614,
+      "sha256": "c4953245d5f312144a0b34c64c7e879f9374ccc22411dac95571cc58e614b74c"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 4728,
-      "sha256": "9786362f8b1dd091027af8110ab25caa59ffa16e615e94e7a793ef11538008f4"
+      "bytes": 5196,
+      "sha256": "54ee05335dde0018356e585f64ce3991adcb0f3edf50c6c83e39c14503cfe761"
     },
     {
       "path": "figures/README.md",
@@ -1060,18 +1065,18 @@
     },
     {
       "path": "manuscript.md",
-      "bytes": 53658,
-      "sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0"
+      "bytes": 53638,
+      "sha256": "a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29"
     },
     {
       "path": "manuscript.pdf",
       "bytes": 778666,
-      "sha256": "7406a9850247c5b6d76c2ff73231d856673c26bd7dade0806259ff13051fd2eb"
+      "sha256": "4f905264af5b19fba584eaa787c5c1d726bb4f262f6644f1bcac044979e7943b"
     },
     {
       "path": "manuscript.tex",
-      "bytes": 63558,
-      "sha256": "3d49a49b4b333db6a936be7a6535c895ec473ef1a03551cd7b4aaded8c128ea6"
+      "bytes": 63538,
+      "sha256": "52228ce1d4b651ff2092a06ed4e123c62bd515dd20f36ca14bab5f5f7b853cf9"
     },
     {
       "path": "reproduce/ACQUISITION_REPLAY_CHECK.json",

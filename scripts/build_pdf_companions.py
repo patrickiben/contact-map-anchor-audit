@@ -246,7 +246,7 @@ def main():
         print('Both PDF editions match their checked Markdown sources and build receipt.')
         return
     from pypdf import PdfReader
-    receipt={'format':'research-companion-pdf-build-v1','date':'2026-10-28','style':'Research and teaching series: Georgia body, Arial headings, teal accents, letter pages','editions':[], 'manuscript_source':json.loads((root/'docs/learning.json').read_text())['source']}
+    receipt={'format':'research-companion-pdf-build-v1','date':'2026-10-29','style':'Research and teaching series: Georgia body, Arial headings, teal accents, letter pages','editions':[], 'manuscript_source':json.loads((root/'docs/learning.json').read_text())['source']}
     for stem in ('STUDY_GUIDE','COMPANION'):
         # The concise edition uses slightly tighter paragraph spacing to avoid
         # an almost empty final page, while retaining the series typography.

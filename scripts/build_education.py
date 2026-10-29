@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse, collections, copy, hashlib, json
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_SOURCE = '5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0'
+EXPECTED_SOURCE = 'a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29'
 EXPECTED_IDS = {'OBJECT','STABILITY','ANCHOR','RANKING','CONSEQUENCE','NULL','DISCOVERY','REPLICATION','PRECISION','SCOPE'}
 
 def digest(data: bytes) -> str:
@@ -14,7 +14,7 @@ def load(path: str):
     return json.loads((ROOT/path).read_text(encoding='utf-8'))
 
 def rendered_documents(learning):
-    lines = ['# Understand the Anchor Audit', '', 'A guided route from diagram translation to a defensible ranking interpretation. Start with the browser presets, then use the worked examples and research workflow.', '', '**Status:** educational adaptation prepared; human learner validation and author approval are not certified. The interactive questions are practice, not the original locked human transfer assessment.', '']
+    lines = ['# Understand the Anchor Audit', '', 'A guided route from diagram translation to a defensible ranking interpretation. Start with the browser presets, then use the worked examples and research workflow.', '', '**Status:** the author approved the manuscript and Additional files 1–7 for submission on 29 October 2026. Human educational review and learner validation remain unperformed. The interactive questions are practice, not the original locked human transfer assessment.', '']
     for lesson in learning['lessons']:
         lines += [f"## {lesson['title']}", '', lesson['summary'], '']
         for paragraph in lesson['body']: lines += [paragraph, '']
@@ -51,7 +51,10 @@ def validate(learning, study, mapping, source_path=None, research_root=None):
         assert mapped['source_lines']==l['source_lines']
         assert mapped.get('supporting_source_ids',[])==l.get('supporting_source_ids',[])
         assert set(l.get('supporting_source_ids',[])) <= {s['id'] for s in mapping.get('supporting_sources',[])}
+    # These are educational-review fields, separate from the author's manuscript approval.
     assert all(v is None for v in mapping['human_reviews'].values())
+    assert mapping['manuscript_submission_approval']['status']=='AUTHOR_CONFIRMED'
+    assert mapping['manuscript_submission_approval']['date']=='2026-10-29'
     for c in study['cohorts']:
         assert c['sites']==c['native_ties']+c['strict_leaders']
         assert c['native_ties']-c['resolved_ties']==c['centered_ties']
@@ -85,7 +88,7 @@ def validate(learning, study, mapping, source_path=None, research_root=None):
             if row['operation']=='length':obj=len(obj)
             elif row['operation']=='subtract':obj=obj-row['subtract']
             assert abs(obj-row['value'])<1e-14, row
-    return {'status':'PASS_MECHANICAL_SCOPE_ONLY','lessons':10,'quiz_items':12,'quiz_kinds':dict(collections.Counter(q['kind'] for q in learning['quiz'])),'source_file_checked':bool(source_path),'supporting_source_files_checked':len(mapping.get('supporting_sources',[])) if source_path else 0,'research_sources_checked':bool(research_root),'aggregate_value_checks':len(value_map['checks']),'human_learner_validation':'NOT_PERFORMED','human_semantic_review':'NOT_PERFORMED','author_approval':'NOT_CERTIFIED','scope':'Source/coverage/value/hash checks; no educational efficacy or formal theorem certification.'}
+    return {'status':'PASS_MECHANICAL_SCOPE_ONLY','lessons':10,'quiz_items':12,'quiz_kinds':dict(collections.Counter(q['kind'] for q in learning['quiz'])),'source_file_checked':bool(source_path),'supporting_source_files_checked':len(mapping.get('supporting_sources',[])) if source_path else 0,'research_sources_checked':bool(research_root),'aggregate_value_checks':len(value_map['checks']),'human_learner_validation':'NOT_PERFORMED','human_semantic_review':'NOT_PERFORMED','author_manuscript_submission_approval':'CONFIRMED_2026-10-29','author_educational_review':'NOT_PERFORMED','scope':'Source/coverage/value/hash checks; no educational efficacy or formal theorem certification.'}
 
 
 def mutation_controls(learning, study, mapping):

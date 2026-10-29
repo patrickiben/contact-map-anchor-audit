@@ -2,10 +2,10 @@
   "schema_version": "anchor-audit/education-source-map-v1",
   "source": {
     "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-    "sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
-    "version": "BMC Bioinformatics final-proof candidate, 28 October 2026",
-    "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
-    "publication_status": "Unsubmitted final-proof candidate; full study archive v0.2.0 and separate Julia validation capsule. Whole-package author approval and human learner reviews remain pending."
+    "sha256": "a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29",
+    "version": "Author-approved BMC Bioinformatics submission manuscript, 29 October 2026",
+    "scope": "Source-linked educational adaptation. The author approved the manuscript and Additional files 1–7 for submission on 29 October 2026. Human educational semantic review and learner validation remain unperformed.",
+    "publication_status": "Author-approved package in preparation for BMC Bioinformatics; not submitted or accepted. Full study archive v0.2.0 and separate Julia validation capsule are preserved."
   },
   "original_companion_sha256": "2cdf0c07cf476025ce4d3823e06d2a5470d1313db6dc877024913252c9d03848",
   "adaptation_status": "New educational adaptation; original validation status is not inherited.",
@@ -120,7 +120,7 @@
         205,
         276
       ],
-      "source_excerpt_sha256": "548cd271367f33f3e19ed4be23f662fe4b4bcc1c15ffac6be0baa3187be47068",
+      "source_excerpt_sha256": "486001f260c80e7709900b4df5942d5c19401c65da6dbb9accd32b8526af3fd7",
       "covered_group": "LB-SCOPE",
       "supporting_source_ids": [
         "AF6",
@@ -183,20 +183,20 @@
   },
   "assets": {
     "docs/learning.json": {
-      "sha256": "ce91982b2283ed8864ea78ea4b83386a53179dcec4a82a196221b9588f4cda5a",
-      "bytes": 27541
+      "sha256": "a7472a771476ea878db96f9084a9c18424d4eed662713361b65bea12c242e706",
+      "bytes": 27672
     },
     "docs/study-summary.json": {
-      "sha256": "0046cedee7a98527e815c3c6ce80359aba760b15e2439af4b8ba14f8bfbecbf0",
+      "sha256": "e0d0b792b1b3f3d6c4f1f32749f622439bcee41cd90b35cedc359fd17e2c0d43",
       "bytes": 4536
     },
     "docs/provenance.json": {
-      "sha256": "8144ea429cb4ddd1835441aa4edb96222afc33b9f706caffce661a978ad18b5c",
-      "bytes": 2711
+      "sha256": "a4b307f20ff480181d1f411a63067fecc1f836d7a4477b80f5aa448a657bf4ee",
+      "bytes": 2801
     },
     "education/GUIDE.md": {
-      "sha256": "794175fe5116c1eb45e3d30029861ade87fc01875cc61136324d47559e028b4f",
-      "bytes": 17366
+      "sha256": "89d480a6cf9e51af6c9079b78b99b09b3829ad789569a9e648b2e5b6135fe3a8",
+      "bytes": 17492
     },
     "education/PRACTICE.md": {
       "sha256": "d0750291b031e46204c0504acc7afd7945031f8b6bb30273b0de7739402146ff",
@@ -211,16 +211,16 @@
       "bytes": 6641
     },
     "education/README.md": {
-      "sha256": "fd93e8becaaea477b233cd640bcc953010ee92441a1a25167d23b94f6263ec11",
-      "bytes": 5724
+      "sha256": "fdb21bc596408c6fb09522c16c7735d3562da7e21f7201760cba7e423f9485bc",
+      "bytes": 6454
     },
     "education/STUDY_VALUE_MAP.json": {
       "sha256": "018abdbab2521698c6b76917bc79201fd4bd7185f41d9fdbccef7f3440f654d5",
       "bytes": 11837
     },
     "scripts/build_education.py": {
-      "sha256": "e9ae09f6768ad141f39c5d3d3e64f3c0d1eda1b8ec04f9cd45976c07087dd38c",
-      "bytes": 9608
+      "sha256": "7777b5314f87a18d7f1e449bc72acb5dc695bf9a6ecd5e74e072cb27c7f12cdc",
+      "bytes": 9998
     }
   },
   "supporting_sources": [
@@ -260,5 +260,11 @@
       "sha256": "3c04819a0cf8963657467fccf93ae57664bdf14523ca677adea5cfadd141d129",
       "bytes": 477294
     }
-  ]
+  ],
+  "human_review_scope": "These null reviews concern the educational adaptation. They do not override the separately recorded author approval of the manuscript and supplements for journal submission.",
+  "manuscript_submission_approval": {
+    "status": "AUTHOR_CONFIRMED",
+    "date": "2026-10-29",
+    "scope": "Consolidated manuscript and Additional files 1–7 for submission; educational human semantic review and learner assessment are separate and unperformed."
+  }
 }

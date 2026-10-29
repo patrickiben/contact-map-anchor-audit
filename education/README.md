@@ -15,9 +15,9 @@ For an interactive route, use the [Anchor Audit Lab](https://patrickiben.github.
 - [Source and coverage map](SOURCE_MAP.json): exact manuscript hash, line ranges, excerpt hashes and educational asset hashes.
 - [Aggregate-value map](STUDY_VALUE_MAP.json): the study-summary numbers and their generating artifact selectors.
 
-The manuscript basis is the 28 October 2026 final-proof candidate, *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, SHA256 `5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0`. That public draft is supplied with the versioned study release; no journal acceptance or new DOI is implied.
+The manuscript basis is the author-approved 29 October 2026 submission manuscript, *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, SHA256 `a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29`. That public draft is supplied with the versioned study release; no journal acceptance or new DOI is implied.
 
-The current rework has not been submitted. The [earlier AlphaGenome audit's teaching materials](https://github.com/patrickiben/alphagenome-allele-demo/tree/main/education) remain tied to its preprint v3 and five earlier supplements. They explain that prior version; the new companion covers the current rework and Additional files 1–6. The [research map](https://github.com/patrickiben/patrickiben/blob/main/RESEARCH_MAP.md) connects both versions to their respective code and demonstrations.
+The current rework has not been submitted. The [earlier AlphaGenome audit's teaching materials](https://github.com/patrickiben/alphagenome-allele-demo/tree/main/education) remain tied to its preprint v3 and five earlier supplements. They explain that prior version; the new companion covers the current rework and Additional files 1–7. The [research map](https://github.com/patrickiben/patrickiben/blob/main/RESEARCH_MAP.md) connects both versions to their respective code and demonstrations.
 
 The synthetic presets and teaching examples are not genomic observations. The study panel separately presents aggregate author analysis of predicted maps. Imported data are supplied by the user and require their own provenance.
 
@@ -41,8 +41,16 @@ The full study archive is released with [v0.2.0](https://github.com/patrickiben/
 
 AlphaGenome outputs and substantial derivatives, including the genomic numerical results discussed here, remain subject to the AlphaGenome Output Terms, separate from the MIT software license. The study release includes the binding terms, required attribution, modification record, and three-part archive checksums/reassembly instructions. Saved raw maps retain their original bytes; mean centering, persistence analysis, ranking and visualization are documented processing steps.
 
+## Historical editions
+
+The following records describe their named earlier editions. The current author-approval status appears below.
+
 The QC revision updates declared funding/conflicts and AI disclosure (Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC), clarifies the 1,192/1,490 coding result including 3/6 synonymous positions, and teaches the explicitly clipped S6 contrast view alongside its unclipped control. Declarations were confirmed; final author approval remains NOT_CERTIFIED and human learner validation NOT_PERFORMED.
 
 This edition incorporates the author’s section-by-section manuscript edits and the added Holm reference. Final proof approval and human learner assessment remain pending.
 
 The v0.2.4 final-proof edition incorporates the targeted Julia persistence check, the approved empty-diagram and Monte Carlo clarifications, corrected scalar-AVI interpretation, the exact mutation-null expectation 51/160 = 0.31875, and the amended compact verifier. The full study data archive remains v0.2.0; the Julia capsule remains a separately preserved v0.2.3 addendum. The rework is not submitted. Whole-package author approval, human semantic review and learner transfer assessment remain pending.
+
+## Current v0.2.5 author-approved edition
+
+On 29 October 2026, the author approved the consolidated manuscript and Additional files 1–7 for submission to BMC Bioinformatics and confirmed that the rework is not under consideration elsewhere. The manuscript approval sentence and source bindings are updated; scientific results and teaching explanations are unchanged. The rework is not yet submitted. Human educational semantic review, accessibility review and learner transfer assessment remain unperformed; manuscript approval does not establish those educational outcomes.

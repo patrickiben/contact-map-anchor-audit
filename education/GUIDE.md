@@ -2,7 +2,7 @@
 
 A guided route from diagram translation to a defensible ranking interpretation. Start with the browser presets, then use the worked examples and research workflow.
 
-**Status:** educational adaptation prepared; human learner validation and author approval are not certified. The interactive questions are practice, not the original locked human transfer assessment.
+**Status:** the author approved the manuscript and Additional files 1–7 for submission on 29 October 2026. Human educational review and learner validation remain unperformed. The interactive questions are practice, not the original locked human transfer assessment.
 
 ## Start with the right object
 
@@ -174,7 +174,7 @@ The research contribution combines a specified preprocessing path, ranking bound
 
 The full v0.2.0 study archive is publicly released with the manuscript, code and verification records. Toolkit code is MIT-licensed; model outputs retain separate provider terms and attribution. Public release does not establish clinical validity, author journal approval or human learner transfer.
 
-Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending.
+Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review. The author approved the manuscript and Additional files 1–7 for submission on 29 October 2026.
 
 The amended Additional file 7 independently checks scalar-derived counts, bounds, ranking sets and credits. Its 495 aggregate comparisons and 17 deliberate failure controls do not recompute persistence, witness distances or model predictions. The full study archive and separate Julia validation capsule supply the larger computational records.
 

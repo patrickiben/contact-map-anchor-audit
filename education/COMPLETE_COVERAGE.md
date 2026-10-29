@@ -1,6 +1,6 @@
 # Complete source-to-teaching coverage
 
-Current source SHA256 `5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0`. Main manuscript plus all six PDF supplementary sources; the executable Additional file 7 is separately hash-bound in ARTIFACTS.json. Coverage denotes mapped educational explanation, not a human comprehension verdict. The complete companion retains 45 units (10 P, 10 R, 7 S, 6 W, 12 T).
+Current source SHA256 `a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29`. Main manuscript plus all six PDF supplementary sources; the executable Additional file 7 is separately hash-bound in ARTIFACTS.json. Coverage denotes mapped educational explanation, not a human comprehension verdict. The complete companion retains 45 units (10 P, 10 R, 7 S, 6 W, 12 T).
 
 | Source object | Span | Teaching units | Topic |
 |---|---|---|---|
@@ -64,4 +64,4 @@ Current source SHA256 `5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e052966755
 
 Additional file 4 is integrated into R09 and P08, Additional file 5 into R06/P05/S07, and Additional files 6–7 into R10/P10. The targeted Julia implementation check is taught in R10 and P09; scalar verification remains distinct. S01–S07 are teaching-unit names, not supplementary-file numbers. Each nonblank manuscript and supplementary Markdown line is covered mechanically; the explanations, adverse-result fidelity and learner understanding require separate review.
 
-The prior public edition remains available through Git history. This edition supersedes its source binding without rewriting that historical provenance. Human semantic review, learner transfer assessment and whole-package author approval remain pending.
+The prior public edition remains available through Git history. This edition supersedes its source binding without rewriting that historical provenance. The author approved the manuscript and Additional files 1–7 for submission on 29 October 2026. Human educational semantic review and learner transfer assessment remain unperformed.

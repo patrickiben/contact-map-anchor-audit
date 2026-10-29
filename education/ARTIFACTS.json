@@ -1,13 +1,13 @@
 {
   "schema": "research-teaching-editions-v1",
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-  "source_scope": "Final-proof BMC candidate, six PDF supplementary sources and the compact scalar-verification archive; source-bound educational adaptation. The full study data archive remains v0.2.0; the Julia capsule is a separate v0.2.3 addendum.",
+  "source_scope": "Author-approved BMC submission manuscript, six PDF supplementary sources and the compact scalar-verification archive; source-bound educational adaptation. The full study data archive remains v0.2.0; the Julia capsule is a separate v0.2.3 addendum.",
   "sources": [
     {
       "id": "MAIN",
       "file": "PROPOSED_BMC_BIOINFORMATICS.md",
-      "sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
+      "sha256": "a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29",
       "lines": 310
     },
     {
@@ -412,7 +412,7 @@
         "R10"
       ],
       "topic": "Authors' contributions",
-      "excerpt_sha256": "67f76760815f475442e34b44378f1f43157d11bb9591989f348640bdbaea8f92"
+      "excerpt_sha256": "ef7f1b170cb4eddc5d64f51e8cdfb502232a32c85c6ff4539470e54edbcd2b66"
     },
     {
       "id": "MAIN-27",
@@ -830,37 +830,37 @@
   "assets": [
     {
       "path": "education/STUDY_GUIDE.md",
-      "sha256": "fc5476da73df132f823898fa5bc628b95dad34f1dfeb6893545a57a2c580828f",
-      "bytes": 14242
+      "sha256": "6c3bf9e8c93710f54314877cd931f5e5c28d3de7966df6d4fe88ba799304e968",
+      "bytes": 14334
     },
     {
       "path": "education/STUDY_GUIDE.pdf",
-      "sha256": "2bac8ffb06f4f2246a535ccd043be3c50aaee54e8c2d9f3ec76f5e9c6322417b",
-      "bytes": 193533
+      "sha256": "9b38a3eab92dadd7a5c06e6f222115117038a34e5bd2dae4565d785356d0c2f7",
+      "bytes": 193596
     },
     {
       "path": "education/COMPANION.md",
-      "sha256": "2c7f62aebc4a46fe6c6f248c4bbf30865ffbed6e2e6880da3b43befb70bfedec",
-      "bytes": 92093
+      "sha256": "03ef4e2b51c39fc0d6d07a67854f3f78d6c8a03ffa5162d43104a1059d8c7a17",
+      "bytes": 92254
     },
     {
       "path": "education/COMPANION.pdf",
-      "sha256": "be2212d2e030028ad873b29c88a82a521e61503d88dffe0915227cb0fc1e3989",
-      "bytes": 289832
+      "sha256": "957c29943a448141224d9cb8d50f84955ac90ec32e46373b3ca3fe1cd2e006b1",
+      "bytes": 289898
     },
     {
       "path": "education/COMPLETE_COVERAGE.md",
-      "sha256": "c5efc7689b62010cc55fdba0fa9b188d9557927a51338d03e7c0b88776e4d8e5",
-      "bytes": 5153
+      "sha256": "bfe0de7e498ba459b9f8d25900827f73f0a74d90b09d33558968a799cdf33827",
+      "bytes": 5235
     },
     {
       "path": "education/pdf_build_metadata.json",
-      "sha256": "0ee4d530a6cedc41276baa4d1302deee884ad9c76411ad52f631686e9795b6d5",
-      "bytes": 1604
+      "sha256": "237c86d2b5881e9ae9f9c15ee30df68b9c1f338b3a340c3878df95f9ce8d5d32",
+      "bytes": 1676
     },
     {
       "path": "scripts/build_pdf_companions.py",
-      "sha256": "66276200906986424007788631b16e81b347a258c87fa5e052faf87b07fce8ea",
+      "sha256": "48159213c46f6bba2daccb433b5fd4119781ac890f288dcaae665d65860b5fef",
       "bytes": 16177
     },
     {
@@ -870,17 +870,17 @@
     },
     {
       "path": "education/RELEASE_QA.md",
-      "sha256": "9385fa91819d85ac30e6e25334a4294132fa8c5b6c0daacb3f68c1ab94af983b",
-      "bytes": 9837
+      "sha256": "5030687b741e6721fa0855e685e18f16e2e6f8d33f910adc52475fcaf79ab3d5",
+      "bytes": 11924
     }
   ],
   "validation": {
     "status": "PASS_MECHANICAL_AND_AI_VISUAL_SCOPE",
     "source_files": 7,
     "human_learner_validation": "NOT_PERFORMED",
-    "author_journal_approval": "NOT_CERTIFIED",
-    "public_release_authorization": "User explicitly requested GitHub update; not a scientific approval verdict.",
-    "visual_scope": "Five-page guide and 32-page complete companion rendered at 90 dpi. Guide pages 1,4,5 and companion pages 1,3-32 directly inspected; guide2-3 and companion2 match prior inspected bodies excluding the bottom65 footer pixels. No clipping, overlap, missing glyph or broken table observed.",
+    "author_journal_approval": "AUTHOR_CONFIRMED_2026-10-29",
+    "public_release_authorization": "User explicitly requested GitHub updates. On 29 October 2026 the author separately approved the manuscript and Additional files 1–7 for BMC submission; educational human reviews remain unperformed.",
+    "visual_scope": "Guide pages 1,5 and companion pages 1,7,17 directly inspected at 100 dpi; all remaining32pages pixel-identical to the previous reviewed edition at90dpi. No clipping, overlap, missing glyph or broken table observed.",
     "executable_supplements": 1,
     "human_semantic_review": "NOT_PERFORMED"
   },

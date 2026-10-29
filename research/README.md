@@ -1,6 +1,6 @@
 # Manuscript and research artifacts
 
-The **v0.2.4 final-proof candidate** is *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, prepared for BMC Bioinformatics. **Not submitted.** The guided review of the manuscript and supplements is complete; approval of the whole submission package remains pending.
+The **v0.2.5 author-approved submission edition** is *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, prepared for BMC Bioinformatics. **Not yet submitted.** On 29 October 2026, Patrick Iben approved the consolidated manuscript and Additional files 1–7 for submission and confirmed that the rework was not under consideration elsewhere. See the [approval-edition record](AUTHOR_APPROVED_EDITION_2026-10-29.md).
 
 [Main manuscript PDF](manuscript.pdf) · [Markdown source](manuscript.md) · [LaTeX source](manuscript.tex) · [Study guide](../education/STUDY_GUIDE.pdf) · [Complete companion](../education/COMPANION.pdf) · [Live demo](https://patrickiben.github.io/contact-map-anchor-audit/)
 

@@ -12,7 +12,7 @@ from .core import (
     audit_site, bottleneck, endpoint_bounds, hausdorff, interval_ranking, top_set,
 )
 
-__version__ = "0.2.4"
+__version__ = "0.2.5"
 __all__ = [
     "audit_site", "bottleneck", "endpoint_bounds", "hausdorff",
     "interval_ranking", "top_set", "MAX_DIAGRAM_POINTS", "MAX_STEPS",

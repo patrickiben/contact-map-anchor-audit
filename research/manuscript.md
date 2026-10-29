@@ -252,7 +252,7 @@ This work received no specific grant or institutional funding.
 
 ### Authors' contributions
 
-P.I. developed the research program and is responsible for the study design, analyses, interpretation and manuscript. Generative-AI assistance is disclosed in Methods. Final author approval of this proposed revision remains pending.
+P.I. developed the research program and is responsible for the study design, analyses, interpretation and manuscript. Generative-AI assistance is disclosed in Methods. P.I. read and approved the final manuscript.
 
 ### Acknowledgements
 

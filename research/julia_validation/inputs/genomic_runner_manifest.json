@@ -1,0 +1,436 @@
+{
+  "records": [
+    {
+      "key": "gm12878_site_007_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_007_ref.f64",
+      "raw_sha256": "8bb852307c13705ace33c5cefd5d6922ed5bdb09c2ac5b847d106d091b1f22d8"
+    },
+    {
+      "key": "gm12878_site_007_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_007_alt0.f64",
+      "raw_sha256": "8f584cffc7654646105b49b5dc936d297ade4e959673c2130c8bdae4dca963ea"
+    },
+    {
+      "key": "gm12878_site_007_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_007_alt1.f64",
+      "raw_sha256": "a4faf79cc6d2301872aafab86a49068a75cfeef5deafbd93fcf80486f64f0044"
+    },
+    {
+      "key": "gm12878_site_007_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_007_alt2.f64",
+      "raw_sha256": "645f6385bd2d6f835a26173530eb6ea4bfd9c331b3cdf010e519b0c1305d0453"
+    },
+    {
+      "key": "imr90_site_007_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_007_ref.f64",
+      "raw_sha256": "c385f61470eaad4cbc90d45a2104fba3fc6c32a3bbabb747c0a24e9dd068050c"
+    },
+    {
+      "key": "imr90_site_007_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_007_alt0.f64",
+      "raw_sha256": "af061a75502300d2dffe4b5b902958472d097f4d05303bcc400e4314dbd20a7c"
+    },
+    {
+      "key": "imr90_site_007_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_007_alt1.f64",
+      "raw_sha256": "eaddf516b8d21925dcaa5d9443fd679c4a3977975c11fe663e0cbcfa1fe33a81"
+    },
+    {
+      "key": "imr90_site_007_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_007_alt2.f64",
+      "raw_sha256": "fc0ad0ad801fef6a94b9a234c2058c00e64d199c82f9402d26504da1db74f6bd"
+    },
+    {
+      "key": "gm12878_site_021_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_021_ref.f64",
+      "raw_sha256": "b525dd07ae2cc6309f0a4a3fa8214443a5a0dca16b560b16c4875bf670d16968"
+    },
+    {
+      "key": "gm12878_site_021_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_021_alt0.f64",
+      "raw_sha256": "25dfd351de8a19ef44dfb69606175857d2c00146959bbd75bb8be6f130562eeb"
+    },
+    {
+      "key": "gm12878_site_021_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_021_alt1.f64",
+      "raw_sha256": "4a79c3088990742ddbbf8b80138d3bc5134570264bf67069bb5abbb3b9448746"
+    },
+    {
+      "key": "gm12878_site_021_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_021_alt2.f64",
+      "raw_sha256": "8d15af45c10cba97e5cd49b4dddd6ac3b498336b9d6b822ff142ec5c5ff7cdd1"
+    },
+    {
+      "key": "imr90_site_021_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_021_ref.f64",
+      "raw_sha256": "f572b61c756ef681d85204200fad4ebb6b3876d136c8fc2c878c64d19ab91985"
+    },
+    {
+      "key": "imr90_site_021_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_021_alt0.f64",
+      "raw_sha256": "1ba1eb1fdc588a2bca567091d140f9769652a98967907f6a09ac5e14476707b8"
+    },
+    {
+      "key": "imr90_site_021_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_021_alt1.f64",
+      "raw_sha256": "39d5f9d0e29ff7c612e513148aa8b0fe50577a77a84341ec3766cfd0962b90ac"
+    },
+    {
+      "key": "imr90_site_021_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_021_alt2.f64",
+      "raw_sha256": "f48928ee8ca6f79f4d8041db952af44de80e49572c1725365ab7f1da189db645"
+    },
+    {
+      "key": "gm12878_site_034_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_034_ref.f64",
+      "raw_sha256": "8c8f717509b5a9415b62f4fb6138f849b70f4d9018fce352eb0732b7b7598041"
+    },
+    {
+      "key": "gm12878_site_034_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_034_alt0.f64",
+      "raw_sha256": "6a6f60ecfb68abd140627ee49eba345952af96afbd24e7a6352236da2c740f65"
+    },
+    {
+      "key": "gm12878_site_034_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_034_alt1.f64",
+      "raw_sha256": "ec5619b1432f31d0ec548f87e62cd6283a5e30c213a2546f121580b3ef472938"
+    },
+    {
+      "key": "gm12878_site_034_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_034_alt2.f64",
+      "raw_sha256": "825c3840aaa965f014f36b39a8a49ecbd3be360661b1349538e330760b5c5f4a"
+    },
+    {
+      "key": "imr90_site_034_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_034_ref.f64",
+      "raw_sha256": "81f12a6e59d4f217824777811dc435fdf95345ed600056d188dc2d6cf1ba2be5"
+    },
+    {
+      "key": "imr90_site_034_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_034_alt0.f64",
+      "raw_sha256": "6cb13006b565f0e429c64395cb82114156e1590770e70c2674346ab179859662"
+    },
+    {
+      "key": "imr90_site_034_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_034_alt1.f64",
+      "raw_sha256": "2ccf278ccecfa33dc36966117bff8d2c40a0a6406c7f13e2bd4069bdb6680ba7"
+    },
+    {
+      "key": "imr90_site_034_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_034_alt2.f64",
+      "raw_sha256": "5407d99e051a8ec871d8ed6416fd206ee1f061f9ea48a172f453d2f6ee310097"
+    },
+    {
+      "key": "gm12878_site_044_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_044_ref.f64",
+      "raw_sha256": "d2286e7406f36f1d4cf8e67c0e33b1021696b4f49cc69cde2e878934c77a262d"
+    },
+    {
+      "key": "gm12878_site_044_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_044_alt0.f64",
+      "raw_sha256": "1aeac4326c2c52d0d35423327eee8048ebf13f6d010990535e1c63f679c15337"
+    },
+    {
+      "key": "gm12878_site_044_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_044_alt1.f64",
+      "raw_sha256": "078c2c561adacd935e3b55ca9171ba49e870376cfdf5cd38fa74f9b007e5062f"
+    },
+    {
+      "key": "gm12878_site_044_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_044_alt2.f64",
+      "raw_sha256": "9efedfa794686a039732b3845d3653414a48b92b82a05147a95cad44d5c43744"
+    },
+    {
+      "key": "imr90_site_044_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_044_ref.f64",
+      "raw_sha256": "8e5dea5153e44c4a0891e1709b9000e6ddad1a60a843e74a0cad02ad348d64ab"
+    },
+    {
+      "key": "imr90_site_044_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_044_alt0.f64",
+      "raw_sha256": "99c6e06f93622f939962b9425b6bea84e3e2b7183f3b6ead3f7c0d3141e76492"
+    },
+    {
+      "key": "imr90_site_044_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_044_alt1.f64",
+      "raw_sha256": "f5b4bacaa4f3dd237765a479eccad65bf5f72f7056741867bf1711c21f056180"
+    },
+    {
+      "key": "imr90_site_044_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_044_alt2.f64",
+      "raw_sha256": "67fb741ddc7161c4c459bb7613053b5ae8744ba1c394601c49d0ad9c51fd61f4"
+    },
+    {
+      "key": "gm12878_site_048_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_048_ref.f64",
+      "raw_sha256": "a328760615678b4c1a3a6e43ae8d3c2a36f64a66e33f23c99128d7d5693d1042"
+    },
+    {
+      "key": "gm12878_site_048_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_048_alt0.f64",
+      "raw_sha256": "2dadf5a3becea35ef9991520b041bca0e5bc2275bb7fb17e2bf2eae28f2ee65a"
+    },
+    {
+      "key": "gm12878_site_048_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_048_alt1.f64",
+      "raw_sha256": "ee341a54047f691002700a03f4b7c1fa924fcbcb2930f847daa06d18f376097c"
+    },
+    {
+      "key": "gm12878_site_048_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_048_alt2.f64",
+      "raw_sha256": "f7e39bfe2abab05b8038a31e4161d69cb2a38f7a0c4ae3fbd26dd0f1a1f28145"
+    },
+    {
+      "key": "imr90_site_048_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_048_ref.f64",
+      "raw_sha256": "cec4ce762a05ed8200ea29567372297dbb83ca5b1de71181019545a9d270671d"
+    },
+    {
+      "key": "imr90_site_048_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_048_alt0.f64",
+      "raw_sha256": "8736fb58d160a7d6d1a5a72abe5c77177c9afb2b0afc21d76d15c82dc21d197c"
+    },
+    {
+      "key": "imr90_site_048_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_048_alt1.f64",
+      "raw_sha256": "cf58869ec16d38ac8605d9470127d74e18e2143f16c00be7c54ced5de143e719"
+    },
+    {
+      "key": "imr90_site_048_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_048_alt2.f64",
+      "raw_sha256": "86d4fea13ed2aa86bf4644aa7f490ca29a51b762654b1d7b8a9c1040cf640c91"
+    },
+    {
+      "key": "gm12878_site_051_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_051_ref.f64",
+      "raw_sha256": "0f6aca1ca14b63c903551eca1a0f51b9ae2727fd5365553370b65cfd1c0f1057"
+    },
+    {
+      "key": "gm12878_site_051_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_051_alt0.f64",
+      "raw_sha256": "d38b85116aa72e15979719f6eefbf81768610219a639c71439b7260eff09520c"
+    },
+    {
+      "key": "gm12878_site_051_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_051_alt1.f64",
+      "raw_sha256": "0921d71a789ad69ea51a1c06b2c9ab0a7d20638dfb146c139b025e4d16890a6f"
+    },
+    {
+      "key": "gm12878_site_051_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_051_alt2.f64",
+      "raw_sha256": "dbaca0e30c533885f4cda9bb40379c169d7f0a62ed0e00a5c932050d38d4a697"
+    },
+    {
+      "key": "imr90_site_051_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_051_ref.f64",
+      "raw_sha256": "2c0ebd1304a652de52cf1f7c5e1c4c77b50d584f620530e7040058806aa25338"
+    },
+    {
+      "key": "imr90_site_051_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_051_alt0.f64",
+      "raw_sha256": "934e3da3a22e2e2db16416395cda070338bd1135b42bb72b1ea3c04dff25af0f"
+    },
+    {
+      "key": "imr90_site_051_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_051_alt1.f64",
+      "raw_sha256": "ce5e10e7a785a164cb24452823066369184e0cf0380a172045bc0d45918068f8"
+    },
+    {
+      "key": "imr90_site_051_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_051_alt2.f64",
+      "raw_sha256": "c3d6e0fad1cd48ab1be2ad86db1f4f26d12fbef36d464392864d1cf44d402aa0"
+    },
+    {
+      "key": "gm12878_site_059_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_059_ref.f64",
+      "raw_sha256": "e6b8f047885a5f69e3e885dbf6d7f15b92467d93c9db6a3fe842e25cd4a55343"
+    },
+    {
+      "key": "gm12878_site_059_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_059_alt0.f64",
+      "raw_sha256": "54b3659431cab767d236a12e210d232da5e446126ecba2cf4915dac51f50ebbe"
+    },
+    {
+      "key": "gm12878_site_059_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_059_alt1.f64",
+      "raw_sha256": "eb643906f9cc844f492b30dc7b10c2e221132d7df1273680865556996528fcf3"
+    },
+    {
+      "key": "gm12878_site_059_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_059_alt2.f64",
+      "raw_sha256": "02be28c037c2144f2df4ca24d24827c5286409c9fa8f8ff155996cbf79db53ad"
+    },
+    {
+      "key": "imr90_site_059_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_059_ref.f64",
+      "raw_sha256": "e4b9caf4d0126a066d2df980a79f232fadd7d077b39b9cfc22e5faf3d2e98359"
+    },
+    {
+      "key": "imr90_site_059_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_059_alt0.f64",
+      "raw_sha256": "1d9519710c159a9dbf0dc6d9a977428453790eb655f04e3606999850aec644ce"
+    },
+    {
+      "key": "imr90_site_059_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_059_alt1.f64",
+      "raw_sha256": "254c56b9f17dba44d2cbcadfdf7bf67096ed781bd970c1597769c13a51b6ab13"
+    },
+    {
+      "key": "imr90_site_059_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_059_alt2.f64",
+      "raw_sha256": "f49e176127193ec229b1d0f170d9cb47c9b9c34702f857e349cc080b78302d8c"
+    },
+    {
+      "key": "gm12878_site_070_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_070_ref.f64",
+      "raw_sha256": "572088a153a05a6265ddf80b228e84e6ba5588657cd0dd1eab1fb6dd952a6631"
+    },
+    {
+      "key": "gm12878_site_070_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_070_alt0.f64",
+      "raw_sha256": "bdff72035b00162e0d5eb31cbf597013b0f1e33b5ef68b46a95e0246617f163b"
+    },
+    {
+      "key": "gm12878_site_070_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_070_alt1.f64",
+      "raw_sha256": "7ced414eff3c5996516c2ceec288e0ff0fd090a47938362088e54698e7e4432d"
+    },
+    {
+      "key": "gm12878_site_070_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_070_alt2.f64",
+      "raw_sha256": "393254bcd77631945497b6a4af08577c4d24733390910c7b494149a25be2ecab"
+    },
+    {
+      "key": "imr90_site_070_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_070_ref.f64",
+      "raw_sha256": "40a44e5c4636106c1dd0bef1121c2d78738e7d5dd03bfd690ff9ac2e10a050f5"
+    },
+    {
+      "key": "imr90_site_070_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_070_alt0.f64",
+      "raw_sha256": "902385f8e0eca87c0247b66764058ea630be5b53ae14e04aa48fba866e9bc51b"
+    },
+    {
+      "key": "imr90_site_070_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_070_alt1.f64",
+      "raw_sha256": "7e6a4a1e20bff0238ffda908e4529fdf2a81a49a552612750fcc426db69b909d"
+    },
+    {
+      "key": "imr90_site_070_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_070_alt2.f64",
+      "raw_sha256": "26a7fed242276645428fdd435427d4786abfd19bfe0a7e48cb2386a9f2183321"
+    },
+    {
+      "key": "gm12878_site_075_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_075_ref.f64",
+      "raw_sha256": "89ce702801b36f8cc198df0bfeee421612c2049d9ecd5481cb96e384f21fcc52"
+    },
+    {
+      "key": "gm12878_site_075_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_075_alt0.f64",
+      "raw_sha256": "ca938bb643ada4356a67b406c7d30a1dbeaca6f122b829a258c093546f5a33d5"
+    },
+    {
+      "key": "gm12878_site_075_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_075_alt1.f64",
+      "raw_sha256": "3a55efa6ce5d80f8ee0aafabcb4ac50f7467e5677fc434297f50b347a54ccd87"
+    },
+    {
+      "key": "gm12878_site_075_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/gm12878_site_075_alt2.f64",
+      "raw_sha256": "8f0c0cc00f877089cf91399e3b3df5e9431a38cf1128da23288c88f73542700d"
+    },
+    {
+      "key": "imr90_site_075_ref",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_075_ref.f64",
+      "raw_sha256": "d65480cbb904889ec8bed9056eda6897e7e551c188cce6cd1a27ad1863c5b815"
+    },
+    {
+      "key": "imr90_site_075_alt0",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_075_alt0.f64",
+      "raw_sha256": "f1c822016474fe655f87564832a95eeb8b01163b0f25751752c742a796b135a9"
+    },
+    {
+      "key": "imr90_site_075_alt1",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_075_alt1.f64",
+      "raw_sha256": "3ebea06094aa29a2fc5f78c4fc6e514e40ed0a88c34247bf471f5f0b5a86f05b"
+    },
+    {
+      "key": "imr90_site_075_alt2",
+      "n": 512,
+      "raw_path": "inputs/genomic/imr90_site_075_alt2.f64",
+      "raw_sha256": "05733a6b835dbabe6e8111e0ba3da4e552af0421a376a4b83df0305f36786f4b"
+    }
+  ]
+}

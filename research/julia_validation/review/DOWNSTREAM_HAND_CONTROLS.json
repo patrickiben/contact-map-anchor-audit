@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "source_sha256": "a491a0ca846f55d91a97626fd4cd3214ef9cf1da131c8218f45760449b1f29a0",
+  "fixtures": [
+    {
+      "name": "empty_diagonal",
+      "hausdorff_actual": 2.0,
+      "hausdorff_hand_expected": 2.0,
+      "bottleneck_actual": 2.0,
+      "bottleneck_hand_expected": 2.0,
+      "passed": true
+    },
+    {
+      "name": "equal_size_translation",
+      "hausdorff_actual": 1.0,
+      "hausdorff_hand_expected": 1.0,
+      "bottleneck_actual": 1.0,
+      "bottleneck_hand_expected": 1.0,
+      "passed": true
+    },
+    {
+      "name": "duplicate_multiplicity",
+      "hausdorff_actual": 0.0,
+      "hausdorff_hand_expected": 0.0,
+      "bottleneck_actual": 2.0,
+      "bottleneck_hand_expected": 2.0,
+      "passed": true
+    },
+    {
+      "name": "diagonal_beats_other_point",
+      "hausdorff_actual": 3.0,
+      "hausdorff_hand_expected": 3.0,
+      "bottleneck_actual": 3.0,
+      "bottleneck_hand_expected": 3.0,
+      "passed": true
+    }
+  ],
+  "scope": "Independent hand-derived tiny checks of diagonal alternatives, translation, multiplicity distinction and shared Hera behavior; no new persistence calculation."
+}

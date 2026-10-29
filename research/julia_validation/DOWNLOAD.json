@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ZIP_MEMBERS_AND_HASHES",
+  "files_verified": 397,
+  "members": 398,
+  "archive_bytes": 88338909,
+  "archive_sha256": "e795faca8ba6217ccc4a2876f8a2613095f8dc8c175c86d41909092a7a36df54",
+  "verified_utc": "2026-10-29T00:18:58.744939+00:00",
+  "url": "https://github.com/patrickiben/contact-map-anchor-audit/releases/download/v0.2.3/JULIA_PERSISTENCE_VALIDATION_2026-10-28.zip",
+  "note": "New validation asset; original v0.2.3 tag and manuscript remain unchanged."
+}

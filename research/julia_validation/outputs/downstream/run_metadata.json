@@ -1,0 +1,41 @@
+{
+  "block_size": 256,
+  "command": [
+    "scripts/compare_downstream.py",
+    "--primary-success-confirmed",
+    "--workers",
+    "3"
+  ],
+  "environment": {
+    "gudhi": "3.13.0",
+    "numpy": "2.5.3",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.7",
+    "scipy": "1.18.1"
+  },
+  "floating_comparison_absolute_tolerance": 1e-12,
+  "gm_ranking_reference_sha256": "827348a54dfd73748b7359c2094be2fbf76f4626df4a9e16cc5778b850b158cd",
+  "gm_witness_reference_sha256": "f2d2b84f010733e42eff1c4f3f3a9c56f4a9b628af450d925b359f301f1e33b2",
+  "hausdorff_implementation": "Independent explicit blockwise all-pairs L-infinity nearest neighbors with diagonal alternatives; no production witness implementation imported.",
+  "manifest_sha256": "d845205c0e2f029983d7760e0b1f292119b78edcbee8a1a9188e66270828ba88",
+  "means_absolute_tolerance": 1e-12,
+  "protocol_sha256": "224dd1162cb36e1fde53c88e09ec66ffb17960d092d21a7b9c7a1fafce580f5d",
+  "python_executable": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/full_validation_2026-10-28/reproduction/fresh_venv/bin/python",
+  "rank_bound_allowance": 1e-12,
+  "rank_comparisons": "GM12878 recorded interval/ranking predictions are available at 1e-6 only; all three top-set/credit tolerances and independently reconstructed interval predictions are evaluated. IMR90 recorded predictions are compared at all three tolerances.",
+  "saturation_primary_tolerance": 1e-10,
+  "saturation_sensitivity_tolerance": 1e-12,
+  "script_sha256": "a491a0ca846f55d91a97626fd4cd3214ef9cf1da131c8218f45760449b1f29a0",
+  "shared_matching_solver": {
+    "delta": 0.0,
+    "name": "gudhi.hera.bottleneck_distance",
+    "scope": "Recomputed on Julia-produced diagrams. This is the same matching solver used in the original analysis, not an independent bottleneck algorithm."
+  },
+  "started_utc": "2026-10-29T00:08:05.329878+00:00",
+  "top_set_tolerances": [
+    0.0,
+    1e-06,
+    1e-05
+  ],
+  "workers": 3
+}

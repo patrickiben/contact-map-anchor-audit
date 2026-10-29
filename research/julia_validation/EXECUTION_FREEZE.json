@@ -1,0 +1,19 @@
+{
+  "frozen_at_utc": "2026-10-29T00:06:31.013396+00:00",
+  "stage": "before first Julia genomic persistence calculation; controls passed",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "files": {
+    "PROTOCOL.md": "224dd1162cb36e1fde53c88e09ec66ffb17960d092d21a7b9c7a1fafce580f5d",
+    "environment/Manifest.toml": "d95d1206c0500fafd74a1965fe87eaa9f8d6633d93f68b1533e258f264dc6b5e",
+    "environment/Project.toml": "119eeaa023d115f70a0ef14ca97f506dafc84382aaeda6b27abf75a267efd87a",
+    "scripts/compare_downstream.py": "a491a0ca846f55d91a97626fd4cd3214ef9cf1da131c8218f45760449b1f29a0",
+    "scripts/compare_genomic.py": "c720bb4462ec344f6e99a0ddeed031e4ac81349b48539c80933ea9b9956417a8",
+    "scripts/control_oracle.py": "c0dbb4368da4f4f208dec5e5af54f13f5a179cf44c6ede4662d8c3a804462bb2",
+    "scripts/export_genomic.py": "7d95c6f20097b7a525d1591b6502cadbf3aaa6fc3e0ecf585aea549fce05a622",
+    "scripts/run_persistence.jl": "6f7146fae2b7803ec0f922782e62a6a180e7386589b99f8c119337e00870a537",
+    "inputs/control_manifest.json": "65139a72b4679e87bc455f746404c2b6b83d7a6edd2e50ce98c9016f9ff37c58",
+    "inputs/control_runner_manifest.json": "57097ddbf7da052b5013405bee01df3cf32f5472cb6f31dfe9751e865eeafe19",
+    "inputs/genomic_manifest.json": "d845205c0e2f029983d7760e0b1f292119b78edcbee8a1a9188e66270828ba88",
+    "inputs/genomic_runner_manifest.json": "abe6efe7031872e0c67b27121b399861057db9acaaa3d9c8ade6ac3f1a9a7019"
+  }
+}

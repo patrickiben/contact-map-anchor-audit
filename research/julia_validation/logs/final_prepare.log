@@ -1,0 +1,8 @@
+01_export_controls: completed
+02_export_genomic: completed
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "workspace": "/private/tmp/anchor-julia-final-prepare-20261028-002",
+  "genomic_persistence_executed": false,
+  "elapsed_seconds": 0.804811250000057
+}

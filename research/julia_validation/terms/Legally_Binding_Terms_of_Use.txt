@@ -1,0 +1,7 @@
+By using this information, you agree to AlphaGenome Output Terms of Use found at https://deepmind.google.com/science/alphagenome/output-terms.
+
+The dated provider Output Terms of Use and Services Additional Terms of Service
+are included in this directory. The root OUTPUT_TERMS_NOTICE.md identifies the
+covered research outputs and derivatives. MODIFICATIONS.md records author
+transformations and portability adaptations. The original-code MIT license
+does not relicense provider outputs or their substantial derivatives.

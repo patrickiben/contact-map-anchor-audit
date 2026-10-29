@@ -1,0 +1,21 @@
+--- initial_freeze/control_oracle.py
++++ scripts/control_oracle.py
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python3
+ """Independent explicit GF(2) boundary reduction controls for the Julia PH check.
+ 
+-Uses NumPy for byte conversion only; no persistent-homology library is imported.
++Uses NumPy for input construction and byte conversion; no PH library is imported.
+ All simplices of dimensions 0, 1 and 2 are reduced with a faces-first tie order.
+ """
+ from __future__ import annotations
+@@ -224,6 +224,9 @@
+         base = ROOT/'outputs'/mode/record['key']
+         binary, receipt_path = base.with_suffix('.f64'), base.with_suffix('.json')
+         receipt = json.loads(receipt_path.read_text())
++        assert receipt['key'] == record['key'], 'Receipt key mismatch'
++        assert receipt['n'] == record['n'], 'Receipt dimension mismatch'
++        assert receipt['raw_sha256'] == record['raw_sha256'], 'Raw input hash mismatch'
+         data = binary.read_bytes()
+         assert digest(data) == receipt['output_sha256'], 'Output file hash mismatch: ' + record['key']
+         intervals = np.frombuffer(data, dtype='<f8').reshape((-1, 2), order='F')

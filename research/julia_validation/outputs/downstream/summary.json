@@ -1,0 +1,203 @@
+{
+  "all_and_only_three_declared_exceptions": true,
+  "block_size": 256,
+  "checks_count": 2565,
+  "command": [
+    "scripts/compare_downstream.py",
+    "--primary-success-confirmed",
+    "--workers",
+    "3"
+  ],
+  "completed_utc": "2026-10-29T00:11:46.447230+00:00",
+  "diagram_count": 72,
+  "elapsed_seconds": 221.1188848749989,
+  "environment": {
+    "gudhi": "3.13.0",
+    "numpy": "2.5.3",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.7",
+    "scipy": "1.18.1"
+  },
+  "failed_sites": [],
+  "floating_comparison_absolute_tolerance": 1e-12,
+  "gm_ranking_reference_sha256": "827348a54dfd73748b7359c2094be2fbf76f4626df4a9e16cc5778b850b158cd",
+  "gm_witness_reference_sha256": "f2d2b84f010733e42eff1c4f3f3a9c56f4a9b628af450d925b359f301f1e33b2",
+  "hausdorff_implementation": "Independent explicit blockwise all-pairs L-infinity nearest neighbors with diagonal alternatives; no production witness implementation imported.",
+  "manifest_sha256": "d845205c0e2f029983d7760e0b1f292119b78edcbee8a1a9188e66270828ba88",
+  "maximum_distance_absolute_error": 0.0,
+  "maximum_shifted_hausdorff_absolute_error": 0.0,
+  "means_absolute_tolerance": 1e-12,
+  "nonsaturated_pairs": [
+    {
+      "absolute_saturation_residual": 0.001204502435174145,
+      "alternate_index": 2,
+      "site_id": "chr13:48303721:G",
+      "site_index": 48,
+      "track": "imr90"
+    },
+    {
+      "absolute_saturation_residual": 0.002583775381601489,
+      "alternate_index": 1,
+      "site_id": "chr13:48307406:G",
+      "site_index": 51,
+      "track": "imr90"
+    },
+    {
+      "absolute_saturation_residual": 0.00014162732143801343,
+      "alternate_index": 0,
+      "site_id": "chr13:48465370:T",
+      "site_index": 59,
+      "track": "imr90"
+    }
+  ],
+  "protocol_sha256": "224dd1162cb36e1fde53c88e09ec66ffb17960d092d21a7b9c7a1fafce580f5d",
+  "python_executable": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/full_validation_2026-10-28/reproduction/fresh_venv/bin/python",
+  "rank_bound_allowance": 1e-12,
+  "rank_comparisons": "GM12878 recorded interval/ranking predictions are available at 1e-6 only; all three top-set/credit tolerances and independently reconstructed interval predictions are evaluated. IMR90 recorded predictions are compared at all three tolerances.",
+  "ref_alt_pair_count": 54,
+  "results": [
+    {
+      "failed_checks_count": 0,
+      "key": "gm12878_site_007",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/gm12878_site_007.json",
+      "result_sha256": "4c3a9cef2d9b2420bd13b4a115d36a38a4aa3b52fd21b77345a00991d44a5498",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "gm12878_site_021",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/gm12878_site_021.json",
+      "result_sha256": "437e3e13e99463a1bc2b58f54da75dc9af7c60b843aa0d48f6de786db1c91d51",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "gm12878_site_034",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/gm12878_site_034.json",
+      "result_sha256": "e823c8dd93626bca5c1596b27b0f110c2860cb43e6f97475fdbc421215206196",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "gm12878_site_044",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/gm12878_site_044.json",
+      "result_sha256": "d52cc5c1df7ad73e94b42650d6a7b479391e7eac4b572b418c778344d5240496",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "gm12878_site_048",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/gm12878_site_048.json",
+      "result_sha256": "6ec4005c924993d30acf86317760c5c97243cee02e7405cf3d58abe8ef9a65f4",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "gm12878_site_051",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/gm12878_site_051.json",
+      "result_sha256": "ccd86d18762330ab25ce0dde03a34411329e66bae23d105f27341df32f8dffe4",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "gm12878_site_059",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/gm12878_site_059.json",
+      "result_sha256": "17f5a19674d80e62902689f8bb97d8337b89bf9a23f2226817ce794788631072",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "gm12878_site_070",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/gm12878_site_070.json",
+      "result_sha256": "a3495db714fa4f3bd7dcaec06494b0b41d43accdd8d88807d241243b5c382c8d",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "gm12878_site_075",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/gm12878_site_075.json",
+      "result_sha256": "c27aff57034d617455679679493d9df1a45b011107176842f728ae9d74cda768",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "imr90_site_007",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/imr90_site_007.json",
+      "result_sha256": "6de15313f8afd197114c0926f76a6f9fb478242a1a7d00a58eea4541abcbedd6",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "imr90_site_021",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/imr90_site_021.json",
+      "result_sha256": "0d13ef155ebfde81c5b884c8acb25f8ca6365072ab89d0758fc93da819a969a6",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "imr90_site_034",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/imr90_site_034.json",
+      "result_sha256": "a90a645cf109782b591d4a43b8c72f8c560599fac29b60953af196c1a681cef0",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "imr90_site_044",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/imr90_site_044.json",
+      "result_sha256": "91ecd2ad0f72381727480fdf204c94c1f0667c62e012b320650e9e05badb053d",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "imr90_site_048",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/imr90_site_048.json",
+      "result_sha256": "b661e1f138689723bc6c97a4b4291f602c91812865a9d1497b08e1323e5ecd36",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "imr90_site_051",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/imr90_site_051.json",
+      "result_sha256": "fa4876e6ca0408e07254102680ebd117128408f2925a1e551d7ed06d9caba3f3",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "imr90_site_059",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/imr90_site_059.json",
+      "result_sha256": "e54e391e8b80ecf11f05c49ed14bb0e2c907e9c67fc81e7cd2ce030d5419de87",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "imr90_site_070",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/imr90_site_070.json",
+      "result_sha256": "3fabf673d818a68f7346aaf8216323d1fa4a57dc30487cbedb981fa9227fce67",
+      "status": "passed"
+    },
+    {
+      "failed_checks_count": 0,
+      "key": "imr90_site_075",
+      "result_path": "/Users/patrickiben/Documents/contact3d_rework_2026-10-28/julia_persistence_check_2026-10-28/outputs/downstream/sites/imr90_site_075.json",
+      "result_sha256": "05384b09670e3fc90297ffcdeb7c3a620d0e4fb7bdf214e9126af6cc3b420e57",
+      "status": "passed"
+    }
+  ],
+  "saturation_primary_tolerance": 1e-10,
+  "saturation_sensitivity_tolerance": 1e-12,
+  "script_sha256": "a491a0ca846f55d91a97626fd4cd3214ef9cf1da131c8218f45760449b1f29a0",
+  "shared_matching_solver": {
+    "delta": 0.0,
+    "name": "gudhi.hera.bottleneck_distance",
+    "scope": "Recomputed on Julia-produced diagrams. This is the same matching solver used in the original analysis, not an independent bottleneck algorithm."
+  },
+  "site_track_count": 18,
+  "started_utc": "2026-10-29T00:08:05.329878+00:00",
+  "status": "passed",
+  "top_set_tolerances": [
+    0.0,
+    1e-06,
+    1e-05
+  ],
+  "workers": 3
+}

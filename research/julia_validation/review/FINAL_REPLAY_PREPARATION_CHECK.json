@@ -1,0 +1,12 @@
+{
+  "status": "PASS_PREPARATION_ONLY",
+  "driver_sha256": "98bb65b2d4c87fb7c590c8bb333d5b3341bc558d667250c288b164605797dc91",
+  "workspace": "/private/tmp/anchor-julia-final-prepare-20261028-002",
+  "controls_exported": 22,
+  "genomic_maps_exported": 72,
+  "genomic_persistence_executed": false,
+  "genomic_persistence_completed": false,
+  "final_metadata_fix": "Distinguish genomic execution invoked from all shards completed, so partial failures cannot be labelled as no invocation.",
+  "original_frozen_scientific_sources_changed": false,
+  "verified_utc": "2026-10-29T00:17:41.827268+00:00"
+}

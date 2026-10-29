@@ -1,0 +1,399 @@
+{
+  "algorithm": "Explicit GF2 boundary-column reduction on every vertex, edge and triangle; faces-first tie order.",
+  "effective_byte_format": "Little-endian Float32 shifted edge births with diagonal0, column-major n*n.",
+  "input_byte_format": "Little-endian Float64 contact map L=-w, column-major n*n.",
+  "mutation_controls": [
+    {
+      "name": "missing_duplicate",
+      "reason": "Complete interval multiset mismatch",
+      "rejected": true
+    },
+    {
+      "name": "changed_endpoint",
+      "reason": "Complete interval multiset mismatch",
+      "rejected": true
+    },
+    {
+      "name": "unremoved_offset",
+      "reason": "Complete interval multiset mismatch",
+      "rejected": true
+    },
+    {
+      "name": "corrupted_input_hash",
+      "reason": "Effective input hash mismatch",
+      "rejected": true
+    }
+  ],
+  "named_controls": 10,
+  "named_hand_expected_agreement": true,
+  "numpy_version": "2.5.3",
+  "protocol_sha256": "224dd1162cb36e1fde53c88e09ec66ffb17960d092d21a7b9c7a1fafce580f5d",
+  "random_seed": 20261028,
+  "records": [
+    {
+      "description": "Three vertices have no positive H1 interval.",
+      "expected_effective_sha256": "331fe3c4e137eb7e1c702ce483cd2bf5364421da731c18a66e637dd35f5d6996",
+      "expected_intervals": [],
+      "expected_offset": 4.0,
+      "hand_expected": [],
+      "key": "filled_triangle",
+      "kind": "named",
+      "n": 3,
+      "raw_path": "inputs/controls/filled_triangle.f64",
+      "raw_sha256": "a209d9d9a6b7966d7515490e53093b777fb9d12733b7fe85cff5932c49d616bf"
+    },
+    {
+      "description": "One four-cycle appears at -2 and is filled at -1.",
+      "expected_effective_sha256": "6589eebec07a1c01d547a342e8717cc31d42b318a4a44ed355c68895cbd4425b",
+      "expected_intervals": [
+        [
+          -2.0,
+          -1.0
+        ]
+      ],
+      "expected_offset": 3.0,
+      "hand_expected": [
+        [
+          -2.0,
+          -1.0
+        ]
+      ],
+      "key": "negative_birth_cycle",
+      "kind": "named",
+      "n": 4,
+      "raw_path": "inputs/controls/negative_birth_cycle.f64",
+      "raw_sha256": "f6053786ed1db654327a970577ddb8e8a8d3b650481935ac4a75374a71b54b5d"
+    },
+    {
+      "description": "Zero raw edge births survive the positive input shift.",
+      "expected_effective_sha256": "6589eebec07a1c01d547a342e8717cc31d42b318a4a44ed355c68895cbd4425b",
+      "expected_intervals": [
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "expected_offset": 1.0,
+      "hand_expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "key": "zero_birth_cycle",
+      "kind": "named",
+      "n": 4,
+      "raw_path": "inputs/controls/zero_birth_cycle.f64",
+      "raw_sha256": "bc14b09ea10ce3235c8432f8e25766062783b48ed73d91c36985cbf1f46025e0"
+    },
+    {
+      "description": "All simplices enter together; no positive-lifetime H1.",
+      "expected_effective_sha256": "e7798ff2744f361dd87a1f3a12ef6ffa37fa5ddf0473c3e030f64a4201a4b45c",
+      "expected_intervals": [],
+      "expected_offset": 1.5,
+      "hand_expected": [],
+      "key": "all_tied_clique",
+      "kind": "named",
+      "n": 5,
+      "raw_path": "inputs/controls/all_tied_clique.f64",
+      "raw_sha256": "2982a3d64edae3950efdce547d5bdc931a40f86947df7e4b9507e6dea80b3178"
+    },
+    {
+      "description": "Two cycles with identical intervals; multiplicity must remain two.",
+      "expected_effective_sha256": "0aee2e079444c9e6308ece077918ecbde36e2c79f774b2373ea465734cb3bee7",
+      "expected_intervals": [
+        [
+          1.0,
+          4.0
+        ],
+        [
+          1.0,
+          4.0
+        ]
+      ],
+      "expected_offset": 0.0,
+      "hand_expected": [
+        [
+          1.0,
+          4.0
+        ],
+        [
+          1.0,
+          4.0
+        ]
+      ],
+      "key": "duplicate_cycles",
+      "kind": "named",
+      "n": 8,
+      "raw_path": "inputs/controls/duplicate_cycles.f64",
+      "raw_sha256": "674f434e1f95c071064e10ab7793c1d97916c8e9161c1c3c431e2889227db78a"
+    },
+    {
+      "description": "Diagonal10 exceeds a two-edge perimeter route2; no metric repair is permitted.",
+      "expected_effective_sha256": "8777e27ff3e117d1c0c26c10ceffff99bb51ed9e69020a8f9715707245ef1a57",
+      "expected_intervals": [
+        [
+          1.0,
+          10.0
+        ]
+      ],
+      "expected_offset": 0.0,
+      "hand_expected": [
+        [
+          1.0,
+          10.0
+        ]
+      ],
+      "key": "nonmetric_cycle",
+      "kind": "named",
+      "n": 4,
+      "raw_path": "inputs/controls/nonmetric_cycle.f64",
+      "raw_sha256": "ca4bb8e06471eb90485a6a8010cee90dd637930cc875532234d581188f617773"
+    },
+    {
+      "description": "The other diagonal still fills H1 at1 despite this diagonal moving to10.",
+      "expected_effective_sha256": "01e9848c377522753899cd53c94793ed4e99d54e7256c3174be8b60b8f1c45d0",
+      "expected_intervals": [
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "expected_offset": 1.0,
+      "hand_expected": [
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "key": "inactive_diagonal",
+      "kind": "named",
+      "n": 4,
+      "raw_path": "inputs/controls/inactive_diagonal.f64",
+      "raw_sha256": "9fdf4bb5335086d4d5afc600c68653be2d1387f16c071cfb2e38f650a88212d9"
+    },
+    {
+      "description": "Adding offset1 then Float32 rounds both edge levels to1.",
+      "expected_effective_sha256": "d804c0a7ec4b646e8a2e4f784ca54fbc8d1954a07d36fc74acd3efc65c7b8613",
+      "expected_intervals": [],
+      "expected_offset": 1.0,
+      "hand_expected": [],
+      "key": "float32_near_tie_collapse",
+      "kind": "named",
+      "n": 4,
+      "raw_path": "inputs/controls/float32_near_tie_collapse.f64",
+      "raw_sha256": "054a37a8d5be84da9fa203dc6302085b4b75df2cb16e32dd84bf105f27fee8b0"
+    },
+    {
+      "description": "Translate both finite interval endpoints by0.5.",
+      "expected_effective_sha256": "6589eebec07a1c01d547a342e8717cc31d42b318a4a44ed355c68895cbd4425b",
+      "expected_intervals": [
+        [
+          -1.5,
+          -0.5
+        ]
+      ],
+      "expected_offset": 2.5,
+      "hand_expected": [
+        [
+          -1.5,
+          -0.5
+        ]
+      ],
+      "key": "translated_negative_cycle",
+      "kind": "named",
+      "n": 4,
+      "raw_path": "inputs/controls/translated_negative_cycle.f64",
+      "raw_sha256": "f4013e1289c4751c3ab243a9d7ecb39a2646cc12a78ec6f66d72edbc8f09b964"
+    },
+    {
+      "description": "Ignore arbitrary finite diagonal map entries; restore nonbinary Float64 offset.",
+      "expected_effective_sha256": "6589eebec07a1c01d547a342e8717cc31d42b318a4a44ed355c68895cbd4425b",
+      "expected_intervals": [
+        [
+          -1.7999999999999998,
+          -0.7999999999999998
+        ]
+      ],
+      "expected_offset": 2.8,
+      "hand_expected": [
+        [
+          -1.7999999999999998,
+          -0.7999999999999998
+        ]
+      ],
+      "key": "ignored_diagonal_values",
+      "kind": "named",
+      "n": 4,
+      "raw_path": "inputs/controls/ignored_diagonal_values.f64",
+      "raw_sha256": "9cde068b9b1fd06a2458aa431493b7bd9753d28da5374fa8a9dba54683e802d2"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "ca04c9c7009dc94b9193f11764db5c2dab2d98b8b9cf41205c53184ba28df571",
+      "expected_intervals": [],
+      "expected_offset": 3.0,
+      "key": "random_00",
+      "kind": "seeded_random",
+      "n": 4,
+      "raw_path": "inputs/controls/random_00.f64",
+      "raw_sha256": "19015fee13801e2c9737899b04784a5de2fc1f4e6cadc17cc7d10ec72804621c"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "240c3e153b4b559f84fb1d61c271eed5f2cca0f6e57d5ec28d6f7370f95e21ed",
+      "expected_intervals": [],
+      "expected_offset": 3.0,
+      "key": "random_01",
+      "kind": "seeded_random",
+      "n": 5,
+      "raw_path": "inputs/controls/random_01.f64",
+      "raw_sha256": "f1eccb7c982f306badba4b1c086c0d39ff1c8290c37c8b161c666159d0646b88"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "4cdbada3ee4243a7058caac55d7f954cef5fd4acdc592f3c253843892d258091",
+      "expected_intervals": [],
+      "expected_offset": 2.0,
+      "key": "random_02",
+      "kind": "seeded_random",
+      "n": 6,
+      "raw_path": "inputs/controls/random_02.f64",
+      "raw_sha256": "cb2f9611b528ca21db32d1deb2eee3453a3ff60ecfbbcd5ff0d12307e58a1fc0"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "4cf5785df34356844655be61be3372ffaf27b003d77eeff5ca0a9f123a48b5f5",
+      "expected_intervals": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0
+        ]
+      ],
+      "expected_offset": 3.0,
+      "key": "random_03",
+      "kind": "seeded_random",
+      "n": 7,
+      "raw_path": "inputs/controls/random_03.f64",
+      "raw_sha256": "684af3dd68dd9ab6f99939ec1a015e100e379608712eaa8a5348e6ea7dcc0c77"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "2e59c61df4b2a7b4a8ba2e72fa2a0e899061b910bcd14c775588c75cf14b4618",
+      "expected_intervals": [],
+      "expected_offset": 3.0,
+      "key": "random_04",
+      "kind": "seeded_random",
+      "n": 4,
+      "raw_path": "inputs/controls/random_04.f64",
+      "raw_sha256": "b2c0e3fd9bab152a48957ab932802a74edce920a3497cdeb78fa6a836c806d8d"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "9f4039686122ace58c9796433445da5efa816b04233818d91a81ed59d6d3fc01",
+      "expected_intervals": [],
+      "expected_offset": 2.0,
+      "key": "random_05",
+      "kind": "seeded_random",
+      "n": 5,
+      "raw_path": "inputs/controls/random_05.f64",
+      "raw_sha256": "85882e3a2b6dade49ce705728c981965e9db822d60b4a00c9e3438775bc3eee1"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "0f1140f0b79b86990e7c222a5658dd755d0de25f2e34bac099fb8f9d537957a0",
+      "expected_intervals": [
+        [
+          -0.5,
+          0.5
+        ]
+      ],
+      "expected_offset": 3.0,
+      "key": "random_06",
+      "kind": "seeded_random",
+      "n": 6,
+      "raw_path": "inputs/controls/random_06.f64",
+      "raw_sha256": "fe1fd8681c593b0e9c1e9e4bd8fdf037b8ffca591fc9384dcf45d6b514156ec5"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "89e0195f1db18fba25d3437107263cbfd7f38899b6eee979271fc803f65e8705",
+      "expected_intervals": [
+        [
+          -1.0,
+          -0.5
+        ]
+      ],
+      "expected_offset": 3.0,
+      "key": "random_07",
+      "kind": "seeded_random",
+      "n": 7,
+      "raw_path": "inputs/controls/random_07.f64",
+      "raw_sha256": "41fddd6a475c62d81164ffe74dcbfe3a05ff9d9fd80e042cd60180b291da2081"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "8225d33f71214f4cea31808276c275551cdef1c4c19e4e6e5c2b4e0f43227a0d",
+      "expected_intervals": [],
+      "expected_offset": 2.0,
+      "key": "random_08",
+      "kind": "seeded_random",
+      "n": 4,
+      "raw_path": "inputs/controls/random_08.f64",
+      "raw_sha256": "558a7625efa0264a49415c46a6a7a5cb1497df2cd4ee45cd959b6610dfd30126"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "613d85d95eafdd7c95faca1775d9a4c574c4b734dec826efa569951c42d7e600",
+      "expected_intervals": [],
+      "expected_offset": 3.0,
+      "key": "random_09",
+      "kind": "seeded_random",
+      "n": 5,
+      "raw_path": "inputs/controls/random_09.f64",
+      "raw_sha256": "3f0ef53bb043615ef2e162dcc92112614cee6e0c49e8877c233d592e8859725b"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "314174c424655ce6da7ad09337d308a0941e9fe87769c0d62f65fe0e6db8ae84",
+      "expected_intervals": [],
+      "expected_offset": 2.0,
+      "key": "random_10",
+      "kind": "seeded_random",
+      "n": 6,
+      "raw_path": "inputs/controls/random_10.f64",
+      "raw_sha256": "577a07652c1328c1581cb2caf3a6e8971a89f6ad58b1763ce378863e7c76bb76"
+    },
+    {
+      "description": "Fixed-seed complete graph; mandatory negative/zero/tied births.",
+      "expected_effective_sha256": "447fbd6167980ac284038a05ffd1dc5a1a58df32915be3ac3d395a0b8f639b9d",
+      "expected_intervals": [
+        [
+          -1.0,
+          -0.5
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "expected_offset": 3.0,
+      "key": "random_11",
+      "kind": "seeded_random",
+      "n": 7,
+      "raw_path": "inputs/controls/random_11.f64",
+      "raw_sha256": "71b12867db8834b934548389f6f36d2d31b3014bb3c2a1c9e4395058fcf2bf80"
+    }
+  ],
+  "schema": "anchor-julia-controls-v1",
+  "script_sha256": "8dfe551ac3d107083eed84a596e18a084ab0d4e2cb31f649e4f9c78a96b41994",
+  "seeded_random_controls": 12
+}

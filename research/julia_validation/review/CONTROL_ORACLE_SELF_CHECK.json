@@ -1,0 +1,30 @@
+{
+  "mutations": [
+    {
+      "name": "missing_duplicate",
+      "reason": "Complete interval multiset mismatch",
+      "rejected": true
+    },
+    {
+      "name": "changed_endpoint",
+      "reason": "Complete interval multiset mismatch",
+      "rejected": true
+    },
+    {
+      "name": "unremoved_offset",
+      "reason": "Complete interval multiset mismatch",
+      "rejected": true
+    },
+    {
+      "name": "corrupted_input_hash",
+      "reason": "Effective input hash mismatch",
+      "rejected": true
+    }
+  ],
+  "named_hand_expected_agreement": true,
+  "records": 22,
+  "scope": "Independent small-graph exact GF2 reduction and comparator calibration; no Julia genomic validation inferred.",
+  "source_sha256": "8dfe551ac3d107083eed84a596e18a084ab0d4e2cb31f649e4f9c78a96b41994",
+  "status": "PASS",
+  "valid_fixture_acceptances": 22
+}

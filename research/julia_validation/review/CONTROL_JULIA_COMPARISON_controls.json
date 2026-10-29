@@ -1,0 +1,118 @@
+{
+  "checks": [
+    {
+      "interval_count": 0,
+      "key": "filled_triangle",
+      "pass": true
+    },
+    {
+      "interval_count": 1,
+      "key": "negative_birth_cycle",
+      "pass": true
+    },
+    {
+      "interval_count": 1,
+      "key": "zero_birth_cycle",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "all_tied_clique",
+      "pass": true
+    },
+    {
+      "interval_count": 2,
+      "key": "duplicate_cycles",
+      "pass": true
+    },
+    {
+      "interval_count": 1,
+      "key": "nonmetric_cycle",
+      "pass": true
+    },
+    {
+      "interval_count": 1,
+      "key": "inactive_diagonal",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "float32_near_tie_collapse",
+      "pass": true
+    },
+    {
+      "interval_count": 1,
+      "key": "translated_negative_cycle",
+      "pass": true
+    },
+    {
+      "interval_count": 1,
+      "key": "ignored_diagonal_values",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "random_00",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "random_01",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "random_02",
+      "pass": true
+    },
+    {
+      "interval_count": 3,
+      "key": "random_03",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "random_04",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "random_05",
+      "pass": true
+    },
+    {
+      "interval_count": 1,
+      "key": "random_06",
+      "pass": true
+    },
+    {
+      "interval_count": 1,
+      "key": "random_07",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "random_08",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "random_09",
+      "pass": true
+    },
+    {
+      "interval_count": 0,
+      "key": "random_10",
+      "pass": true
+    },
+    {
+      "interval_count": 2,
+      "key": "random_11",
+      "pass": true
+    }
+  ],
+  "manifest_sha256": "8408619cb369bba3c1db3dd9f33e539ccff824d41c2e3ff0a13472f9b792f349",
+  "mode": "controls",
+  "scope": "Exact control barcode/effective-input correspondence only.",
+  "status": "PASS"
+}

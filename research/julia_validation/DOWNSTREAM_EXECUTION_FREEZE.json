@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-10-29T00:08:04.751045+00:00",
+  "stage": "primary PASS; before downstream execution",
+  "primary_result_sha256": "1e3febd9205270ec36d90f090d3e3133a138d01ef9734eca12ba8188fef2a190",
+  "downstream_script_sha256": "a491a0ca846f55d91a97626fd4cd3214ef9cf1da131c8218f45760449b1f29a0",
+  "changes_since_initial_freeze": [
+    {
+      "path": "scripts/control_oracle.py",
+      "before": "c0dbb4368da4f4f208dec5e5af54f13f5a179cf44c6ede4662d8c3a804462bb2",
+      "after": "8dfe551ac3d107083eed84a596e18a084ab0d4e2cb31f649e4f9c78a96b41994"
+    },
+    {
+      "path": "inputs/control_manifest.json",
+      "before": "65139a72b4679e87bc455f746404c2b6b83d7a6edd2e50ce98c9016f9ff37c58",
+      "after": "8408619cb369bba3c1db3dd9f33e539ccff824d41c2e3ff0a13472f9b792f349"
+    }
+  ],
+  "explanation": "Control comparator gained receipt key, n and raw-hash checks and corresponding self-hash metadata was regenerated; controls rerun and still PASS. Downstream driver gained portability CLI and blockwise cdist before first downstream execution. The Julia runner, genomic comparator, raw input manifest, selection, protocol, primary endpoint equality rule and genomic outputs are unchanged."
+}

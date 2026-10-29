@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-29T00:16:35.534840+00:00",
+  "relocated_workspace": "/private/tmp/anchor-julia-prepare-review-20261028-001",
+  "controls_passed": 22,
+  "genomic_persistence_executed_in_packaging_smoke_test": false,
+  "copied_script_sha256": "6f7146fae2b7803ec0f922782e62a6a180e7386589b99f8c119337e00870a537",
+  "comparison": {
+    "checks": [
+      {
+        "interval_count": 0,
+        "key": "filled_triangle",
+        "pass": true
+      },
+      {
+        "interval_count": 1,
+        "key": "negative_birth_cycle",
+        "pass": true
+      },
+      {
+        "interval_count": 1,
+        "key": "zero_birth_cycle",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "all_tied_clique",
+        "pass": true
+      },
+      {
+        "interval_count": 2,
+        "key": "duplicate_cycles",
+        "pass": true
+      },
+      {
+        "interval_count": 1,
+        "key": "nonmetric_cycle",
+        "pass": true
+      },
+      {
+        "interval_count": 1,
+        "key": "inactive_diagonal",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "float32_near_tie_collapse",
+        "pass": true
+      },
+      {
+        "interval_count": 1,
+        "key": "translated_negative_cycle",
+        "pass": true
+      },
+      {
+        "interval_count": 1,
+        "key": "ignored_diagonal_values",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "random_00",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "random_01",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "random_02",
+        "pass": true
+      },
+      {
+        "interval_count": 3,
+        "key": "random_03",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "random_04",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "random_05",
+        "pass": true
+      },
+      {
+        "interval_count": 1,
+        "key": "random_06",
+        "pass": true
+      },
+      {
+        "interval_count": 1,
+        "key": "random_07",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "random_08",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "random_09",
+        "pass": true
+      },
+      {
+        "interval_count": 0,
+        "key": "random_10",
+        "pass": true
+      },
+      {
+        "interval_count": 2,
+        "key": "random_11",
+        "pass": true
+      }
+    ],
+    "manifest_sha256": "8408619cb369bba3c1db3dd9f33e539ccff824d41c2e3ff0a13472f9b792f349",
+    "mode": "controls",
+    "scope": "Exact control barcode/effective-input correspondence only.",
+    "status": "PASS"
+  },
+  "scope": "Preparation exported all72 genomic inputs and22 controls; separate manual Julia control smoke passed in relocated workspace. This is not a second full genomic replay."
+}

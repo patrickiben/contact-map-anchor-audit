@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "preparation_workspace": "/private/tmp/anchor-julia-prepare-review-20261028-001",
+  "prepare_status": "PREPARED_NOT_EXECUTED",
+  "exported_controls": 22,
+  "exported_genomic_inputs": 72,
+  "genomic_persistence_executed": false,
+  "outputs_empty_after_preparation": true,
+  "existing_destination_refusal_exit_code": 2,
+  "existing_destination_status_unchanged": true,
+  "driver_sha256": "f38abf40bec48e5bcb294ab6cb039efd37451ab429ca9ae6eb084bbf29537012",
+  "scope": "Preparation and overwrite-refusal check only; not a second full genomic replay."
+}

@@ -120,13 +120,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4950,
-      "sha256": "ed4158064423716428b0dd5bc750e89ddfd10ca7614ea8003364e4c1d0b44221"
+      "bytes": 5358,
+      "sha256": "a0e710278bb2bf83b9210e58e38a734af58f7c2066b016783c5e4783b064bc23"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 4553,
-      "sha256": "107edfd38c31dd6994d3b3e6da25801e882d8816b0ab81e7ebc3fe70b7a9bb17"
+      "bytes": 6014,
+      "sha256": "52350823100796f642753a56ce5f87057f1d33f5c5dee7949e3f8323e0a4964e"
     },
     {
       "path": "figures/README.md",
@@ -182,6 +182,871 @@
       "path": "figures/render_s6.py",
       "bytes": 5313,
       "sha256": "42abfae0f9fb679c0cd9802d4932ab49ad47bb9e1f37301e2cb4a0983f43b7da"
+    },
+    {
+      "path": "julia_validation/CAPSULE_MANIFEST.json",
+      "bytes": 69885,
+      "sha256": "46a4c31b1145e3a337187341e199cdd82461cebd7867ec2bd9638d9b4d5a90a8"
+    },
+    {
+      "path": "julia_validation/DOWNLOAD.json",
+      "bytes": 485,
+      "sha256": "cfee3a3e2b371230d9a643443c6101e628be797a25d5a8f72ffe0d6a150c035b"
+    },
+    {
+      "path": "julia_validation/DOWNSTREAM_EXECUTION_FREEZE.json",
+      "bytes": 1201,
+      "sha256": "26910bc804e680a1e5e3c395a5af03b3c77dd1a4984cdc7072467e187e8bb54b"
+    },
+    {
+      "path": "julia_validation/EXECUTION_FREEZE.json",
+      "bytes": 1439,
+      "sha256": "b67aca7a23ceee383d7bffb491d7acb8c8e0e009bfb71964940230b96a4119a6"
+    },
+    {
+      "path": "julia_validation/LICENSE_CODE_MIT.txt",
+      "bytes": 1807,
+      "sha256": "2d21badd9389cfdbe0af1238e862f7064855a793985c1d9bd140124f397ad52f"
+    },
+    {
+      "path": "julia_validation/MODIFICATIONS.md",
+      "bytes": 985,
+      "sha256": "a8618c54710aa276d1107c374b7c6cb9a9ac0e7e2578b82e14a78aaea9d6cdfb"
+    },
+    {
+      "path": "julia_validation/OUTPUT_TERMS_NOTICE.md",
+      "bytes": 2849,
+      "sha256": "4813d417ca49860a54fc1d40799a399605b2e7790f8704eb93020a1589f1f156"
+    },
+    {
+      "path": "julia_validation/PROPOSED_MANUSCRIPT_INTEGRATION.md",
+      "bytes": 2449,
+      "sha256": "61acc842937b1d7911e54c2a960791a5f644f0e8b2b027d85cd6a2d161888a4d"
+    },
+    {
+      "path": "julia_validation/PROTOCOL.md",
+      "bytes": 4976,
+      "sha256": "224dd1162cb36e1fde53c88e09ec66ffb17960d092d21a7b9c7a1fafce580f5d"
+    },
+    {
+      "path": "julia_validation/README.md",
+      "bytes": 2546,
+      "sha256": "8b8ac613344ee3b3f9b363cc3925a0b699a1d5106c279baf7b3940eed8d04a0e"
+    },
+    {
+      "path": "julia_validation/REPLAY.md",
+      "bytes": 5551,
+      "sha256": "2cca6932da067dc1d87883eb95e25e5200fc01f94d6d0222d9673fdba9cd84df"
+    },
+    {
+      "path": "julia_validation/REPORT.md",
+      "bytes": 7546,
+      "sha256": "fa8005b23eb39ea45cf6e4eba27e54283dab8fa41ba0e98de141820aac667d77"
+    },
+    {
+      "path": "julia_validation/environment/Manifest.toml",
+      "bytes": 29024,
+      "sha256": "d95d1206c0500fafd74a1965fe87eaa9f8d6633d93f68b1533e258f264dc6b5e"
+    },
+    {
+      "path": "julia_validation/environment/Project.toml",
+      "bytes": 103,
+      "sha256": "119eeaa023d115f70a0ef14ca97f506dafc84382aaeda6b27abf75a267efd87a"
+    },
+    {
+      "path": "julia_validation/environment/requirements-python.txt",
+      "bytes": 41,
+      "sha256": "c9e4a7362f77ea953e13391faee0baa5f65db70c2e1d6b4f12dba92ac9761a9f"
+    },
+    {
+      "path": "julia_validation/inputs/control_manifest.json",
+      "bytes": 13367,
+      "sha256": "8408619cb369bba3c1db3dd9f33e539ccff824d41c2e3ff0a13472f9b792f349"
+    },
+    {
+      "path": "julia_validation/inputs/control_runner_manifest.json",
+      "bytes": 4418,
+      "sha256": "57097ddbf7da052b5013405bee01df3cf32f5472cb6f31dfe9751e865eeafe19"
+    },
+    {
+      "path": "julia_validation/inputs/genomic_manifest.json",
+      "bytes": 91244,
+      "sha256": "d845205c0e2f029983d7760e0b1f292119b78edcbee8a1a9188e66270828ba88"
+    },
+    {
+      "path": "julia_validation/inputs/genomic_runner_manifest.json",
+      "bytes": 15394,
+      "sha256": "abe6efe7031872e0c67b27121b399861057db9acaaa3d9c8ade6ac3f1a9a7019"
+    },
+    {
+      "path": "julia_validation/logs/controls.log",
+      "bytes": 12984,
+      "sha256": "331c52ef3e5a70a87d3d508ca501417bfa27a30403dd9c255e44ce879f042dee"
+    },
+    {
+      "path": "julia_validation/logs/downstream.log",
+      "bytes": 1569,
+      "sha256": "bddf6ae5d3eda57899df82fb02dbdb2e65d705bf34f7fed702f299d6fbb1e242"
+    },
+    {
+      "path": "julia_validation/logs/environment_install.log",
+      "bytes": 8378,
+      "sha256": "f48295b8e57fca2b513eedf0ebfaae544b54e93e6aa34ad9d238b2bed7a8a5e5"
+    },
+    {
+      "path": "julia_validation/logs/final_prepare.log",
+      "bytes": 251,
+      "sha256": "231d5254987be33c1df2e00661080a2e265f1eb43dd9878a904b15556ee22679"
+    },
+    {
+      "path": "julia_validation/logs/genomic_shard_1.log",
+      "bytes": 10922,
+      "sha256": "23bf503b1b6bcaddf2dd5a51ae08ef7ab960f5c2398f3131225cdf7a048c932f"
+    },
+    {
+      "path": "julia_validation/logs/genomic_shard_2.log",
+      "bytes": 10928,
+      "sha256": "41c4c2c1fab2f5a79e041fbb071ad148748b99d6df9ab63a8dc2aa0fce380a6d"
+    },
+    {
+      "path": "julia_validation/logs/genomic_shard_3.log",
+      "bytes": 10925,
+      "sha256": "3b2d1bbb18ff51f155f8dfbce2fdae60088488c1a6ee2972a51ccdc9e81ffc50"
+    },
+    {
+      "path": "julia_validation/logs/genomic_shard_4.log",
+      "bytes": 10938,
+      "sha256": "60040ea402e60565769f6e4ce70170e95f82293a374270fd705f742a0808bfc1"
+    },
+    {
+      "path": "julia_validation/logs/precompile.log",
+      "bytes": 30,
+      "sha256": "77e97f2e2c91d7bd87b667453bf4226be3fcbc03f851f3b64a4090ce154173ee"
+    },
+    {
+      "path": "julia_validation/outputs/PRIMARY_COMPARISON.json",
+      "bytes": 25335,
+      "sha256": "1e3febd9205270ec36d90f090d3e3133a138d01ef9734eca12ba8188fef2a190"
+    },
+    {
+      "path": "julia_validation/outputs/controls/all_tied_clique.json",
+      "bytes": 575,
+      "sha256": "490ea269b1b678e8ad1434a798c87f01cc8bc83ec87eb9f165e2aabaf4e01836"
+    },
+    {
+      "path": "julia_validation/outputs/controls/duplicate_cycles.json",
+      "bytes": 596,
+      "sha256": "6c3432de2a7df39571d8cd7bca28f7ce4f0f14d0cfd1a143ed4a57addef05c12"
+    },
+    {
+      "path": "julia_validation/outputs/controls/filled_triangle.json",
+      "bytes": 587,
+      "sha256": "1eed1546c7fbc310d4b79cf458fd7dff120a261f2851b14a491457a0a7500902"
+    },
+    {
+      "path": "julia_validation/outputs/controls/float32_near_tie_collapse.json",
+      "bytes": 607,
+      "sha256": "a37248e47a7649d505ae9bc9dfe83c8b3f002d2d92807e48fbf003d4856c627c"
+    },
+    {
+      "path": "julia_validation/outputs/controls/ignored_diagonal_values.json",
+      "bytes": 601,
+      "sha256": "d6c2e24e1a39c39d7effe459d6867382ddfbb115eb11692eb94f02b29168f324"
+    },
+    {
+      "path": "julia_validation/outputs/controls/inactive_diagonal.json",
+      "bytes": 597,
+      "sha256": "302fd8f44766c015f1b3181a4ecc4b46aff8cc98f824bb18adc25e94c0d5e3f9"
+    },
+    {
+      "path": "julia_validation/outputs/controls/negative_birth_cycle.json",
+      "bytes": 598,
+      "sha256": "38869b64ef02ef6697646319db6e9704ff00134199a84ac81be62eae02b7c62b"
+    },
+    {
+      "path": "julia_validation/outputs/controls/nonmetric_cycle.json",
+      "bytes": 582,
+      "sha256": "b5996ba7132ae37bf9384265a5e61e15f1b5a0ff32e4e15e3e462757087774aa"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_00.json",
+      "bytes": 590,
+      "sha256": "57a904c0f50c15f8f7c2c2b1d074e007267a3a31e65c4b746fb0660b41e367d9"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_01.json",
+      "bytes": 575,
+      "sha256": "9fc1b0665b8a46fc29bf657a1e496f9d6c4b24ce408043c2224a59b5573ca595"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_02.json",
+      "bytes": 590,
+      "sha256": "bc93d249c580ec844a33bec21f2cc84566f795a20f6f7ac81de1b6008c430b57"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_03.json",
+      "bytes": 590,
+      "sha256": "462fc4d1e1baa89b068e6ce9686b719c72af3c83d180e7e8faaf5f76cdd6cd22"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_04.json",
+      "bytes": 588,
+      "sha256": "7f19a9e74ebab2bcc2c1caafda321664ff8c4648125a83881752aa4ac51566ca"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_05.json",
+      "bytes": 573,
+      "sha256": "6889263650658416b2885bffdda482ca1017da5c23d34984b5547bb4b96d8b3e"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_06.json",
+      "bytes": 575,
+      "sha256": "49d202068587815c92d0f471955f7d68e139e401f180061a38d25f7b5ec90e30"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_07.json",
+      "bytes": 589,
+      "sha256": "dfedcd86c3ad6cae2b0e318d7c562d8c12ba94433dd675d4794c393491d260a7"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_08.json",
+      "bytes": 590,
+      "sha256": "2314f8ee48417a6b22ef581ece796a88f7d8b3ded8813de97804ec0c09b7017b"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_09.json",
+      "bytes": 576,
+      "sha256": "a7440edcfb5e59d83bf37d3f00afb726aa3fe6315d98836a4a94f24ba6e8259d"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_10.json",
+      "bytes": 590,
+      "sha256": "4533aa96f3b0a59923c7e5dd699a4a6bb72cbe733047ff6ec27b3e126193dd09"
+    },
+    {
+      "path": "julia_validation/outputs/controls/random_11.json",
+      "bytes": 592,
+      "sha256": "115f08d1362675f693c16e8e6a916bc558290bdfdf8789f596c3ed35f9f0aace"
+    },
+    {
+      "path": "julia_validation/outputs/controls/translated_negative_cycle.json",
+      "bytes": 604,
+      "sha256": "342cbeb5a7e0464594dc66f113d9b59c1ca7266a74bc4b63e301a7adb0d7467e"
+    },
+    {
+      "path": "julia_validation/outputs/controls/zero_birth_cycle.json",
+      "bytes": 597,
+      "sha256": "fc4808637fb0220bb37332efdb2da9b8ac74c1e9d37596c89e280bf166d3f636"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/progress.json",
+      "bytes": 119,
+      "sha256": "8171e0a151f5ec38a025049d8074a1b28c4ff3b75e7cdc9011fdebde5f372a6d"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/run_metadata.json",
+      "bytes": 1964,
+      "sha256": "fcd1b160a1cf368e9f8b33777efd49a0d2d5c81c82ec9ab9ffff2681c043dc8b"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/gm12878_site_007.json",
+      "bytes": 42806,
+      "sha256": "4c3a9cef2d9b2420bd13b4a115d36a38a4aa3b52fd21b77345a00991d44a5498"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/gm12878_site_021.json",
+      "bytes": 43327,
+      "sha256": "437e3e13e99463a1bc2b58f54da75dc9af7c60b843aa0d48f6de786db1c91d51"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/gm12878_site_034.json",
+      "bytes": 43403,
+      "sha256": "e823c8dd93626bca5c1596b27b0f110c2860cb43e6f97475fdbc421215206196"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/gm12878_site_044.json",
+      "bytes": 43032,
+      "sha256": "d52cc5c1df7ad73e94b42650d6a7b479391e7eac4b572b418c778344d5240496"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/gm12878_site_048.json",
+      "bytes": 42450,
+      "sha256": "6ec4005c924993d30acf86317760c5c97243cee02e7405cf3d58abe8ef9a65f4"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/gm12878_site_051.json",
+      "bytes": 42469,
+      "sha256": "ccd86d18762330ab25ce0dde03a34411329e66bae23d105f27341df32f8dffe4"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/gm12878_site_059.json",
+      "bytes": 43251,
+      "sha256": "17f5a19674d80e62902689f8bb97d8337b89bf9a23f2226817ce794788631072"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/gm12878_site_070.json",
+      "bytes": 42674,
+      "sha256": "a3495db714fa4f3bd7dcaec06494b0b41d43accdd8d88807d241243b5c382c8d"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/gm12878_site_075.json",
+      "bytes": 43330,
+      "sha256": "c27aff57034d617455679679493d9df1a45b011107176842f728ae9d74cda768"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/imr90_site_007.json",
+      "bytes": 48385,
+      "sha256": "6de15313f8afd197114c0926f76a6f9fb478242a1a7d00a58eea4541abcbedd6"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/imr90_site_021.json",
+      "bytes": 48392,
+      "sha256": "0d13ef155ebfde81c5b884c8acb25f8ca6365072ab89d0758fc93da819a969a6"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/imr90_site_034.json",
+      "bytes": 48511,
+      "sha256": "a90a645cf109782b591d4a43b8c72f8c560599fac29b60953af196c1a681cef0"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/imr90_site_044.json",
+      "bytes": 47962,
+      "sha256": "91ecd2ad0f72381727480fdf204c94c1f0667c62e012b320650e9e05badb053d"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/imr90_site_048.json",
+      "bytes": 47491,
+      "sha256": "b661e1f138689723bc6c97a4b4291f602c91812865a9d1497b08e1323e5ecd36"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/imr90_site_051.json",
+      "bytes": 47484,
+      "sha256": "fa4876e6ca0408e07254102680ebd117128408f2925a1e551d7ed06d9caba3f3"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/imr90_site_059.json",
+      "bytes": 47230,
+      "sha256": "e54e391e8b80ecf11f05c49ed14bb0e2c907e9c67fc81e7cd2ce030d5419de87"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/imr90_site_070.json",
+      "bytes": 48469,
+      "sha256": "3fabf673d818a68f7346aaf8216323d1fa4a57dc30487cbedb981fa9227fce67"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/sites/imr90_site_075.json",
+      "bytes": 48257,
+      "sha256": "05384b09670e3fc90297ffcdeb7c3a620d0e4fb7bdf214e9126af6cc3b420e57"
+    },
+    {
+      "path": "julia_validation/outputs/downstream/summary.json",
+      "bytes": 9343,
+      "sha256": "a7c1afc7c01442323e020b77d7c780380cb3dd85d8dfc19b897829c8469f1089"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_007_alt0.json",
+      "bytes": 605,
+      "sha256": "ce08f1b9c135e57127edbf9fd17f311cabc1a411e85e99b9b7404239e5bfef58"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_007_alt1.json",
+      "bytes": 608,
+      "sha256": "66616f32913896414692e34adb48bd80b381d2846b0d20d8396d646373894be1"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_007_alt2.json",
+      "bytes": 607,
+      "sha256": "b5403896ab1524c295b5d80fee689b7951efe8c0a455984e63ab16aa4d488302"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_007_ref.json",
+      "bytes": 606,
+      "sha256": "cd1668218d27d9bf260e2ca51cd74aa18334df988cd46f51d33cdd14fc394524"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_021_alt0.json",
+      "bytes": 607,
+      "sha256": "94ea3e4c57364703ee56b56986514f3b01b46fee65023dc43ab447071fc6c529"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_021_alt1.json",
+      "bytes": 609,
+      "sha256": "66e45f0fdffa617110a69bfaff2ec228233dcfb17e3d884a3b526ead286e148c"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_021_alt2.json",
+      "bytes": 609,
+      "sha256": "a1b1ba0aa0e2e3c010384f2f17f263fd68a2daa8777a6d38897689aaebc53b85"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_021_ref.json",
+      "bytes": 607,
+      "sha256": "c75002c2c4c3b705c0728e96563d4858c3caf328b526d60e40b41c05b8c60a99"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_034_alt0.json",
+      "bytes": 610,
+      "sha256": "a492b39b0e6a49b85edb76c1ba952958d4ba4aed69964c9a12b95c2544b88cb7"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_034_alt1.json",
+      "bytes": 608,
+      "sha256": "5fc90428549591e4690b28e00d6d2f05a685f405ac238b6dc7534569ed839679"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_034_alt2.json",
+      "bytes": 610,
+      "sha256": "d600fa46289dcc2b401e9343672577e4cd8c82abc23df908b342d1f21f00d131"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_034_ref.json",
+      "bytes": 610,
+      "sha256": "043f0a7aa96510615588604ce652dad4480f20fed8717e8ac350bf0dae9a1dad"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_044_alt0.json",
+      "bytes": 606,
+      "sha256": "538805d8aff7bfc82c0e01513e8052b714eb14f51d0b671a5402c2d112a99e41"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_044_alt1.json",
+      "bytes": 606,
+      "sha256": "aaa3d1754fec909cbd7d86beb237cf442dda47cec78178835afab3d0579243e8"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_044_alt2.json",
+      "bytes": 607,
+      "sha256": "1fee4e6ccebfc06b19c4cf921c20075ba4e5c841967ec192fee43a8607d882ff"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_044_ref.json",
+      "bytes": 605,
+      "sha256": "33da3b65f252714a611db163962f58e5cfb872090e1c57229b31473cb03a8d01"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_048_alt0.json",
+      "bytes": 605,
+      "sha256": "e416908778e36b360095e02bed3099d66c08002bff6dcfcb3cb41455177f664a"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_048_alt1.json",
+      "bytes": 608,
+      "sha256": "e49da7263fa1f6b672a323932b45b594176fb0fbe6b200dcbafc2f2c8fe2bf69"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_048_alt2.json",
+      "bytes": 608,
+      "sha256": "041e1f678300ed9949edc82b66dc589645df6d2cdbd74f74bee809f455c49a21"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_048_ref.json",
+      "bytes": 607,
+      "sha256": "2e917afbd15c43f67b7eea78871230d9fccc4825ff148f11d7756f6f75015a22"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_051_alt0.json",
+      "bytes": 605,
+      "sha256": "81ce1bd07cd3548ecb37c9cfa997a4d97efe6205b81d4e140f29555ac79482a3"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_051_alt1.json",
+      "bytes": 602,
+      "sha256": "d26db4912e61e1d763d5bb4e9e65ebe677b33d47bde91679beaf4602f3680c61"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_051_alt2.json",
+      "bytes": 605,
+      "sha256": "c9621d4487c9cb33c91c5c1c0afd81b883b12f5f96f33631af5ab1cbe5e9b6ec"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_051_ref.json",
+      "bytes": 607,
+      "sha256": "052f42c079fd5fbd89ac2ff909a2aa0e502cb741f43f101175ca57094525196a"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_059_alt0.json",
+      "bytes": 606,
+      "sha256": "3ff63f597797a6e97b4e1ed3138b71d9819ca20375639575015c87daa3771225"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_059_alt1.json",
+      "bytes": 608,
+      "sha256": "7342808020f6db1ad196713ecf8a8e4b202d7b106f8c4749205e4a4f631b32d6"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_059_alt2.json",
+      "bytes": 608,
+      "sha256": "cc2b5f98f9b53ad15bd2cd7e7a414145d47b79621cce3887033a832b747c85bc"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_059_ref.json",
+      "bytes": 605,
+      "sha256": "a2d99829d3abfb30d24d803e49688cf4e16abfebd29ca689f3aed1da32400f74"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_070_alt0.json",
+      "bytes": 607,
+      "sha256": "6b11db7f22cfa57ee48347ce8126d1830abd04bde27e40e82a86f241f73c7080"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_070_alt1.json",
+      "bytes": 605,
+      "sha256": "7338e21bea2df3c94398d9bc9ea9f6efe3dd96291627703759fee290eacc6998"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_070_alt2.json",
+      "bytes": 605,
+      "sha256": "b8c9d9252c17b790a3da54305dfd42f726e197211e896a730259605e04d40ae4"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_070_ref.json",
+      "bytes": 608,
+      "sha256": "dea7da4e952236873823956e9e54083647b3d1854d8ef9b423970d224e0a70d6"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_075_alt0.json",
+      "bytes": 606,
+      "sha256": "69d54889edbb3c5c53004a364ed3e655655776f9f4422d77a05a9e138021eefb"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_075_alt1.json",
+      "bytes": 606,
+      "sha256": "edea88b5cd57d1e4acc665f8395c1c0c413b6d84ded86085e83a1a0f3db5be09"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_075_alt2.json",
+      "bytes": 605,
+      "sha256": "6337609e0429cd7ed855b0bdbcc46d0653388989f945a8d205897456a49933c3"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/gm12878_site_075_ref.json",
+      "bytes": 604,
+      "sha256": "dc0a878de20ecdd032b5deb066ad0834d59d374350869d79d7c5ebaebf7179ac"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_007_alt0.json",
+      "bytes": 606,
+      "sha256": "1c325200208252e0c03e4fd31bef7491d23ae26f0df16a7b7240540f4b71c43d"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_007_alt1.json",
+      "bytes": 603,
+      "sha256": "9a629863f451795fe565bcb9ddbc91b0d9c6a3de91ebdb631797a7ca4be22221"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_007_alt2.json",
+      "bytes": 600,
+      "sha256": "e886b6e987bfda1c2eb778084d6d33cb0ab2f0d436489d6d14a9e2c440162ede"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_007_ref.json",
+      "bytes": 603,
+      "sha256": "8000029c0e162b3941c827cd189e3cad76cffe4f809f1ae8b17277a8ae25e70f"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_021_alt0.json",
+      "bytes": 605,
+      "sha256": "5fce23f67dddac6fd433921dbb75bca89f7cf0c28cb8b80aa65294b6671213d6"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_021_alt1.json",
+      "bytes": 602,
+      "sha256": "1e175cf538b88b7d7629c7ac91769f5a95e9cb469455b3317238428c84c604be"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_021_alt2.json",
+      "bytes": 605,
+      "sha256": "cecae8ba592b9368817f13deb61ecdf8d92cd6f4e414ecaea27f1827adb3be01"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_021_ref.json",
+      "bytes": 603,
+      "sha256": "6e40b06c764bd9a07ad4655a043adc4d5d7d57899764e4d8649131f993576a20"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_034_alt0.json",
+      "bytes": 606,
+      "sha256": "00163598f7ad736b88190ef77544783545c9b6ca850a9399b2b2776c897687d9"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_034_alt1.json",
+      "bytes": 606,
+      "sha256": "a40492c1942e84b194394284cd849f2cd3cd033da3015846a68b1f4b6795712a"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_034_alt2.json",
+      "bytes": 606,
+      "sha256": "c8ee104bfee431d7d43cf5903c8e4ac72c93a3509091fc0420e3e1619439457c"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_034_ref.json",
+      "bytes": 606,
+      "sha256": "bfd71657e9f8ae34e9cf589b2238461577fdbcda1ce457048f31a9b8bc667067"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_044_alt0.json",
+      "bytes": 605,
+      "sha256": "9168f4d9d8303f5719bae76f4bb8739ca78ace7a53577c252d825be2aeda9826"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_044_alt1.json",
+      "bytes": 605,
+      "sha256": "29248c17df48cb431cf67858250553b5b588cbf32c12c7dbca6edbbab50953c7"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_044_alt2.json",
+      "bytes": 606,
+      "sha256": "9394484af505178ba5ef6e112bf05579465572e07de4cc370a49ade7b70668f2"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_044_ref.json",
+      "bytes": 605,
+      "sha256": "ec03c4ef4c7913cf87a2053c0c7d730be730c5be3ee78bd55a72e4376d388945"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_048_alt0.json",
+      "bytes": 606,
+      "sha256": "381b4de40b4e752bb6b6f69555310ae06904c28c1cc904f9ce5a25d2d77c83c8"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_048_alt1.json",
+      "bytes": 607,
+      "sha256": "8ca9caa5842a51e1f4554e4c6f1c493fe4713746a20c741d799e5c448cbdb7e2"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_048_alt2.json",
+      "bytes": 609,
+      "sha256": "64a631281dbc46484ff54afa5504cb07da727ec32f17cc7af2e182c286534296"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_048_ref.json",
+      "bytes": 608,
+      "sha256": "82f44fa537c11a8fe5eb266b311c313d8cd0b90f30e292151c3ae91f41159e94"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_051_alt0.json",
+      "bytes": 608,
+      "sha256": "fb0fb0be86ccbf1e95530b2772d2aa3959562aa7d97a6f02b1353a91c5fea7f8"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_051_alt1.json",
+      "bytes": 607,
+      "sha256": "5da91c0e906cd0aaaad011105de3fc39ab082e9dae681c59edc8773604fe6766"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_051_alt2.json",
+      "bytes": 611,
+      "sha256": "9223d33e3e25108a16dfdfabe814b2ed64c0d7251e0ea254191a088f097fda6f"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_051_ref.json",
+      "bytes": 606,
+      "sha256": "f9efb5aac2d3f243c7d815beafca869c06bdd067413e2af1e4f2217576ae74f3"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_059_alt0.json",
+      "bytes": 607,
+      "sha256": "0c1679f7620ed88c120b74950172bab2913028c77a096d3febd85da90d69db7a"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_059_alt1.json",
+      "bytes": 608,
+      "sha256": "c76ab3e071a405a7e1c6603edb82636443c0d720477da470abced063e4e9ad24"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_059_alt2.json",
+      "bytes": 607,
+      "sha256": "f49e222a9649f5fe9ba4e728b3758fd0654fc4fca87e2a153501dfcda203a84c"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_059_ref.json",
+      "bytes": 605,
+      "sha256": "c9e48717dc1b4a24dafaeb2ff8eb64a8748d3c087c6b121731e914df0ed3802f"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_070_alt0.json",
+      "bytes": 605,
+      "sha256": "b1878459609ce925f658bfa0ed61a6b3e7b6222bbffaa38a6292a23c65213dc0"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_070_alt1.json",
+      "bytes": 606,
+      "sha256": "3fecb7d86f37017ea2a088eda05825a7d838f45757b0759cdbf41d2198c5305b"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_070_alt2.json",
+      "bytes": 606,
+      "sha256": "0b567c82dbfc67656753e721d6936cb43738eb5a1cd7c98f0a17fa47bb0e75da"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_070_ref.json",
+      "bytes": 606,
+      "sha256": "adb98f76a36efc3b54f429c70d8b3cd4fab41b3a376186036aca6cdee8b22cd2"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_075_alt0.json",
+      "bytes": 605,
+      "sha256": "1f208fc17650a2fd86823ee6801c24ea476f40dec5f60b86c2db69bd281657fd"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_075_alt1.json",
+      "bytes": 603,
+      "sha256": "8e0cebbddab7ef6091ab2051da60ac57d08fe2a143ab9bc24ea77405195c5683"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_075_alt2.json",
+      "bytes": 606,
+      "sha256": "42c6a81918307cd20dde47bdba20e44a12493a76453395c53aa5ab3e14e17d46"
+    },
+    {
+      "path": "julia_validation/outputs/genomic/imr90_site_075_ref.json",
+      "bytes": 603,
+      "sha256": "c1dd8753ef4966dfa68355b5ea592a5c3297be7eb779332bc47696a34c7f9a7c"
+    },
+    {
+      "path": "julia_validation/review/COHORT_REVIEW.md",
+      "bytes": 6049,
+      "sha256": "c3225af34e9957466efaf69052e23d1a40d84243e321c16ffd94360c84c52737"
+    },
+    {
+      "path": "julia_validation/review/COHORT_SOURCE_INVENTORY.json",
+      "bytes": 16320,
+      "sha256": "e1b517665833f505b988a573acc9d5e9be1bc196b5bce8a88ad36cf83cdbb2c4"
+    },
+    {
+      "path": "julia_validation/review/CONTROL_JULIA_COMPARISON_controls.json",
+      "bytes": 2192,
+      "sha256": "d6f5a1cade6ecd6f3a9d53f1b25098637322b94cd3a1ac79a3f706cb91798a2c"
+    },
+    {
+      "path": "julia_validation/review/CONTROL_ORACLE_SELF_CHECK.json",
+      "bytes": 847,
+      "sha256": "5cb90356307672efd7cc31b6ca94a3290bb16939e252dd244ddc3240c77e4597"
+    },
+    {
+      "path": "julia_validation/review/DOWNSTREAM_HAND_CONTROLS.json",
+      "bytes": 1155,
+      "sha256": "ee009f0cd1e901e02d415c23432fa936433b43aff76fc14c8e3e9c8484cca043"
+    },
+    {
+      "path": "julia_validation/review/DOWNSTREAM_METHOD_REVIEW.md",
+      "bytes": 3832,
+      "sha256": "08874520f3fb4273a5971b4d597d52c39fe21922b694a56b70fff301894bec90"
+    },
+    {
+      "path": "julia_validation/review/DOWNSTREAM_RESULT_REVIEW.md",
+      "bytes": 5215,
+      "sha256": "96f30d8c8a2c550cd1840cb7448628c9e15c7426a29ae45440e75793c138cddc"
+    },
+    {
+      "path": "julia_validation/review/FILTRATION_REVIEW.md",
+      "bytes": 7140,
+      "sha256": "d4dd9f685c3f0956c88e8da05b60d6fbc61b73495154013d9ac826caff7ed921"
+    },
+    {
+      "path": "julia_validation/review/FINAL_REPLAY_PREPARATION_CHECK.json",
+      "bytes": 597,
+      "sha256": "3d95a8082fb35aad989e6f424e24a086a6e7d982c61b6a4cd9d4917710e9f5e3"
+    },
+    {
+      "path": "julia_validation/review/INDEPENDENT_RESULT_REVIEW.md",
+      "bytes": 5812,
+      "sha256": "bd1c9ea1656f1115d8e98477616ab9b2b29a14bddba4f0dd29af39671a240374"
+    },
+    {
+      "path": "julia_validation/review/RELOCATED_CONTROL_SMOKE.json",
+      "bytes": 2968,
+      "sha256": "d71805fbebbccb615372050f5b53d7d8742cce54fc584402d58b8f9cce21da1c"
+    },
+    {
+      "path": "julia_validation/review/REPLAY_PREPARATION_CHECK.json",
+      "bytes": 573,
+      "sha256": "5fbb5ca6674f87df6008f000348a5d3d17a68f41eb9f05dd0b1a4fc77c059e9f"
+    },
+    {
+      "path": "julia_validation/review/RUNNER_AND_CONTROL_REVIEW.md",
+      "bytes": 3992,
+      "sha256": "5ae3efc9ea8fc9bfe43175bf3eb0201ac263a3d99511c4932749ed58fb84ce45"
+    },
+    {
+      "path": "julia_validation/review/initial_freeze/RECONSTRUCTION.md",
+      "bytes": 1764,
+      "sha256": "0edc00d9dde5828a8630a186546494557568f5539c7dc6dfbbed00c98a4424f5"
+    },
+    {
+      "path": "julia_validation/review/initial_freeze/control_manifest.json",
+      "bytes": 13367,
+      "sha256": "65139a72b4679e87bc455f746404c2b6b83d7a6edd2e50ce98c9016f9ff37c58"
+    },
+    {
+      "path": "julia_validation/review/initial_freeze/control_oracle.py",
+      "bytes": 12482,
+      "sha256": "c0dbb4368da4f4f208dec5e5af54f13f5a179cf44c6ede4662d8c3a804462bb2"
+    },
+    {
+      "path": "julia_validation/review/initial_freeze/control_oracle_changes.diff",
+      "bytes": 1147,
+      "sha256": "b2716448c8782d630be098c4be0241691b318395fe807fb91d419d15564b2192"
+    },
+    {
+      "path": "julia_validation/scripts/compare_downstream.py",
+      "bytes": 25731,
+      "sha256": "a491a0ca846f55d91a97626fd4cd3214ef9cf1da131c8218f45760449b1f29a0"
+    },
+    {
+      "path": "julia_validation/scripts/compare_genomic.py",
+      "bytes": 4112,
+      "sha256": "c720bb4462ec344f6e99a0ddeed031e4ac81349b48539c80933ea9b9956417a8"
+    },
+    {
+      "path": "julia_validation/scripts/control_oracle.py",
+      "bytes": 12715,
+      "sha256": "8dfe551ac3d107083eed84a596e18a084ab0d4e2cb31f649e4f9c78a96b41994"
+    },
+    {
+      "path": "julia_validation/scripts/export_genomic.py",
+      "bytes": 3879,
+      "sha256": "7d95c6f20097b7a525d1591b6502cadbf3aaa6fc3e0ecf585aea549fce05a622"
+    },
+    {
+      "path": "julia_validation/scripts/replay.py",
+      "bytes": 13254,
+      "sha256": "98bb65b2d4c87fb7c590c8bb333d5b3341bc558d667250c288b164605797dc91"
+    },
+    {
+      "path": "julia_validation/scripts/run_persistence.jl",
+      "bytes": 3498,
+      "sha256": "6f7146fae2b7803ec0f922782e62a6a180e7386589b99f8c119337e00870a537"
+    },
+    {
+      "path": "julia_validation/scripts/verify_capsule.py",
+      "bytes": 941,
+      "sha256": "cebf533aacd28d48c12119d0017df6be0f7e6b2e24fcf47fa589fb6727099332"
+    },
+    {
+      "path": "julia_validation/study_inputs/BUNDLED_INPUT_MANIFEST.json",
+      "bytes": 7387,
+      "sha256": "3b5658ea7149cc7d3d42213cfdf29456de0403533dfb9eadff27dd29066fe74e"
+    },
+    {
+      "path": "julia_validation/terms/AlphaGenome_Output_Terms_2026-10-09.pdf",
+      "bytes": 100722,
+      "sha256": "3df37d06d58802a123729161106f9b1e19b7cd1ca8a7eb6b7317e539c2378c87"
+    },
+    {
+      "path": "julia_validation/terms/AlphaGenome_Services_Additional_Terms_2026-09-08.pdf",
+      "bytes": 159130,
+      "sha256": "0a1b52c469cda9828cc1a5c64b7b39122bd96e20827617fe157d34126005a6c5"
+    },
+    {
+      "path": "julia_validation/terms/Legally_Binding_Terms_of_Use.txt",
+      "bytes": 522,
+      "sha256": "768411a9b84e27f89f7813a892d907faad2a083d6cad8c3988294d1e6b8f2c9e"
+    },
+    {
+      "path": "julia_validation/terms/SOURCE_MANIFEST.json",
+      "bytes": 751,
+      "sha256": "fba133bc3f01ea38bff002c2714816a4b5d43e4e8dbf2bbd9729a65f4ff6d009"
     },
     {
       "path": "manuscript.md",
@@ -438,5 +1303,14 @@
       "bytes": 751,
       "sha256": "fba133bc3f01ea38bff002c2714816a4b5d43e4e8dbf2bbd9729a65f4ff6d009"
     }
-  ]
+  ],
+  "validation_addendum": {
+    "name": "Targeted Julia persistence check",
+    "date": "2026-10-28",
+    "report": "julia_validation/REPORT.md",
+    "manuscript_changed": false,
+    "diagrams": 72,
+    "intervals": 847288,
+    "downstream_checks": 2565
+  }
 }

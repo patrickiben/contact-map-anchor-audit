@@ -83,6 +83,8 @@ The toolkit accompanies Patrick Iben's author-review manuscript *Auditing prepro
 
 The prospective IMR-90 test identified **49/84 centered leaders versus 7/84 with simple bounds**, adding 42 decisions across six genes with no observed contradictions and 35 unresolved sites. Universal numerical saturation failed in three comparisons; both bounds abstained at those sites. This paired test uses the same 84 replication sites and a second output track of one model. RMS baselines still exceeded centered H1 selected-allele credit.
 
+A subsequent [targeted Julia check](research/julia_validation/REPORT.md) reproduced **72 full diagrams and all 847,288 intervals exactly**, including multiplicities, and preserved all three known IMR-90 exceptions. Its 22 controls and 2,565 downstream checks passed. This adds separate-implementation evidence within the Ripser algorithm family; matching still uses Hera. The current manuscript and teaching editions remain at v0.2.3 while the new verification wording awaits final author review.
+
 The research contribution is an executable audit of a specified preprocessing path, its ranking consequences and its observed behavior in predicted contact maps. Bottleneck distance, elementary stability bounds and shift-invariant comparisons have established precedents; this is not a claim to a new generic metric.
 
 The browser separates three evidence classes:
@@ -91,7 +93,7 @@ The browser separates three evidence classes:
 2. **Study summary:** aggregate author analysis results from the predicted-map cohorts, bound to named source artifacts and the manuscript hash.
 3. **User imports:** diagrams supplied by the user, with provenance and interpretation determined by their own upstream workflow.
 
-The small toolkit checkout does not contain model weights or raw genomic map arrays. The [full study archive in release v0.2.0](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0) supplies the stored maps, paired calls, diagrams, source and offline replay instructions as three checksum-verified download parts. [Provider output terms and modification notices](research/OUTPUT_TERMS_NOTICE.md) apply separately to the model outputs and substantial derivatives. The package does not generate persistence diagrams from contact maps, locate genomic loops, infer pathogenicity or establish physical chromatin remodeling. The study's sharper rankings did not establish a consistent improvement in clinically selected-allele credit.
+The small toolkit checkout does not contain model weights or raw genomic map arrays. The [full study archive in release v0.2.0](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0) supplies the stored maps, paired calls, diagrams, source and offline replay instructions as three checksum-verified download parts. [Provider output terms and modification notices](research/OUTPUT_TERMS_NOTICE.md) apply separately to the model outputs and substantial derivatives. The audit CLI and browser lab take diagrams as input; the separate Julia validation capsule regenerates the selected full diagrams from saved maps. Neither locates genomic loops, infers pathogenicity or establishes physical chromatin remodeling. The study's sharper rankings did not establish a consistent improvement in clinically selected-allele credit.
 
 For the earlier background-profile audit, see the separate [Same-Site Allele Explorer](https://github.com/patrickiben/alphagenome-allele-demo). Its endpoint differs from the direct reference-versus-alternate diagram comparison used here.
 

@@ -10,6 +10,8 @@ The prospective IMR-90 test increased centered-leader coverage from **7/84 to 49
 
 The [0.2.3 author read-through revision](AUTHOR_READTHROUGH_REVISION_2026-10-28.md) incorporates the accepted clarifications, adds Holm (1979) at first use and updates the source-linked teaching editions. The main PDF remains 22 pages, with 30 references. The [earlier 0.2.2 QC revision](QC_REVISION_2026-10-28.md) improved the coding-denominator explanation and S6 figure. Scientific results, all six supplements and the v0.2.0 data archive are unchanged in 0.2.3. Final proof and submission approval remain pending. [Validation](VALIDATION.md) distinguishes the current checks from earlier scientific runs.
 
+The [targeted Julia validation addendum](julia_validation/README.md) independently reconstructed 72 full diagrams (847,288 intervals) with exact agreement and reproduced all checked downstream results. Its downloadable capsule includes the selected inputs and pinned environment. This new verification is documented separately; it has not yet been inserted into the frozen v0.2.3 manuscript or supplements.
+
 ## Supporting files
 
 | File | Content |

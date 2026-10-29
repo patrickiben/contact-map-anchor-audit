@@ -1,0 +1,136 @@
+{
+  "records": [
+    {
+      "key": "filled_triangle",
+      "n": 3,
+      "raw_path": "inputs/controls/filled_triangle.f64",
+      "raw_sha256": "a209d9d9a6b7966d7515490e53093b777fb9d12733b7fe85cff5932c49d616bf"
+    },
+    {
+      "key": "negative_birth_cycle",
+      "n": 4,
+      "raw_path": "inputs/controls/negative_birth_cycle.f64",
+      "raw_sha256": "f6053786ed1db654327a970577ddb8e8a8d3b650481935ac4a75374a71b54b5d"
+    },
+    {
+      "key": "zero_birth_cycle",
+      "n": 4,
+      "raw_path": "inputs/controls/zero_birth_cycle.f64",
+      "raw_sha256": "bc14b09ea10ce3235c8432f8e25766062783b48ed73d91c36985cbf1f46025e0"
+    },
+    {
+      "key": "all_tied_clique",
+      "n": 5,
+      "raw_path": "inputs/controls/all_tied_clique.f64",
+      "raw_sha256": "2982a3d64edae3950efdce547d5bdc931a40f86947df7e4b9507e6dea80b3178"
+    },
+    {
+      "key": "duplicate_cycles",
+      "n": 8,
+      "raw_path": "inputs/controls/duplicate_cycles.f64",
+      "raw_sha256": "674f434e1f95c071064e10ab7793c1d97916c8e9161c1c3c431e2889227db78a"
+    },
+    {
+      "key": "nonmetric_cycle",
+      "n": 4,
+      "raw_path": "inputs/controls/nonmetric_cycle.f64",
+      "raw_sha256": "ca4bb8e06471eb90485a6a8010cee90dd637930cc875532234d581188f617773"
+    },
+    {
+      "key": "inactive_diagonal",
+      "n": 4,
+      "raw_path": "inputs/controls/inactive_diagonal.f64",
+      "raw_sha256": "9fdf4bb5335086d4d5afc600c68653be2d1387f16c071cfb2e38f650a88212d9"
+    },
+    {
+      "key": "float32_near_tie_collapse",
+      "n": 4,
+      "raw_path": "inputs/controls/float32_near_tie_collapse.f64",
+      "raw_sha256": "054a37a8d5be84da9fa203dc6302085b4b75df2cb16e32dd84bf105f27fee8b0"
+    },
+    {
+      "key": "translated_negative_cycle",
+      "n": 4,
+      "raw_path": "inputs/controls/translated_negative_cycle.f64",
+      "raw_sha256": "f4013e1289c4751c3ab243a9d7ecb39a2646cc12a78ec6f66d72edbc8f09b964"
+    },
+    {
+      "key": "ignored_diagonal_values",
+      "n": 4,
+      "raw_path": "inputs/controls/ignored_diagonal_values.f64",
+      "raw_sha256": "9cde068b9b1fd06a2458aa431493b7bd9753d28da5374fa8a9dba54683e802d2"
+    },
+    {
+      "key": "random_00",
+      "n": 4,
+      "raw_path": "inputs/controls/random_00.f64",
+      "raw_sha256": "19015fee13801e2c9737899b04784a5de2fc1f4e6cadc17cc7d10ec72804621c"
+    },
+    {
+      "key": "random_01",
+      "n": 5,
+      "raw_path": "inputs/controls/random_01.f64",
+      "raw_sha256": "f1eccb7c982f306badba4b1c086c0d39ff1c8290c37c8b161c666159d0646b88"
+    },
+    {
+      "key": "random_02",
+      "n": 6,
+      "raw_path": "inputs/controls/random_02.f64",
+      "raw_sha256": "cb2f9611b528ca21db32d1deb2eee3453a3ff60ecfbbcd5ff0d12307e58a1fc0"
+    },
+    {
+      "key": "random_03",
+      "n": 7,
+      "raw_path": "inputs/controls/random_03.f64",
+      "raw_sha256": "684af3dd68dd9ab6f99939ec1a015e100e379608712eaa8a5348e6ea7dcc0c77"
+    },
+    {
+      "key": "random_04",
+      "n": 4,
+      "raw_path": "inputs/controls/random_04.f64",
+      "raw_sha256": "b2c0e3fd9bab152a48957ab932802a74edce920a3497cdeb78fa6a836c806d8d"
+    },
+    {
+      "key": "random_05",
+      "n": 5,
+      "raw_path": "inputs/controls/random_05.f64",
+      "raw_sha256": "85882e3a2b6dade49ce705728c981965e9db822d60b4a00c9e3438775bc3eee1"
+    },
+    {
+      "key": "random_06",
+      "n": 6,
+      "raw_path": "inputs/controls/random_06.f64",
+      "raw_sha256": "fe1fd8681c593b0e9c1e9e4bd8fdf037b8ffca591fc9384dcf45d6b514156ec5"
+    },
+    {
+      "key": "random_07",
+      "n": 7,
+      "raw_path": "inputs/controls/random_07.f64",
+      "raw_sha256": "41fddd6a475c62d81164ffe74dcbfe3a05ff9d9fd80e042cd60180b291da2081"
+    },
+    {
+      "key": "random_08",
+      "n": 4,
+      "raw_path": "inputs/controls/random_08.f64",
+      "raw_sha256": "558a7625efa0264a49415c46a6a7a5cb1497df2cd4ee45cd959b6610dfd30126"
+    },
+    {
+      "key": "random_09",
+      "n": 5,
+      "raw_path": "inputs/controls/random_09.f64",
+      "raw_sha256": "3f0ef53bb043615ef2e162dcc92112614cee6e0c49e8877c233d592e8859725b"
+    },
+    {
+      "key": "random_10",
+      "n": 6,
+      "raw_path": "inputs/controls/random_10.f64",
+      "raw_sha256": "577a07652c1328c1581cb2caf3a6e8971a89f6ad58b1763ce378863e7c76bb76"
+    },
+    {
+      "key": "random_11",
+      "n": 7,
+      "raw_path": "inputs/controls/random_11.f64",
+      "raw_sha256": "71b12867db8834b934548389f6f36d2d31b3014bb3c2a1c9e4395058fcf2bf80"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-10-29T03:01:57.365890+00:00",
+  "revision": "final-proof-2026-10-28",
+  "base_release": "v0.2.0",
+  "base_archive_sha256": "bd388be7b862f15de7a978655b96c0ba473a434983edd65381e00e85a397c709",
+  "base_archive_bytes": 470297,
+  "base_manifest_sha256": "fec2e31375087173e78047b5b66195141d203ac7464d88c48c3bb4907bc87453",
+  "scope": "Verifier hardening and documentation/licensing packaging only. Scientific inputs, original analysis engine, frozen protocols, terms and preserved results are unchanged.",
+  "changes": [
+    {
+      "path": "FINAL_PROOF_VALIDATION.json",
+      "change": "added",
+      "previous_sha256": null,
+      "sha256": "c95a1853fbe4259d8611db25f731c4973ed671c271f0b688a5c6a7db5ab1859c"
+    },
+    {
+      "path": "LICENSE_CODE_MIT.txt",
+      "change": "added",
+      "previous_sha256": null,
+      "sha256": "d2a62ede049fa4a035ec5ae8a365756ab160ac8027583b96ffcb37fa2c6ae717"
+    },
+    {
+      "path": "MODIFICATIONS.md",
+      "change": "added",
+      "previous_sha256": null,
+      "sha256": "ad1b23db30442c83e721207ad0db3006f727f885b252270d830364c7d9a905d8"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "previous_sha256": "11f39586cfd5e18133a9bc84cd7df7e108d17425cea394414b9af4b97c67655e",
+      "sha256": "d37758164c2cbfd9eb4f2bf866f97187e7bb42a66bad47c28cbdf675009b70ef"
+    },
+    {
+      "path": "history/v0.2.0/BUNDLE_MANIFEST.json",
+      "change": "added",
+      "previous_sha256": null,
+      "sha256": "fec2e31375087173e78047b5b66195141d203ac7464d88c48c3bb4907bc87453"
+    },
+    {
+      "path": "history/v0.2.0/README.md",
+      "change": "added",
+      "previous_sha256": null,
+      "sha256": "11f39586cfd5e18133a9bc84cd7df7e108d17425cea394414b9af4b97c67655e"
+    },
+    {
+      "path": "history/v0.2.0/verify_derived_results.py",
+      "change": "added",
+      "previous_sha256": null,
+      "sha256": "6dfb298857c159c5f4add191995f7e689cfd6bfe3e9582fd9e901d126b3fa996"
+    },
+    {
+      "path": "test_verifier_controls.py",
+      "change": "added",
+      "previous_sha256": null,
+      "sha256": "8f22fe281cf92e14444d40b2a15a9be83d24af7bd39fd4ca225811fcbfac40ba"
+    },
+    {
+      "path": "verify_derived_results.py",
+      "change": "modified",
+      "previous_sha256": "6dfb298857c159c5f4add191995f7e689cfd6bfe3e9582fd9e901d126b3fa996",
+      "sha256": "5581f31cd91fe8bda7b4f9551693fe7cc155db1540fd878aecd708217868dbd7"
+    }
+  ],
+  "validation": "FINAL_PROOF_VALIDATION.json",
+  "original_files": "history/v0.2.0/",
+  "manifest_note": "BUNDLE_MANIFEST.json is regenerated after this amendment receipt and covers every other file."
+}

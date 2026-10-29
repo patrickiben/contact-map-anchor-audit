@@ -75,3 +75,5 @@ Synthetic presets verify and explain mathematical behavior. The study panel repo
 A reusable computation helps make the method inspectable. It does not establish independence from model training, biological exchangeability, calibrated clinical performance or experimental chromosome architecture. Those require different evidence.
 
 The paired IMR-90 study illustrates why abstention and added coverage need separate reporting: both methods abstained at all three saturation-exception sites, while strengthened bounds added 42 decisions elsewhere. The full v0.2.0 study archive supplies the map inputs separately from small scalar-verification records, with provider output notices retained.
+
+The targeted Julia addendum checks 72 full diagrams from nine replication sites on both tracks using Ripserer. Exact agreement concerns identical effective float32 inputs; downstream Hera matching remains shared. The full-study replay, targeted separate-implementation check and compact scalar verifier answer different reproducibility questions. None supplies Lean formalization, biological validation or human author approval.

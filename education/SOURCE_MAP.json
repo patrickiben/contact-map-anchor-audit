@@ -2,10 +2,10 @@
   "schema_version": "anchor-audit/education-source-map-v1",
   "source": {
     "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-    "sha256": "05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d",
-    "version": "BMC Bioinformatics author read-through revision, 28 October 2026",
+    "sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
+    "version": "BMC Bioinformatics final-proof candidate, 28 October 2026",
     "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
-    "publication_status": "Public research draft and v0.2.0 study archive; no journal submission, acceptance or new DOI claimed."
+    "publication_status": "Unsubmitted final-proof candidate; full study archive v0.2.0 and separate Julia validation capsule. Whole-package author approval and human learner reviews remain pending."
   },
   "original_companion_sha256": "2cdf0c07cf476025ce4d3823e06d2a5470d1313db6dc877024913252c9d03848",
   "adaptation_status": "New educational adaptation; original validation status is not inherited.",
@@ -17,7 +17,8 @@
         42
       ],
       "source_excerpt_sha256": "c4c0a7119e28eb9656cda2bfb0d56bb2037f220288bff7471569abe3aea8ee9e",
-      "covered_group": "LB-OBJECT"
+      "covered_group": "LB-OBJECT",
+      "supporting_source_ids": []
     },
     {
       "id": "STABILITY",
@@ -26,7 +27,8 @@
         42
       ],
       "source_excerpt_sha256": "c4c0a7119e28eb9656cda2bfb0d56bb2037f220288bff7471569abe3aea8ee9e",
-      "covered_group": "LB-STABILITY"
+      "covered_group": "LB-STABILITY",
+      "supporting_source_ids": []
     },
     {
       "id": "ANCHOR",
@@ -35,70 +37,95 @@
         76
       ],
       "source_excerpt_sha256": "cae8fe55a3be90e9a23f6341060af48e13590ba363fb10e17cc2da48adb3016c",
-      "covered_group": "LB-ANCHOR"
+      "covered_group": "LB-ANCHOR",
+      "supporting_source_ids": [
+        "AF2"
+      ]
     },
     {
       "id": "RANKING",
       "source_lines": [
         77,
-        159
+        161
       ],
-      "source_excerpt_sha256": "2d98df5f8eeaca8adbf7ad7915f731c660c387936eb411a0907dd461df8d7e8e",
-      "covered_group": "LB-RANKING"
+      "source_excerpt_sha256": "5cb93b30add51fdc0e14903462f116fb70eff8ff5822fdf223e6a475593e9b89",
+      "covered_group": "LB-RANKING",
+      "supporting_source_ids": [
+        "AF2",
+        "AF4"
+      ]
     },
     {
       "id": "CONSEQUENCE",
       "source_lines": [
-        195,
-        202
+        197,
+        204
       ],
-      "source_excerpt_sha256": "48042c90305d2f0b27b26906fe3f499c4295f9b17884aece8ed659bf16748701",
-      "covered_group": "LB-CONSEQUENCE"
+      "source_excerpt_sha256": "b8078ef07e7e476f057889aa22787a052ca505f09ab4041772efa929c4262ed4",
+      "covered_group": "LB-CONSEQUENCE",
+      "supporting_source_ids": [
+        "AF3",
+        "AF5"
+      ]
     },
     {
       "id": "NULL",
       "source_lines": [
         117,
-        128
+        196
       ],
-      "source_excerpt_sha256": "07deb243f748ab81f03e68a4764f3e78b375e57e9ca2453547315a0a4ae18545",
-      "covered_group": "LB-NULL"
+      "source_excerpt_sha256": "1cc41534130db27378c49382234b63eba3e0299929384ed5a444c5edd79eb15a",
+      "covered_group": "LB-NULL",
+      "supporting_source_ids": []
     },
     {
       "id": "DISCOVERY",
       "source_lines": [
-        160,
-        194
+        162,
+        196
       ],
-      "source_excerpt_sha256": "3abb07d2513c7e210d1acec577ed6808339a9417075c0f757fe6d495033d19c5",
-      "covered_group": "LB-DISCOVERY"
+      "source_excerpt_sha256": "409b3afe437796d5f56175456af0c0ecfed9d9f5481d5b99e190b7462f3891d1",
+      "covered_group": "LB-DISCOVERY",
+      "supporting_source_ids": [
+        "AF4"
+      ]
     },
     {
       "id": "REPLICATION",
       "source_lines": [
         98,
-        173
+        175
       ],
-      "source_excerpt_sha256": "7801a9eb793852543647cea3f2e807aec9a60b7115692d516ee0b317cdbcb4bb",
-      "covered_group": "LB-REPLICATION"
+      "source_excerpt_sha256": "e5fe59c5136f94481a39e21f7e29c0aa9b27d0f9ee90482fa5adaa8507c720b3",
+      "covered_group": "LB-REPLICATION",
+      "supporting_source_ids": [
+        "AF4"
+      ]
     },
     {
       "id": "PRECISION",
       "source_lines": [
         129,
-        136
+        138
       ],
-      "source_excerpt_sha256": "af2830a3cdcae73f0cfcc1f0c092e9e6a4fefc24db3909d069fdb67df0d3cd15",
-      "covered_group": "LB-PRECISION"
+      "source_excerpt_sha256": "0b92db1270ef96e1317f9f8ae069d499dd0c24d0871d495c737de803a3c0f74e",
+      "covered_group": "LB-PRECISION",
+      "supporting_source_ids": [
+        "AF6"
+      ]
     },
     {
       "id": "SCOPE",
       "source_lines": [
-        203,
-        274
+        205,
+        276
       ],
-      "source_excerpt_sha256": "2d2e2d355497eaa91856fb7a0a0b2c5f7d2223a8f633a5120ff0db8301e2fd84",
-      "covered_group": "LB-SCOPE"
+      "source_excerpt_sha256": "548cd271367f33f3e19ed4be23f662fe4b4bcc1c15ffac6be0baa3187be47068",
+      "covered_group": "LB-SCOPE",
+      "supporting_source_ids": [
+        "AF6",
+        "AF7"
+      ]
     }
   ],
   "structural_exclusions": [
@@ -111,8 +138,8 @@
     },
     {
       "source_lines": [
-        275,
-        307
+        277,
+        310
       ],
       "reason": "Bibliography; concepts are taught in mapped body units."
     }
@@ -139,8 +166,8 @@
     },
     {
       "source_lines": [
-        137,
-        159
+        139,
+        161
       ],
       "covered_by": [
         "RANKING",
@@ -156,20 +183,20 @@
   },
   "assets": {
     "docs/learning.json": {
-      "sha256": "cdea3864951c08d1f73947b4005636f5ff7f5c64d10c617e7911c11ee35c233e",
-      "bytes": 25849
+      "sha256": "ce91982b2283ed8864ea78ea4b83386a53179dcec4a82a196221b9588f4cda5a",
+      "bytes": 27541
     },
     "docs/study-summary.json": {
-      "sha256": "6c8999b4bc26714773d49d57ae7fdbee4fb94c0c4c280108cc47cde4b2b577d6",
-      "bytes": 4223
+      "sha256": "0046cedee7a98527e815c3c6ce80359aba760b15e2439af4b8ba14f8bfbecbf0",
+      "bytes": 4536
     },
     "docs/provenance.json": {
-      "sha256": "845e9336cc4e65d3aa6f741641abeca946f7b61f27ea76959402efc15a554ea2",
-      "bytes": 2637
+      "sha256": "8144ea429cb4ddd1835441aa4edb96222afc33b9f706caffce661a978ad18b5c",
+      "bytes": 2711
     },
     "education/GUIDE.md": {
-      "sha256": "c9ca9f191d6f0b83879867b6757144b9bf6f1c736a5c57aeea234bd973cf5b68",
-      "bytes": 16321
+      "sha256": "794175fe5116c1eb45e3d30029861ade87fc01875cc61136324d47559e028b4f",
+      "bytes": 17366
     },
     "education/PRACTICE.md": {
       "sha256": "d0750291b031e46204c0504acc7afd7945031f8b6bb30273b0de7739402146ff",
@@ -180,20 +207,58 @@
       "bytes": 4753
     },
     "education/RESEARCHER_WORKFLOW.md": {
-      "sha256": "955842ffe04646664746139f93b130848304f8b3153d71fdbab030fc6f6ef1b7",
-      "bytes": 6211
+      "sha256": "6443b5039bc072bfe5d8ae8bd2fe3c1216ae1c07eb077988a6c407799a25fa40",
+      "bytes": 6641
     },
     "education/README.md": {
-      "sha256": "5e06ac91bc89776e31ee30b27aaf805251795ff3bc041821fbef1c694824e642",
-      "bytes": 5188
+      "sha256": "fd93e8becaaea477b233cd640bcc953010ee92441a1a25167d23b94f6263ec11",
+      "bytes": 5724
     },
     "education/STUDY_VALUE_MAP.json": {
       "sha256": "018abdbab2521698c6b76917bc79201fd4bd7185f41d9fdbccef7f3440f654d5",
       "bytes": 11837
     },
     "scripts/build_education.py": {
-      "sha256": "63a39fa4455deca69cbded6869bfb014d3db4b337462c3bd6c454badb2d38ff9",
-      "bytes": 9018
+      "sha256": "e9ae09f6768ad141f39c5d3d3e64f3c0d1eda1b8ec04f9cd45976c07087dd38c",
+      "bytes": 9608
     }
-  }
+  },
+  "supporting_sources": [
+    {
+      "id": "AF1",
+      "file": "Additional_file_1.md",
+      "sha256": "47076ca6d4f99bbdeba0ba04310733ca85f6cef1fba58c8642272338018ef32a"
+    },
+    {
+      "id": "AF2",
+      "file": "Additional_file_2.md",
+      "sha256": "7f4e3ef432c198d9d96cdb7dd3291fa00b0168281c1ecc3367642a2603c6da83"
+    },
+    {
+      "id": "AF3",
+      "file": "Additional_file_3.md",
+      "sha256": "f150e9735d54a9fa8d950fd264468d74d93cbe707e0900b7c0365bc6c0d76f00"
+    },
+    {
+      "id": "AF4",
+      "file": "Additional_file_4.md",
+      "sha256": "803260204eb77e11fd41b3b9781e19718657c2dec50aa869c14273ce47f8e3c9"
+    },
+    {
+      "id": "AF5",
+      "file": "Additional_file_5.md",
+      "sha256": "7952b0db7959c1bc2c8f9ea96449d5223a7ede317698328659cee0b5f6541fc9"
+    },
+    {
+      "id": "AF6",
+      "file": "Additional_file_6.md",
+      "sha256": "3badb2b513cd578773a6e97399a833c37c2db3ce3aac40048500f6554ea7e80f"
+    },
+    {
+      "id": "AF7",
+      "file": "Additional_file_7.zip",
+      "sha256": "3c04819a0cf8963657467fccf93ae57664bdf14523ca677adea5cfadd141d129",
+      "bytes": 477294
+    }
+  ]
 }

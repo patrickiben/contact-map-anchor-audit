@@ -2,7 +2,7 @@
 
 This supplement concerns the same 84 sites and seven genes under a second AlphaGenome contact track. It is not a new cohort or independent model. The protocol was locally frozen before acquisition, then native-only predictions were locked before centered evaluation.
 
-Technical transfer: PASS. Operational benchmark: PASS. The operational threshold was 17 additional leaders and gains in four genes, with complete data and no validation failures. It is not a powered hypothesis test.
+Technical transfer: PASS. Operational benchmark: PASS. The operational threshold was at least 17 additional leaders and gains in at least four genes, with no lost simple-bound decisions, complete data and no validation failures. It is not a powered hypothesis test.
 
 ## Gene-level primary results (tie tolerance 1e-6)
 

@@ -53,3 +53,16 @@ Rendered both PDFs at 90 dpi. Guide page 3 and companion pages 1 and 3–23 have
 Final guide SHA-256: `f80cfbe3cac8452af5230d8e821da96196a92da45b9a9a71eef332dceb8d5c91`. Final companion SHA-256: `3e30745e3c65d1c3c657bf7076cee52079fd958e957ef32bcffc3b19c729d2a0`.
 
 Producer checks and coverage continue to identify mechanical scope only. Human learner validation remains NOT_PERFORMED; final author proof and journal approval remain pending.
+
+
+## Final-proof / software release 0.2.4 education refresh
+
+Current main-source SHA-256: `5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0`. The six supplementary Markdown sources and corrected Additional file 7 ZIP are separately hash-bound. The full study archive remains v0.2.0; the Julia capsule remains its separately preserved v0.2.3 addendum. The entries above are historical records for their named editions.
+
+The hand-written companion was retained and amended. Teaching now distinguishes the complete original-implementation replay, targeted Julia/Ripserer reconstruction, and scalar-only verifier. It covers the 72-diagram/847,288-interval agreement, repeated intervals, 22 small controls, shared Hera matching and identical effective float32 input limits. It incorporates the AF1 weighted-flag condition, AF2 empty-diagram conventions, AF3 pointwise versus simultaneous Monte Carlo intervals, corrected scalar-AVI interpretation and floating-point lattice caveat in AF5, and exact mutation-null expectation 51/160 = 0.31875. The amended scalar verifier is explained without claiming a new PH run.
+
+Current editions: five-page study guide and 32-page complete companion. Both were rendered at 90 dpi. Changed guide pages 1, 4 and 5 and companion pages 1 and 3–32 were directly image-inspected. Guide pages 2–3 and companion page 2 pixel-match the previously inspected edition, excluding the bottom 65 footer pixels. A repeated guide closing notice was condensed to avoid an almost-empty extra page; detailed-unit source labels now stay with the opening explanation. Tables, repeated table headers, equations, code, question/answer groups and page numbering were checked. No clipping, overlap, missing glyph or broken table was observed. Render evidence is retained outside the repository in the final-proof education-refresh records.
+
+Mechanical checks cover 45 teaching units, 56 source spans across all seven Markdown sources, the executable AF7 checksum, ten browser lessons, twelve practice items, all seven mutation controls and 39 producer-value selectors. Supplemental source hashes are included in the browser-lesson source map. The public-source filename `research/manuscript.md` and the preparation filename are both supported by the PDF checker. Checks concern source fidelity, arithmetic selectors and artifact integrity; this refresh ran no genomic PH, acquisition or clinical test.
+
+Whole-package author approval remains **NOT_CERTIFIED**. Human semantic review and learner transfer assessment remain **NOT_PERFORMED**; no human educational pass or journal submission is implied. The user authorized the GitHub refresh, but this educational task itself made no commit, push or external publication.

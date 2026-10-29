@@ -7,7 +7,9 @@ import argparse
 from fractions import Fraction
 import hashlib
 import json
+import math
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parent
 
@@ -74,6 +76,8 @@ def aggregate(rows):
 
 
 def main():
+    if sys.flags.optimize:
+        raise SystemExit('Verification requires assertions: remove -O/-OO and unset PYTHONOPTIMIZE.')
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
     parser.add_argument('--data-dir', type=Path, default=ROOT / 'data')
@@ -82,7 +86,16 @@ def main():
     expected = read(args.data_dir / 'expected_results.json')
     records = data['records']
     assert len(records) == 84 and sorted(r['site_index'] for r in records) == list(range(84))
+    vector_keys = ('native', 'centered', 'deltas', 'shifted_hausdorff',
+                   'locked_lower', 'locked_upper', 'locked_strengthened_lower')
+    for record in records:
+        for values in [record[key] for key in vector_keys] + list(record['baselines'].values()):
+            assert len(values) == 3 and all(
+                isinstance(x, (int, float)) and not isinstance(x, bool) and math.isfinite(x)
+                for x in values), ('invalid allele vector', record['site_index'])
+        assert type(record['selected_allele_index']) is int and 0 <= record['selected_allele_index'] < 3
     allowance = data['practical_allowance']
+    assert math.isfinite(allowance) and allowance >= 0
     results = {}
     checks = 0
     for tol in [0.0, 1e-6, 1e-5]:
@@ -99,18 +112,28 @@ def main():
                     assert exp[scope][gene][key] == value, (tol, scope, gene, key)
                     checks += 1
         results[str(tol)] = summary
+    assert checks == 495
     residuals = [abs(abs(c-b)-abs(d)) for r in records for b,c,d in zip(r['native'],r['centered'],r['deltas'])]
+    assert len(residuals) == 252
     assert sum(x <= 1e-10 for x in residuals) == 249
     assert max(residuals) == expected['secondary']['residual_quantiles']['1']
     exceptions = [(r['site_index'],i) for r in records for i,(b,c,d) in enumerate(zip(r['native'],r['centered'],r['deltas'])) if abs(abs(c-b)-abs(d))>1e-10]
     path_data = read(args.data_dir / 'exploratory_path_scalars.json')['comparisons']
     assert sorted(exceptions) == sorted((r['site_index'],r['alternate_index']) for r in path_data)
+    endpoint_records = {r['site_index']: r for r in records}
     path_results = []
     for path in path_data:
+        endpoint = endpoint_records[path['site_index']]
+        alternate = path['alternate_index']
+        assert path['native_distance'] == endpoint['native'][alternate]
+        assert path['centered_distance'] == endpoint['centered'][alternate]
+        assert path['delta'] == endpoint['deltas'][alternate]
         magnitude = abs(path['delta'])
         b, c = path['native_distance'], path['centered_distance']
         departures = []
         assert [r['lambda'] for r in path['grid']] == [0.0, .1, .25, .5, .75, .9, 1.0]
+        assert abs(path['grid'][0]['distance'] - b) <= allowance
+        assert abs(path['grid'][-1]['distance'] - c) <= allowance
         for point in path['grid']:
             lam, value = point['lambda'], point['distance']
             lower = max(0., b-lam*magnitude, c-(1-lam)*magnitude)-allowance
@@ -128,7 +151,13 @@ def main():
     rendered=json.dumps(output,indent=2,sort_keys=True)+'\n'
     if args.output:
         args.output.write_text(rendered)
-    print(json.dumps({'status':output['status'],'aggregate_value_comparisons':checks,'sites':84,'pairs':252,'primary_simple':7,'primary_strengthened':49,'additional':42,'saturated':249}))
+    primary = results[str(1e-6)]
+    print(json.dumps({'status':output['status'],'aggregate_value_comparisons':checks,
+                      'sites':len(records),'pairs':len(residuals),
+                      'primary_simple':primary['simple_unique_leaders'],
+                      'primary_strengthened':primary['strengthened_unique_leaders'],
+                      'additional':primary['additional_leader_sites'],
+                      'saturated':sum(x <= 1e-10 for x in residuals)}))
 
 
 if __name__ == '__main__':

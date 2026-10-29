@@ -62,6 +62,7 @@
 \usepackage{lineno}
 \usepackage{etoolbox}
 \usepackage{needspace}
+\usepackage{xurl}
 \AtBeginEnvironment{longtable}{\singlespacing\small}
 \AtBeginEnvironment{verbatim}{\singlespacing\small}
 \setlength{\emergencystretch}{3em}
@@ -132,10 +133,11 @@ had zero exceedances. Their raw reported p-value was therefore 0.0001,
 the simulation resolution floor. The recorded plug-in Monte Carlo
 standard error was 0.0001; this is an estimated precision diagnostic,
 not a known true standard error at a zero-exceedance boundary. The
-corresponding recorded Wilson interval for the exceedance probability,
-mapped through the plus-one formula, was {[}0.000100, 0.000484{]}. These
-intervals describe Monte Carlo precision conditional on the fitted label
-model, not uncertainty in biological effects.
+corresponding recorded pointwise 95\% Wilson interval for the exceedance
+probability, mapped through the plus-one formula, was {[}0.000100,
+0.000484{]}. These intervals describe Monte Carlo precision conditional
+on the specified label-null model, not uncertainty in biological
+effects.
 
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}

@@ -1,12 +1,12 @@
 {
   "title": "Understand the Anchor Audit",
-  "version": "1.2.0",
+  "version": "0.2.4-final-proof",
   "source": {
     "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-    "sha256": "05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d",
-    "version": "BMC Bioinformatics author read-through revision, 28 October 2026",
+    "sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
+    "version": "BMC Bioinformatics final-proof candidate, 28 October 2026",
     "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
-    "publication_status": "Public research draft and v0.2.0 study archive; no journal submission, acceptance or new DOI claimed."
+    "publication_status": "Unsubmitted final-proof candidate; full study archive v0.2.0 and separate Julia validation capsule. Whole-package author approval and human learner reviews remain pending."
   },
   "lessons": [
     {
@@ -23,7 +23,8 @@
         "Keep reference and alternate bins, masks, track and filtration conventions aligned before creating diagrams. Changing that support changes the scientific comparison."
       ],
       "try_it": "List which information a diagram preserves and which genomic locations it can discard.",
-      "boundary": "An abstract degree-one feature is not automatically a located chromatin loop."
+      "boundary": "An abstract degree-one feature is not automatically a located chromatin loop.",
+      "supporting_source_ids": []
     },
     {
       "id": "STABILITY",
@@ -39,7 +40,8 @@
         "Ranks answer a different question. If two scores are tied, even a small difference can select a unique leader. A stable numerical score therefore does not guarantee a stable rank."
       ],
       "try_it": "Two scores are both 1.000. One becomes 1.001. Has the score changed much? Has the unique-leader decision changed?",
-      "boundary": "Mathematical stability does not establish biological calibration."
+      "boundary": "Mathematical stability does not establish biological calibration.",
+      "supporting_source_ids": []
     },
     {
       "id": "ANCHOR",
@@ -56,7 +58,10 @@
         "Two information settings matter. Whole-path envelopes use both native and centered endpoints after evaluation. The prospective endpoint audit instead uses native diagrams, native distances and the declared shifts before centered matching; those endpoint decisions do not automatically protect the whole path."
       ],
       "try_it": "Use reference (0,4), alternate (1,5), and shift 0.25. Check that the lifetime stays 4 while distance rises from 1 to 1.25.",
-      "boundary": "Numerical near-saturation is not a formal certificate for unseen higher-precision model outputs."
+      "boundary": "Numerical near-saturation is not a formal certificate for unseen higher-precision model outputs.",
+      "supporting_source_ids": [
+        "AF2"
+      ]
     },
     {
       "id": "RANKING",
@@ -64,7 +69,7 @@
       "summary": "A tolerance and score bounds make the ranking rule explicit.",
       "source_lines": [
         77,
-        159
+        161
       ],
       "body": [
         "The top set contains every score within the chosen tolerance of the maximum. When the selected allele belongs to a tie, fractional credit divides one by the size of that top set. Ties are not silently broken by array order.",
@@ -73,23 +78,31 @@
         "In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leaders and strengthened bounds identified 49: 42 additional decisions across six genes, with zero observed contradictions and 35 unresolved sites. The practical numerical allowance is not a full validated-arithmetic enclosure. Unresolved by the bounds does not necessarily mean that the directly computed centered scores are tied."
       ],
       "try_it": "Increase the tie tolerance in the lab. Explain why a previously unique leader can become unresolved without changing any diagram.",
-      "boundary": "A unique maximum is not evidence that the selected allele is clinically correct."
+      "boundary": "A unique maximum is not evidence that the selected allele is clinically correct.",
+      "supporting_source_ids": [
+        "AF2",
+        "AF4"
+      ]
     },
     {
       "id": "CONSEQUENCE",
       "title": "Interpret the earlier AVI result precisely",
       "summary": "A significant conditional result can have a negative observed margin.",
       "source_lines": [
-        195,
-        202
+        197,
+        204
       ],
       "body": [
         "The historical AVI counts rank Euclidean distances from a background centroid. They are not established rankings of raw AVI values. This distinction matters in a paper about anchor-sensitive rankings.",
         "The mean statistic is the selected distance minus the larger competing distance. In the reported missense analysis the observed average was negative, but the simulated matched-null average was more negative. The significant result therefore describes enrichment relative to that null, not average superiority to the strongest alternative.",
-        "Some reported small adjusted values came from zero exceedances in a finite simulation. They are estimates at the simulation resolution floor. The frozen significant-count criterion and its remaining Monte Carlo uncertainty are both retained."
+        "Some reported small adjusted values came from zero exceedances in a finite simulation. Their raw p-values reach the simulation resolution floor; multiplicity adjustment gives larger q-values. The frozen significant-count criterion and its remaining Monte Carlo uncertainty are both retained."
       ],
       "try_it": "An observed margin is -0.01 and a simulated-null mean is -0.08. State one conclusion the difference supports and one it does not.",
-      "boundary": "Neither background-distance ranking nor null-relative enrichment supplies an independently validated pathogenic-versus-benign classifier."
+      "boundary": "Neither background-distance ranking nor null-relative enrichment supplies an independently validated pathogenic-versus-benign classifier.",
+      "supporting_source_ids": [
+        "AF3",
+        "AF5"
+      ]
     },
     {
       "id": "NULL",
@@ -97,23 +110,25 @@
       "summary": "The calculation can be exact while the model remains conditional.",
       "source_lines": [
         117,
-        128
+        196
       ],
       "body": [
         "At each site, the study compared all three non-reference substitutions. Selected-allele credit records whether the clinically selected substitution is among the top scores, with ties sharing credit.",
         "The label tests held the computed maps fixed and used specified probabilities for which allele would be selected. Exact finite-label arithmetic computes that conditional distribution without Monte Carlo sampling error. It does not make the selection process a randomized clinical experiment.",
-        "No discovery primary or sensitivity test survived Holm adjustment across the sixteen-test family. This did not establish the absence of every biological effect. Different representations and label models answer different questions."
+        "No discovery primary or sensitivity test survived Holm adjustment across the sixteen-test family. This did not establish the absence of every biological effect. Different representations and label models answer different questions.",
+        "Under the mutation-weighted discovery null, expected centered credit was exactly 51/160 = 0.31875. Exactness describes the specified finite-label arithmetic, not experimentally established selection probabilities."
       ],
       "try_it": "Explain why exact probability arithmetic cannot prove that clinically selected alleles were exchangeable.",
-      "boundary": "Null reference intervals are not biological effect confidence intervals."
+      "boundary": "Null reference intervals are not biological effect confidence intervals.",
+      "supporting_source_ids": []
     },
     {
       "id": "DISCOVERY",
       "title": "Find the mechanism before celebrating the ranking",
       "summary": "Centering resolved many native ties without replacing strict leaders.",
       "source_lines": [
-        160,
-        194
+        162,
+        196
       ],
       "body": [
         "The discovery audit found numerical endpoint saturation across its computed allele comparisons. Some distances increased and others decreased. The sign of the response depended on relative diagram location.",
@@ -122,7 +137,10 @@
         "The earlier GM12878 saturation pattern did not universally transfer: 249 of 252 IMR-90 comparisons passed and three RB1 comparisons failed. Both simple and strengthened bounds already abstained at all three sites. The distinct witness gain is 42 decisions elsewhere, not unique detection of these exceptions. Exploratory direct samples showed two turning paths and one effectively flat path."
       ],
       "try_it": "Compare alternates (1,5) and (-1,3) against reference (0,4), with the same positive shift. Why does the scalar native distance not tell you the direction?",
-      "boundary": "Local saturation is ordinary on a nonflat piece of a finite matching problem; its frequency is not a new generic theorem."
+      "boundary": "Local saturation is ordinary on a nonflat piece of a finite matching problem; its frequency is not a new generic theorem.",
+      "supporting_source_ids": [
+        "AF4"
+      ]
     },
     {
       "id": "REPLICATION",
@@ -130,7 +148,7 @@
       "summary": "More unique ranks did not produce a consistent clinical-credit gain.",
       "source_lines": [
         98,
-        173
+        175
       ],
       "body": [
         "The new spatial cohort and protocol were fixed before those maps were acquired. It contained 84 sites in seven other loci. New spatial outcomes were prospective; independence from model training was not established.",
@@ -140,7 +158,10 @@
         "IMR-90 selected credit rose descriptively from 0.335317 to 0.398810, whereas GM12878 replication credit fell. Native and centered RMS credits were 0.500000 and 0.517857 in IMR-90 and 0.444444 and 0.460317 in GM12878; all exceeded centered H1 in the corresponding track. More unique rankings did not establish clinical superiority."
       ],
       "try_it": "Give a one-sentence conclusion that includes both tie resolution and the credit decrease.",
-      "boundary": "Eighty-four overlapping windows do not represent 84 independent genomic regions."
+      "boundary": "Eighty-four overlapping windows do not represent 84 independent genomic regions.",
+      "supporting_source_ids": [
+        "AF4"
+      ]
     },
     {
       "id": "PRECISION",
@@ -148,33 +169,42 @@
       "summary": "Tolerance, delivered precision and solver error have distinct roles.",
       "source_lines": [
         129,
-        136
+        138
       ],
       "body": [
         "The delivered map values lie on a finite precision grid. This makes resolution relevant to ties, but does not isolate quantization as the cause of every tie or saturation event. Higher-precision source predictions would be needed for that comparison.",
         "A tie tolerance defines an analysis convention. A numerical allowance is a claimed budget for computation error. Neither automatically becomes a physical detection limit. If coordinate units change, both must be scaled with the scores.",
-        "The paper reports numerical witnesses using practical allowances. It does not provide a complete interval-arithmetic certificate for every solver operation. The software likewise distinguishes numerical checks from formal real-arithmetic proof."
+        "The paper reports numerical witnesses using practical allowances. It does not provide a complete interval-arithmetic certificate for every solver operation. The software likewise distinguishes numerical checks from formal real-arithmetic proof.",
+        "A targeted Julia check used Ripserer to reconstruct 72 full diagrams from nine replication sites on both tracks. All 847,288 intervals matched, including repeated intervals and every known IMR-90 exception. Ripserer is a separate implementation in the Ripser algorithm family; the comparison used identical effective float32 inputs and retained Hera for downstream matching. It was not a full-cohort or independent-model validation."
       ],
       "try_it": "Multiply all diagram coordinates and shifts by ten. What else must be multiplied by ten to preserve the same ranking rule?",
-      "boundary": "Reproducing floating-point outputs does not reveal the model’s unexposed internal precision."
+      "boundary": "Reproducing floating-point outputs does not reveal the model’s unexposed internal precision.",
+      "supporting_source_ids": [
+        "AF6"
+      ]
     },
     {
       "id": "SCOPE",
       "title": "Use reproducibility to answer the right question",
       "summary": "A rerun supports computation; independent measurements support biology.",
       "source_lines": [
-        203,
-        274
+        205,
+        276
       ],
       "body": [
         "The validation reran cached-input calculations and checked source-specific numerical claims. Replaying original random seeds can reproduce a simulation exactly without reducing its statistical uncertainty.",
         "This toolkit adds synthetic examples and reusable software. Imported diagrams are processed locally in the browser. The study-summary panel reports aggregate author analyses, not raw contact maps.",
         "The research contribution combines a specified preprocessing path, ranking bounds, useful witnesses, explicit unresolved cases and measured new-locus behavior. It is not a new generic distance, a physical loop detector or a clinical prediction tool.",
         "The full v0.2.0 study archive is publicly released with the manuscript, code and verification records. Toolkit code is MIT-licensed; model outputs retain separate provider terms and attribution. Public release does not establish clinical validity, author journal approval or human learner transfer.",
-        "Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending."
+        "Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending.",
+        "The amended Additional file 7 independently checks scalar-derived counts, bounds, ranking sets and credits. Its 495 aggregate comparisons and 17 deliberate failure controls do not recompute persistence, witness distances or model predictions. The full study archive and separate Julia validation capsule supply the larger computational records."
       ],
       "try_it": "Describe one independent measurement that would be needed to connect the audit to a real structural chromosome change.",
-      "boundary": "The practice quiz has not been validated with human learners and does not replace author review."
+      "boundary": "The practice quiz has not been validated with human learners and does not replace author review.",
+      "supporting_source_ids": [
+        "AF6",
+        "AF7"
+      ]
     }
   ],
   "quiz": [

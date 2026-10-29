@@ -2,13 +2,13 @@
 
 ## Reader, purpose and exact basis
 
-This is the complete research-and-teaching edition for Patrick Iben's *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, the frozen author-review manuscript dated 28 October 2026, together with all six current additional files. It explains the main methods, mathematical statements, empirical results, all three main tables, all four main figures, limitations, reproducibility record, declarations and the supplements. The [concise study guide](STUDY_GUIDE.md) offers a shorter introduction; both editions have PDFs.
+This is the complete research-and-teaching edition for Patrick Iben's *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, the final-proof candidate dated 28 October 2026, together with its six PDF supplements and compact scalar-verification archive (Additional file 7). It explains the main methods, mathematical statements, empirical results, all three main tables, all four main figures, limitations, reproducibility record, declarations and the supplements. The [concise study guide](STUDY_GUIDE.md) offers a shorter introduction; both editions have PDFs.
 
 The intended reader has one statistics course. No genetics or persistence background is assumed. Read the ten guided lessons first, then use R01-R10 for detailed source reading, S01-S07 for the supplements, the six worked examples to check mechanisms, and the twelve practice questions to test interpretation. The glossary and researcher workflow support later use of the executable toolkit.
 
 **Publication status:** this is an unsubmitted rework incorporating the earlier AlphaGenome audit. The earlier submissions were desk rejected for journal fit. Their archived preprint and reproduction deposit remain historical sources, not a new DOI or an active submission for this rework. The revised manuscript and study archive are publicly released; that release is not journal submission, journal acceptance or a new DOI.
 
-**Exact-source contract:** [ARTIFACTS.json](ARTIFACTS.json) records the SHA-256 of the current main source and all six additional files. [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md) maps source spans and substantive objects to teaching units. Main-source hash: `05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d`.
+**Exact-source contract:** [ARTIFACTS.json](ARTIFACTS.json) records the SHA-256 of the current main source and all six additional files. [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md) maps source spans and substantive objects to teaching units. Main-source hash: `5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0`.
 
 Completeness means an explicit teaching treatment of every substantive source component, including the supplement proofs, counterexamples and result-table interpretations. It does not mean copying each bibliography entry, reprinting all raw data, rerunning the research bundle inside the PDF, or claiming independent biological validation. Reported values are attributed to the frozen sources. Synthetic arithmetic illustrates a method and is not an additional genomic observation.
 
@@ -16,7 +16,7 @@ Completeness means an explicit teaching treatment of every substantive source co
 
 Definitions and mathematical proofs establish conditional statements. Model-output results describe delivered predictions. Statistical results depend on declared labels, nulls, sampling and multiplicity families. Exploratory checks remain exploratory. Prespecified spatial replication means its design preceded new spatial outcomes, not that the model's training set is known. Reproduction checks retained computations; it does not establish clinical truth.
 
-Each detailed reading identifies its source and evidence type, explains the reasoning and supplies a question with an answer. Read the question before the answer. The twelve multiple-choice items are practice with feedback, not the original locked human transfer assessment. No human learner pass rate or educational efficacy is claimed. AI assisted adaptation, mathematical review and software verification; author scientific responsibility and human review remain distinct.
+Each detailed reading names its source, evidence type and explained question. Try the question before its answer. The twelve multiple-choice items are practice with feedback, not the original locked human assessment. Human semantic review and learner transfer remain unperformed; final author approval is pending. AI-assisted checks do not replace those reviews.
 
 ## Guided lessons: a first route through the manuscript
 
@@ -86,7 +86,7 @@ In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leader
 
 **Boundary:** A unique maximum is not evidence that the selected allele is clinically correct.
 
-Source: current manuscript lines 77–159; [source map](SOURCE_MAP.json).
+Source: current manuscript lines 77–161; [source map](SOURCE_MAP.json).
 
 ## P05. Interpret the earlier AVI result precisely
 
@@ -96,13 +96,13 @@ The historical AVI counts rank Euclidean distances from a background centroid. T
 
 The mean statistic is the selected distance minus the larger competing distance. In the reported missense analysis the observed average was negative, but the simulated matched-null average was more negative. The significant result therefore describes enrichment relative to that null, not average superiority to the strongest alternative.
 
-Some reported small adjusted values came from zero exceedances in a finite simulation. They are estimates at the simulation resolution floor. The frozen significant-count criterion and its remaining Monte Carlo uncertainty are both retained.
+Some reported small adjusted values came from zero exceedances in a finite simulation. Their raw p-values reach the simulation resolution floor; multiplicity adjustment gives larger q-values. The frozen significant-count criterion and its remaining Monte Carlo uncertainty are both retained.
 
 **Try it:** An observed margin is -0.01 and a simulated-null mean is -0.08. State one conclusion the difference supports and one it does not.
 
 **Boundary:** Neither background-distance ranking nor null-relative enrichment supplies an independently validated pathogenic-versus-benign classifier.
 
-Source: current manuscript lines 195–202; [source map](SOURCE_MAP.json).
+Source: current manuscript lines 197–204; [source map](SOURCE_MAP.json).
 
 ## P06. Separate exact arithmetic from a scientific null
 
@@ -114,11 +114,13 @@ The label tests held the computed maps fixed and used specified probabilities fo
 
 No discovery primary or sensitivity test survived Holm adjustment across the sixteen-test family. This did not establish the absence of every biological effect. Different representations and label models answer different questions.
 
+Under the mutation-weighted discovery null, expected centered credit was exactly 51/160 = 0.31875. Exactness describes the specified finite-label arithmetic, not experimentally established selection probabilities.
+
 **Try it:** Explain why exact probability arithmetic cannot prove that clinically selected alleles were exchangeable.
 
 **Boundary:** Null reference intervals are not biological effect confidence intervals.
 
-Source: current manuscript lines 117–128; [source map](SOURCE_MAP.json).
+Source: current manuscript lines 117–196; [source map](SOURCE_MAP.json).
 
 ## P07. Find the mechanism before celebrating the ranking
 
@@ -136,7 +138,7 @@ The earlier GM12878 saturation pattern did not universally transfer: 249 of 252 
 
 **Boundary:** Local saturation is ordinary on a nonflat piece of a finite matching problem; its frequency is not a new generic theorem.
 
-Source: current manuscript lines 160–194; [source map](SOURCE_MAP.json).
+Source: current manuscript lines 162–196; [source map](SOURCE_MAP.json).
 
 ## P08. Ask what actually replicated
 
@@ -156,7 +158,7 @@ IMR-90 selected credit rose descriptively from 0.335317 to 0.398810, whereas GM1
 
 **Boundary:** Eighty-four overlapping windows do not represent 84 independent genomic regions.
 
-Source: current manuscript lines 98–173; [source map](SOURCE_MAP.json).
+Source: current manuscript lines 98–175; [source map](SOURCE_MAP.json).
 
 ## P09. Match the conclusion to numerical resolution
 
@@ -168,11 +170,13 @@ A tie tolerance defines an analysis convention. A numerical allowance is a claim
 
 The paper reports numerical witnesses using practical allowances. It does not provide a complete interval-arithmetic certificate for every solver operation. The software likewise distinguishes numerical checks from formal real-arithmetic proof.
 
+A targeted Julia check used Ripserer to reconstruct 72 full diagrams from nine replication sites on both tracks. All 847,288 intervals matched, including repeated intervals and every known IMR-90 exception. Ripserer is a separate implementation in the Ripser algorithm family; the comparison used identical effective float32 inputs and retained Hera for downstream matching. It was not a full-cohort or independent-model validation.
+
 **Try it:** Multiply all diagram coordinates and shifts by ten. What else must be multiplied by ten to preserve the same ranking rule?
 
 **Boundary:** Reproducing floating-point outputs does not reveal the model’s unexposed internal precision.
 
-Source: current manuscript lines 129–136; [source map](SOURCE_MAP.json).
+Source: current manuscript lines 129–138; [source map](SOURCE_MAP.json).
 
 ## P10. Use reproducibility to answer the right question
 
@@ -188,11 +192,13 @@ The full v0.2.0 study archive is publicly released with the manuscript, code and
 
 Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending.
 
+The amended Additional file 7 independently checks scalar-derived counts, bounds, ranking sets and credits. Its 495 aggregate comparisons and 17 deliberate failure controls do not recompute persistence, witness distances or model predictions. The full study archive and separate Julia validation capsule supply the larger computational records.
+
 **Try it:** Describe one independent measurement that would be needed to connect the audit to a real structural chromosome change.
 
 **Boundary:** The practice quiz has not been validated with human learners and does not replace author review.
 
-Source: current manuscript lines 203–274; [source map](SOURCE_MAP.json).
+Source: current manuscript lines 205–276; [source map](SOURCE_MAP.json).
 
 ## R01. Read the data object before selecting the method
 
@@ -264,7 +270,7 @@ Rank filtrations remove magnitude information under strictly increasing transfor
 
 **Source:** current manuscript/additional-file spans mapped by this unit in [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md). **Evidence:** retained empirical results and stated design.
 
-The initial coding cohort has 120 positions: DNM1 20, PCCA 15, PCCB 27 and MMUT 58. All three non-reference substitutions were scored. Most scorers used 400 background variants, with fewer for some. Dominant maximum-absolute pooling summarized profiles. Euclidean and Poincare comparisons jointly scaled each site's three profiles and centroid by their maximum norm; the Poincare transform used curvature -1 and radius fraction 0.8. Cosine comparison of scalar AVI was undefined and not interpreted.
+The initial coding cohort has 120 positions: DNM1 20, PCCA 15, PCCB 27 and MMUT 58. All three non-reference substitutions were scored. Most scorers used 400 background variants, with fewer for some. Dominant maximum-absolute pooling summarized profiles. Euclidean and Poincare comparisons jointly scaled each site's three profiles and centroid by their maximum norm; the Poincare transform used curvature -1 and radius fraction 0.8. For scalar AVI, cosine distance compares only sign when both inputs are nonzero and is undefined if either is zero. It does not measure AVI magnitude differences.
 
 The primary mean statistic subtracts the larger unselected distance from the selected distance, then averages. The declared family is 22 scorers times three geometries. The 384-position four-gene replication and 1,713-position seven-gene replication have different selection histories. The first sample came from capped recent ClinVar queries with an intronic-excluding parser; later pools used star-filtered records from a checksummed snapshot. They are selected study samples, not random variant populations.
 
@@ -273,18 +279,18 @@ Permutation analyses used 9,999 draws, plus-one p-values, BH within declared fam
 | Retained reading | Reported result | What it means |
 |---|---|---|
 | Initial primary family | 17 of 66 BH-significant comparisons | A family-level result for the original profile endpoint. |
-| Primary CONTACT_MAPS Poincare | Exact-tail bounds 0.014989-0.015035; BH q bounds 0.054961-0.055128 | Above 0.05; a later exploratory top-1 result does not replace it. |
+| Primary CONTACT_MAPS Poincare | Numerical tail bounds 0.014989-0.015035; BH q bounds 0.054961-0.055128 | Both q endpoints exceed 0.05. Floating-point lattice calculations are not rigorous arithmetic certificates; a later exploratory top-1 result does not replace them. |
 | AVI nonsense/start loss | 1,095 of 1,238 first ranks, about 88% | Distances from the background centroid, not raw AVI ranks. |
 | AVI missense | 94 of 246 first ranks, about 38% | A different consequence stratum, not a direct subtraction from a clinical benchmark. |
 | Coding uniform versus matched null | 37 versus 10 significant comparisons | The frozen quarter criterion failed; eligibility changed from 1,490 to 452 AVI positions. |
 | Missense outside chr13 | 58 of 170 first ranks, 0.341 | Retains the negative-margin versus null-relative distinction. |
-| Other intronic splicing scorers | 46, 47 and 47 first ranks among 63 positions; q 0.000252 each | Conditional retained findings with Monte Carlo precision limits. |
+| Other intronic: splice junctions, splice sites, splice-site usage | 46, 47 and 47 first ranks among 63 positions; q 0.000252 each | Conditional retained findings with Monte Carlo precision limits. |
 | Canonical splice | No significant comparison among 63 scorer-by-geometry tests at 157 positions | A distinct stratum; cannot be pooled with the other-intronic result. |
 | Exploratory consequence rule | Expected first choice 0.817 versus AVI 1,192/1,490 (0.800), including 3/6 synonymous positions | Post hoc, with random tie breaking for the rule; not independent validation. |
 
 The retained missense observed mean was about -0.0128 versus simulated null mean -0.0829; outside chr13 these were -0.0407 and -0.0785. The significant q-values were 0.00132 and 0.00165. The negative observed margins preclude interpreting these as positive average leads over the strongest rival. AVI includes other predictors and consequence-related features; related computational evidence can also enter clinical labels. Post hoc, AlphaMissense alone also showed a missense preference, but it is an AVI input and therefore not an independent model baseline.
 
-Changing the background centroid to a zero-effect origin retained sixteen significant Euclidean/Poincare comparisons in a separate 44-comparison sensitivity family. It does not imply identical p-values in all families. Historical top-1 used an argsort-selected maximum, while mean rank used midranks. Cache checks found no relevant ties in the highlighted AVI strata or the exploratory CONTACT_MAPS top-1 result, so those counts were unchanged. CONTACT_MAPS top-1 was 53/120 with exploratory q 0.0441, not the primary mean-statistic result above.
+Changing the background centroid to a zero-effect origin retained sixteen significant Euclidean/Poincare comparisons in a separate 44-comparison sensitivity family. It does not imply identical p-values in all families. Historical top-1 used an argsort-selected maximum, while mean rank used midranks. Neither rule is the spatial analysis's tie-aware fractional-credit rule. Cache checks found no relevant ties in the highlighted AVI strata or the exploratory CONTACT_MAPS top-1 result, so those counts were unchanged. CONTACT_MAPS top-1 was 53/120 with exploratory q 0.0441, not the primary mean-statistic result above.
 
 **Check:** Did switching to direct reference-alternate spatial distance repair every limitation? **Answer:** It removed the external background centroid by changing the endpoint. Consequence, pooling, ascertainment, label circularity and generalization still need separate evidence.
 
@@ -319,7 +325,7 @@ Three sensitivity nulls applied consequence matching, mutation weights, and both
 
 The first three tests are one-sided enrichment above one third; the fourth is paired and two-sided around zero. No row passes the declared correction. The centered excess above one third is 0.041667, distinct from its native-to-centered change of 0.006944.
 
-For centered sensitivity analyses, consequence matching had expected credit 0.3264, p 0.1001 and sixteen-test Holm 1. Mutation weighting gave 0.3187, p 0.06459 and Holm 0.896. Combining both gave 0.2953, p 0.006084 and Holm 0.09735. None passes the declared sixteen-test familywise threshold. Failure to reject is not proof that all biological effects vanish. The Holm correction is described in [Holm (1979)](https://www.jstor.org/stable/4615733); the main manuscript now cites it at first use.
+For centered sensitivity analyses, consequence matching had expected credit 0.3264, p 0.1001 and sixteen-test Holm 1. Mutation weighting gave exactly 51/160 = 0.31875, p 0.06459 and Holm 0.896. Combining both gave 0.2953, p 0.006084 and Holm 0.09735. None passes the declared sixteen-test familywise threshold. Failure to reject is not proof that all biological effects vanish. The Holm correction is described in [Holm (1979)](https://www.jstor.org/stable/4615733); the main manuscript now cites it at first use.
 
 Native, centered and rank representations had 75, three and one tied sites. Centering resolved 72 native ties and preserved all 45 strict leaders. Credit vectors changed at 73 sites, yet the average selected-credit gain stayed small. Conditional null reference intervals are not confidence intervals for biological effects. Resampling only four purposively selected genes cannot establish population-wide coverage.
 
@@ -406,21 +412,37 @@ The bfloat16-representable values make numerical resolution relevant. They do no
 
 The frozen main manuscript reports a later fresh-environment regeneration of all 204 spatial sites from cached maps. All 6,324 checked per-site comparisons met their tolerances; eighteen centered-distance vectors differed only at floating rounding scale. Six retained historical outputs regenerated byte-for-byte with original seeds. All sixteen conditional tests were separately recertified. These are reported research-bundle checks, not a new execution of that entire bundle by this teaching PDF. Reproducing a fixed simulation seed does not measure Monte Carlo precision or model accuracy.
 
+The full 84-site IMR-90 replay reused the original persistent-homology implementation. A separate computational audit recomputed all 252 Hausdorff witnesses and reconstructed rankings and rational credits. These checks test different components and do not imply external human peer review.
+
+### Targeted Julia persistence check
+
+Additional file 6 adds a separate implementation check with Ripserer 0.17.0 in Julia 1.13.0. The sample combines the previously frozen smallest-hash site in each of seven genes with all known IMR-90 saturation exceptions: nine sites, both tracks, a reference and three alternates, giving 72 diagrams. Selection preceded the Julia results but deliberately included known exceptions. It is targeted computational validation, not a fresh biological sample.
+
+All 512 bins and 130,816 unordered edges were retained for every map. Julia received raw maps, reconstructed the weighted flag filtration over the two-element field, reproduced the effective float32 inputs, and restored the original float64 offset. All 847,288 intervals matched exactly as multisets, including repeated intervals. Twenty-two small-graph controls agreed with explicit boundary-matrix reduction; four deliberately damaged comparisons were rejected.
+
+Downstream calculations reproduced all 108 native/centered distances and 54 Hausdorff witnesses, with 2,565 checks passing. All three known IMR-90 exceptions remained. A separate all-pairs calculation checked the witnesses, but bottleneck matching still used the shared Hera solver. Ripserer belongs to the same algorithm family as Ripser. Exact agreement on these inputs is stronger implementation evidence; it does not validate unrounded real maps, every site, clinical accuracy or an independent model. No Lean proof or new exact-rational label analysis was produced.
+
+The [Julia validation capsule](https://github.com/patrickiben/contact-map-anchor-audit/releases/download/v0.2.3/JULIA_PERSISTENCE_VALIDATION_2026-10-28.zip) preserves the selected inputs, pinned environments, code, outputs and execution amendments. Its original report validates the earlier v0.2.3 manuscript state; the current candidate incorporates that result. Portable packaging controls are not another full genomic replay.
+
+**Check:** What does Julia agreement add? **Answer:** It reduces concern that the selected full diagrams depend on one PH implementation. Shared algorithmic ideas, matching software and model-generated inputs leave other sources of error and biological questions open.
+
+### Reproduction records and review status
+
 The research record includes per-call maps, diagrams, track metadata, coordinates, protocols, failure records and source hashes. The versioned public release distributes reusable code and teaching materials together with a separate full study archive carrying provider output notices. The old reproduction deposit and old preprint are historical sources, not deposits or DOIs for the revised manuscript. Public code release does not imply journal submission or publication of the rework.
 
 The confirmed declarations report public annotations and computational outputs, no specific grant or institutional funding, and no competing financial or nonfinancial interests. OpenAI Codex assisted development, derivations, code, validation, prose and source checks; Qwen3.8 assisted earlier drafting and Qwen3.8-Max generated author-supplied QC reports checked against retained artifacts. These checks are not external peer review. AlphaGenome produced molecular predictions. The author retains responsibility; final author approval and human learner effectiveness remain uncertified.
 
-The current main bibliography groups model/output context, topology and invariant-distance precedents, clinical annotations and computational-evidence guidance, inference methods, the earlier archive, and toolkit sources. The additional files use local bibliography numbering. Citing these sources does not independently reproduce their findings.
+The current main bibliography has 31 references, including model/output context, topology and invariant-distance precedents, clinical annotations and computational-evidence guidance, inference methods, Ripserer, the earlier archive, and toolkit sources. The additional files use local bibliography numbering. Citing these sources does not independently reproduce their findings.
 
 **Check:** What would turn this into evidence about physical chromatin architecture? **Answer:** A validation design with relevant experimental structural measurements or perturbations, appropriate location-sensitive comparisons and justified sampling. Agreement among model-output computations is not that experiment.
 
-The full study archive is released with [v0.2.0](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0), alongside the public manuscript, code, protocols and verification records. Toolkit code is MIT-licensed; provider model outputs retain their separate terms and attribution notices. Public availability supports reproduction, not clinical validity, author journal approval or human learner effectiveness. Additional file 6 separates stored-input replay and 252 independent witness checks from model validity and notes that replay shares the PH kernel.
+The full study archive is released with [v0.2.0](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0), alongside the public manuscript, code, protocols and verification records. Toolkit code is MIT-licensed; provider model outputs retain their separate terms and attribution notices. Public availability supports reproduction, not clinical validity, author journal approval or human learner effectiveness. Additional file 6 separates the full original-implementation replay from the targeted Julia check. Additional file 7 is a compact scalar verifier: it reconstructs 495 aggregate comparisons over the same 84 sites and 252 pairs, without PH, witness-distance, matrix-baseline or model-inference recomputation. Its final-proof amendment adds licensing and modification records, labels historical access statements, and strengthens vector and exploratory-path checks. The positive scalar report is unchanged; 17 deliberate failure controls are rejected. A newly created lock records a replay's timing, not the original prospective experiment.
 
 ## S01. Vertex thinning: when extinction is a finite-set statement
 
 **Source:** current manuscript/additional-file spans mapped by this unit in [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md). **Evidence:** finite-set proof, counterexamples and a conditional sampling identity.
 
-Retain each of N fixed bins independently with probability p. A flag complex with at most three vertices has no degree-one homology: a three-cycle is filled by its triangle. Any statistic that is zero for an empty degree-one diagram can be nonzero only if at least four bins survive. The statistic or filtration transformation may depend on p or the retained count, provided it preserves that zero. For every positive epsilon:
+Retain each of N fixed bins independently with probability p, then restrict the edge array and use the same weighted flag filtration. A flag complex with at most three vertices has no degree-one homology: a three-cycle is filled by its triangle. Any statistic that is zero for an empty degree-one diagram can be nonzero only if at least four bins survive. The statistic or filtration transformation may depend on p or the retained count, provided it preserves that zero. For every positive epsilon:
 
 `P(|T_p| > epsilon) <= P(Binomial(N,p) >= 4) <= choose(N,4) * p^4`
 
@@ -458,7 +480,7 @@ The word proved matters. A complete budget must cover input conversion, recovere
 
 For one real-real point pair, average the birth and death differences to obtain c, and take half the absolute difference of those two differences to obtain q. Its L-infinity cost after translation t is exactly `|t-c| + q`. A diagonal cost is constant at half the lifetime. For one partial matching, the largest cost is the maximum of a line of slope -1, a line of slope +1 and a constant. Minimizing over finitely many matchings yields a continuous piecewise-affine distance with local slopes -1, zero or +1. The lower envelope need not be convex: identical interval (0,2) gives `min(|t|,1)`. These slopes are measured against the shift t. Against the normalized path fraction lambda, the possible slopes are -T, zero and +T, where T is the absolute relative shift.
 
-For a native distance b greater than zero, form the augmented finite bipartite graph. Its left side contains real D points and diagonal copies of E; its right side contains real E points and diagonal copies of D. Include all real-real edges, each real point's own diagonal edge, and all dummy-to-dummy edges at cost zero. A perfect matching then represents a persistence matching. Classify edges by native cost: below b, equal to b, or above b. The critical real-real edges have directional slope -1 when the chosen direction points toward their corner c, and +1 otherwise; diagonal edges have slope zero.
+If either finite diagram is empty, the distance is constant under translation, including zero when both are empty. Otherwise, for a native distance b greater than zero, form the augmented finite bipartite graph. Its left side contains real D points and diagonal copies of E; its right side contains real E points and diagonal copies of D. Include all real-real edges, each real point's own diagonal edge, and all dummy-to-dummy edges at cost zero. A perfect matching then represents a persistence matching. Classify edges by native cost: below b, equal to b, or above b. The critical real-real edges have directional slope -1 when the chosen direction points toward their corner c, and +1 otherwise; diagonal edges have slope zero.
 
 Let gamma be the smallest nonzero difference between an edge cost and b. A sufficient radius R is the smaller of gamma/2 and the positive corner distances of decreasing critical real-real edges. An absent corner minimum is infinite; dummy zero-cost edges ensure a gap exists when b is positive. Before R, noncritical edges cannot cross the candidate levels, and the critical slopes stay fixed.
 
@@ -472,7 +494,7 @@ The radius is conservative and can be much shorter than the actual anchor shift.
 
 **Source:** current manuscript/additional-file spans mapped by this unit in [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md). **Evidence:** bounds and counterexample.
 
-For each point in either diagram, find the cheaper of its closest opposite real point and its diagonal. Take the largest of these costs over both directions. Distance to an empty real set is infinity, so an empty opposite diagram correctly leaves the diagonal option. Every complete matching must pay at least this bound H.
+For each point in either diagram, find the cheaper of its closest opposite real point and its diagonal. Take the largest of these costs over both directions. Distance to an empty real set is infinity, so an empty opposite diagram correctly leaves the diagonal option. A maximum over an empty point set is zero; two empty diagrams therefore have witness zero. Every complete matching must pay at least this bound H.
 
 For increasing saturation, `H(delta) <= C <= A+T`. If the endpoints of this inequality meet, no extra shifted matching is needed to establish that endpoint. With an upper enclosure A_up and lower witness H_low, the increasing deficit is at most `A_up + T - H_low`.
 
@@ -514,7 +536,7 @@ The recorded Fraction-based verifier enumerated 250 small rational diagram pairs
 
 **Source:** current manuscript/additional-file spans mapped by this unit in [COMPLETE_COVERAGE.md](COMPLETE_COVERAGE.md). **Evidence:** retained simulation estimates and post-result precision checks.
 
-The five highlighted profile cells each had zero exceedances in 9,999 null draws. Their plus-one raw p-value is `(0+1)/(9999+1) = 0.0001`. The recorded plug-in MCSE is 0.0001, a diagnostic estimate rather than a known true standard error at the boundary. The recorded Wilson interval for the exceedance probability, mapped through the plus-one formula, was [0.000100,0.000484]. This is conditional simulation precision, not uncertainty about biological effects.
+The five highlighted profile cells each had zero exceedances in 9,999 null draws. Their plus-one raw p-value is `(0+1)/(9999+1) = 0.0001`. The recorded plug-in MCSE is 0.0001, a diagnostic estimate rather than a known true standard error at the boundary. The recorded pointwise 95% Wilson interval for the exceedance probability, mapped through the plus-one formula, was [0.000100,0.000484]. This is conditional simulation precision under the specified label-null model, not uncertainty about biological effects. Its pointwise coverage differs from the simultaneous coverage below.
 
 | Profile comparison | Sites | Exceedances / draws | Raw p | BH q |
 |---|---:|---:|---:|---:|
@@ -844,6 +866,8 @@ Synthetic presets verify and explain mathematical behavior. The study panel repo
 A reusable computation helps make the method inspectable. It does not establish independence from model training, biological exchangeability, calibrated clinical performance or experimental chromosome architecture. Those require different evidence.
 
 The paired IMR-90 study illustrates why abstention and added coverage need separate reporting: both methods abstained at all three saturation-exception sites, while strengthened bounds added 42 decisions elsewhere. The full v0.2.0 study archive supplies the map inputs separately from small scalar-verification records, with provider output notices retained.
+
+The targeted Julia addendum checks 72 full diagrams from nine replication sites on both tracks using Ripserer. Exact agreement concerns identical effective float32 inputs; downstream Hera matching remains shared. The full-study replay, targeted separate-implementation check and compact scalar verifier answer different reproducibility questions. None supplies Lean formalization, biological validation or human author approval.
 
 ## Further reading and source roles
 

@@ -4,7 +4,7 @@ A short introduction to *Auditing preprocessing-sensitive allele rankings in pre
 
 This guide is for a numerate reader with one statistics course and no assumed expertise in persistent homology. It is the shorter of two editions. The [complete companion](COMPANION.md) explains the main manuscript and Additional files 1–6, including the proofs, all result tables, all four figure-reading tasks, worked examples and practice questions. Both editions have matching PDFs.
 
-**Exact basis:** the frozen author-review manuscript and six additional files dated 28 October 2026. This rework is not yet submitted. It incorporates the earlier AlphaGenome audit, whose journal submissions were desk rejected for fit. The earlier preprint remains a separate, historical version; its DOI is not a DOI for this rework. Source hashes are in [ARTIFACTS.json](ARTIFACTS.json).
+**Exact basis:** the final-proof manuscript, six PDF supplements and scalar-verification archive dated 28 October 2026. This rework is not yet submitted. It incorporates the earlier AlphaGenome audit, whose journal submissions were desk rejected for fit. The earlier preprint remains a separate, historical version; its DOI is not a DOI for this rework. Source hashes are in [ARTIFACTS.json](ARTIFACTS.json).
 
 ## The problem in one picture
 
@@ -93,7 +93,7 @@ Native-distance margins can sometimes guarantee that a strict leader remains abo
 
 The remaining sites stay unresolved. That is useful information about which calculations or error bounds are still needed. The witness cannot replace complete matching in general because it can miss repeated intervals: two copies of (0,4) versus one have witness zero but bottleneck distance two. No measured runtime speedup was claimed in the research analysis.
 
-## The six additional files and their role
+## The supporting files and their role
 
 - **S1, vertex thinning:** deleting bins can extinguish degree-one features for a fixed finite bin set, but this is distinct from reducing sequencing depth; deletion can also reveal a cycle at intermediate thinning.
 - **S2, anchor theory:** proves path envelopes, local slope and ranking statements, supplies counterexamples, and explains why the individual mathematical ingredients have established precedents.
@@ -101,7 +101,12 @@ The remaining sites stay unresolved. That is useful information about which calc
 
 - **Additional file 4, paired track test:** records the frozen coverage comparison, all genes, tolerances, stronger baselines and exploratory exception paths.
 - **Additional file 5, retained audit:** preserves the earlier within-site methods, adverse consequence controls and clinical-ascertainment limitations.
-- **Additional file 6, reproducibility:** separates stored-input replay and scalar verification from model validity and public access to full inputs.
+- **Additional file 6, reproducibility:** distinguishes full original-implementation replay from the targeted Julia check.
+- **Additional file 7, compact verification:** reconstructs scalar-derived bounds, rankings and credits; it does not recompute PH or model outputs.
+
+## What the Julia check adds
+
+Ripserer in Julia separately reconstructed 72 full diagrams from nine replication sites on both tracks, including all known IMR-90 exceptions. All 847,288 intervals matched exactly, with duplicates preserved. Twenty-two small controls agreed with explicit boundary reduction. This tests another implementation in the Ripser algorithm family on identical effective float32 inputs; downstream matching still used Hera. It strengthens computational evidence for that sample, not every site, an independent model or clinical validity. No Lean proof was produced.
 
 ## Five self-checks
 
@@ -115,8 +120,6 @@ The remaining sites stay unresolved. That is useful information about which calc
 
 Open the [Anchor Audit Lab](https://patrickiben.github.io/contact-map-anchor-audit/) for five synthetic controls, a centering slider, bounds, local diagram import and JSON audit export. The Python toolkit accepts larger finite diagrams. Neither route constructs diagrams from a contact map or chooses the biological anchor for you.
 
-The [complete companion](COMPANION.pdf) supplies the detailed reading route, six worked examples, twelve practice questions and a research workflow. These are teaching adaptations, not biological replications or validated learner assessments. Human learner testing remains pending. Codex assisted development and verification, Qwen3.8 earlier drafting, and Qwen3.8-Max author-supplied QC. Checks do not replace final author approval.
+The [complete companion](COMPANION.pdf) supplies the detailed reading route, six worked examples, twelve practice questions and a research workflow. These are teaching adaptations, not biological replications or validated learner assessments. Whole-package author approval, human semantic review and learner testing remain pending. Codex assisted development and verification, Qwen3.8 earlier drafting, and Qwen3.8-Max author-supplied QC. Checks do not replace final author approval.
 
-The full study archive is released with [v0.2.0](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0), alongside the public manuscript, code, protocols and verification records. Toolkit code is MIT-licensed; provider model outputs retain their separate terms and attribution notices. Public availability supports reproduction, not clinical validity, author journal approval or human learner effectiveness.
-
-AlphaGenome outputs and substantial derivatives, including the genomic numerical results discussed here, remain subject to the AlphaGenome Output Terms, separate from the MIT software license. The study release includes the binding terms, required attribution, modification record, and three-part archive checksums/reassembly instructions. Saved raw maps retain their original bytes; mean centering, persistence analysis, ranking and visualization are documented processing steps.
+The [v0.2.0 release](https://github.com/patrickiben/contact-map-anchor-audit/releases/tag/v0.2.0) supplies the full study archive; the Julia check has a separate capsule. Original software is MIT-licensed. AlphaGenome outputs and substantial derivatives retain provider terms and notices. Saved raw maps retain their bytes; centering, persistence analysis, ranking and visualization are documented modifications. Public access does not establish clinical validity, author approval or learner effectiveness.

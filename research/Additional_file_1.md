@@ -4,7 +4,7 @@ Retained mathematical contribution from the combined manuscript. Vertex thinning
 
 
 
-**Proposition 2: finite-set degree-one extinction.** Fix $N$ bins and retain each independently with probability $p$. Restrict the edge array to the retained bins. Let $T_p$ be a well-defined statistic that equals zero whenever the resulting degree-one diagram is empty. Transformations of the statistic or filtration may depend on $p$ or the retained count, provided they preserve this zero. Then, for every $\varepsilon > 0$,
+**Proposition 2: finite-set degree-one extinction.** Fix $N$ bins and retain each independently with probability $p$. Restrict the edge array to the retained bins and use the weighted flag filtration defined in the main text. Let $T_p$ be a well-defined statistic that equals zero whenever the resulting degree-one diagram is empty. Transformations of the statistic or filtration may depend on $p$ or the retained count, provided they preserve this zero. Then, for every $\varepsilon > 0$,
 
 $$\Pr(|T_p|>\varepsilon)\leq\Pr\{\operatorname{Bin}(N,p)\geq4\}\leq \binom{N}{4}p^4.$$
 

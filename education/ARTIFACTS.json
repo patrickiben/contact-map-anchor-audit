@@ -2,49 +2,49 @@
   "schema": "research-teaching-editions-v1",
   "date": "2026-10-28",
   "title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-  "source_scope": "Current proposed BMC manuscript and six additional files; full educational adaptation, not an addendum. Source files are hash-bound; the v0.2.0 release supplies the full study archive under separate provider output terms.",
+  "source_scope": "Final-proof BMC candidate, six PDF supplementary sources and the compact scalar-verification archive; source-bound educational adaptation. The full study data archive remains v0.2.0; the Julia capsule is a separate v0.2.3 addendum.",
   "sources": [
     {
       "id": "MAIN",
       "file": "PROPOSED_BMC_BIOINFORMATICS.md",
-      "sha256": "05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d",
-      "lines": 307
+      "sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
+      "lines": 310
     },
     {
       "id": "AF1",
       "file": "Additional_file_1.md",
-      "sha256": "fd5fca0f612cd028e8bf2152d7fc51699ab6dd4159845a39bef5d945f42c0106",
+      "sha256": "47076ca6d4f99bbdeba0ba04310733ca85f6cef1fba58c8642272338018ef32a",
       "lines": 25
     },
     {
       "id": "AF2",
       "file": "Additional_file_2.md",
-      "sha256": "f678d6cec4a4ff515f95664d53482bcbabff61bea7b6885174cb8390887bf404",
+      "sha256": "7f4e3ef432c198d9d96cdb7dd3291fa00b0168281c1ecc3367642a2603c6da83",
       "lines": 161
     },
     {
       "id": "AF3",
       "file": "Additional_file_3.md",
-      "sha256": "7a97fe7c5ba6d0ca6bf30219f877bf8ac6786909bb5691c638e5641842b55057",
+      "sha256": "f150e9735d54a9fa8d950fd264468d74d93cbe707e0900b7c0365bc6c0d76f00",
       "lines": 32
     },
     {
       "id": "AF4",
       "file": "Additional_file_4.md",
-      "sha256": "3f606898cee06afd9c14dce7a4c48e9e0e0d808b03e97ac68c3049bba443282c",
+      "sha256": "803260204eb77e11fd41b3b9781e19718657c2dec50aa869c14273ce47f8e3c9",
       "lines": 78
     },
     {
       "id": "AF5",
       "file": "Additional_file_5.md",
-      "sha256": "3f2bcc74a40f063a9cb9ebb4b1972bce59b58db50a26f4de62a22c2e8bd5ddc1",
+      "sha256": "7952b0db7959c1bc2c8f9ea96449d5223a7ede317698328659cee0b5f6541fc9",
       "lines": 42
     },
     {
       "id": "AF6",
       "file": "Additional_file_6.md",
-      "sha256": "41b81b21c6185613610da04b475ad84558f511888f530b596d62dfe8b2830a30",
-      "lines": 24
+      "sha256": "3badb2b513cd578773a6e97399a833c37c2db3ce3aac40048500f6554ea7e80f",
+      "lines": 45
     }
   ],
   "coverage": [
@@ -73,7 +73,7 @@
         "P08"
       ],
       "topic": "Abstract",
-      "excerpt_sha256": "be3f62ad0b7fb8a72a8dc60d653bccd5681637162b2639fdc703cc73e339e7ff"
+      "excerpt_sha256": "0d98dc160d89731396006f03be7dbf004eeaa182d6a5417a5bea6dd2cc554b10"
     },
     {
       "id": "MAIN-03",
@@ -87,7 +87,7 @@
         "R05"
       ],
       "topic": "Background",
-      "excerpt_sha256": "f641a09cc4185a04ebfb4a5d3763f746368108e997ecda80c86d6cbd3a71b4da"
+      "excerpt_sha256": "cd697b5d8012255cb25542c6f90b68f247d2824e3f7d8d0582a815ccd81a23d5"
     },
     {
       "id": "MAIN-04",
@@ -162,7 +162,7 @@
         "S05"
       ],
       "topic": "Native-only prediction of centered leaders",
-      "excerpt_sha256": "79c1011256d9b281f9a75d22f1e6f51d4cf593aa823188f537b9673a03be69a7"
+      "excerpt_sha256": "64fcdb27c262d3171cacf142840c27b645d211ee1359420083cae19c609d0dd6"
     },
     {
       "id": "MAIN-09",
@@ -192,14 +192,14 @@
         "S07"
       ],
       "topic": "Clinical-label summaries and baseline comparisons",
-      "excerpt_sha256": "07deb243f748ab81f03e68a4764f3e78b375e57e9ca2453547315a0a4ae18545"
+      "excerpt_sha256": "68dc5ad5e0f704641ff1d5da988ea4393534cff59c2ef15688810c916186615f"
     },
     {
       "id": "MAIN-11",
       "source": "MAIN",
       "lines": [
         129,
-        136
+        138
       ],
       "units": [
         "P09",
@@ -207,14 +207,14 @@
         "R10"
       ],
       "topic": "Computation, verification and AI assistance",
-      "excerpt_sha256": "af2830a3cdcae73f0cfcc1f0c092e9e6a4fefc24db3909d069fdb67df0d3cd15"
+      "excerpt_sha256": "0b92db1270ef96e1317f9f8ae069d499dd0c24d0871d495c737de803a3c0f74e"
     },
     {
       "id": "MAIN-12",
       "source": "MAIN",
       "lines": [
-        137,
-        138
+        139,
+        140
       ],
       "units": [
         "INTRO"
@@ -226,8 +226,8 @@
       "id": "MAIN-13",
       "source": "MAIN",
       "lines": [
-        139,
-        159
+        141,
+        161
       ],
       "units": [
         "P04",
@@ -241,8 +241,8 @@
       "id": "MAIN-14",
       "source": "MAIN",
       "lines": [
-        160,
-        173
+        162,
+        175
       ],
       "units": [
         "P07",
@@ -256,8 +256,8 @@
       "id": "MAIN-15",
       "source": "MAIN",
       "lines": [
-        174,
-        194
+        176,
+        196
       ],
       "units": [
         "P06",
@@ -265,28 +265,28 @@
         "R09"
       ],
       "topic": "Selected-allele credit and stronger scalar baselines",
-      "excerpt_sha256": "328147f72afa69247460195f82d53ae37ba7e5d6d1df7d25be478c60df782e1f"
+      "excerpt_sha256": "532fc293f132a00cf5e727ccb3f7a95732cf00c04e12b974f0ddd8958e2e7008"
     },
     {
       "id": "MAIN-16",
       "source": "MAIN",
       "lines": [
-        195,
-        202
+        197,
+        204
       ],
       "units": [
         "P05",
         "R06"
       ],
       "topic": "Consequence controls from the retained within-site audit",
-      "excerpt_sha256": "48042c90305d2f0b27b26906fe3f499c4295f9b17884aece8ed659bf16748701"
+      "excerpt_sha256": "b8078ef07e7e476f057889aa22787a052ca505f09ab4041772efa929c4262ed4"
     },
     {
       "id": "MAIN-17",
       "source": "MAIN",
       "lines": [
-        203,
-        218
+        205,
+        220
       ],
       "units": [
         "P10",
@@ -299,8 +299,8 @@
       "id": "MAIN-18",
       "source": "MAIN",
       "lines": [
-        219,
-        222
+        221,
+        224
       ],
       "units": [
         "P10",
@@ -313,8 +313,8 @@
       "id": "MAIN-19",
       "source": "MAIN",
       "lines": [
-        223,
-        226
+        225,
+        228
       ],
       "units": [
         "INTRO"
@@ -326,8 +326,8 @@
       "id": "MAIN-20",
       "source": "MAIN",
       "lines": [
-        227,
-        228
+        229,
+        230
       ],
       "units": [
         "R10"
@@ -339,8 +339,8 @@
       "id": "MAIN-21",
       "source": "MAIN",
       "lines": [
-        229,
-        232
+        231,
+        234
       ],
       "units": [
         "R10"
@@ -352,8 +352,8 @@
       "id": "MAIN-22",
       "source": "MAIN",
       "lines": [
-        233,
-        236
+        235,
+        238
       ],
       "units": [
         "R10"
@@ -365,22 +365,22 @@
       "id": "MAIN-23",
       "source": "MAIN",
       "lines": [
-        237,
-        242
+        239,
+        244
       ],
       "units": [
         "P10",
         "R10"
       ],
       "topic": "Availability of data and materials",
-      "excerpt_sha256": "dac51aa010ae7b8b56f134065fc9b4eb5145a613949b891cf132a4180bf2bd5f"
+      "excerpt_sha256": "2613069a97cc179725bffe5a7e993d89dc6344c097178f7a9b38d8d94377cec5"
     },
     {
       "id": "MAIN-24",
       "source": "MAIN",
       "lines": [
-        243,
-        246
+        245,
+        248
       ],
       "units": [
         "R10"
@@ -392,8 +392,8 @@
       "id": "MAIN-25",
       "source": "MAIN",
       "lines": [
-        247,
-        250
+        249,
+        252
       ],
       "units": [
         "R10"
@@ -405,8 +405,8 @@
       "id": "MAIN-26",
       "source": "MAIN",
       "lines": [
-        251,
-        254
+        253,
+        256
       ],
       "units": [
         "R10"
@@ -418,8 +418,8 @@
       "id": "MAIN-27",
       "source": "MAIN",
       "lines": [
-        255,
-        258
+        257,
+        260
       ],
       "units": [
         "R10"
@@ -431,8 +431,8 @@
       "id": "MAIN-28",
       "source": "MAIN",
       "lines": [
-        259,
-        274
+        261,
+        276
       ],
       "units": [
         "INTRO"
@@ -444,15 +444,15 @@
       "id": "MAIN-29",
       "source": "MAIN",
       "lines": [
-        275,
-        307
+        277,
+        310
       ],
       "units": [
         "R05",
         "R10"
       ],
       "topic": "References",
-      "excerpt_sha256": "53e3acd62e50947ad47a72f838fc293b878dfe8616c97afda7e89904ef951174"
+      "excerpt_sha256": "74e88877c6432b120e07fa40f66a6272c013d74e1acfc7da235d4d2666306f09"
     },
     {
       "id": "AF1-01",
@@ -465,7 +465,7 @@
         "S01"
       ],
       "topic": "Additional file 1: Vertex thinning",
-      "excerpt_sha256": "61ca52c3e9e54f1387064020e4ba179164bdfa73b1c2004ab06252c0501c0740"
+      "excerpt_sha256": "3d8642319c949b1577c65fc220b5a116a63b3f07165ce49a01821c6122443a05"
     },
     {
       "id": "AF2-01",
@@ -530,7 +530,7 @@
         "S03"
       ],
       "topic": "A native-diagram-only local certificate",
-      "excerpt_sha256": "63f835d6124afb42ea88eae1466c3a48e04b811428b29435c38c370d513f973f"
+      "excerpt_sha256": "c4f1fec22362dafb5bf101fe2bac15c401285d17521d0a6b6546d624df62c2d1"
     },
     {
       "id": "AF2-06",
@@ -543,7 +543,7 @@
         "S04"
       ],
       "topic": "4. Witnesses that can avoid another complete matching computation",
-      "excerpt_sha256": "10d995906a87a3d72eb5a6b836db61a8c165028c2279c1e5a5dccb528fb76169"
+      "excerpt_sha256": "686e5f61096483f8065b5f7e769786c04ac1eaef1363a89663c0d68cfdebc59f"
     },
     {
       "id": "AF2-07",
@@ -556,7 +556,7 @@
         "S05"
       ],
       "topic": "5. Ranking, tolerance and partial orders",
-      "excerpt_sha256": "6a2fad29596c2889683e6ee1cbb8d5ecc116652986d068e469d2c3baf66d3866"
+      "excerpt_sha256": "03a286e8d86093c946c04b1598bdf00912033d951f5a0509b7030e155b6dcb4f"
     },
     {
       "id": "AF2-08",
@@ -569,7 +569,7 @@
         "S06"
       ],
       "topic": "6. Rank-filtration perturbations",
-      "excerpt_sha256": "cd50a857fb31b0ba2b6c001fb056f470b8841d470ff40d82f78d484c7daa3787"
+      "excerpt_sha256": "e5a62876c840ecf65b78409bcd488d7b8fe330e1f084588b6670fa7481b02b45"
     },
     {
       "id": "AF2-09",
@@ -609,7 +609,7 @@
         "R06"
       ],
       "topic": "Additional file 3: Monte Carlo scope",
-      "excerpt_sha256": "654a91632d3c3f0a068c04b371aee4b486841f75267197e59af2e8146bd19986"
+      "excerpt_sha256": "2c210a4e1af28b00f7d9b557307dbbe732a82d1439f2ba357ee8e67919667448"
     },
     {
       "id": "AF4-01",
@@ -623,7 +623,7 @@
         "P08"
       ],
       "topic": "Additional file 4: Track portability",
-      "excerpt_sha256": "afb24c54ee8750c11b30ed7815ec9685be7eae9ae9b9df24345d089d6b3a74f1"
+      "excerpt_sha256": "d4db1f0f9b00b1eaa48f3ba5dbd68f44772f9252209238ed6ed2c311e38204fc"
     },
     {
       "id": "AF4-02",
@@ -723,7 +723,7 @@
         "S07"
       ],
       "topic": "1 Design and empirical scope",
-      "excerpt_sha256": "15809fadb52ebeea2c8855144783ea3af11ea1114f752648f1e13f978505b6ce"
+      "excerpt_sha256": "23fef7c0836aab9a7640b9a41e5d370b812f2e5479ac12d078ac017fe63ab244"
     },
     {
       "id": "AF5-03",
@@ -738,7 +738,7 @@
         "S07"
       ],
       "topic": "2 Consequence-associated enrichment and surviving signals",
-      "excerpt_sha256": "028e79c664bb020cef6bbf39cdf90f01eb4a0a368079cb35ad345836b7649831"
+      "excerpt_sha256": "9e7511344820666974902cada824b4bef97f225d0535b9376bcd7bf242128718"
     },
     {
       "id": "AF5-04",
@@ -753,7 +753,7 @@
         "S07"
       ],
       "topic": "3 Anchors, ranks and the scope of their repair",
-      "excerpt_sha256": "d8ff95c78a70bd70945883d178372687101adb70510f2f00cfe1ba409d1c36a7"
+      "excerpt_sha256": "bac5559ab4e277e6c4757a566d08bdbf25cab6ebd752b43a782fde2d6af6ef72"
     },
     {
       "id": "AF5-05",
@@ -782,82 +782,96 @@
         "P10"
       ],
       "topic": "Additional file 6: Reproducibility details",
-      "excerpt_sha256": "f013e3e45a60cbd09ed7f5841ad16582b174db42271f881f35cf6d6f10a97b21"
+      "excerpt_sha256": "8f50baeb8ff29523d84dda6aa0e3e29b014ecedb53c12958368deba0237035d4"
     },
     {
       "id": "AF6-02",
       "source": "AF6",
       "lines": [
         16,
-        21
+        35
+      ],
+      "units": [
+        "R10",
+        "P10"
+      ],
+      "topic": "Targeted Julia persistence check",
+      "excerpt_sha256": "940b7bd312b3aeae3d59d4232869c65ac9530aac8b25aff84f70bed9836cb04c"
+    },
+    {
+      "id": "AF6-03",
+      "source": "AF6",
+      "lines": [
+        36,
+        40
+      ],
+      "units": [
+        "R10",
+        "P10"
+      ],
+      "topic": "Cited resources",
+      "excerpt_sha256": "eb9addbd366cd75330358b7274a52469cde75918030aadc960ba2bc74c52fd85"
+    },
+    {
+      "id": "AF6-04",
+      "source": "AF6",
+      "lines": [
+        41,
+        45
       ],
       "units": [
         "R10",
         "P10"
       ],
       "topic": "Fixed illustrative site",
-      "excerpt_sha256": "ff24255f72da3a0290ed358da6cea8671231b6a31ed2a70adb524e0add355d7e"
-    },
-    {
-      "id": "AF6-03",
-      "source": "AF6",
-      "lines": [
-        22,
-        24
-      ],
-      "units": [
-        "R10",
-        "P10"
-      ],
-      "topic": "Cited archive",
-      "excerpt_sha256": "8d66bbd1c1321530c05b3709d9e7cf1cc38b8437d883bf597f1e838e0072f19d"
+      "excerpt_sha256": "f7f4dbb491a16acddb481f7605b215c529abe71160e797ce71d409adb7e44499"
     }
   ],
   "assets": [
     {
       "path": "education/STUDY_GUIDE.md",
-      "sha256": "5627da79a9e43ccdc39ef2a9de5629c99c6c465a15ea2ceba6d1947e48301d8c",
-      "bytes": 13871
+      "sha256": "fc5476da73df132f823898fa5bc628b95dad34f1dfeb6893545a57a2c580828f",
+      "bytes": 14242
     },
     {
       "path": "education/STUDY_GUIDE.pdf",
-      "sha256": "f80cfbe3cac8452af5230d8e821da96196a92da45b9a9a71eef332dceb8d5c91",
-      "bytes": 193110
+      "sha256": "2bac8ffb06f4f2246a535ccd043be3c50aaee54e8c2d9f3ec76f5e9c6322417b",
+      "bytes": 193533
     },
     {
       "path": "education/COMPANION.md",
-      "sha256": "d833369db3fd1f1a3efb15d46d113b717e9575ac5dcf754caf8d35d5f66646fb",
-      "bytes": 86870
+      "sha256": "2c7f62aebc4a46fe6c6f248c4bbf30865ffbed6e2e6880da3b43befb70bfedec",
+      "bytes": 92093
     },
     {
       "path": "education/COMPANION.pdf",
-      "sha256": "3e30745e3c65d1c3c657bf7076cee52079fd958e957ef32bcffc3b19c729d2a0",
-      "bytes": 284084
+      "sha256": "be2212d2e030028ad873b29c88a82a521e61503d88dffe0915227cb0fc1e3989",
+      "bytes": 289832
     },
     {
       "path": "education/COMPLETE_COVERAGE.md",
-      "sha256": "77b654092b2b20d3540b0cf0aac10a6660a920a5e0e485c147b78dbcd4546617",
-      "bytes": 4649
+      "sha256": "c5efc7689b62010cc55fdba0fa9b188d9557927a51338d03e7c0b88776e4d8e5",
+      "bytes": 5153
     },
     {
       "path": "education/pdf_build_metadata.json",
-      "sha256": "a94277043abb7211d162a0c13ed3a92818d48c01afe80a964fd00d0253f0c077",
-      "bytes": 1541
+      "sha256": "0ee4d530a6cedc41276baa4d1302deee884ad9c76411ad52f631686e9795b6d5",
+      "bytes": 1604
     },
     {
       "path": "scripts/build_pdf_companions.py",
-      "sha256": "5b82968a693ab179c42d24c6b37a97afb9dfb725da14e975308ec95a46b99c32",
-      "bytes": 15966
+      "sha256": "66276200906986424007788631b16e81b347a258c87fa5e052faf87b07fce8ea",
+      "bytes": 16177
     },
     {
       "path": "scripts/check_pdf_companions.py",
-      "sha256": "b7cc89fa695e93cb07494b3cbaab0754ae6657ed56a7ae6646f2fb9e1a778d62",
-      "bytes": 3746
+      "sha256": "eddc8b02c820928e3172172f09682f255a8bfbd938e44fc9df85190ee437e423",
+      "bytes": 4450
     },
     {
       "path": "education/RELEASE_QA.md",
-      "sha256": "a2840ba45f4854e8277abcae3357017c4704dd9fed263a804a08c244ffcbf000",
-      "bytes": 7092
+      "sha256": "9385fa91819d85ac30e6e25334a4294132fa8c5b6c0daacb3f68c1ab94af983b",
+      "bytes": 9837
     }
   ],
   "validation": {
@@ -866,6 +880,21 @@
     "human_learner_validation": "NOT_PERFORMED",
     "author_journal_approval": "NOT_CERTIFIED",
     "public_release_authorization": "User explicitly requested GitHub update; not a scientific approval verdict.",
-    "visual_scope": "Current 5/30-page editions rendered at 90 dpi; guide3 and companion1,3\u201323 changed bodies inspected, plus companion2,24. Other bodies pixel-match the previously inspected v0.2.2 edition excluding the bottom65 footer pixels. No clipping, overlap or broken tables observed."
-  }
+    "visual_scope": "Five-page guide and 32-page complete companion rendered at 90 dpi. Guide pages 1,4,5 and companion pages 1,3-32 directly inspected; guide2-3 and companion2 match prior inspected bodies excluding the bottom65 footer pixels. No clipping, overlap, missing glyph or broken table observed.",
+    "executable_supplements": 1,
+    "human_semantic_review": "NOT_PERFORMED"
+  },
+  "executable_supplements": [
+    {
+      "id": "AF7",
+      "file": "Additional_file_7.zip",
+      "sha256": "3c04819a0cf8963657467fccf93ae57664bdf14523ca677adea5cfadd141d129",
+      "bytes": 477294,
+      "units": [
+        "R10",
+        "P10"
+      ],
+      "scope": "Compact scalar verification; no full PH, witness-distance, matrix-baseline or model inference recomputation."
+    }
+  ]
 }

@@ -128,9 +128,11 @@ The primary statistic was the mean difference between the selected
 substitution's distance from the background profile and the larger
 distance of its two alternatives. It was evaluated for 22 scorers in
 three geometries with within-site randomization and a declared
-66-comparison family. The cosine comparison for the scalar AVI score is
-undefined and was not interpreted. AVI includes AlphaMissense and
-consequence-related features {[}2,3,4{]}.
+66-comparison family. For scalar AVI, cosine distance depends only on
+sign when both inputs are nonzero and is undefined if either input is
+zero; it is not interpreted here as measuring differences in AVI
+magnitude. AVI includes AlphaMissense and consequence-related features
+{[}2,3,4{]}.
 
 The replications include 384 held-out primary positions in the four-gene
 pool and 1,713 primary positions in seven further genes. The four-gene
@@ -159,19 +161,22 @@ hoc. These analyst-defined mutation weights are sensitivity models, not
 independently estimated site-specific mutation rates. The highlighted
 missense and other-intronic mean-statistic q-values derive from
 zero-exceedance, 9,999-draw Monte Carlo cells. They are adjusted point
-estimates at the simulation resolution floor; Additional file 3 reports
-their raw p-values and Monte Carlo precision. The spatial tests in the
-main article spatial analysis instead use exact finite-label arithmetic.
+estimates derived from raw p-values at the simulation resolution floor;
+Additional file 3 reports their raw p-values and Monte Carlo precision.
+The spatial tests in the main article spatial analysis instead use exact
+finite-label arithmetic.
 
 \subsection{2 Consequence-associated enrichment and surviving
 signals}\label{consequence-associated-enrichment-and-surviving-signals}
 
 In the initial cohort, 17 of 66 primary comparisons were significant
 after BH correction. For the primary CONTACT\_MAPS Poincaré comparison,
-an exact lattice calculation bounded the uniform-null tail probability
-at 0.014989--0.015035 and its BH q-value at 0.054961--0.055128. Both
-bounds leave it above the threshold. Other statistic and null choices
-can change this conclusion. These are contact-score profile results, not
+a deterministic lattice calculation gave numerical bounds of
+0.014989--0.015035 for the uniform-null tail probability and
+0.054961--0.055128 for its BH q-value. These calculations used
+floating-point arithmetic and are not rigorous arithmetic certificates.
+Both q-value endpoints exceed 0.05. Other statistic and null choices can
+change this conclusion. These are contact-score profile results, not
 persistence-diagram results.
 
 The expanded replication gives the more informative consequence
@@ -205,14 +210,14 @@ were -0.0407 and -0.0785, and q was 0.00165. Additional file 3 records
 the values and simulation scope. Null-relative enrichment, a positive
 average margin and preferential first rank are distinct.
 
-At 63 other intronic positions, the three splicing scorers placed the
-selected allele first at 46, 47 and 47 positions, respectively; each
-corresponding reported mean-statistic q-value was 0.000252. At 157
-canonical splice positions, none of the 63 scorer-by-geometry
-comparisons was significant. These findings are conditional on the
-evaluated sites and labels. Missense and splice classifications can
-incorporate computational evidence related to the evaluated predictors
-{[}9,10{]}.
+At 63 other intronic positions, the splice-junction, splice-site and
+splice-site-usage scorers placed the selected allele first at 46, 47 and
+47 positions, respectively; each corresponding reported mean-statistic
+q-value was 0.000252. At 157 canonical splice positions, none of the 63
+scorer-by-geometry comparisons was significant. These findings are
+conditional on the evaluated sites and labels. Missense and splice
+classifications can incorporate computational evidence related to the
+evaluated predictors {[}9,10{]}.
 
 Post hoc, a model-free consequence-severity rule had an expected
 first-choice fraction of 0.817 under random tie breaking, compared with
@@ -235,14 +240,15 @@ analysis families. The historical top-1 analysis designated one maximum
 using the index returned by \texttt{argsort}; it did not require strict
 superiority or allocate fractional credit for tied maxima. Its mean-rank
 alternative used midranks. These rules differ from the tie-aware
-indicator used in the main article spatial analysis. A targeted cache
-check found no top ties, either exactly or within absolute tolerance
-10⁻¹², for the reported AVI Euclidean nonsense/start-loss and missense
-strata, including missense outside chr13. Their three reported counts
-are unaffected by this distinction. The exploratory CONTACT\_MAPS
-Poincaré top-1 count, 53 of 120, also had no tied maxima; its reported q
-= 0.0441 belongs to the exploratory 66-comparison rank family and is
-distinct from the primary mean-statistic result above.
+fractional-credit rule used in the main article spatial analysis. A
+targeted cache check found no top ties, either exactly or within
+absolute tolerance 10⁻¹², for the reported AVI Euclidean
+nonsense/start-loss and missense strata, including missense outside
+chr13. Their three reported counts are unaffected by this distinction.
+The exploratory CONTACT\_MAPS Poincaré top-1 count, 53 of 120, also had
+no tied maxima; its reported q = 0.0441 belongs to the exploratory
+66-comparison rank family and is distinct from the primary
+mean-statistic result above.
 
 The new direct reference-versus-alternate spatial comparison eliminates
 an external background centroid by construction. That changes the

@@ -30,10 +30,12 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Verify published research bindings and independently reconstructed results
         run: python scripts/check_research_release.py
+      - name: Check compact scalar-verifier failure controls
+        run: python research/reproduce/test_verifier_controls.py
       - name: Check educational content and adverse fixtures
-        run: python scripts/build_education.py --check --self-test
+        run: python scripts/build_education.py --check --self-test --source research/manuscript.md
       - name: Check printable teaching editions and coverage
-        run: python scripts/check_pdf_companions.py
+        run: python scripts/check_pdf_companions.py --source-root research
       - name: Check the generated standalone lab
         run: python scripts/build_standalone.py --check
       - name: Install browser test dependencies

@@ -78,7 +78,7 @@ The familiar parameterized-matching structure is a useful derivation for this au
 
 ### A native-diagram-only local certificate
 
-The following provides a prospective slope from native diagrams, without consulting a centered endpoint or selected-allele labels. Assume $b=f(0)>0$. Form the standard finite augmented bipartite graph: real $D$ points and $E$-diagonal copies on the left; real $E$ points and $D$-diagonal copies on the right. Include every real-real edge, each real point's own diagonal edge, and all diagonal-copy to diagonal-copy edges of cost zero. A perfect matching encodes a persistence matching.
+The following provides a prospective slope from native diagrams, without consulting a centered endpoint or selected-allele labels. If either finite diagram is empty, $f$ is constant under translation, with slope zero for every shift. Otherwise, assume $b=f(0)>0$. Form the standard finite augmented bipartite graph: real $D$ points and $E$-diagonal copies on the left; real $E$ points and $D$-diagonal copies on the right. Include every real-real edge, each real point's own diagonal edge, and all diagonal-copy to diagonal-copy edges of cost zero. A perfect matching encodes a persistence matching.
 
 Call an edge low, critical or high according as its native cost is $<b$, $=b$ or $>b$. For a direction $h\in \{-1,+1\}$, a critical real-real edge has one-sided slope $a_e=-1$ if $h c_{xy}>0$, and $+1$ otherwise. Critical diagonal edges have slope zero. Define
 
@@ -108,7 +108,7 @@ $$
 \begin{aligned}H(t)=\max\bigl\{&\max_x\min[\operatorname{dist}_{\infty}(x,E+t),\operatorname{life}(x)/2],\\ &\max_y\min[\operatorname{dist}_{\infty}(y+t,D),\operatorname{life}(y)/2]\bigr\}\leq f(t).\end{aligned}
 $$
 
-Use distance $+\infty$ to the empty finite set. The inequality holds because each point in any matching either pays a real-point cost or its diagonal cost. Nearest-neighbor queries can evaluate H efficiently.
+Use distance $+\infty$ to an empty finite set and value zero for a maximum over an empty point set. The inequality holds because each point in any matching either pays a real-point cost or its diagonal cost. Nearest-neighbor queries can evaluate H efficiently.
 
 For an increasing path, $H(\delta)\leq C\leq A+T$. If $H(\delta)=A+T$, saturation is proved without solving the shifted matching problem. With an error-controlled lower estimate $H_{low}$ and upper estimate $A_{up}$, the increasing deficit is bounded by $\kappa_+\leq A_{up}+T-H_{low}$. This is a witness-based audit using native diagrams and the chosen shift. It is independent of centered matching computation, but not independent of the chosen anchor or diagram geometry.
 
@@ -132,14 +132,14 @@ For arbitrary certified score intervals $[L_a,U_a]$, a exceeds b by more than $\
 
 The standard anchor-blind margin guarantee is $A_i-A_j>|\delta_i|+|\delta_j|+\tau$, with numerical errors added when estimated quantities are used. A slope-aware path certificate can be tighter: minimize $(A_i-A_j)+\lambda(k_i-k_j)$ over the desired $\lambda$ interval, which requires only its endpoints, then subtract the two tube errors and compare to $\tau$. These are elementary robust-ranking consequences, not new generic ranking theorems.
 
-Do not choose $\lambda$ using selected-allele labels and treat the resulting enrichment as predeclared. The new replication should freeze the tolerance, error budget, endpoint-saturation statistic, ranking audit and any predictive baseline before map outcomes are inspected.
+Do not choose $\lambda$ using selected-allele labels and treat the resulting enrichment as predeclared. Replication analyses should freeze the tolerance, error budget, endpoint-saturation statistic, ranking audit and any predictive baseline before map outcomes are inspected.
 
 
 ## 6. Rank-filtration perturbations
 
 
 
-Assign edge ij the fraction of eligible edges with strictly greater $L$ value, grouping ties so equal weights enter together. The resulting rank flag filtration is unchanged under every strictly increasing transformation of $L$ (Giusti et al., 2015). It removes magnitude information more broadly than global centring. Near ties, small entrywise changes can alter ranks, so the weighted-filtration stability bound does not transfer automatically. If edge perturbations are bounded by $\delta$, only comparisons whose original gap is at most $2\delta$ can change. With $m$ edges, the rank-filtration perturbation is at most $\max_e \#\{f\ne e:|w_f-w_e|\leq2\delta\}/m$. At exact ties no universal continuity bound tending to zero with $\delta$ exists: splitting an all-tied four-bin graph into a zero-birth perimeter and two arbitrarily later diagonals creates a rank interval of length 2/3.
+Assign edge ij the fraction of eligible edges with strictly greater $L$ value, grouping ties so equal weights enter together. The resulting rank flag filtration is unchanged under every strictly increasing transformation of $L$ (Giusti et al., 2015). It removes magnitude information more broadly than global centring. Near ties, small entrywise changes can alter ranks, so the weighted-filtration stability bound does not transfer automatically. If edge perturbations are bounded by $\delta$, only comparisons whose original gap is at most $2\delta$ can change. For a fixed set of $m$ eligible edges, the rank-filtration perturbation is at most $\max_e \#\{f\ne e:|w_f-w_e|\leq2\delta\}/m$. At exact ties no universal continuity bound tending to zero with $\delta$ exists: splitting an all-tied four-bin graph into a zero-birth perimeter and two arbitrarily later diagonals creates a rank interval of length 2/3.
 
 An uncentred weighted filtration, a centred weighted filtration and a rank filtration answer different questions. Their comparison is more informative than labelling topology uniformly intensity-sensitive. Degree-one interval lengths also omit genomic feature identity: relabelling bins leaves the abstract diagram unchanged. Coordinate-sensitive comparisons remain necessary when loop location is the target.
 

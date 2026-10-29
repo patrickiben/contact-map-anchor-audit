@@ -8,9 +8,11 @@
     "TRANSFER": 4
   },
   "source_file_checked": true,
+  "supporting_source_files_checked": 7,
   "research_sources_checked": true,
   "aggregate_value_checks": 39,
   "human_learner_validation": "NOT_PERFORMED",
+  "human_semantic_review": "NOT_PERFORMED",
   "author_approval": "NOT_CERTIFIED",
   "scope": "Source/coverage/value/hash checks; no educational efficacy or formal theorem certification.",
   "mutation_controls": [

@@ -1,0 +1,95 @@
+{
+  "negative_control_count": 17,
+  "negative_controls": [
+    {
+      "exit_code": 1,
+      "name": "centered_score_outside_interval",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "missing_site",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "wrong_selected_label",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "wrong_witness",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "wrong_expected_count",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "extra_delta",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "extra_witness",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "extra_baseline_score",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "nonfinite_score",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "unlinked_path_delta",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "unlinked_path_native_endpoint",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "unlinked_path_centered_endpoint",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "changed_path_start_sample",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "changed_path_end_sample",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "python_O",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "python_OO",
+      "rejected": true
+    },
+    {
+      "exit_code": 1,
+      "name": "inherited_PYTHONOPTIMIZE",
+      "rejected": true
+    }
+  ],
+  "positive_matches_preserved_result_byte_for_byte": true,
+  "positive_result_sha256": "1e5486ab6f810109f2832977fdf5cabee665b07ae21e89f450fc6103c00e977a",
+  "python_version": "3.14.7",
+  "scope": "Scalar-verifier regression controls only; no model calls, PH, witness recomputation or new statistical inference.",
+  "status": "PASS_SCALAR_VERIFIER_CONTROLS"
+}

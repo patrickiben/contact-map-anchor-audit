@@ -1,7 +1,7 @@
 {
   "title": "Prospective decision coverage across two prediction tracks",
   "scope": "Aggregate author analysis of two AlphaGenome output tracks. GM12878 discovery and new-locus replication are distinct cohorts; paired IMR-90 reuses the 84 replication sites and model architecture. Clinical-credit comparisons in replication and portability are descriptive.",
-  "source_sha256": "05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d",
+  "source_sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
   "cohorts": [
     {
       "id": "discovery",
@@ -66,7 +66,8 @@
     "Universal endpoint saturation did not transfer: 249/252 IMR-90 comparisons saturated. Both bounds abstained at the three exceptional sites; the witness-specific gain occurred elsewhere.",
     "All 612 GM12878 comparisons numerically saturated. Centering resolved 138/141 native ties and preserved all 63 strict native leaders across discovery and replication.",
     "Selected-allele credit decreased after centering in GM12878 replication and increased in IMR-90. RMS map baselines exceeded centered H1 credit in both tracks. No clinical superiority is established.",
-    "No discovery main or sensitivity test survived Holm adjustment over all sixteen tests. No new confirmatory clinical-enrichment family was added."
+    "No discovery main or sensitivity test survived Holm adjustment over all sixteen tests. No new confirmatory clinical-enrichment family was added.",
+    "A targeted Julia/Ripserer check reproduced all 72 full diagrams (847,288 intervals) from nine selected replication sites on both tracks, including all known IMR-90 exceptions. This is separate-implementation agreement on identical effective float32 inputs, not full-cohort or independent-model validation."
   ],
   "limits": [
     "One model, two output tracks; paired IMR-90 reuses the seven replication loci rather than adding independent sites.",
@@ -86,7 +87,7 @@
   ],
   "primary_tie_tolerance": 1e-06,
   "source_lines": [
-    137,
-    202
+    139,
+    204
   ]
 }

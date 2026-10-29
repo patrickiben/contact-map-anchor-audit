@@ -1,0 +1,57 @@
+{
+  "version": "0.2.4",
+  "status": "PASS_SCOPED_LOCAL_RELEASE_CHECKS",
+  "checked_utc": "2026-10-29T03:36:01.476334+00:00",
+  "source_sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
+  "main_pdf_sha256": "7406a9850247c5b6d76c2ff73231d856673c26bd7dade0806259ff13051fd2eb",
+  "manuscript_pages": 23,
+  "references": 31,
+  "source_text_unchanged_by_layout": true,
+  "manuscript_package_checks": 85,
+  "research_file_bindings": 270,
+  "scalar_aggregate_comparisons": 495,
+  "scalar_verifier_failure_controls": 17,
+  "python_suite": {
+    "run": 26,
+    "passed": 23,
+    "failed": 0,
+    "skipped_optional_backend": 3
+  },
+  "javascript_core_suite": {
+    "passed": 5,
+    "failed": 0
+  },
+  "browser_suite": {
+    "passed": 16,
+    "failed": 0,
+    "engine": "Chromium",
+    "limits": "Browser/mobile emulation and automated accessibility checks do not certify all devices or all accessibility requirements."
+  },
+  "education": {
+    "lessons": 10,
+    "quiz_items": 12,
+    "teaching_units": 45,
+    "source_coverage_spans": 56,
+    "source_files": 7,
+    "executable_supplements": 1,
+    "producer_values": 39,
+    "mutation_controls": 7,
+    "study_guide_pages": 5,
+    "complete_companion_pages": 32,
+    "source_bytes_checked": true,
+    "human_semantic_review": "NOT_PERFORMED",
+    "human_learner_validation": "NOT_PERFORMED"
+  },
+  "source_zip": {
+    "members": 6,
+    "sha256": "b6a1ea2c71d6deedb0a095a71214729de9b75fcb8deab7ad2d7ac0daaffa1714",
+    "bytes": 1267343,
+    "isolated_compile_passes": 2,
+    "compiled_pages": 23,
+    "normalized_text_identical": true
+  },
+  "scientific_scope": "No new model calls or full-cohort persistence computations in this consolidation. Earlier full replay and targeted Julia evidence retain their documented scope. No Lean or formal real-arithmetic certification.",
+  "author_submission_approval": "PENDING_WHOLE_PACKAGE_ATTESTATION",
+  "journal_submission": "NOT_SUBMITTED",
+  "CI_and_publication": "Recorded separately after commit and publication; local checks do not imply remote CI completion."
+}

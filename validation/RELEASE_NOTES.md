@@ -1,11 +1,7 @@
-Initial release of the Anchor Audit Toolkit and educational companion.
+# Anchor Audit Toolkit v0.2.4
 
-- Interactive browser laboratory with five synthetic presets, direct bottleneck evaluations, endpoint envelopes, ranking bounds, local JSON import and audit export.
-- Python CLI and library: dependency-free reference backend and optional GUDHI Hera/SciPy backend for up to 20,000 finite points per diagram.
-- Ten lessons, six worked examples and twelve practice questions with feedback and source mapping.
-- Offline single-file HTML companion; download `AnchorAuditLab.html` and open it in a browser.
-- Frozen aggregate study summaries, kept separate from the synthetic examples and user inputs.
+This release consolidates the accepted manuscript and supplement proof edits, integrates the targeted Julia validation, refreshes the five-page study guide and 32-page complete companion, and strengthens the compact scalar verifier. The manuscript remains in preparation for BMC Bioinformatics; it has not been submitted. Whole-package author submission approval remains pending.
 
-Validation: 26 Python tests with optional dependencies, five JavaScript core tests and 14 desktop/mobile browser tests passed locally. Source excerpts, 26 aggregate values and six educational mutation controls were checked. One retained 7,907-point genomic diagram pair reproduced its stored native and centered endpoints without observed discrepancy.
+Scientific inputs and results are unchanged. The compact verifier reproduces the earlier output byte-for-byte and rejects all 17 new failure controls. Current manuscript, supplement and teaching hashes are synchronized. See [the final-proof record](../research/FINAL_PROOF_REVISION_2026-10-28.md) and [scoped release checks](release-checks-v0.2.4.json).
 
-These are numerical and software checks. The toolkit does not establish clinical prediction, experimental chromatin structure, formal floating-point certification or educational efficacy in human learners. Raw model maps and per-site genomic diagrams are not redistributed.
+The full study archive remains in v0.2.0. The separate targeted Julia capsule remains in v0.2.3, with its original hashes and scope. This publication is not another full scientific replay, formal arithmetic proof, biological validation or human learner assessment. Provider Output Terms remain distinct from the original-code MIT license.

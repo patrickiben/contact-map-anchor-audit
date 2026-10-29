@@ -70,7 +70,7 @@ In a locked paired IMR-90 test, simple bounds identified 7 of 84 centered leader
 
 **Boundary:** A unique maximum is not evidence that the selected allele is clinically correct.
 
-Source: current BMC manuscript lines 77–159; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 77–161; see [source map](SOURCE_MAP.json).
 
 ## Interpret the earlier AVI result precisely
 
@@ -80,13 +80,13 @@ The historical AVI counts rank Euclidean distances from a background centroid. T
 
 The mean statistic is the selected distance minus the larger competing distance. In the reported missense analysis the observed average was negative, but the simulated matched-null average was more negative. The significant result therefore describes enrichment relative to that null, not average superiority to the strongest alternative.
 
-Some reported small adjusted values came from zero exceedances in a finite simulation. They are estimates at the simulation resolution floor. The frozen significant-count criterion and its remaining Monte Carlo uncertainty are both retained.
+Some reported small adjusted values came from zero exceedances in a finite simulation. Their raw p-values reach the simulation resolution floor; multiplicity adjustment gives larger q-values. The frozen significant-count criterion and its remaining Monte Carlo uncertainty are both retained.
 
 **Try it:** An observed margin is -0.01 and a simulated-null mean is -0.08. State one conclusion the difference supports and one it does not.
 
 **Boundary:** Neither background-distance ranking nor null-relative enrichment supplies an independently validated pathogenic-versus-benign classifier.
 
-Source: current BMC manuscript lines 195–202; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 197–204; see [source map](SOURCE_MAP.json).
 
 ## Separate exact arithmetic from a scientific null
 
@@ -98,11 +98,13 @@ The label tests held the computed maps fixed and used specified probabilities fo
 
 No discovery primary or sensitivity test survived Holm adjustment across the sixteen-test family. This did not establish the absence of every biological effect. Different representations and label models answer different questions.
 
+Under the mutation-weighted discovery null, expected centered credit was exactly 51/160 = 0.31875. Exactness describes the specified finite-label arithmetic, not experimentally established selection probabilities.
+
 **Try it:** Explain why exact probability arithmetic cannot prove that clinically selected alleles were exchangeable.
 
 **Boundary:** Null reference intervals are not biological effect confidence intervals.
 
-Source: current BMC manuscript lines 117–128; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 117–196; see [source map](SOURCE_MAP.json).
 
 ## Find the mechanism before celebrating the ranking
 
@@ -120,7 +122,7 @@ The earlier GM12878 saturation pattern did not universally transfer: 249 of 252 
 
 **Boundary:** Local saturation is ordinary on a nonflat piece of a finite matching problem; its frequency is not a new generic theorem.
 
-Source: current BMC manuscript lines 160–194; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 162–196; see [source map](SOURCE_MAP.json).
 
 ## Ask what actually replicated
 
@@ -140,7 +142,7 @@ IMR-90 selected credit rose descriptively from 0.335317 to 0.398810, whereas GM1
 
 **Boundary:** Eighty-four overlapping windows do not represent 84 independent genomic regions.
 
-Source: current BMC manuscript lines 98–173; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 98–175; see [source map](SOURCE_MAP.json).
 
 ## Match the conclusion to numerical resolution
 
@@ -152,11 +154,13 @@ A tie tolerance defines an analysis convention. A numerical allowance is a claim
 
 The paper reports numerical witnesses using practical allowances. It does not provide a complete interval-arithmetic certificate for every solver operation. The software likewise distinguishes numerical checks from formal real-arithmetic proof.
 
+A targeted Julia check used Ripserer to reconstruct 72 full diagrams from nine replication sites on both tracks. All 847,288 intervals matched, including repeated intervals and every known IMR-90 exception. Ripserer is a separate implementation in the Ripser algorithm family; the comparison used identical effective float32 inputs and retained Hera for downstream matching. It was not a full-cohort or independent-model validation.
+
 **Try it:** Multiply all diagram coordinates and shifts by ten. What else must be multiplied by ten to preserve the same ranking rule?
 
 **Boundary:** Reproducing floating-point outputs does not reveal the model’s unexposed internal precision.
 
-Source: current BMC manuscript lines 129–136; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 129–138; see [source map](SOURCE_MAP.json).
 
 ## Use reproducibility to answer the right question
 
@@ -172,11 +176,13 @@ The full v0.2.0 study archive is publicly released with the manuscript, code and
 
 Declarations confirm no competing financial or nonfinancial interests and no specific grant or institutional funding. Codex assisted the work; Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC checked against retained artifacts. AI checks are not external peer review; final author approval remains pending.
 
+The amended Additional file 7 independently checks scalar-derived counts, bounds, ranking sets and credits. Its 495 aggregate comparisons and 17 deliberate failure controls do not recompute persistence, witness distances or model predictions. The full study archive and separate Julia validation capsule supply the larger computational records.
+
 **Try it:** Describe one independent measurement that would be needed to connect the audit to a real structural chromosome change.
 
 **Boundary:** The practice quiz has not been validated with human learners and does not replace author review.
 
-Source: current BMC manuscript lines 203–274; see [source map](SOURCE_MAP.json).
+Source: current BMC manuscript lines 205–276; see [source map](SOURCE_MAP.json).
 
 ## Glossary
 

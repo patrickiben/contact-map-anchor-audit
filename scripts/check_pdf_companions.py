@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Check the frozen PDF editions and coverage manifest with only the standard library.
 
-Optionally verify the main manuscript and all six additional files with --source-root DIR.
+Optionally verify the main manuscript, six supplementary sources and the
+executable Additional file 7 with --source-root DIR.
 PDF byte/hash checks do not replace rendering or human learner evaluation.
 """
 import argparse
@@ -39,8 +40,10 @@ def check(source_root=None):
     assert units==expected, 'Teaching unit inventory changed'
     for name in ('STUDY_GUIDE','COMPANION'):
         content=(ROOT/'education'/f'{name}.md').read_text()
-        for token in ('42','249','252','35','0.517857','v0.2.0'):
+        for token in ('42','249','252','35','0.517857','v0.2.0','Ripserer','847,288'):
             assert token in content, (name,'Missing current-edition claim',token)
+    assert '51/160 = 0.31875' in companion
+    assert 'Floating-point lattice calculations are not rigorous arithmetic certificates' in companion
     coverage=(ROOT/'education/COMPLETE_COVERAGE.md').read_text()
     for row in manifest['coverage']:
         assert set(row['units'])<=units|{'INTRO'}, row['id']
@@ -48,7 +51,10 @@ def check(source_root=None):
     if source_root:
         source_root=Path(source_root)
         for source in manifest['sources']:
-            content=(source_root/source['file']).read_bytes()
+            path=source_root/source['file']
+            if source['id']=='MAIN' and not path.exists():
+                path=source_root/'manuscript.md'
+            content=path.read_bytes()
             assert digest(content)==source['sha256'], 'Source changed: '+source['file']
             lines=content.decode().splitlines()
             assert len(lines)==source['lines']
@@ -59,7 +65,10 @@ def check(source_root=None):
                 assert digest('\n'.join(lines[a-1:b]).encode())==row['excerpt_sha256'],row['id']
             missing=[i for i,line in enumerate(lines,1) if line.strip() and i not in covered]
             assert not missing, (source['id'],missing)
-    return {'status':'PASS_MECHANICAL_CHECKS','editions':{x['name']:x['pages'] for x in receipt['editions']},'teaching_units':len(units),'coverage_rows':len(manifest['coverage']),'source_files_checked':bool(source_root),'human_learner_validation':'NOT_PERFORMED','limits':'Hashes, PDF structure signatures and source coverage do not certify educational efficacy, biological validity or a formal mathematical proof.'}
+        for source in manifest.get('executable_supplements', []):
+            content=(source_root/source['file']).read_bytes()
+            assert digest(content)==source['sha256'] and len(content)==source['bytes'], source['file']
+    return {'status':'PASS_MECHANICAL_CHECKS','editions':{x['name']:x['pages'] for x in receipt['editions']},'teaching_units':len(units),'coverage_rows':len(manifest['coverage']),'source_files_checked':bool(source_root),'executable_supplements_checked':len(manifest.get('executable_supplements', [])) if source_root else 0,'human_learner_validation':'NOT_PERFORMED','human_semantic_review':'NOT_PERFORMED','limits':'Hashes, PDF structure signatures and source coverage do not certify educational efficacy, biological validity or a formal mathematical proof.'}
 
 
 def main():

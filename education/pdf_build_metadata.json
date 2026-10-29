@@ -8,31 +8,31 @@
       "pages": 5,
       "markdown": {
         "path": "education/STUDY_GUIDE.md",
-        "sha256": "5627da79a9e43ccdc39ef2a9de5629c99c6c465a15ea2ceba6d1947e48301d8c"
+        "sha256": "fc5476da73df132f823898fa5bc628b95dad34f1dfeb6893545a57a2c580828f"
       },
       "pdf": {
         "path": "education/STUDY_GUIDE.pdf",
-        "sha256": "f80cfbe3cac8452af5230d8e821da96196a92da45b9a9a71eef332dceb8d5c91"
+        "sha256": "2bac8ffb06f4f2246a535ccd043be3c50aaee54e8c2d9f3ec76f5e9c6322417b"
       }
     },
     {
       "name": "COMPANION",
-      "pages": 30,
+      "pages": 32,
       "markdown": {
         "path": "education/COMPANION.md",
-        "sha256": "d833369db3fd1f1a3efb15d46d113b717e9575ac5dcf754caf8d35d5f66646fb"
+        "sha256": "2c7f62aebc4a46fe6c6f248c4bbf30865ffbed6e2e6880da3b43befb70bfedec"
       },
       "pdf": {
         "path": "education/COMPANION.pdf",
-        "sha256": "3e30745e3c65d1c3c657bf7076cee52079fd958e957ef32bcffc3b19c729d2a0"
+        "sha256": "be2212d2e030028ad873b29c88a82a521e61503d88dffe0915227cb0fc1e3989"
       }
     }
   ],
   "manuscript_source": {
     "manuscript_title": "Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps",
-    "sha256": "05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d",
-    "version": "BMC Bioinformatics author read-through revision, 28 October 2026",
+    "sha256": "5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0",
+    "version": "BMC Bioinformatics final-proof candidate, 28 October 2026",
     "scope": "Source-linked educational adaptation of an unsubmitted research manuscript. Human author approval and learner validation are not certified by this toolkit.",
-    "publication_status": "Public research draft and v0.2.0 study archive; no journal submission, acceptance or new DOI claimed."
+    "publication_status": "Unsubmitted final-proof candidate; full study archive v0.2.0 and separate Julia validation capsule. Whole-package author approval and human learner reviews remain pending."
   }
 }

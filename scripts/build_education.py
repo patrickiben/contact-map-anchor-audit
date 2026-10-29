@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse, collections, copy, hashlib, json
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_SOURCE = '05b28b1bcc1b3a715152beb5e07567afc628632851dba5d54e5301ea69483b5d'
+EXPECTED_SOURCE = '5e4c411756fc29c16886ec42d4d888525f6622f8a653f71e05296675546927d0'
 EXPECTED_IDS = {'OBJECT','STABILITY','ANCHOR','RANKING','CONSEQUENCE','NULL','DISCOVERY','REPLICATION','PRECISION','SCOPE'}
 
 def digest(data: bytes) -> str:
@@ -34,7 +34,7 @@ def validate(learning, study, mapping, source_path=None, research_root=None):
     assert learning['source']['sha256'] == study['source_sha256'] == mapping['source']['sha256'] == EXPECTED_SOURCE
     assert len(learning['lessons']) == 10
     combined=' '.join(' '.join(x['body']) for x in learning['lessons'])
-    for fact in ('42 additional decisions','35 unresolved','249 of 252','Both simple and strengthened bounds','same 84','same AlphaGenome architecture','0.517857','before centered matching','full validated-arithmetic enclosure'):
+    for fact in ('42 additional decisions','35 unresolved','249 of 252','Both simple and strengthened bounds','same 84','same AlphaGenome architecture','0.517857','before centered matching','full validated-arithmetic enclosure','847,288 intervals','Ripserer','51/160 = 0.31875'):
         assert fact in combined, 'Missing portability teaching boundary: '+fact
     assert {c['id'] for c in study['cohorts']} == {'discovery','replication','imr90'}
     ids={x['id'] for x in learning['lessons']};assert ids==EXPECTED_IDS
@@ -49,6 +49,8 @@ def validate(learning, study, mapping, source_path=None, research_root=None):
         assert l['body'] and l['try_it'] and l['boundary'] and l['summary']
         mapped=next(x for x in mapping['lessons'] if x['id']==l['id'])
         assert mapped['source_lines']==l['source_lines']
+        assert mapped.get('supporting_source_ids',[])==l.get('supporting_source_ids',[])
+        assert set(l.get('supporting_source_ids',[])) <= {s['id'] for s in mapping.get('supporting_sources',[])}
     assert all(v is None for v in mapping['human_reviews'].values())
     for c in study['cohorts']:
         assert c['sites']==c['native_ties']+c['strict_leaders']
@@ -65,6 +67,8 @@ def validate(learning, study, mapping, source_path=None, research_root=None):
     if source_path:
         content=Path(source_path).read_bytes();assert digest(content)==EXPECTED_SOURCE,'Source manuscript changed'
         source_lines=content.decode().splitlines()
+        for supplemental in mapping.get('supporting_sources',[]):
+            assert digest((Path(source_path).parent/supplemental['file']).read_bytes())==supplemental['sha256'], supplemental['file']
         for l in mapping['lessons']:
             a,b=l['source_lines'];assert digest('\n'.join(source_lines[a-1:b]).encode())==l['source_excerpt_sha256']
         covered={i for l in mapping['lessons'] for i in range(l['source_lines'][0],l['source_lines'][1]+1)}
@@ -81,7 +85,7 @@ def validate(learning, study, mapping, source_path=None, research_root=None):
             if row['operation']=='length':obj=len(obj)
             elif row['operation']=='subtract':obj=obj-row['subtract']
             assert abs(obj-row['value'])<1e-14, row
-    return {'status':'PASS_MECHANICAL_SCOPE_ONLY','lessons':10,'quiz_items':12,'quiz_kinds':dict(collections.Counter(q['kind'] for q in learning['quiz'])),'source_file_checked':bool(source_path),'research_sources_checked':bool(research_root),'aggregate_value_checks':len(value_map['checks']),'human_learner_validation':'NOT_PERFORMED','author_approval':'NOT_CERTIFIED','scope':'Source/coverage/value/hash checks; no educational efficacy or formal theorem certification.'}
+    return {'status':'PASS_MECHANICAL_SCOPE_ONLY','lessons':10,'quiz_items':12,'quiz_kinds':dict(collections.Counter(q['kind'] for q in learning['quiz'])),'source_file_checked':bool(source_path),'supporting_source_files_checked':len(mapping.get('supporting_sources',[])) if source_path else 0,'research_sources_checked':bool(research_root),'aggregate_value_checks':len(value_map['checks']),'human_learner_validation':'NOT_PERFORMED','human_semantic_review':'NOT_PERFORMED','author_approval':'NOT_CERTIFIED','scope':'Source/coverage/value/hash checks; no educational efficacy or formal theorem certification.'}
 
 
 def mutation_controls(learning, study, mapping):

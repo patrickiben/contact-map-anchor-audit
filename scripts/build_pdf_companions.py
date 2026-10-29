@@ -136,6 +136,9 @@ class Renderer:
         paragraph = Paragraph(self.inlines(nodes), styles[style])
         if len(nodes)==1 and nodes[0]['t']=='Strong':
             paragraph.keepWithNext = True
+        if nodes and nodes[0]['t']=='Strong' and self.inlines(nodes[0]['c'])=='Source:':
+            # Keep a detailed unit's source label with its opening explanation.
+            paragraph.keepWithNext = True
         return paragraph
 
     def table(self, content):

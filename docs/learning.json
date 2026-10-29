@@ -465,5 +465,14 @@
     "The interactive quiz is practice with answer feedback, not a validated human transfer assessment.",
     "Public release authorization is not a human learner or author journal-approval verdict."
   ],
-  "assessment_scope": "These multiple-choice practice items adapt the source reading guide. They are not the locked free-response human transfer test used in the manuscript validation harness. No learner pass rate or educational effectiveness is claimed."
+  "assessment_scope": "These multiple-choice practice items adapt the source reading guide. They are not the locked free-response human transfer test used in the manuscript validation harness. No learner pass rate or educational effectiveness is claimed.",
+  "current_journal_status": {
+    "journal": "BMC Bioinformatics",
+    "status": "SUBMITTED_TECHNICAL_CHECK",
+    "submitted_date": "2026-10-29",
+    "status_as_of": "2026-10-29",
+    "public_record": "https://github.com/patrickiben/contact-map-anchor-audit/blob/main/research/SUBMISSION_STATUS.md",
+    "scope": "Submission received; no acceptance or peer-review outcome claimed."
+  },
+  "source_snapshot_note": "The source publication_status describes the author-approved v0.2.5 snapshot frozen before submission. The current journal status is recorded separately; the manuscript and teaching PDF source hashes remain unchanged."
 }

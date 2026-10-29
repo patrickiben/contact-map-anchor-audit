@@ -1,6 +1,6 @@
 # Scientific validation and release checks
 
-29 October 2026. The current edition is v0.2.5, the author-approved submission edition for BMC Bioinformatics. Patrick Iben approved the consolidated manuscript and Additional files 1–7 and confirmed that the rework was not under consideration elsewhere. The pending-approval sentence has been replaced by the author-approval statement. Scientific text and all supplementary files retain their accepted content. No journal submission or acceptance is claimed.
+29 October 2026. The current edition is v0.2.5, the author-approved submission edition for BMC Bioinformatics. Patrick Iben approved the consolidated manuscript and Additional files 1–7 and confirmed that the rework was not under consideration elsewhere. The pending-approval sentence has been replaced by the author-approval statement. Scientific text and all supplementary files retain their accepted content. BMC Bioinformatics confirmed submission receipt on 29 October 2026 and reported the Technical Check stage. This is not an acceptance or peer-review outcome; see [the submission-status record](SUBMISSION_STATUS.md). The validation results below retain their recorded scopes.
 
 ## Scientific computations retained from earlier runs
 

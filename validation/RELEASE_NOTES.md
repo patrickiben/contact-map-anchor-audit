@@ -1,5 +1,7 @@
 # Anchor Audit Toolkit v0.2.5
 
+**Subsequent status:** BMC Bioinformatics received the submission on 29 October 2026 and reported Technical Check. The release description below records the unchanged pre-submission snapshot. [Current status](../research/SUBMISSION_STATUS.md).
+
 This author-approved submission edition records Patrick Iben's approval of the consolidated manuscript and Additional files 1–7 on 29 October 2026. The main manuscript replaces its preparation-only pending-approval sentence with “P.I. read and approved the final manuscript.” The rework is prepared for BMC Bioinformatics and is not yet submitted.
 
 Scientific content, results, figures, references and all seven additional files are unchanged from v0.2.4. Main-source/PDF hashes, upload source archive and teaching source bindings are refreshed. See [the approved-edition record](../research/AUTHOR_APPROVED_EDITION_2026-10-29.md) and [scoped release checks](release-checks-v0.2.5.json).

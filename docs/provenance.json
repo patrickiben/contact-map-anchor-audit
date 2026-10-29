@@ -35,5 +35,14 @@
     "coverage": "education/SOURCE_MAP.json",
     "local_check": "python scripts/build_education.py --check",
     "optional_source_check": "python scripts/build_education.py --check --source research/manuscript.md"
-  }
+  },
+  "current_journal_status": {
+    "journal": "BMC Bioinformatics",
+    "status": "SUBMITTED_TECHNICAL_CHECK",
+    "submitted_date": "2026-10-29",
+    "status_as_of": "2026-10-29",
+    "public_record": "https://github.com/patrickiben/contact-map-anchor-audit/blob/main/research/SUBMISSION_STATUS.md",
+    "scope": "Submission received; no acceptance or peer-review outcome claimed."
+  },
+  "source_snapshot_note": "The source publication_status describes the author-approved v0.2.5 snapshot frozen before submission. The current journal status is recorded separately; the manuscript and teaching PDF source hashes remain unchanged."
 }

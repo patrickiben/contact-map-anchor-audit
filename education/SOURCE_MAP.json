@@ -183,16 +183,16 @@
   },
   "assets": {
     "docs/learning.json": {
-      "sha256": "a7472a771476ea878db96f9084a9c18424d4eed662713361b65bea12c242e706",
-      "bytes": 27672
+      "sha256": "401129755422167d315c539916aaad25f48536c0fa5ac6d6bcfa707748e55e9d",
+      "bytes": 28305
     },
     "docs/study-summary.json": {
       "sha256": "e0d0b792b1b3f3d6c4f1f32749f622439bcee41cd90b35cedc359fd17e2c0d43",
       "bytes": 4536
     },
     "docs/provenance.json": {
-      "sha256": "a4b307f20ff480181d1f411a63067fecc1f836d7a4477b80f5aa448a657bf4ee",
-      "bytes": 2801
+      "sha256": "aad5155399bddf26dbd2e936c84f7551fb016123c019bb5caa02ab37bd4b9e1e",
+      "bytes": 3434
     },
     "education/GUIDE.md": {
       "sha256": "89d480a6cf9e51af6c9079b78b99b09b3829ad789569a9e648b2e5b6135fe3a8",
@@ -211,8 +211,8 @@
       "bytes": 6641
     },
     "education/README.md": {
-      "sha256": "fdb21bc596408c6fb09522c16c7735d3562da7e21f7201760cba7e423f9485bc",
-      "bytes": 6454
+      "sha256": "a635863fcd9e264fa7c78f4b024cc97a33474531afdd27e512e3a5f4aa6015c6",
+      "bytes": 6893
     },
     "education/STUDY_VALUE_MAP.json": {
       "sha256": "018abdbab2521698c6b76917bc79201fd4bd7185f41d9fdbccef7f3440f654d5",
@@ -266,5 +266,14 @@
     "status": "AUTHOR_CONFIRMED",
     "date": "2026-10-29",
     "scope": "Consolidated manuscript and Additional files 1–7 for submission; educational human semantic review and learner assessment are separate and unperformed."
-  }
+  },
+  "current_journal_status": {
+    "journal": "BMC Bioinformatics",
+    "status": "SUBMITTED_TECHNICAL_CHECK",
+    "submitted_date": "2026-10-29",
+    "status_as_of": "2026-10-29",
+    "public_record": "https://github.com/patrickiben/contact-map-anchor-audit/blob/main/research/SUBMISSION_STATUS.md",
+    "scope": "Submission received; no acceptance or peer-review outcome claimed."
+  },
+  "source_snapshot_note": "The source publication_status describes the author-approved v0.2.5 snapshot frozen before submission. The current journal status is recorded separately; the manuscript and teaching PDF source hashes remain unchanged."
 }

@@ -17,7 +17,7 @@ For an interactive route, use the [Anchor Audit Lab](https://patrickiben.github.
 
 The manuscript basis is the author-approved 29 October 2026 submission manuscript, *Auditing preprocessing-sensitive allele rankings in predicted chromatin contact maps*, SHA256 `a1d5a2cc86f85d0eaaa1d6393cd7193ae9fb92526dd928df46f316fa0d18ce29`. That public draft is supplied with the versioned study release; no journal acceptance or new DOI is implied.
 
-The current rework has not been submitted. The [earlier AlphaGenome audit's teaching materials](https://github.com/patrickiben/alphagenome-allele-demo/tree/main/education) remain tied to its preprint v3 and five earlier supplements. They explain that prior version; the new companion covers the current rework and Additional files 1–7. The [research map](https://github.com/patrickiben/patrickiben/blob/main/RESEARCH_MAP.md) connects both versions to their respective code and demonstrations.
+The rework was submitted to **BMC Bioinformatics on 29 October 2026** and entered **Technical Check**. [Current status](../research/SUBMISSION_STATUS.md). The study-guide and companion PDFs preserve the author-approved v0.2.5 snapshot frozen before submission; their historical status wording describes that edition, and their scientific content is unchanged. The [earlier AlphaGenome audit's teaching materials](https://github.com/patrickiben/alphagenome-allele-demo/tree/main/education) remain tied to its preprint v3 and five earlier supplements. They explain that prior version; the new companion covers the current rework and Additional files 1–7. The [research map](https://github.com/patrickiben/patrickiben/blob/main/RESEARCH_MAP.md) connects both versions to their respective code and demonstrations.
 
 The synthetic presets and teaching examples are not genomic observations. The study panel separately presents aggregate author analysis of predicted maps. Imported data are supplied by the user and require their own provenance.
 
@@ -43,7 +43,7 @@ AlphaGenome outputs and substantial derivatives, including the genomic numerical
 
 ## Historical editions
 
-The following records describe their named earlier editions. The current author-approval status appears below.
+The following records describe their named earlier editions. The author-approval snapshot is described below; the current journal status is stated above.
 
 The QC revision updates declared funding/conflicts and AI disclosure (Qwen3.8 earlier drafting; Qwen3.8-Max author-supplied QC), clarifies the 1,192/1,490 coding result including 3/6 synonymous positions, and teaches the explicitly clipped S6 contrast view alongside its unclipped control. Declarations were confirmed; final author approval remains NOT_CERTIFIED and human learner validation NOT_PERFORMED.
 
@@ -51,6 +51,6 @@ This edition incorporates the author’s section-by-section manuscript edits and
 
 The v0.2.4 final-proof edition incorporates the targeted Julia persistence check, the approved empty-diagram and Monte Carlo clarifications, corrected scalar-AVI interpretation, the exact mutation-null expectation 51/160 = 0.31875, and the amended compact verifier. The full study data archive remains v0.2.0; the Julia capsule remains a separately preserved v0.2.3 addendum. The rework is not submitted. Whole-package author approval, human semantic review and learner transfer assessment remain pending.
 
-## Current v0.2.5 author-approved edition
+## Frozen v0.2.5 author-approved edition
 
-On 29 October 2026, the author approved the consolidated manuscript and Additional files 1–7 for submission to BMC Bioinformatics and confirmed that the rework is not under consideration elsewhere. The manuscript approval sentence and source bindings are updated; scientific results and teaching explanations are unchanged. The rework is not yet submitted. Human educational semantic review, accessibility review and learner transfer assessment remain unperformed; manuscript approval does not establish those educational outcomes.
+On 29 October 2026, the author approved the consolidated manuscript and Additional files 1–7 for submission to BMC Bioinformatics and confirmed that the rework is not under consideration elsewhere. The manuscript approval sentence and source bindings are updated; scientific results and teaching explanations are unchanged. At this edition's freeze, the rework had not yet been submitted; submission was received later on the same date. Human educational semantic review, accessibility review and learner transfer assessment remain unperformed; manuscript approval does not establish those educational outcomes.
